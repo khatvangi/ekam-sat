@@ -1,0 +1,325 @@
+{
+  "meta": {
+    "title": "Bhagavad Gita — Ekam Sat Node Taxonomy",
+    "description": "35 doctrinal nodes extracted from BG. Each node is a precise proposition, not a topic. These are the search targets for the MBH echo project.",
+    "verse_format": "chapter.verse",
+    "hk_note": "Terms given in Harvard-Kyoto for grep against BORI corpus"
+  },
+  "nodes": [
+    {
+      "id": "N01",
+      "name": "Indestructibility of the Self",
+      "proposition": "The ātman is unborn, eternal, undying — it cannot be killed by any weapon",
+      "anchor_verses": ["2.19", "2.20", "2.23", "2.24"],
+      "hk_terms": ["nitya", "nityaH", "avyaya", "aja", "ajaH", "ajasya", "na hanyate", "na jaayate"],
+      "core_hk": ["nitya", "aja", "avyaya"],
+      "notes": "The bedrock of Krishna's entire argument. Everything else rests on this."
+    },
+    {
+      "id": "N02",
+      "name": "Self vs Body Distinction",
+      "proposition": "The self (dehin) is distinct from and inhabits the body (deha); grief arises from confusing them",
+      "anchor_verses": ["2.13", "2.18", "2.22", "15.8"],
+      "hk_terms": ["dehin", "deha", "zarIra", "zarIriNa", "dehI", "kzetra", "kzetrajJa"],
+      "core_hk": ["dehin", "zarIrin", "kzetrajJa"],
+      "notes": "The diagnostic of ignorance — mistaking the perishable for the eternal"
+    },
+    {
+      "id": "N03",
+      "name": "Nishkama Karma — Action without Fruit-Attachment",
+      "proposition": "One must act; the fruit of action is not one's right; do not make fruit the motive; do not embrace inaction",
+      "anchor_verses": ["2.47", "3.19", "4.20", "18.9"],
+      "hk_terms": ["nishkAma", "phala", "phalaM", "phalasaMga", "karmaphala", "tyAga", "niyata", "phalatyAga"],
+      "core_hk": ["mA phaleshu", "karmaNy evAdhikAras te", "phalatyAga"],
+      "notes": "BG 2.47 is the single most cited verse in entire tradition. Track its echoes across MBH."
+    },
+    {
+      "id": "N04",
+      "name": "Equanimity — Sama in Pleasure and Pain",
+      "proposition": "The stable-minded person is unmoved by pleasure or pain, heat or cold, honor or dishonor",
+      "anchor_verses": ["2.15", "2.38", "2.48", "6.7", "14.24"],
+      "hk_terms": ["sama", "samatA", "samadukhasukha", "dvandva", "titikshA", "sthitaprajJa"],
+      "core_hk": ["sama", "samatva", "dvandva"],
+      "notes": "Sthitaprajña description in 2.54-72 is a complete portrait — search for these qualities across MBH"
+    },
+    {
+      "id": "N05",
+      "name": "The Sthitaprajna — Portrait of the Realized",
+      "proposition": "The wise one whose mind is unmoved in sorrow, who does not long for pleasure, free of passion fear anger",
+      "anchor_verses": ["2.55", "2.56", "2.57", "2.58", "2.70"],
+      "hk_terms": ["sthitaprajJa", "sthitadhI", "prajJA", "munikA", "muni", "vItarAga", "vItabhaya", "vItakrodha"],
+      "core_hk": ["sthitaprajJa", "vItarAga", "vItabhaya"],
+      "notes": "This is a CHARACTER description — check if any MBH sage is described in these terms"
+    },
+    {
+      "id": "N06",
+      "name": "Three Gunas — Sattva Rajas Tamas",
+      "proposition": "All of prakriti operates through three qualities — sattva (clarity), rajas (activity), tamas (inertia)",
+      "anchor_verses": ["14.5", "14.6", "14.7", "14.8", "18.40"],
+      "hk_terms": ["guNa", "guNAn", "sattva", "rajas", "tamas", "triguNa", "prakRti"],
+      "core_hk": ["sattva", "rajas", "tamas", "triguNa"],
+      "notes": "Guna framework appears in Sankhya — track its use across all parvas"
+    },
+    {
+      "id": "N07",
+      "name": "Field and Knower of the Field",
+      "proposition": "The body is the field (kshetra); the self is the knower of the field (kshetrajna); Brahman knows all fields",
+      "anchor_verses": ["13.1", "13.2", "13.3", "13.26"],
+      "hk_terms": ["kzetra", "kzetrajJa", "kzetrin", "jJAna", "jJeya"],
+      "core_hk": ["kzetra", "kzetrajJa"],
+      "notes": "Chapter 13 framework — track ksetra/ksetrajna across MBH"
+    },
+    {
+      "id": "N08",
+      "name": "Brahman Pervades All",
+      "proposition": "Brahman is the substratum of all existence — in the smallest and the greatest",
+      "anchor_verses": ["10.39", "13.13", "13.14", "13.17", "18.20"],
+      "hk_terms": ["brahman", "brahmaN", "sarvabhUta", "sarvatra", "vibhu", "vyApya", "ekaM"],
+      "core_hk": ["brahman", "sarvabhUta", "ekaM"],
+      "notes": "The ekam sat node par excellence — one in all, all in one"
+    },
+    {
+      "id": "N09",
+      "name": "Self is the Same in All Beings",
+      "proposition": "One who sees the same Self in all beings, and all beings in the Self, does not hate",
+      "anchor_verses": ["6.29", "6.32", "13.27", "13.28", "18.20"],
+      "hk_terms": ["sarvabhUta", "AtmasamaM", "samadarzin", "ekaM", "AtmanA", "AtmAnaM"],
+      "core_hk": ["samadarzin", "sarvabhUta", "ekaM"],
+      "notes": "THIS is the direct ekam sat node — oneness of self across all beings"
+    },
+    {
+      "id": "N10",
+      "name": "Renunciation vs Abandonment — Tyaga vs Sannyasa",
+      "proposition": "True renunciation is not abandonment of action but abandonment of attachment to results",
+      "anchor_verses": ["18.2", "18.3", "18.4", "18.11"],
+      "hk_terms": ["tyAga", "saMnyAsa", "saMnyAsin", "niyata", "karma", "phalatyAga"],
+      "core_hk": ["tyAga", "saMnyAsa"],
+      "notes": "Important: BG opposes false renunciation. Track MBH sages who address this"
+    },
+    {
+      "id": "N11",
+      "name": "Yoga as Equanimity in Action",
+      "proposition": "Yoga is skill in action; perform actions as yoga, established in equanimity",
+      "anchor_verses": ["2.48", "2.50", "6.1", "6.2"],
+      "hk_terms": ["yoga", "yogin", "yogaH", "karmayoga", "buddhiyoga", "jJAnayoga"],
+      "core_hk": ["yoga", "yogin"],
+      "notes": "Track how yoga is defined vs how it is used colloquially across MBH"
+    },
+    {
+      "id": "N12",
+      "name": "Desire as Root of All Bondage",
+      "proposition": "Desire (kama) is the enemy — from desire comes anger, from anger delusion, from delusion destruction of discrimination",
+      "anchor_verses": ["3.37", "3.39", "3.40", "16.21"],
+      "hk_terms": ["kAma", "kAmasya", "krodha", "lobha", "moha", "rAga"],
+      "core_hk": ["kAma", "krodha", "lobha"],
+      "notes": "The chain kama-krodha-moha-nasht is a complete causal sequence. Track it in MBH."
+    },
+    {
+      "id": "N13",
+      "name": "Duty According to One's Nature — Svadharma",
+      "proposition": "It is better to do one's own dharma imperfectly than another's dharma well",
+      "anchor_verses": ["3.35", "18.41", "18.43", "18.47"],
+      "hk_terms": ["svadharma", "paradharma", "varNa", "karma", "svabhAva"],
+      "core_hk": ["svadharma", "svabhAva"],
+      "notes": "Svadharma is not just caste-duty — it is action aligned with one's nature"
+    },
+    {
+      "id": "N14",
+      "name": "Knowledge Destroys Ignorance",
+      "proposition": "As fire burns fuel, knowledge burns all karmas; there is nothing purifying like knowledge",
+      "anchor_verses": ["4.37", "4.38", "4.39", "5.16"],
+      "hk_terms": ["jJAna", "jJAnagni", "ajJAna", "avidyA", "prakAza", "dIpta"],
+      "core_hk": ["jJAna", "ajJAna", "viveka"],
+      "notes": "Jnana as fire — track this metaphor across MBH"
+    },
+    {
+      "id": "N15",
+      "name": "Brahman as the Origin and End of All",
+      "proposition": "From Brahman beings arise, in Brahman they exist, into Brahman they return",
+      "anchor_verses": ["7.6", "9.4", "9.5", "10.8", "14.27"],
+      "hk_terms": ["prabhava", "prabhavaH", "pralaya", "udaya", "yataH", "tataH", "sarvasya"],
+      "core_hk": ["prabhava", "pralaya", "sarvasya"],
+      "notes": "Cosmological frame — all things from one source and return to it"
+    },
+    {
+      "id": "N16",
+      "name": "The Imperishable Beyond All Dualities",
+      "proposition": "That which is beyond the two perishable and imperishable, called Purushottama — that is the highest",
+      "anchor_verses": ["15.16", "15.17", "15.18", "8.20", "8.21"],
+      "hk_terms": ["akzara", "kzara", "purushottama", "avyakta", "para", "parama"],
+      "core_hk": ["akzara", "purushottama", "parama"],
+      "notes": "The transcendent beyond even the avyakta — track this highest designation"
+    },
+    {
+      "id": "N17",
+      "name": "Surrender — Sarva Dharman Parityajya",
+      "proposition": "Abandon all dharmas and take refuge in Me alone — I will liberate you from all sins",
+      "anchor_verses": ["18.66", "9.22", "12.6", "12.7"],
+      "hk_terms": ["zaraNam", "zaraNAgati", "prapatti", "bhakti", "ekam", "parityajya"],
+      "core_hk": ["zaraNam", "zaraNAgati"],
+      "notes": "BG's culminating statement — track zaraNam across MBH as ultimate refuge"
+    },
+    {
+      "id": "N18",
+      "name": "Devotion — Bhakti as Highest Path",
+      "proposition": "By undivided devotion alone can I be known, seen, and entered into",
+      "anchor_verses": ["11.54", "12.2", "18.54", "18.55"],
+      "hk_terms": ["bhakti", "bhaktimAn", "bhaktyA", "ananyabhakti", "priya"],
+      "core_hk": ["bhakti", "ananyabhakti"],
+      "notes": "Track bhakti language — not worship language but the one-pointed love/attention"
+    },
+    {
+      "id": "N19",
+      "name": "The Wise Grieve for Neither Living nor Dead",
+      "proposition": "The learned grieve neither for those who have died nor for those still living",
+      "anchor_verses": ["2.11", "2.13", "2.19", "2.20"],
+      "hk_terms": ["zocati", "zoka", "azocyan", "dhIra", "paNDita", "paMDita"],
+      "core_hk": ["azocya", "zoka", "dhIra"],
+      "notes": "BG opens with this rebuke of Arjuna's grief. Track this pattern — wise person not grieving — across MBH"
+    },
+    {
+      "id": "N20",
+      "name": "Non-Attachment to Fruits — Phala Phalatyaga",
+      "proposition": "Having performed a sacrificial action, relinquish the fruit — this is the teaching of the renouncer",
+      "anchor_verses": ["4.20", "5.10", "5.11", "6.1"],
+      "hk_terms": ["AsaktaH", "asakti", "nirAzI", "nirmama", "nirahaMkAra"],
+      "core_hk": ["asakti", "nirmama", "nirahaMkAra"],
+      "notes": "Non-I-ness and non-mine-ness as twin props of liberation"
+    },
+    {
+      "id": "N21",
+      "name": "Silence and Self-Control — Maunam Indriyanigraha",
+      "proposition": "Control of speech, body, and mind — austerity of the highest order",
+      "anchor_verses": ["17.14", "17.15", "17.16", "10.38"],
+      "hk_terms": ["mauna", "maunaM", "indriyanigraha", "dama", "damaH", "zama"],
+      "core_hk": ["mauna", "dama", "indriyanigraha"],
+      "notes": "Mauna as spiritual practice — track its occurrence in sage descriptions"
+    },
+    {
+      "id": "N22",
+      "name": "Impermanence of the World — Duhkhalaya",
+      "proposition": "This world is a home of suffering and impermanence — do not take refuge in it",
+      "anchor_verses": ["8.15", "9.33", "15.1", "15.2"],
+      "hk_terms": ["dukkhAlaya", "anityam", "anitya", "asukha", "kzaNabhaGgura"],
+      "core_hk": ["dukkhAlaya", "anitya"],
+      "notes": "Impermanence — shared with Buddhist framework but here in Vedantic register"
+    },
+    {
+      "id": "N23",
+      "name": "The Cosmic Person — Vishwarupa",
+      "proposition": "All of existence is a manifestation of the cosmic form — the entire world is sustained in a fragment of the divine",
+      "anchor_verses": ["10.42", "11.7", "11.13", "11.20"],
+      "hk_terms": ["vizvArUpa", "vizvarUpa", "vizvaM", "vibhUti", "vibhUtiH"],
+      "core_hk": ["vizvarUpa", "vibhUti"],
+      "notes": "Cosmological vision — track vibhuti language across MBH"
+    },
+    {
+      "id": "N24",
+      "name": "Time as the Destroyer — Kala",
+      "proposition": "I am Time, the great destroyer of worlds — even without you these warriors shall not exist",
+      "anchor_verses": ["11.32", "10.30", "10.33"],
+      "hk_terms": ["kAla", "kAlaH", "mahAkAla", "kAlasya", "nAzaya"],
+      "core_hk": ["kAla", "kAlasya"],
+      "notes": "Kala as cosmic principle — absolutely central to MBH's own self-understanding"
+    },
+    {
+      "id": "N25",
+      "name": "Liberation — Moksha as the Highest Goal",
+      "proposition": "Having attained Me, the great-souled ones do not return to rebirth — they have attained the highest perfection",
+      "anchor_verses": ["8.15", "8.16", "4.9", "14.19", "14.20"],
+      "hk_terms": ["moksha", "mokzaM", "mukti", "vimukti", "vimukta", "brahmabhUta", "punarjanman"],
+      "core_hk": ["moksha", "vimukta", "brahmabhUta"],
+      "notes": "Moksha as non-return — the telos — track across all MBH discourse"
+    },
+    {
+      "id": "N26",
+      "name": "Friend of All Beings — Sarvabhutahite Ratah",
+      "proposition": "The sage who is friend to all beings, compassionate, free of possessiveness — such a devotee is dear to Me",
+      "anchor_verses": ["12.13", "12.14", "5.25", "12.4"],
+      "hk_terms": ["sarvabhUtahita", "maitrI", "karuNA", "adveza", "ahiMsA"],
+      "core_hk": ["sarvabhUtahita", "maitrI", "ahiMsA"],
+      "notes": "The ethical face of ekam sat — because all are one, harm to any is harm to self"
+    },
+    {
+      "id": "N27",
+      "name": "The Witness Self — Sakshi Chetana",
+      "proposition": "The supreme self is the witness, the permitter, the upholder, the experiencer, the great lord",
+      "anchor_verses": ["13.22", "13.23", "15.9", "15.10"],
+      "hk_terms": ["sAkzI", "sAkshI", "upadrazTA", "anumantA", "bhoktA", "mahezvaraH"],
+      "core_hk": ["sAkzI", "upadrazTA"],
+      "notes": "The sakshi concept — pure witness consciousness — track in MBH sage descriptions"
+    },
+    {
+      "id": "N28",
+      "name": "True Sacrifice — Yajna as Inner Fire",
+      "proposition": "The highest yajna is the sacrifice of self into the fire of Brahman — not ritual but knowledge",
+      "anchor_verses": ["4.24", "4.25", "4.33", "9.16"],
+      "hk_terms": ["yajJa", "yajJaH", "brahmArpaNam", "Ahuti", "agni", "jJAnayajJa"],
+      "core_hk": ["yajJa", "brahmArpaNam", "jJAnayajJa"],
+      "notes": "Internalization of yajna — ritual becomes knowledge. Major thread."
+    },
+    {
+      "id": "N29",
+      "name": "He Who Sees Inaction in Action",
+      "proposition": "One who sees inaction in action and action in inaction is wise among humans — liberated while acting",
+      "anchor_verses": ["4.18", "4.19", "4.20"],
+      "hk_terms": ["akarman", "akaraNi", "karmaNo", "akarmaNi", "karma"],
+      "core_hk": ["akarman", "akarmaNi"],
+      "notes": "The paradox of liberated action — among the most subtle BG teachings"
+    },
+    {
+      "id": "N30",
+      "name": "The Divine and Demonic Natures",
+      "proposition": "Two classes of beings: those with divine nature (fearlessness, purity, compassion) and demonic (deceit, arrogance, cruelty)",
+      "anchor_verses": ["16.1", "16.2", "16.3", "16.4"],
+      "hk_terms": ["daivI", "AsurI", "daivam", "Asuram", "AbhayaM", "dambha", "krodha", "ahaMkAra"],
+      "core_hk": ["daivI", "AsurI", "dambha"],
+      "notes": "The moral typology — track these character descriptions across MBH narrative"
+    },
+    {
+      "id": "N31",
+      "name": "Ishvara as Inner Ruler of All Hearts",
+      "proposition": "The Lord dwells in the heart of all beings, causing them to revolve by maya as if mounted on a machine",
+      "anchor_verses": ["18.61", "15.15", "10.11"],
+      "hk_terms": ["Izvara", "IzvaraH", "hRdaya", "hRdi", "antaryAmin", "sarvasya"],
+      "core_hk": ["Izvara", "antaryAmin", "hRdi"],
+      "notes": "The inner ruler — Ishvara as indwelling presence, not external deity"
+    },
+    {
+      "id": "N32",
+      "name": "Practice and Dispassion — Abhyasa Vairagya",
+      "proposition": "By practice and dispassion the mind is restrained — these two are the means",
+      "anchor_verses": ["6.35", "6.36", "12.9", "12.10"],
+      "hk_terms": ["abhyAsa", "vairAgya", "vairAgyeNa", "abhyAsena", "manas", "nigraha"],
+      "core_hk": ["abhyAsa", "vairAgya"],
+      "notes": "The practical method — how does one actually do this? Track across MBH"
+    },
+    {
+      "id": "N33",
+      "name": "Purification of Mind — Chitta Shuddhi",
+      "proposition": "With a purified intellect, controlling the self with fortitude, having abandoned sense objects, free of passion and aversion",
+      "anchor_verses": ["18.51", "18.52", "6.12", "6.14"],
+      "hk_terms": ["buddhizuddhi", "cittzuddhi", "zuddhA", "zuddhi", "vimuktaH", "prasAda"],
+      "core_hk": ["zuddhi", "prasAda", "buddhizuddhi"],
+      "notes": "Purity as prerequisite to realization — track in descriptions of qualified sages"
+    },
+    {
+      "id": "N34",
+      "name": "Not the Doer — Ahamkara as False Agent",
+      "proposition": "One who is deluded by ego thinks 'I am the doer' — but it is the gunas that act",
+      "anchor_verses": ["3.27", "3.28", "5.8", "5.9", "13.29"],
+      "hk_terms": ["ahaMkAra", "ahaMkRti", "kartA", "kartRtva", "ahaM", "nAhaM"],
+      "core_hk": ["ahaMkAra", "akartA"],
+      "notes": "Non-doership — the agent-self is the root illusion"
+    },
+    {
+      "id": "N35",
+      "name": "Brahmavidya — Knowledge of Brahman as Supreme",
+      "proposition": "This is the royal knowledge, royal secret, supremely purifying, directly known, in accord with dharma",
+      "anchor_verses": ["9.1", "9.2", "18.63", "18.64"],
+      "hk_terms": ["brahmavidyA", "rAjavidyA", "rAjaguhyaM", "paramaM", "guhyam", "uttamam"],
+      "core_hk": ["brahmavidyA", "rAjavidyA", "guhyam"],
+      "notes": "The meta-node: BG itself claims to be Brahmavidya. Track this self-designation."
+    }
+  ]
+}

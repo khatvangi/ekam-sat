@@ -1,0 +1,20 @@
+# corpus data (too large for github, kept locally)
+bori/
+gretil/
+sanskritdocs/
+
+# output artifacts
+output/
+
+# zip archives
+*.zip
+
+# python
+__pycache__/
+*.pyc
+
+# duplicates at root (canonical copies are in scripts/ and data/)
+/scan_corpus.py
+/extract_speakers.py
+/semantic_search.py
+/bg_nodes.json
