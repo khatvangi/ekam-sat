@@ -1,0 +1,160 @@
+# ═══════════════════════════════════════════════════════════════════════
+# mbh_extra_nodes.yaml — teachings present in MBH but absent/weak in BG
+# ═══════════════════════════════════════════════════════════════════════
+# these are the INVERSE of the BG-derived nodes: teachings that the
+# Gita selects out, compresses, mutes, or transforms.
+#
+# discovery method: bottom-up extraction from high-density non-BG
+# doctrinal passages (Shantiparva, Anushasana, Vanaparva).
+#
+# each node gets a provisional inverse_type:
+#   A = BG-central and MBH-wide (for reference only)
+#   B = BG-central but MBH-local
+#   C = BG-present but weak elsewhere
+#   D = MBH-strong but BG-weak
+#   E = MBH-strong and BG-absent
+#
+# status: DISCOVERY PHASE — add candidates as found.
+# ═══════════════════════════════════════════════════════════════════════
+
+nodes:
+
+  # ─── TYPE E: strong in MBH, absent from BG ─────────────────────────
+
+  - id: X001
+    short_label: rajadharma_burden
+    canonical_statement: >
+      the burden of kingship requires ethically compromised action
+      for preservation of loka-order. the ruler must bear difficult
+      action that a renunciant would reject.
+    domain:
+      primary: dharma
+      secondary: kingship
+    bg_status:
+      present: false
+      centrality: 0.00
+      notes: >
+        BG addresses arjuna as warrior but does not develop rajadharma
+        as independent teaching cluster. svadharma subsumes it.
+    discovery:
+      discovered_from: []  # TO FILL: specific Shanti passages
+      speakers: ["Bhishma"]
+      parvas: ["12"]
+    inverse_analysis:
+      provisional_type: E
+      inverse_relation: omitted
+      rationale: >
+        BG addresses action-duty but not the specific burden of
+        political sovereignty. shantiparva devotes hundreds of verses
+        to this; BG does not.
+
+  - id: X002
+    short_label: dandaniti_statecraft
+    canonical_statement: >
+      the science of punishment (dandaniti) as the foundation of
+      social order. without danda, the strong devour the weak.
+    domain:
+      primary: dharma
+      secondary: governance
+    bg_status:
+      present: false
+      centrality: 0.00
+      notes: >
+        BG mentions divine danda once (10.38) as a vibhuti but does
+        not develop the political theory. shantiparva is the locus.
+    discovery:
+      discovered_from: []
+      speakers: ["Bhishma", "Yudhishthira"]
+      parvas: ["12"]
+    inverse_analysis:
+      provisional_type: E
+      inverse_relation: omitted
+
+  - id: X003
+    short_label: grief_dharma
+    canonical_statement: >
+      sustained philosophical engagement with grief, loss, and
+      lamentation as dharmic process — not merely corrected but
+      explored and honored.
+    domain:
+      primary: dharma
+      secondary: psychology
+    bg_status:
+      present: false
+      centrality: 0.05
+      notes: >
+        BG corrects arjuna's grief in ch1-2. striparva and
+        ashramavasikaparva explore grief as sustained experience.
+        BG treats vishada as problem to solve, not dharma to traverse.
+    discovery:
+      discovered_from: []
+      speakers: ["Gandhari", "Dhritarashtra", "Vidura"]
+      parvas: ["11", "15"]
+    inverse_analysis:
+      provisional_type: E
+      inverse_relation: opposed
+      rationale: >
+        BG actively redirects away from grief toward action.
+        MBH elsewhere treats grief as legitimate sustained experience
+        with its own dharmic arc.
+
+  # ─── TYPE D: strong in MBH, weak in BG ─────────────────────────────
+
+  - id: X004
+    short_label: tirtha_pilgrimage
+    canonical_statement: >
+      pilgrimage to sacred places (tirtha-yatra) as means of
+      purification and spiritual transformation.
+    domain:
+      primary: sadhana
+      secondary: ritual
+    bg_status:
+      present: false
+      centrality: 0.00
+      notes: >
+        entirely absent from BG. vanaparva devotes long tirtha-yatra
+        sections to pilgrimage theology.
+    discovery:
+      discovered_from: []
+      speakers: ["Lomasha", "Narada", "Pulastya"]
+      parvas: ["03"]
+    inverse_analysis:
+      provisional_type: E
+      inverse_relation: omitted
+
+  - id: X005
+    short_label: narrative_dharma
+    canonical_statement: >
+      dharma taught through itihasa (narrative example) rather than
+      philosophical proposition — stories of kings, sages, and
+      ancestors as the primary vehicle of instruction.
+    domain:
+      primary: sadhana
+      secondary: pedagogy
+    bg_status:
+      present: false
+      centrality: 0.05
+      notes: >
+        BG is propositional. much of MBH teaches through story.
+        this is a structural difference, not just content.
+    discovery:
+      discovered_from: []
+      speakers: ["Vyasa", "Narada", "Lomasha", "Bhishma"]
+      parvas: ["01", "03", "12", "13"]
+    inverse_analysis:
+      provisional_type: D
+      inverse_relation: transformed
+      rationale: >
+        BG transforms narrative pedagogy into direct philosophical
+        discourse. the teaching method itself is different.
+
+  # ─── PLACEHOLDER: more candidates to discover ──────────────────────
+  # TO EXTRACT from high-density non-BG passages:
+  # - ritual theology (yajña as literal, not metaphorical)
+  # - ancestor obligations (pitR-dharma)
+  # - dharma of women (stri-dharma)
+  # - forest asceticism (vAnaprastha as distinct path)
+  # - snake-lore / naga-dharma (nahusha, etc.)
+  # - dharma of animals / ecology
+  # - time-philosophy beyond guna (kala as independent force)
+  # - political alliance theory (sandhi-vigraha)

@@ -1,0 +1,417 @@
+# ═══════════════════════════════════════════════════════════════════════
+# node_semantics.yaml — semantic meaning families for doctrinal nodes
+# ═══════════════════════════════════════════════════════════════════════
+# each node defines: canonical statement, required conceptual features,
+# expression families (direct, paraphrase, inferential), exclusion cues,
+# and validation examples. this replaces pure lexical matching with
+# structured semantic satisfaction scoring.
+#
+# status: GOLD STANDARD nodes first (15-20), then expand to all 123.
+# format follows ChatGPT's recommended schema with adaptations.
+# ═══════════════════════════════════════════════════════════════════════
+
+nodes:
+
+  # ─── GOLD STANDARD SET 1: CORE METAPHYSICAL ────────────────────────
+
+  - id: N006
+    short_label: atman_indestructible
+    canonical_statement: >
+      the true self (Atman) is unborn, undying, eternal, and not destroyed
+      when the body is destroyed.
+    domain:
+      primary: tattva
+      secondary: ontology
+    bg_status:
+      present: true
+      centrality: 0.95
+      anchor_verses: ["2.20", "2.19", "2.17", "2.23", "2.24"]
+    semantic_profile:
+      conceptual_features_required:
+        - enduring_self
+        - body_self_distinction
+      conceptual_features_optional:
+        - unborn
+        - undying
+        - indestructible
+        - not_slain_when_body_slain
+        - eternal_unchanging
+      exclusion_features:
+        - merely_praise_of_longevity
+        - generic_reference_to_life
+        - bodily_survival_without_ontology
+        - genealogical_continuity
+    expression_families:
+      direct_hk:
+        - "na hanyate hanyamAne zarIre"
+        - "ajo nityaH zAzvato yaM purANaH"
+        - "avinAzi tu tad viddhi"
+        - "na jAyate mriyate vA kadAcin"
+        - "nityaH sarvagataH sthANuH"
+      paraphrase_hk:
+        - "deha vinAze pi AtmA na vinaSyati"
+        - "zarIra nAza na spRzati AtmAnam"
+        - "avinAzI avyayaH AtmA"
+      inferential_patterns:
+        - "grief over death corrected through self-body distinction"
+        - "slaying denied at the level of true self"
+        - "the body perishes but the dweller does not"
+    contextual_cues:
+      positive: [grief_context, battle_context, mortality_discussion, funeral_lament_with_correction]
+      negative: [genealogy_only, mere_funeral_without_ontology, bodily_heroism]
+    validation_examples:
+      positive: ["06023019", "06023020", "06023017"]
+      hard_positive: []  # TO CURATE: find non-BG verses that clearly teach this
+      false_positive: []  # TO CURATE: verses with nitya/aja that DON'T teach atman doctrine
+
+  - id: N009
+    short_label: sat_asat
+    canonical_statement: >
+      the real (sat) never ceases to be; the unreal (asat) never comes to be.
+      the boundary between them is seen by seers of truth.
+    domain:
+      primary: tattva
+      secondary: ontology
+    bg_status:
+      present: true
+      centrality: 0.90
+      anchor_verses: ["2.16"]
+    semantic_profile:
+      conceptual_features_required:
+        - being_nonbeing_distinction
+        - ontological_permanence
+      conceptual_features_optional:
+        - truth_seekers_vision
+        - sat_as_ultimate_reality
+        - asat_as_nonexistent
+      exclusion_features:
+        - merely_true_false_in_moral_sense
+        - sat_as_good_person
+        - generic_praise
+    expression_families:
+      direct_hk:
+        - "nAsato vidyate bhAvaH"
+        - "nAbhAvo vidyate sataH"
+        - "sadasat"
+      paraphrase_hk:
+        - "yat sat tat sadA asti"
+        - "asat na kadAcid asti"
+      inferential_patterns:
+        - "permanent vs impermanent as ontological categories"
+        - "discrimination between real and apparent"
+    validation_examples:
+      positive: ["06024016"]
+      hard_positive: []
+      false_positive: []
+
+  # ─── GOLD STANDARD SET 2: KARMA / ACTION TEACHINGS ─────────────────
+
+  - id: N017
+    short_label: nishkama_karma
+    canonical_statement: >
+      act without attachment to the fruits of action.
+      you have the right to action but not to its results.
+    domain:
+      primary: sadhana
+      secondary: karma
+    bg_status:
+      present: true
+      centrality: 0.95
+      anchor_verses: ["2.47", "2.48"]
+    semantic_profile:
+      conceptual_features_required:
+        - action_performed
+        - fruit_detachment
+      conceptual_features_optional:
+        - right_to_action_not_result
+        - equanimity_in_outcome
+        - offering_action_to_divine
+      exclusion_features:
+        - mere_inaction
+        - laziness_framed_as_detachment
+        - abandoning_all_action
+    expression_families:
+      direct_hk:
+        - "karmaNy evAdhikAras te mA phaleSu kadAcana"
+        - "mA karmaphalaheturbhUH"
+        - "yogasthaH kuru karmANi"
+      paraphrase_hk:
+        - "karmaphalam tyaktvA"
+        - "phalAsaGgam tyaktvA"
+        - "niSkAmakarma"
+        - "phale asakta kuru"
+      inferential_patterns:
+        - "performing duty while surrendering personal stake in outcome"
+        - "action as offering rather than acquisition"
+        - "discipline of intention while acting"
+    validation_examples:
+      positive: ["06024047", "06024048"]
+      hard_positive: []
+      false_positive: []
+
+  - id: N016
+    short_label: desire_chain
+    canonical_statement: >
+      contemplating sense objects creates attachment; from attachment
+      comes desire; from desire anger; from anger delusion; from delusion
+      loss of memory; from that, destruction of discrimination; from that, ruin.
+    domain:
+      primary: tattva
+      secondary: psychology
+    bg_status:
+      present: true
+      centrality: 0.85
+      anchor_verses: ["2.62", "2.63"]
+    semantic_profile:
+      conceptual_features_required:
+        - causal_chain_from_desire
+        - progressive_degradation
+      conceptual_features_optional:
+        - sense_object_contemplation
+        - attachment_leading_to_anger
+        - delusion_from_anger
+        - destruction_of_discrimination
+      exclusion_features:
+        - mere_list_of_negative_qualities
+        - anger_without_causal_chain
+        - desire_as_positive
+    expression_families:
+      direct_hk:
+        - "dhyAyato viSayAn puMsaH saGgas teSUpajAyate"
+        - "saGgAt saMjAyate kAmaH kAmAt krodho bhijAyate"
+        - "krodhAd bhavati saMmohaH"
+      paraphrase_hk:
+        - "kAma krodha lobha moha"
+        - "indriyArtha saGga"
+        - "kAma prasakti vinAza"
+      inferential_patterns:
+        - "cascading psychological degradation from initial attachment"
+        - "desire as the root of a chain leading to ruin"
+    validation_examples:
+      positive: ["06024062", "06024063"]
+      hard_positive: []
+      false_positive: []
+
+  # ─── GOLD STANDARD SET 3: YOGA / DISCIPLINE ────────────────────────
+
+  - id: N015
+    short_label: sthitaprajna
+    canonical_statement: >
+      one whose wisdom is steady — who has abandoned all desires,
+      who is content in the self by the self — is sthitaprajna.
+    domain:
+      primary: phala
+      secondary: portrait
+    bg_status:
+      present: true
+      centrality: 0.80
+      anchor_verses: ["2.55", "2.56", "2.57", "2.58"]
+    semantic_profile:
+      conceptual_features_required:
+        - steady_wisdom
+        - desire_abandonment
+      conceptual_features_optional:
+        - self_contentment
+        - equanimity
+        - unshaken_by_pleasure_pain
+        - tortoise_withdrawing_senses
+      exclusion_features:
+        - mere_stoicism
+        - emotional_numbness
+        - intellectual_pride
+    expression_families:
+      direct_hk:
+        - "sthitaprajJa"
+        - "sthitadhI"
+        - "prajahAti yadA kAmAn sarvAn"
+      paraphrase_hk:
+        - "dRDhaprajJa"
+        - "niyatamAnasa"
+        - "samAhitabuddhiH"
+      inferential_patterns:
+        - "portrait of the sage who is unshaken"
+        - "withdrawal of senses compared to tortoise"
+        - "contentment arising from self alone"
+    validation_examples:
+      positive: ["06024055", "06024056"]
+      hard_positive: []
+      false_positive: []
+
+  # ─── GOLD STANDARD SET 4: BHAKTI / SURRENDER ──────────────────────
+
+  - id: N075
+    short_label: equal_vision
+    canonical_statement: >
+      the divine is the same toward all beings. there is no one hateful
+      or dear. those who worship with devotion are in the divine and
+      the divine is in them.
+    domain:
+      primary: tattva
+      secondary: devotion
+    bg_status:
+      present: true
+      centrality: 0.80
+      anchor_verses: ["9.29", "5.18", "6.29"]
+    semantic_profile:
+      conceptual_features_required:
+        - equal_divine_presence
+        - non_partiality
+      conceptual_features_optional:
+        - seeing_same_in_brahmana_and_outcaste
+        - self_in_all_beings
+        - all_beings_in_self
+      exclusion_features:
+        - mere_political_equality
+        - social_leveling_without_ontology
+    expression_families:
+      direct_hk:
+        - "samo haM sarvabhUteSu"
+        - "sarvabhUtastham AtmAnaM"
+        - "samadarzinaH"
+        - "vidyAvinayasaMpanne brAhmaNe gavi hastini"
+      paraphrase_hk:
+        - "samadRSTi"
+        - "sarvatra samabuddhiH"
+        - "samaloSTAzmakAJcanaH"
+      inferential_patterns:
+        - "divine impartiality toward all beings"
+        - "seeing the same reality in learned and outcaste"
+    validation_examples:
+      positive: ["06031029", "06027018"]
+      hard_positive: []
+      false_positive: []
+
+  # ─── GOLD STANDARD SET 5: GUNA / PRAKRITI ─────────────────────────
+
+  - id: N047
+    short_label: two_prakritis
+    canonical_statement: >
+      the divine has two natures: lower (apara) consisting of the eight-fold
+      material nature, and higher (para) which is the life-principle (jiva)
+      sustaining the world.
+    domain:
+      primary: tattva
+      secondary: cosmology
+    bg_status:
+      present: true
+      centrality: 0.80
+      anchor_verses: ["7.4", "7.5"]
+    semantic_profile:
+      conceptual_features_required:
+        - two_natures
+        - material_vs_conscious
+      conceptual_features_optional:
+        - eight_fold_material_nature
+        - jiva_as_higher_nature
+        - divine_sustains_through_both
+      exclusion_features:
+        - mere_enumeration_of_elements
+        - sankhya_without_divine_ground
+    expression_families:
+      direct_hk:
+        - "apareyam itas tv anyAM prakRtiM viddhi me parAm"
+        - "bhUmir Apo nalaH vAyuH"
+        - "jIvabhUtAM mahAbAho"
+      paraphrase_hk:
+        - "parA aparA prakRti"
+        - "kSetra kSetrajJa"
+        - "jaDa cetana"
+      inferential_patterns:
+        - "material elements listed then transcended by conscious principle"
+        - "nature as divine instrument but not ultimate"
+    validation_examples:
+      positive: ["06029004", "06029005"]
+      hard_positive: []
+      false_positive: []
+
+  # ─── GOLD STANDARD SET 6: RENUNCIATION ─────────────────────────────
+
+  - id: N033
+    short_label: sannyasa_yoga_same
+    canonical_statement: >
+      sannyasa (renunciation of action) and karmayoga (discipline of action)
+      both lead to the same end. one who sees them as one sees truly.
+    domain:
+      primary: sadhana
+      secondary: reconciliation
+    bg_status:
+      present: true
+      centrality: 0.75
+      anchor_verses: ["5.4", "5.5"]
+    semantic_profile:
+      conceptual_features_required:
+        - renunciation_and_action_reconciled
+        - same_goal_different_paths
+      conceptual_features_optional:
+        - karmayoga_preferred
+        - seeing_their_unity
+      exclusion_features:
+        - pure_renunciation_without_action_path
+        - action_without_any_renunciatory_dimension
+    expression_families:
+      direct_hk:
+        - "sAMkhyayogau pRthag bAlAH pravadanti na paNDitAH"
+        - "ekaM sAMkhyaM ca yogaM ca yaH pazyati sa pazyati"
+      paraphrase_hk:
+        - "saMnyAsa yoga samAna phala"
+        - "tyAga karmayoga aikyam"
+      inferential_patterns:
+        - "apparent opposites (action vs renunciation) shown to converge"
+        - "wise person sees no difference between the two paths"
+    validation_examples:
+      positive: ["06027004", "06027005"]
+      hard_positive: []
+      false_positive: []
+
+  # ─── GOLD STANDARD SET 7: SVADHARMA ────────────────────────────────
+
+  - id: N011
+    short_label: svadharma_duty
+    canonical_statement: >
+      it is better to perform one's own dharma imperfectly than to
+      perform another's dharma perfectly. death in one's own dharma
+      is better; another's dharma is dangerous.
+    domain:
+      primary: sadhana
+      secondary: ethics
+    bg_status:
+      present: true
+      centrality: 0.85
+      anchor_verses: ["3.35", "18.47"]
+    semantic_profile:
+      conceptual_features_required:
+        - own_duty_over_others
+        - imperfect_own_duty_preferred
+      conceptual_features_optional:
+        - death_in_own_duty_better
+        - paradharma_dangerous
+        - svabhava_determines_dharma
+      exclusion_features:
+        - generic_duty_without_own_vs_other
+        - mere_caste_obligations
+    expression_families:
+      direct_hk:
+        - "zreyAn svadharmo viguNaH paradharmAt svanuSThitAt"
+        - "svadharme nidhanaM zreyaH"
+        - "paradharmo bhayAvahaH"
+      paraphrase_hk:
+        - "svadharma AcaraNa uttama"
+        - "svabhAva niyata karma"
+      inferential_patterns:
+        - "own duty however flawed is superior to alien duty however perfect"
+        - "authenticity of action over borrowed excellence"
+    validation_examples:
+      positive: ["06025035", "06040047"]
+      hard_positive: []
+      false_positive: []
+
+  # ─── PLACEHOLDER: REMAINING GOLD STANDARD NODES ────────────────────
+  # TO CURATE: add semantic profiles for these priority nodes:
+  # N058: aksara_brahman
+  # N095: brahman_womb
+  # N048: divine_origin_dissolution
+  # N093: purusha_prakriti
+  # N108: three_tapas
+  # N069: divine_cosmic_relations
+  # N022: desire_enemy
+  # N060: om_imperishable
