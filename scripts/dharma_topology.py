@@ -130,32 +130,44 @@ def build_null_baselines(corpus_dir, nodes, echo_count, n_trials=50):
     print(f"  Corpus loaded: {len(corpus)} non-BG verses")
     print(f"  Running {n_trials} random trials...")
 
+    # ensemble baseline: simulate FULL node architecture (not single pseudo-nodes)
+    # each trial creates a complete set of pseudo-nodes matching the real architecture
     for trial in range(n_trials):
-        # random pseudo-node: pick random terms matching real distribution
-        n_terms = random.choice(term_counts)
-        n_core = max(2, n_terms // 3)
-        terms = random.sample(candidate_words, min(n_terms, len(candidate_words)))
-        core = terms[:n_core]
+        total_trial_echoes = 0
 
-        # count "echoes" (verses where 2+ core terms co-occur)
-        echo_count_trial = 0
-        for vid, text in corpus.items():
-            matches = sum(1 for t in core if t in text)
-            if matches >= 2:
-                echo_count_trial += 1
-        random_echo_counts.append(echo_count_trial)
+        # create a full ensemble of pseudo-nodes matching real node count + term distribution
+        n_pseudo_nodes = len(nodes)
+        for _ in range(n_pseudo_nodes):
+            n_terms = random.choice(term_counts)
+            n_core = max(2, n_terms // 3)
+            if len(candidate_words) < n_terms:
+                continue
+            terms = random.sample(candidate_words, n_terms)
+            core = terms[:n_core]
 
-        # high-frequency control
-        hf_terms = random.sample(high_freq_words, min(n_core, len(high_freq_words)))
-        hf_count = 0
-        for vid, text in corpus.items():
-            matches = sum(1 for t in hf_terms if t in text)
-            if matches >= 2:
-                hf_count += 1
-        highfreq_echo_counts.append(hf_count)
+            for vid, text in corpus.items():
+                # use word-boundary matching: split text into tokens
+                text_tokens = set(text.split())
+                matches = sum(1 for t in core if t in text_tokens)
+                if matches >= 2:
+                    total_trial_echoes += 1
 
-        if (trial + 1) % 10 == 0:
-            print(f"    trial {trial+1}/{n_trials}")
+        random_echo_counts.append(total_trial_echoes)
+
+        # high-frequency ensemble control
+        hf_total = 0
+        for _ in range(n_pseudo_nodes):
+            n_core = max(2, random.choice(term_counts) // 3)
+            hf_terms = random.sample(high_freq_words, min(n_core, len(high_freq_words)))
+            for vid, text in corpus.items():
+                text_tokens = set(text.split())
+                matches = sum(1 for t in hf_terms if t in text_tokens)
+                if matches >= 2:
+                    hf_total += 1
+        highfreq_echo_counts.append(hf_total)
+
+        if (trial + 1) % 5 == 0:
+            print(f"    trial {trial+1}/{n_trials} (ensemble of {n_pseudo_nodes} pseudo-nodes each)")
 
     results = {
         "real_strong_echoes": echo_count,
@@ -217,54 +229,103 @@ def build_cooccurrence(echoes, nodes):
                 cooc[i][j] += 1
                 cooc[j][i] += 1
 
-    # find strongest pairs
-    pairs = []
+    # compute per-node frequencies for normalization
+    node_freq = np.zeros(n)
+    for vid, node_set in verse_nodes.items():
+        for nid in node_set:
+            if nid in node_idx:
+                node_freq[node_idx[nid]] += 1
+
+    total_verses = len(verse_nodes)
+
+    # compute PMI (pointwise mutual information) for each pair
+    # PMI(a,b) = log2(P(a,b) / (P(a) * P(b)))
+    # also compute Jaccard: |A∩B| / |A∪B|
+    pairs_raw = []
+    pairs_pmi = []
+    pairs_jaccard = []
+
     for i in range(n):
         for j in range(i + 1, n):
             if cooc[i][j] > 0:
-                pairs.append((node_ids[i], node_ids[j], int(cooc[i][j])))
+                raw = int(cooc[i][j])
+                p_ab = raw / max(total_verses, 1)
+                p_a = node_freq[i] / max(total_verses, 1)
+                p_b = node_freq[j] / max(total_verses, 1)
+                pmi = np.log2(p_ab / max(p_a * p_b, 1e-10)) if p_ab > 0 else 0
+                jaccard = raw / max(node_freq[i] + node_freq[j] - raw, 1)
 
-    pairs.sort(key=lambda x: x[2], reverse=True)
+                pairs_raw.append((node_ids[i], node_ids[j], raw))
+                pairs_pmi.append((node_ids[i], node_ids[j], round(pmi, 3)))
+                pairs_jaccard.append((node_ids[i], node_ids[j], round(jaccard, 4)))
 
-    # find clusters via simple connected-component grouping at threshold
-    threshold = np.percentile([p[2] for p in pairs if p[2] > 0], 90) if pairs else 1
-    strong_pairs = [(a, b) for a, b, c in pairs if c >= threshold]
+    pairs_raw.sort(key=lambda x: x[2], reverse=True)
+    pairs_pmi.sort(key=lambda x: x[2], reverse=True)
+    pairs_jaccard.sort(key=lambda x: x[2], reverse=True)
 
-    # build adjacency for clustering
+    # cluster stability test: run connected components at multiple thresholds
+    # using PMI-based edges (frequency-normalized)
     from collections import deque
-    adj = defaultdict(set)
-    for a, b in strong_pairs:
-        adj[a].add(b)
-        adj[b].add(a)
 
-    visited = set()
-    clusters = []
-    for node in adj:
-        if node not in visited:
-            cluster = set()
-            queue = deque([node])
-            while queue:
-                curr = queue.popleft()
-                if curr in visited:
-                    continue
-                visited.add(curr)
-                cluster.add(curr)
-                queue.extend(adj[curr] - visited)
-            if len(cluster) >= 2:
-                clusters.append(sorted(cluster))
+    def find_clusters_at_threshold(pair_list, pct):
+        """find connected components using top pct% of pairs."""
+        if not pair_list:
+            return []
+        cutoff = np.percentile([p[2] for p in pair_list if p[2] > 0], 100 - pct)
+        strong = [(a, b) for a, b, c in pair_list if c >= cutoff]
+        adj = defaultdict(set)
+        for a, b in strong:
+            adj[a].add(b)
+            adj[b].add(a)
+        visited = set()
+        clusters = []
+        for node in adj:
+            if node not in visited:
+                cluster = set()
+                queue = deque([node])
+                while queue:
+                    curr = queue.popleft()
+                    if curr in visited:
+                        continue
+                    visited.add(curr)
+                    cluster.add(curr)
+                    queue.extend(adj[curr] - visited)
+                if len(cluster) >= 2:
+                    clusters.append(sorted(cluster))
+        return clusters
+
+    # test stability across thresholds
+    stability = {}
+    for pct in [5, 10, 15, 20, 30]:
+        cl = find_clusters_at_threshold(pairs_pmi, pct)
+        stability[f"top_{pct}pct"] = {"n_clusters": len(cl), "sizes": [len(c) for c in cl]}
+
+    # use top 10% PMI as primary clustering
+    clusters = find_clusters_at_threshold(pairs_pmi, 10)
 
     node_names = {n["id"]: n["name"] for n in nodes}
 
     print(f"  Verses with 2+ nodes: {sum(1 for ns in verse_nodes.values() if len(ns) >= 2)}")
-    print(f"  Node pairs with co-occurrence: {len([p for p in pairs if p[2] > 0])}")
-    print(f"  Strong pairs (>= {threshold:.0f} co-occurrences): {len(strong_pairs)}")
-    print(f"  Doctrinal clusters found: {len(clusters)}")
+    print(f"  Node pairs with co-occurrence: {len([p for p in pairs_raw if p[2] > 0])}")
+    print(f"  Clusters (PMI top 10%): {len(clusters)}")
 
-    print(f"\n  Top 15 node pairs:")
-    for a, b, c in pairs[:15]:
-        print(f"    {a} × {b}: {c} co-occurrences")
+    print(f"\n  Cluster stability across PMI thresholds:")
+    for thresh, info in sorted(stability.items()):
+        print(f"    {thresh}: {info['n_clusters']} clusters, sizes={info['sizes']}")
+
+    print(f"\n  Top 10 by raw co-occurrence:")
+    for a, b, c in pairs_raw[:10]:
+        print(f"    {a} × {b}: {c} raw")
+
+    print(f"\n  Top 10 by PMI (frequency-normalized — true doctrinal affinity):")
+    for a, b, c in pairs_pmi[:10]:
+        print(f"    {a} × {b}: PMI={c}")
         print(f"      {node_names.get(a, '?')[:40]}")
         print(f"      {node_names.get(b, '?')[:40]}")
+
+    print(f"\n  Top 10 by Jaccard (proportional overlap):")
+    for a, b, c in pairs_jaccard[:10]:
+        print(f"    {a} × {b}: J={c}")
 
     print(f"\n  Doctrinal clusters (strong co-occurrence):")
     for i, cluster in enumerate(clusters):
@@ -275,9 +336,11 @@ def build_cooccurrence(echoes, nodes):
     return {
         "cooccurrence_matrix": cooc.tolist(),
         "node_ids": node_ids,
-        "top_pairs": [(a, b, c) for a, b, c in pairs[:50]],
-        "clusters": clusters,
-        "threshold": float(threshold),
+        "top_pairs_raw": [(a, b, c) for a, b, c in pairs_raw[:50]],
+        "top_pairs_pmi": [(a, b, c) for a, b, c in pairs_pmi[:50]],
+        "top_pairs_jaccard": [(a, b, c) for a, b, c in pairs_jaccard[:50]],
+        "clusters_pmi": clusters,
+        "cluster_stability": stability,
     }
 
 
@@ -326,27 +389,48 @@ def build_speaker_signatures(discourses, nodes):
         top = sp["node_counts"].most_common(10)
         # absent nodes (never echoed by this speaker)
         absent = all_node_ids - sp["unique_nodes"]
-        # doctrinal density: unique nodes per 100 verses
-        density = len(sp["unique_nodes"]) / max(sp["total_verses"], 1) * 100
+
+        # breadth density: unique nodes per 100 verses
+        breadth = len(sp["unique_nodes"]) / max(sp["total_verses"], 1) * 100
+        # intensity: total node-mentions per 100 verses (rewards sustained teaching)
+        total_mentions = sum(sp["node_counts"].values())
+        intensity = total_mentions / max(sp["total_verses"], 1) * 100
+        # concentration: how focused on top nodes (Herfindahl index)
+        # high = specialized teacher, low = broad teacher
+        if total_mentions > 0:
+            shares = [c / total_mentions for c in sp["node_counts"].values()]
+            herfindahl = sum(s * s for s in shares)
+        else:
+            herfindahl = 0
 
         sig = {
             "speaker": speaker,
             "total_verses": sp["total_verses"],
             "total_discourses": sp["total_discourses"],
             "unique_nodes": len(sp["unique_nodes"]),
-            "doctrinal_density": round(density, 2),
+            "breadth_density": round(breadth, 2),
+            "teaching_intensity": round(intensity, 2),
+            "concentration_hhi": round(herfindahl, 4),
             "top_nodes": [(nid, count) for nid, count in top],
             "absent_count": len(absent),
         }
         signatures.append(sig)
 
     print(f"  Speakers with 100+ verses: {len(signatures)}")
-    for sig in signatures[:15]:
-        print(f"\n  {sig['speaker']:<20} {sig['total_verses']:>6} verses | "
-              f"{sig['unique_nodes']:>3} nodes | density={sig['doctrinal_density']:.1f}/100v")
-        top3 = sig["top_nodes"][:3]
-        for nid, count in top3:
-            print(f"    → {nid} ({node_names.get(nid, '?')[:45]}): {count}")
+    print(f"\n  {'Speaker':<18} {'Verses':>6} {'Nodes':>5} {'Breadth':>8} {'Intensity':>10} {'HHI':>6}")
+    print(f"  {'':─<18} {'':─>6} {'':─>5} {'':─>8} {'':─>10} {'':─>6}")
+    for sig in signatures[:20]:
+        print(f"  {sig['speaker']:<18} {sig['total_verses']:>6} {sig['unique_nodes']:>5} "
+              f"{sig['breadth_density']:>7.1f} {sig['teaching_intensity']:>9.1f} "
+              f"{sig['concentration_hhi']:>6.3f}")
+
+    print(f"\n  Top 5 by teaching intensity (sustained depth, not just breadth):")
+    by_intensity = sorted(signatures, key=lambda x: x["teaching_intensity"], reverse=True)
+    for sig in by_intensity[:5]:
+        print(f"    {sig['speaker']:<20} intensity={sig['teaching_intensity']:.1f}/100v "
+              f"breadth={sig['breadth_density']:.1f}/100v")
+        for nid, count in sig["top_nodes"][:3]:
+            print(f"      → {nid} ({node_names.get(nid, '?')[:40]}): {count}")
 
     return signatures
 
@@ -446,26 +530,60 @@ def compute_graph_centrality(cooc_data, nodes):
     # simplified: count how many pairs of other nodes a node bridges
     # (using shortest-path approximation via BFS)
 
-    # eigenvector centrality approximation via power iteration
-    adj = matrix.astype(float)
-    np.fill_diagonal(adj, 0)
-    # normalize
-    row_sums = adj.sum(axis=1, keepdims=True)
-    row_sums[row_sums == 0] = 1
-    adj_norm = adj / row_sums
+    # compute eigenvector centrality on BOTH raw and PMI-normalized graphs
+    def power_iteration_centrality(adj_matrix):
+        """eigenvector centrality via power iteration."""
+        a = adj_matrix.astype(float).copy()
+        np.fill_diagonal(a, 0)
+        rs = a.sum(axis=1, keepdims=True)
+        rs[rs == 0] = 1
+        a_norm = a / rs
+        v = np.ones(len(a)) / len(a)
+        for _ in range(200):
+            v_new = a_norm.T @ v
+            nm = np.linalg.norm(v_new)
+            if nm > 0:
+                v_new /= nm
+            if np.allclose(v, v_new, atol=1e-10):
+                break
+            v = v_new
+        return v
 
-    # power iteration
-    v = np.ones(n) / n
-    for _ in range(100):
-        v_new = adj_norm.T @ v
-        norm = np.linalg.norm(v_new)
-        if norm > 0:
-            v_new /= norm
-        if np.allclose(v, v_new, atol=1e-8):
-            break
-        v = v_new
+    # raw co-occurrence centrality
+    eig_raw = power_iteration_centrality(matrix)
+    eigen_raw = {node_ids[i]: float(eig_raw[i]) for i in range(n)}
 
-    eigen_centrality = {node_ids[i]: float(v[i]) for i in range(n)}
+    # PMI-weighted centrality (frequency-normalized)
+    pmi_matrix = np.zeros((n, n))
+    node_freq_arr = np.zeros(n)
+    verse_nodes_flat = defaultdict(set)
+    for e in cooc_data.get("_echoes_ref", []):
+        pass  # not available here, use node_freq from diagonal
+
+    # reconstruct node frequencies from co-occurrence diagonal + row sums
+    for i in range(n):
+        node_freq_arr[i] = sum(1 for j in range(n) if matrix[i][j] > 0)
+
+    total_v = max(sum(matrix[i][j] for i in range(n) for j in range(i+1, n)), 1)
+    for i in range(n):
+        for j in range(i+1, n):
+            if matrix[i][j] > 0:
+                p_ab = matrix[i][j] / total_v
+                p_a = sum(matrix[i]) / total_v
+                p_b = sum(matrix[j]) / total_v
+                pmi_val = np.log2(p_ab / max(p_a * p_b, 1e-15))
+                pmi_matrix[i][j] = max(pmi_val, 0)  # positive PMI only
+                pmi_matrix[j][i] = pmi_matrix[i][j]
+
+    eig_pmi = power_iteration_centrality(pmi_matrix)
+    eigen_pmi = {node_ids[i]: float(eig_pmi[i]) for i in range(n)}
+
+    # rank stability: compare raw vs PMI rankings
+    raw_rank = {nid: rank for rank, nid in enumerate(sorted(eigen_raw, key=eigen_raw.get, reverse=True))}
+    pmi_rank = {nid: rank for rank, nid in enumerate(sorted(eigen_pmi, key=eigen_pmi.get, reverse=True))}
+
+    # use average of both for final classification
+    eigen_centrality = {nid: (eigen_raw.get(nid, 0) + eigen_pmi.get(nid, 0)) / 2 for nid in node_ids}
 
     # classify nodes
     classifications = []
@@ -499,10 +617,15 @@ def compute_graph_centrality(cooc_data, nodes):
     for role, count in role_counts.most_common():
         print(f"    {role:<12} {count:>3} nodes")
 
-    print(f"\n  Top 15 by eigenvector centrality (doctrinal gravity):")
+    print(f"\n  Top 15 by combined centrality (raw + PMI averaged):")
+    print(f"  {'Node':<6} {'Name':<42} {'Combined':>8} {'RawRank':>7} {'PMIRank':>7} {'Stable?':>7}")
     for c in classifications[:15]:
-        print(f"    {c['node_id']} {c['name'][:45]:<45} "
-              f"eig={c['eigen_centrality']:.4f} deg={c['degree']:>3} [{c['role']}]")
+        nid = c["node_id"]
+        rr = raw_rank.get(nid, 999)
+        pr = pmi_rank.get(nid, 999)
+        stable = "yes" if abs(rr - pr) <= 10 else "NO"
+        print(f"    {nid:<6} {c['name'][:40]:<42} "
+              f"{c['eigen_centrality']:.4f} {rr:>5} {pr:>7} {stable:>7}")
 
     print(f"\n  Peripheral nodes (isolated doctrines):")
     peripheral = [c for c in classifications if c["role"] == "peripheral"]
@@ -544,7 +667,29 @@ def compression_test(echoes, nodes, discourses):
 
         n_verses = d.get("verse_count", len(verses))
         n_nodes = len(nodes_in_discourse)
-        compression = n_nodes / max(n_verses, 1) * 100  # nodes per 100 verses
+
+        # breadth compression: unique nodes per 100 verses
+        breadth_comp = n_nodes / max(n_verses, 1) * 100
+
+        # intensity compression: total node-hits per 100 verses
+        total_hits = sum(len(verse_nodes.get(v, set())) for v in verses)
+        intensity_comp = total_hits / max(n_verses, 1) * 100
+
+        # sliding window peak: max unique nodes in any 20-verse window
+        window_size = min(20, len(verses))
+        peak_window = 0
+        for w_start in range(0, len(verses) - window_size + 1):
+            window_nodes = set()
+            for v in verses[w_start:w_start + window_size]:
+                window_nodes.update(verse_nodes.get(v, set()))
+            peak_window = max(peak_window, len(window_nodes))
+
+        # cluster richness: how many distinct node-pairs co-occur (not just individual nodes)
+        node_pairs_in_discourse = set()
+        for v in verses:
+            v_nodes = verse_nodes.get(v, set())
+            for a, b in combinations(sorted(v_nodes), 2):
+                node_pairs_in_discourse.add((a, b))
 
         discourse_compression.append({
             "speaker": d.get("speaker", "?"),
@@ -552,10 +697,13 @@ def compression_test(echoes, nodes, discourses):
             "start": d.get("start_verse", ""),
             "verses": n_verses,
             "unique_nodes": n_nodes,
-            "compression": round(compression, 2),
+            "breadth_compression": round(breadth_comp, 2),
+            "intensity_compression": round(intensity_comp, 2),
+            "peak_window_20v": peak_window,
+            "cluster_richness": len(node_pairs_in_discourse),
         })
 
-    discourse_compression.sort(key=lambda x: x["compression"], reverse=True)
+    discourse_compression.sort(key=lambda x: x["intensity_compression"], reverse=True)
 
     # parva-level compression
     parva_compression = defaultdict(lambda: {"verses": 0, "nodes": set()})
@@ -568,21 +716,22 @@ def compression_test(echoes, nodes, discourses):
         parva_verse_ids[e["parva_num"]].add(e["verse_id"])
 
     print(f"  Discourses analyzed: {len(discourse_compression)}")
-    print(f"\n  Top 15 most compressed discourses (nodes per 100 verses):")
+    print(f"\n  Top 15 by teaching intensity (node-hits per 100 verses):")
+    print(f"  {'Speaker':<18} {'Parva':<12} {'Verses':>5} {'Nodes':>5} {'Breadth':>7} "
+          f"{'Intens':>6} {'Peak20':>6} {'Pairs':>5}")
     for d in discourse_compression[:15]:
         pname = PARVAS.get(d["parva"], "?")
-        print(f"    {d['speaker']:<20} P{d['parva']} {pname:<15} "
-              f"{d['verses']:>5}v {d['unique_nodes']:>3}n "
-              f"compression={d['compression']:.1f}")
+        print(f"    {d['speaker']:<18} {pname:<12} {d['verses']:>5} {d['unique_nodes']:>5} "
+              f"{d['breadth_compression']:>6.1f} {d['intensity_compression']:>6.1f} "
+              f"{d['peak_window_20v']:>5} {d['cluster_richness']:>5}")
 
-    print(f"\n  Least compressed (>100 verses):")
+    print(f"\n  Least compressed (>100 verses, by intensity):")
     bottom = [d for d in discourse_compression if d["verses"] >= 100]
-    bottom.sort(key=lambda x: x["compression"])
+    bottom.sort(key=lambda x: x["intensity_compression"])
     for d in bottom[:10]:
         pname = PARVAS.get(d["parva"], "?")
-        print(f"    {d['speaker']:<20} P{d['parva']} {pname:<15} "
-              f"{d['verses']:>5}v {d['unique_nodes']:>3}n "
-              f"compression={d['compression']:.1f}")
+        print(f"    {d['speaker']:<18} {pname:<12} {d['verses']:>5} "
+              f"intensity={d['intensity_compression']:.1f}")
 
     return discourse_compression
 
@@ -623,53 +772,96 @@ def false_friend_analysis(echoes, nodes, corpus_dir):
                     for word in m.group(1).split():
                         corpus_freq[word] += 1
 
-    # classify terms
-    noise_terms = []
-    signal_terms = []
+    # context-sensitive false-friend detection
+    # a term is a false friend if it is common AND appears indiscriminately
+    # across doctrinal and non-doctrinal contexts.
+    # measure: what % of a term's corpus occurrences are in echo-tagged verses?
+    # high selectivity = the term mostly appears where doctrinal content is → signal
+    # low selectivity = the term appears everywhere regardless → noise
 
-    for term, echo_count in term_echo_count.most_common():
+    # build set of echo-tagged verses
+    echo_verse_ids = set(e["verse_id"] for e in echoes)
+
+    # for each term, count occurrences in echo vs non-echo verses
+    term_in_echo = Counter()
+    term_in_non_echo = Counter()
+    corpus_path_ff = Path(corpus_dir)
+    for filepath in sorted(corpus_path_ff.iterdir()):
+        if not filepath.is_file():
+            continue
+        with open(filepath, "r", encoding="utf-8", errors="replace") as f:
+            for line in f:
+                m_ff = re.match(r'^(\d{8})[a-e]?\s+(.*)', line.strip())
+                if m_ff:
+                    vid = m_ff.group(1)
+                    text = m_ff.group(2)
+                    is_echo = vid in echo_verse_ids
+                    for word in text.split():
+                        if word in term_echo_count:
+                            if is_echo:
+                                term_in_echo[word] += 1
+                            else:
+                                term_in_non_echo[word] += 1
+
+    classified = []
+    for term, echo_contribs in term_echo_count.most_common():
         freq = corpus_freq.get(term, 0)
-        # noise ratio: what fraction of corpus contains this term?
-        if total_verses > 0:
-            corpus_ratio = freq / total_verses
-        else:
-            corpus_ratio = 0
+        corpus_ratio = freq / max(total_verses, 1)
+        in_echo = term_in_echo.get(term, 0)
+        in_non = term_in_non_echo.get(term, 0)
+        total_occ = in_echo + in_non
 
-        entry = {
+        # selectivity: fraction of occurrences in echo-tagged verses
+        selectivity = in_echo / max(total_occ, 1)
+
+        # classify using both frequency and selectivity
+        if corpus_ratio > 0.05 and selectivity < 0.3:
+            cls = "high_noise"
+        elif corpus_ratio > 0.01 and selectivity < 0.4:
+            cls = "contextual_noise"
+        elif corpus_ratio > 0.01 and selectivity >= 0.4:
+            cls = "high_freq_but_selective"
+        else:
+            cls = "signal"
+
+        classified.append({
             "term": term,
-            "echo_contributions": echo_count,
+            "echo_contributions": echo_contribs,
             "corpus_frequency": freq,
             "corpus_ratio": round(corpus_ratio, 4),
-        }
+            "selectivity": round(selectivity, 3),
+            "class": cls,
+        })
 
-        # high noise: appears in >5% of corpus
-        if corpus_ratio > 0.05:
-            entry["class"] = "high_noise"
-            noise_terms.append(entry)
-        elif corpus_ratio > 0.01:
-            entry["class"] = "moderate_noise"
-            noise_terms.append(entry)
-        else:
-            entry["class"] = "signal"
-            signal_terms.append(entry)
+    noise_terms = [t for t in classified if "noise" in t["class"]]
+    signal_terms = [t for t in classified if t["class"] == "signal"]
+    selective_highfreq = [t for t in classified if t["class"] == "high_freq_but_selective"]
 
     print(f"  Total unique matched terms: {len(term_echo_count)}")
-    print(f"  Signal terms (<1% corpus): {len(signal_terms)}")
-    print(f"  Noise terms (>1% corpus): {len(noise_terms)}")
+    print(f"  Signal (rare + selective): {len(signal_terms)}")
+    print(f"  High-freq but selective: {len(selective_highfreq)}")
+    print(f"  Noise (common + indiscriminate): {len(noise_terms)}")
 
-    print(f"\n  Top 15 noisiest terms (inflate echo counts):")
+    print(f"\n  Context-sensitive noise (common AND non-selective):")
     noise_terms.sort(key=lambda x: x["corpus_ratio"], reverse=True)
-    for t in noise_terms[:15]:
+    for t in noise_terms[:10]:
         print(f"    {t['term']:<20} corpus={t['corpus_ratio']*100:.1f}% "
-              f"echoes={t['echo_contributions']:>5} [{t['class']}]")
+              f"selectivity={t['selectivity']:.2f} echoes={t['echo_contributions']:>5} [{t['class']}]")
 
-    print(f"\n  Top 15 strongest signal terms (rare but echoed):")
+    print(f"\n  High-frequency BUT selective (common yet doctrinally discriminative):")
+    selective_highfreq.sort(key=lambda x: x["selectivity"], reverse=True)
+    for t in selective_highfreq[:10]:
+        print(f"    {t['term']:<20} corpus={t['corpus_ratio']*100:.1f}% "
+              f"selectivity={t['selectivity']:.2f} echoes={t['echo_contributions']:>5}")
+
+    print(f"\n  Top 10 strongest signal terms:")
     signal_terms.sort(key=lambda x: x["echo_contributions"], reverse=True)
-    for t in signal_terms[:15]:
+    for t in signal_terms[:10]:
         print(f"    {t['term']:<20} corpus={t['corpus_ratio']*100:.2f}% "
-              f"echoes={t['echo_contributions']:>5} [signal]")
+              f"selectivity={t['selectivity']:.2f} echoes={t['echo_contributions']:>5}")
 
-    return {"noise": noise_terms[:50], "signal": signal_terms[:50]}
+    return {"noise": noise_terms, "selective_highfreq": selective_highfreq[:30],
+            "signal": signal_terms[:50]}
 
 
 # ═════════════════════════════════════════════════════════════════════════════
