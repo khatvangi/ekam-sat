@@ -3,7 +3,7 @@
 > *ekam sad viprā bahudhā vadanti*
 > "Truth is one; the wise call it by many names" — Ṛg Veda 1.164.46
 
-A computational analysis pipeline proving that the Bhagavad Gītā's teachings are not unique to the Gītā — they are scattered across the entire Mahābhārata (~89,000 verses, BORI Critical Edition), spoken by different sages in different contexts, all converging on a single doctrinal core.
+A computational mapping of doctrinal recurrence across the entire Mahābhārata (~89,000 verses, BORI Critical Edition), demonstrating that the Bhagavad Gītā's teachings appear throughout the epic — spoken by different sages in different contexts, all converging on a single doctrinal core.
 
 ## the thesis
 
@@ -42,9 +42,9 @@ Udyogaparva (05)     ██████████████                 
 
 ## methodology
 
-### pre-sectarian lens
+### siddhānta, not sampradāya
 
-all analysis uses a pre-sectarian reading framework (following RV 1.164.46). the 123 doctrinal nodes are NOT advaita, dvaita, or any post-BG school. they represent what the text says before interpretive traditions diverge. methodology documented in `protocols/node_extraction_methodology.md`.
+all analysis reads the text at the level of siddhānta (established conclusion) rather than through any particular sampradāya (sectarian school). the 123 doctrinal nodes represent what the text itself states — not an Advaita, Dvaita, or Viśiṣṭādvaita reading. this is not a "neutral lens" in the Western academic sense where all positions are treated as equally interpretive. ekam sat (RV 1.164.46) is the Veda's own statement about the nature of truth. the various sampradāyas are themselves attempts to articulate this siddhānta — they acknowledge the divergence. we read at the level before the divergence, which is the level the Mahābhārata itself operates at. methodology documented in `protocols/node_extraction_methodology.md`.
 
 ### what we search
 
@@ -276,12 +276,23 @@ three critical bugs were discovered during a code audit on 2026-03-13. all have 
 pre-fix numbers (v2): 98,658 echoes — **stale, do not cite**
 post-fix numbers (v3): 43,303 echoes — **current, publication-grade**
 
-## limitations
+## limitations and future work
 
-1. **MiniLM on Sanskrit**: the multilingual sentence-transformer finds mostly verbatim repetitions in HK transliterated Sanskrit. true meaning-level echoes are better found via english queries (`--mode query --text "..."`)
-2. **speaker detection**: relies on `X uvAca` pattern. misses speakers introduced by other formulae (e.g., narrative description of who speaks)
-3. **commentary alignment**: chapter numbers in Nilakantha's commentary use vulgate (Chitrashala) edition numbering, not BORI. a full concordance between editions does not exist in machine-readable form
-4. **OCR quality**: Surya achieves ~80% character accuracy on Devanagari. ligature/spacing errors are common but key terms remain readable
+### current limitations
+
+1. **no null baselines yet**: echo counts are not calibrated against random-term bundles or frequency-normalized expectations. a random-node control and a non-BG doctrinal control set (e.g., rājadharma terms) are needed to establish statistical significance. until then, raw counts demonstrate recurrence patterns but not their statistical unusualness.
+2. **no morphological normalization**: Sanskrit is highly inflected and compound-rich. the current pipeline matches surface forms only — no stemming, compound decomposition, or sandhi resolution. philosophically identical teachings using different inflected forms may be missed; conversely, shared vocabulary in different argumentative contexts may trigger false matches.
+3. **MiniLM on Sanskrit**: the multilingual sentence-transformer finds mostly verbatim repetitions in HK transliterated Sanskrit. true meaning-level echoes are better found via english queries (`--mode query --text "..."`). the semantic layer should be treated as exploratory, not evidential, until validated against manually annotated samples.
+4. **speaker detection is a lower bound**: relies on `X uvAca` pattern. misses speakers introduced by other formulae (e.g., narrative description of who speaks). speaker-level results should be read as minimum counts.
+5. **commentary alignment**: chapter numbers in Nīlakaṇṭha's commentary use vulgate (Chitrashala) edition numbering, not BORI. a full concordance between editions does not exist in machine-readable form.
+6. **OCR quality**: Surya achieves ~80% character accuracy on Devanagari. ligature/spacing errors are common but key terms remain readable.
+
+### planned controls
+
+- random-node baseline: generate N random term bundles of equal size/frequency distribution and compare echo counts
+- common-term baseline: measure echo density using high-frequency non-doctrinal terms to establish the noise floor
+- non-BG control set: scan for a non-Gītā doctrinal cluster (e.g., rājadharma, arthaśāstra terms) to compare distribution
+- manual adjudication: hand-verify a stratified sample of high-, medium-, and low-strength echoes for doctrinal relevance
 
 ## license
 

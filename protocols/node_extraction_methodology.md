@@ -6,8 +6,8 @@ This document describes the method used to extract an exhaustive set of doctrina
 propositions ("nodes") from the Bhagavad Gita (BORI Critical Edition), for use as
 search targets against the full Mahabharata corpus (~89,000 verses).
 
-The goal: prove that the BG's teachings are not unique to the BG but are scattered
-across the entire MBH, spoken by different sages in different contexts, converging
+The goal: demonstrate computationally that the BG's teachings recur across the
+entire MBH, spoken by different sages in different contexts, converging
 on one point (ekam sat).
 
 ## 2. What Is a Node?
@@ -167,7 +167,7 @@ Each node generates a search query against the full MBH corpus:
 3. **Semantic search** (`semantic_search.py`): use sentence-transformer
    embeddings to find meaning-level echoes beyond vocabulary match.
 
-The three layers together prove the thesis at increasing levels of rigor:
+The three layers together build the case at increasing levels of rigor:
 vocabulary match → discourse context → semantic equivalence.
 
 ## 7. Known Limitations and Future Work
