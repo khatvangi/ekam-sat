@@ -1,0 +1,808 @@
+# ═══════════════════════════════════════════════════════════════
+# collocational markers — secondary tier (~35 terms)
+# register-tagged markers for the method-hardening index (MHI)
+# and other indices. these track what language SURROUNDS the
+# primary terms.
+#
+# NOT full cards. each marker has: forms, register, frequency,
+# one representative citation, and a drift note.
+#
+# three registers:
+#   practice = doing, experiencing, transforming (method-shape)
+#   system = enumerating, classifying, analyzing (thesis-shape)
+#   ontic = being, existing, essence (ch1 markers)
+#
+# built from corpus frequency analysis: 2026-02-10
+# status: DRAFT — needs audit
+# ═══════════════════════════════════════════════════════════════
+
+
+# ═══════════════════════════════════════════════════════════════
+# PRACTICE REGISTER (15 markers)
+# the language of DOING — verbs, participial forms, experiential
+# these mark method-shape / early instruction language
+# ═══════════════════════════════════════════════════════════════
+
+c01_pahana:
+  id: "pahana"
+  register: "practice"
+  concept: "abandoning / letting go"
+  forms:
+    pali: ["pahāna", "pajahati", "pahāya"]
+    sanskrit: ["prahāṇa", "prajahāti"]
+    chinese: ["斷 (duàn)"]
+  frequency:
+    sutta_files: 349
+    sutta_occurrences: "~1400"
+    commentary_ratio: "sutta-dominated"
+  representative_citation:
+    ref: "SN 47.47"
+    text: "kāyaduccaritaṁ pahāya kāyasucaritaṁ bhāvessasi"
+    note: "'abandon bodily misconduct, cultivate bodily good conduct' — pahāya + bhāveti pair"
+  drift_note: >
+    pajahati (verb: 'abandons') is the baseline. later becomes pahāna
+    (noun: 'abandonment') — a category in lists. the verb form
+    marks practice-register; the noun form marks system-register.
+
+c02_viraga:
+  id: "viraga"
+  register: "practice"
+  concept: "dispassion / fading away"
+  forms:
+    pali: ["virāga", "virāgā"]
+    sanskrit: ["virāga"]
+    chinese: ["離欲 (lí yù)"]
+  frequency:
+    sutta_files: 455
+    sutta_occurrences: "~2300"
+    commentary_ratio: "sutta-dominated"
+  representative_citation:
+    ref: "SN 22.116"
+    text: "rūpassa ce bhikkhu nibbidāya virāgāya nirodhāya dhammaṁ deseti"
+    note: "'if a monk teaches dhamma for disenchantment, dispassion, cessation of form' — the nibbidā-virāga-nirodha chain"
+  drift_note: >
+    virāga appears in the standard chain: nibbidā → virāga → vimutti.
+    this is PROCESS language — one state leading to another.
+    a quintessential practice-register marker.
+
+c03_vossagga:
+  id: "vossagga"
+  register: "practice"
+  concept: "relinquishment / letting go"
+  forms:
+    pali: ["vossagga", "vossaggapariṇāmiṁ"]
+    sanskrit: ["—"]
+    chinese: ["捨 (shě)"]
+  frequency:
+    sutta_files: 95
+    sutta_occurrences: 145
+    commentary_ratio: "sutta-dominated"
+  representative_citation:
+    ref: "SN 46.57"
+    text: "satisambojjhaṅgaṁ bhāveti vivekanissitaṁ virāganissitaṁ nirodhanissitaṁ vossaggapariṇāmiṁ"
+    note: "'develops the mindfulness awakening-factor... ripening in relinquishment' — vossagga as the CULMINATION"
+  drift_note: >
+    vossagga is rare and almost untranslatable. it marks the
+    final stage of the practice sequence: seclusion → dispassion →
+    cessation → relinquishment. when this word appears, the
+    text is at its most practice-shaped.
+
+c04_sikkhati:
+  id: "sikkhati"
+  register: "practice"
+  concept: "trains / learns through practice"
+  forms:
+    pali: ["sikkhati", "sikkhāpadesu"]
+    sanskrit: ["śikṣate"]
+    chinese: ["學 (xué)"]
+  frequency:
+    sutta_files: "~200"
+    sutta_occurrences: "~500"
+    commentary_ratio: "sutta-dominated"
+  representative_citation:
+    ref: "DN 2:42.1"
+    text: "samādāya sikkhati sikkhāpadesu"
+    note: "'having undertaken, trains in the training rules' — sikkhati as active practice"
+  drift_note: >
+    sikkhati (trains) → sikkhā (training) → tisso sikkhā (three
+    trainings: sīla, samādhi, paññā). the verb becomes a system
+    of three categories.
+
+c05_patipajjati:
+  id: "patipajjati"
+  register: "practice"
+  concept: "practices / walks the path / follows"
+  forms:
+    pali: ["paṭipajjati"]
+    sanskrit: ["pratipadyate"]
+    chinese: ["行 (xíng)"]
+  frequency:
+    sutta_files: "~150"
+    sutta_occurrences: "~300"
+    commentary_ratio: "balanced"
+  representative_citation:
+    ref: "MN 99:4.4"
+    text: "vibhajjavādo kho ahamettha māṇava"
+    note: "context: the buddha analyzes what practices (paṭipadā) lead to what results"
+  drift_note: >
+    paṭipajjati (walks toward) is the verb behind paṭipadā (path).
+    the walking verb marks practice-register; the path noun can
+    shift toward system-register when classified.
+
+c06_bhaveti:
+  id: "bhaveti"
+  register: "practice"
+  concept: "cultivates / develops / brings into being"
+  forms:
+    pali: ["bhāveti", "bhāvehi"]
+    sanskrit: ["bhāvayati"]
+    chinese: ["修 (xiū)"]
+  frequency:
+    sutta_files: "~400"
+    sutta_occurrences: "~2000"
+    commentary_ratio: "sutta-dominated"
+  representative_citation:
+    ref: "MN 119:4.9"
+    text: "evaṁ bhikkhave bhikkhu kāyagatāsatiṁ bhāveti"
+    note: "'thus a monk cultivates body-focused mindfulness' — THE quintessential practice verb"
+  drift_note: >
+    bhāveti is THE practice-register verb. its nominalization
+    (bhāvanā = 'meditation') marks the verb→noun shift from
+    practice to system. when you see bhāveti, you're in
+    method-shape. when you see bhāvanā, you're drifting.
+
+c07_ajjhattam:
+  id: "ajjhattam"
+  register: "practice"
+  concept: "internally / within oneself"
+  forms:
+    pali: ["ajjhattaṃ"]
+    sanskrit: ["adhyātmam"]
+    chinese: ["內 (nèi)"]
+  frequency:
+    sutta_files: "~200"
+    sutta_occurrences: "~500"
+    commentary_ratio: "sutta-dominated"
+  representative_citation:
+    ref: "MN 10:9.1"
+    text: "ajjhattaṁ kāye kāyānupassī viharati"
+    note: "'dwells observing the body within the body internally' — first-person experiential"
+  drift_note: >
+    ajjhattaṁ marks FIRST-PERSON experiential language.
+    when a text says 'internally,' the instruction is
+    directed at the practitioner's OWN experience.
+    system-register language rarely uses ajjhattaṁ.
+
+c08_paccattam:
+  id: "paccattam"
+  register: "practice"
+  concept: "individually / for oneself / personally"
+  forms:
+    pali: ["paccattaṃ"]
+    sanskrit: ["pratyātmam"]
+    chinese: ["自 (zì)"]
+  frequency:
+    sutta_files: "~100"
+    sutta_occurrences: "~200"
+    commentary_ratio: "sutta-dominated"
+  representative_citation:
+    ref: "SN 22.59:8.1"
+    text: "paccattaṁyeva ñāṇaṁ ahosi"
+    note: "'knowledge arose individually/personally' — direct personal realization"
+  drift_note: >
+    paccattaṁ marks INDIVIDUAL realization — the teaching
+    must be verified in one's own experience. system-register
+    language replaces personal verification with categorical
+    knowledge.
+
+c09_yathabhutam:
+  id: "yathabhutam"
+  register: "practice"
+  concept: "as it actually is / in accordance with reality"
+  forms:
+    pali: ["yathābhūtaṃ"]
+    sanskrit: ["yathābhūtam"]
+    chinese: ["如實 (rúshí)"]
+  frequency:
+    sutta_files: "~200"
+    sutta_occurrences: "~600"
+    commentary_ratio: "sutta-dominated"
+  representative_citation:
+    ref: "SN 56.11:5.1"
+    text: "idaṁ dukkhaṁ ariyasaccanti yathābhūtaṁ pajānāti"
+    note: "'understands as it actually is: this is the noble truth of suffering'"
+  drift_note: >
+    yathābhūtaṁ is epistemological — it describes the MODE
+    of knowing (as things actually are), not the CONTENT of
+    knowledge. system-register replaces this with categorical
+    assertions about what things ARE.
+
+c10_pajahati:
+  id: "pajahati"
+  register: "practice"
+  concept: "abandons / gives up (active verb form)"
+  forms:
+    pali: ["pajahati"]
+    sanskrit: ["prajahāti"]
+    chinese: ["斷 (duàn)"]
+  frequency:
+    sutta_files: "~300"
+    sutta_occurrences: "~800"
+    commentary_ratio: "sutta-dominated"
+  representative_citation:
+    ref: "SN 22.59:7.2"
+    text: "evaṁ passaṁ ... nibbindati. nibbindaṁ virajjati. virāgā vimuccati"
+    note: "the nibbidā-virāga-vimutti chain — pajahati underlies the entire letting-go process"
+  drift_note: >
+    pajahati overlaps with pahāna (c01) but preserves the
+    ACTIVE verb form. the verb pajahati = practice register;
+    the noun pahāna = transitional to system register.
+
+c11_viharati:
+  id: "viharati"
+  register: "practice"
+  concept: "dwells / abides / lives (in a practice state)"
+  forms:
+    pali: ["viharati"]
+    sanskrit: ["viharati"]
+    chinese: ["住 (zhù)"]
+  frequency:
+    sutta_files: 1222
+    sutta_occurrences: "~18000"
+    commentary_ratio: "sutta-dominated (overwhelmingly)"
+  representative_citation:
+    ref: "DN 2:75.1"
+    text: "paṭhamaṁ jhānaṁ upasampajja viharati"
+    note: "'enters and dwells in the first jhāna' — THE practice formula"
+  drift_note: >
+    viharati is the single most frequent practice-register
+    marker (~18,000 occurrences). it means the practitioner
+    IS LIVING IN a practice state — not analyzing it from
+    outside. when viharati disappears from a text, the text
+    has left practice-register entirely.
+
+c12_pajanati:
+  id: "pajanati"
+  register: "practice"
+  concept: "understands directly / knows through experience"
+  forms:
+    pali: ["pajānāti"]
+    sanskrit: ["prajānāti"]
+    chinese: ["知 (zhī)"]
+  frequency:
+    sutta_files: 295
+    sutta_occurrences: "~950"
+    commentary_ratio: "sutta-dominated"
+  representative_citation:
+    ref: "DN 22 (satipaṭṭhāna)"
+    text: "dīghaṁ vā assasanto dīghaṁ assasāmīti pajānāti"
+    note: "'breathing in long, one understands: I breathe in long' — knowing through doing"
+  drift_note: >
+    pajānāti marks EXPERIENTIAL knowing — the practitioner
+    understands by doing, not by categorizing. this is the
+    epistemic marker of practice-register.
+
+c13_sacchikaroti:
+  id: "sacchikaroti"
+  register: "practice"
+  concept: "realizes / makes witness / directly experiences"
+  forms:
+    pali: ["sacchikaroti", "sacchikato"]
+    sanskrit: ["sākṣātkaroti"]
+    chinese: ["證 (zhèng)"]
+  frequency:
+    sutta_files: 41
+    sutta_occurrences: 90
+    commentary_ratio: "balanced"
+  representative_citation:
+    ref: "MN 79"
+    text: "atthi ākāravatī paṭipadā ekantasukhassa lokassa sacchikiriyāya"
+    note: "'there is a path for the realization of the completely blissful world'"
+  drift_note: >
+    sacchikaroti literally means 'makes-before-the-eyes' —
+    witnessing, not inferring. this is the strongest
+    practice-register epistemic marker.
+
+c14_abhijanati:
+  id: "abhijanati"
+  register: "practice"
+  concept: "directly knows / knows by experience"
+  forms:
+    pali: ["abhijānāti"]
+    sanskrit: ["abhijānāti"]
+    chinese: ["證知"]
+  frequency:
+    sutta_files: "~100"
+    sutta_occurrences: "~300"
+    commentary_ratio: "sutta-dominated"
+  representative_citation:
+    ref: "MN 1:3.2"
+    text: "pathavīṁ pathavīto abhijānāti"
+    note: "'directly knows earth as earth' — the mūlapariyāya sutta's repeated formula"
+  drift_note: >
+    abhijānāti = 'knows toward/upon' — direct experiential
+    knowledge. contrasts with system-register terms like
+    vavatthāpeti ('determines/defines').
+
+c15_nibbindati:
+  id: "nibbindati"
+  register: "practice"
+  concept: "grows disenchanted / becomes weary"
+  forms:
+    pali: ["nibbindati", "nibbidā"]
+    sanskrit: ["nirvidyate", "nirveda"]
+    chinese: ["厭 (yàn)"]
+  frequency:
+    sutta_files: 180
+    sutta_occurrences: "~400"
+    commentary_ratio: "sutta-dominated"
+  representative_citation:
+    ref: "SN 22.59:7.2"
+    text: "evaṁ passaṁ bhikkhave sutavā ariyasāvako rūpasmimpi nibbindati"
+    note: "'seeing thus, the learned noble disciple grows disenchanted with form' — the turning point"
+  drift_note: >
+    nibbindati marks the EXPERIENTIAL turning point —
+    the moment practice yields disenchantment. it's the
+    hinge between seeing-clearly and letting-go.
+    system-register rarely uses this word because it
+    describes a subjective shift, not an objective category.
+
+
+# ═══════════════════════════════════════════════════════════════
+# SYSTEM REGISTER (15 markers)
+# the language of CLASSIFYING — nouns, analytical terms,
+# definitional vocabulary. these mark thesis-shape / scholastic
+# ═══════════════════════════════════════════════════════════════
+
+c16_vibhajjati:
+  id: "vibhajjati"
+  register: "system"
+  concept: "analyzes / discriminates / divides"
+  forms:
+    pali: ["vibhajjati"]
+    sanskrit: ["vibhajati"]
+    chinese: ["分別 (fēnbié)"]
+  frequency:
+    sutta_files: "~30"
+    sutta_occurrences: "~60"
+    commentary_ratio: "commentary-heavy"
+  representative_citation:
+    ref: "MN 99:4.4"
+    text: "vibhajjavādo kho ahamettha māṇava"
+    note: "'I am an analyst here' — but the METHOD of analysis hardens into SYSTEM of analysis"
+  drift_note: >
+    vibhajjati bridges both registers: in MN 99 it's the
+    buddha's anti-dogmatic METHOD (practice); in abhidhamma
+    it's the systematic OPERATION of classifying (system).
+
+c17_vavatthapeti:
+  id: "vavatthapeti"
+  register: "system"
+  concept: "determines / defines / establishes distinctions"
+  forms:
+    pali: ["vavatthāpeti", "vavatthāna"]
+    sanskrit: ["vyavasthāpayati"]
+    chinese: ["決定"]
+  frequency:
+    sutta_files: "rare"
+    sutta_occurrences: "<20"
+    commentary_ratio: "commentary-dominated (5:1+)"
+  representative_citation:
+    ref: "Visuddhimagga line 9480"
+    text: "catunnaṃ dhātūnaṃ vavatthānaṃ"
+    note: "'determination of the four elements' — analytical operation on dhamma categories"
+  drift_note: >
+    vavatthāpeti is almost ABSENT from the suttas and
+    DOMINANT in commentary. it IS the system-register —
+    the act of fixing definitions. where this word appears,
+    you are in thesis-shape.
+
+c18_lakkhana:
+  id: "lakkhana"
+  register: "system"
+  concept: "characteristic / mark / defining feature"
+  forms:
+    pali: ["lakkhaṇa"]
+    sanskrit: ["lakṣaṇa"]
+    chinese: ["相 (xiàng)"]
+  frequency:
+    sutta_files: "~50"
+    sutta_occurrences: "~100"
+    commentary_ratio: "commentary-dominated (108 in visuddhimagga alone)"
+  representative_citation:
+    ref: "Visuddhimagga line 85"
+    text: "kānassa lakkhaṇarasapaccupaṭṭhānapadaṭṭhānāni"
+    note: "the four-aspect formula: characteristic, function, manifestation, proximate cause"
+  drift_note: >
+    lakkhaṇa in the suttas means 'mark, sign' (e.g. the
+    32 marks of a great person). in buddhaghosa it becomes
+    the first element of a universal analytical formula.
+    the same word shifts from 'observable feature' to
+    'defining characteristic in a classification system.'
+
+c19_rasa_fn:
+  id: "rasa_fn"
+  register: "system"
+  concept: "function / essence / taste (in analytical sense)"
+  forms:
+    pali: ["rasa (function)"]
+    sanskrit: ["rasa"]
+    chinese: ["味 (wèi)"]
+  frequency:
+    sutta_files: "~30 (mostly literal 'taste')"
+    sutta_occurrences: "~50"
+    commentary_ratio: "commentary-dominated (analytical sense)"
+  representative_citation:
+    ref: "Visuddhimagga line 695"
+    text: "vikkhepaviddhaṃsanaraso"
+    note: "'whose function is destroying distraction' — rasa as 'function' in the four-aspect formula"
+  drift_note: >
+    rasa in the suttas means 'taste, flavor.' buddhaghosa
+    repurposes it as 'function' in his analytical formula.
+    the same word: 'what it tastes like' → 'what it does
+    as a classified entity.' this is a micro-level semantic
+    drift within the commentary tradition.
+
+c20_paccupatthana:
+  id: "paccupatthana"
+  register: "system"
+  concept: "manifestation / proximate appearance"
+  forms:
+    pali: ["paccupaṭṭhāna"]
+    sanskrit: ["pratyupasthāna"]
+    chinese: ["現起"]
+  frequency:
+    sutta_files: "~10"
+    sutta_occurrences: "~20"
+    commentary_ratio: "commentary-dominated"
+  representative_citation:
+    ref: "Visuddhimagga line 1084"
+    text: "ārakkhapaccupaṭṭhānā"
+    note: "'manifests as guarding' — sati's manifestation in the four-aspect formula"
+  drift_note: >
+    paccupaṭṭhāna is the third element of buddhaghosa's formula.
+    almost exclusively commentarial. its presence in a text
+    is a near-certain marker of system-register.
+
+c21_patthana:
+  id: "patthana"
+  register: "system"
+  concept: "origination / conditional relations / causal genesis"
+  forms:
+    pali: ["paṭṭhāna"]
+    sanskrit: ["prasthāna"]
+    chinese: ["發趣"]
+  frequency:
+    sutta_files: "~20"
+    sutta_occurrences: "~40"
+    commentary_ratio: "abhidhamma-dominated"
+  representative_citation:
+    ref: "Paṭṭhāna (seventh abhidhamma book)"
+    text: "hetuya paccayo, ārammaṇe paccayo"
+    note: "the 24 conditions system — the most elaborate system-register text in the canon"
+  drift_note: >
+    the paṭṭhāna IS the system-register made canonical.
+    24 types of conditional relations applied exhaustively
+    to all dhammas. its presence marks maximum systematization.
+
+c22_paccaya:
+  id: "paccaya"
+  register: "system"
+  concept: "condition / requisite cause"
+  forms:
+    pali: ["paccaya"]
+    sanskrit: ["pratyaya"]
+    chinese: ["緣 (yuán)"]
+  frequency:
+    sutta_files: "~300"
+    sutta_occurrences: ">1000"
+    commentary_ratio: "balanced (both registers)"
+  representative_citation:
+    ref: "SN 12.2"
+    text: "avijjāpaccayā bhikkhave saṅkhārā; saṅkhārapaccayā viññāṇaṁ"
+    note: "'with ignorance as condition, formations arise' — the paṭiccasamuppāda formula"
+  drift_note: >
+    paccaya bridges registers: in SN 12 it's part of the
+    experiential dependent-origination narrative. in the
+    paṭṭhāna it becomes a 24-fold classification system.
+    the word is the SAME; the register shifts.
+
+c23_ganana:
+  id: "ganana"
+  register: "system"
+  concept: "counting / enumeration / numerical classification"
+  forms:
+    pali: ["gaṇanā"]
+    sanskrit: ["gaṇanā"]
+    chinese: ["數 (shù)"]
+  frequency:
+    sutta_files: "~10"
+    sutta_occurrences: "~20"
+    commentary_ratio: "commentary-dominated"
+  representative_citation:
+    ref: "Visuddhimagga (general method)"
+    text: "gaṇanā is listed as one of the meditation methods"
+    note: "counting breaths — but also counting categories"
+  drift_note: >
+    gaṇanā marks the enumerative mode — lists of 3, 4, 5,
+    7, 8, 12, etc. the suttas use numbers functionally
+    (four noble truths, eightfold path). the abhidhamma
+    uses numbers systematically (89 cittas, 52 cetasikas).
+
+c24_uddesa:
+  id: "uddesa"
+  register: "system"
+  concept: "summary recitation / initial statement"
+  forms:
+    pali: ["uddesa"]
+    sanskrit: ["uddeśa"]
+    chinese: ["總說"]
+  frequency:
+    sutta_files: "~30"
+    sutta_occurrences: "~60"
+    commentary_ratio: "balanced"
+  representative_citation:
+    ref: "Khuddaka texts (ps, pe, ne)"
+    text: "uddesa-niddesa-paṭiniddesa format"
+    note: "the three-part exegetical structure: summary → exposition → re-exposition"
+  drift_note: >
+    uddesa-niddesa is the EXEGETICAL METHOD — summarize,
+    then expand. this is a system-register tool for
+    organizing teaching material. its presence marks
+    scholastic structuring of sutta content.
+
+c25_niddesa:
+  id: "niddesa"
+  register: "system"
+  concept: "detailed exposition / analytical expansion"
+  forms:
+    pali: ["niddesa"]
+    sanskrit: ["nirdeśa"]
+    chinese: ["解說"]
+  frequency:
+    sutta_files: "~30"
+    sutta_occurrences: "~60"
+    commentary_ratio: "balanced"
+  representative_citation:
+    ref: "Mahāniddesa, Cūḷaniddesa (canonical niddesa texts)"
+    text: "word-by-word expansion of sutta verses"
+    note: "the niddesa texts ARE the systematization of sutta poetry into analytical prose"
+  drift_note: >
+    niddesa is the partner of uddesa. together they form
+    the expansion method that converts compact sutta
+    formulas into exhaustive analysis.
+
+c26_patibhaga:
+  id: "patibhaga"
+  register: "system"
+  concept: "counterpart / similar image / corresponding aspect"
+  forms:
+    pali: ["paṭibhāga"]
+    sanskrit: ["pratibhāga"]
+    chinese: ["相似"]
+  frequency:
+    sutta_files: "rare"
+    sutta_occurrences: "<10"
+    commentary_ratio: "commentary-dominated"
+  representative_citation:
+    ref: "Visuddhimagga (kasiṇa meditation section)"
+    text: "paṭibhāganimitta"
+    note: "the 'counterpart sign' — a precise meditation technical term from buddhaghosa"
+  drift_note: >
+    paṭibhāga is almost exclusively commentarial.
+    the 'counterpart sign' (paṭibhāganimitta) in
+    kasiṇa meditation is a visuddhimagga innovation.
+    its presence instantly marks commentary-register.
+
+c27_sangaha:
+  id: "sangaha"
+  register: "system"
+  concept: "compendium / collection / gathering together"
+  forms:
+    pali: ["saṅgaha"]
+    sanskrit: ["saṃgraha"]
+    chinese: ["攝 (shè)"]
+  frequency:
+    sutta_files: "~20"
+    sutta_occurrences: "~40"
+    commentary_ratio: "commentary-dominated (128 in visuddhimagga)"
+  representative_citation:
+    ref: "Visuddhimagga line 33"
+    text: "sīlādisaṅgahaṃ khemaṃ ujuṃ maggaṃ visuddhiyā"
+    note: "'the collection of virtue etc., the safe straight path to purification'"
+  drift_note: >
+    saṅgaha as a title (abhidhammatthasaṅgaha = 'compendium
+    of abhidhamma meanings') IS the system-register genre.
+    the word means 'gathering together' — the act of
+    collecting scattered teachings into a system.
+
+c28_pariccheda:
+  id: "pariccheda"
+  register: "system"
+  concept: "chapter / division / delimitation"
+  forms:
+    pali: ["pariccheda"]
+    sanskrit: ["pariccheda"]
+    chinese: ["品 (pǐn)"]
+  frequency:
+    sutta_files: "rare"
+    sutta_occurrences: "<10"
+    commentary_ratio: "commentary-dominated"
+  representative_citation:
+    ref: "Visuddhimagga, Abhidhammatthasaṅgaha"
+    text: "sīlaparicchedo (chapter on virtue)"
+    note: "pariccheda as chapter division — structural organization of knowledge"
+  drift_note: >
+    pariccheda marks STRUCTURAL DIVISION of knowledge
+    into chapters. the suttas don't divide themselves;
+    the commentary tradition divides them.
+
+c29_desana:
+  id: "desana"
+  register: "system"
+  concept: "teaching / exposition / proclamation"
+  forms:
+    pali: ["desanā"]
+    sanskrit: ["deśanā"]
+    chinese: ["說 (shuō)"]
+  frequency:
+    sutta_files: "~100"
+    sutta_occurrences: "~200"
+    commentary_ratio: "balanced"
+  representative_citation:
+    ref: "various sutta colophons"
+    text: "idamavoca bhagavā"
+    note: "'thus spoke the blessed one' — but desanā as a category of teaching is commentary"
+  drift_note: >
+    desanā in the suttas is the ACT of teaching.
+    in commentary it becomes a CLASSIFICATION of teaching
+    types (abhidhamma-desanā vs. sutta-desanā, etc.).
+
+c30_naya:
+  id: "naya"
+  register: "system"
+  concept: "method / logical procedure / inferential reasoning"
+  forms:
+    pali: ["naya"]
+    sanskrit: ["naya"]
+    chinese: ["理 (lǐ)"]
+  frequency:
+    sutta_files: "~20"
+    sutta_occurrences: "~40"
+    commentary_ratio: "commentary-dominated"
+  representative_citation:
+    ref: "Nettippakaraṇa (canonical hermeneutics text)"
+    text: "naya as formal method of interpretation"
+    note: "the netti codifies 16 modes of interpretation (naya) — formal hermeneutics"
+  drift_note: >
+    naya in suttas means 'way, method' loosely. in the
+    nettippakaraṇa it becomes a formal hermeneutic system.
+    this is the drift from 'how to understand' to
+    'the 16 modes of interpretation.'
+
+
+# ═══════════════════════════════════════════════════════════════
+# ONTIC REGISTER (5 markers)
+# the language of BEING — existence, essence, permanence.
+# these mark the ontological vocabulary that appears when
+# practice-language drifts into metaphysics (ch1 markers).
+# ═══════════════════════════════════════════════════════════════
+
+c31_svabhava:
+  id: "svabhava"
+  register: "ontic"
+  concept: "own-nature / intrinsic nature / essence"
+  forms:
+    pali: ["sabhāva"]
+    sanskrit: ["svabhāva"]
+    chinese: ["自性 (zìxìng)"]
+  frequency:
+    sutta_files: 40
+    sutta_occurrences: 94
+    commentary_occurrences: 266
+    commentary_ratio: "2.8:1 commentary-dominated — KEY FINDING"
+  representative_citation:
+    ref: "Visuddhimagga line 11950"
+    text: "dhammasabhāvapaṭivedhalakkhaṇā paññā"
+    note: "'wisdom whose characteristic is penetrating the own-nature of phenomena'"
+  drift_note: >
+    CRITICAL: sabhāva is 2.8x more frequent in the
+    visuddhimagga than in the entire sutta corpus.
+    it IS the ontological vocabulary — asserting that
+    dhammas have 'own-natures' to be penetrated.
+    the suttas rarely make this claim; the commentary
+    builds its entire analytical system on it.
+    nāgārjuna's MMK attacks precisely this concept
+    (svabhāva-śūnyatā = emptiness of own-nature).
+
+c32_paramattha:
+  id: "paramattha"
+  register: "ontic"
+  concept: "ultimate / highest meaning / absolute reality"
+  forms:
+    pali: ["paramattha"]
+    sanskrit: ["paramārtha"]
+    chinese: ["勝義 (shèngyì)"]
+  frequency:
+    sutta_files: 41
+    sutta_occurrences: 78
+    commentary_occurrences: 45
+    commentary_ratio: "0.58:1 sutta-dominated — INVERSE of sabhāva"
+  representative_citation:
+    ref: "Khuddaka Nikāya (Paṭisambhidāmagga)"
+    text: "paramatthato"
+    note: "'in the ultimate sense' — already appears in late canonical analytical texts"
+  drift_note: >
+    UNLIKE sabhāva, paramattha originates in late canonical
+    texts (paṭisambhidāmagga, milindapañha), not in
+    commentary. it's an analytical tool that the suttas
+    themselves begin developing. the two-truth theory
+    (sammuti vs. paramattha) starts WITHIN the canon.
+
+c33_sassata:
+  id: "sassata"
+  register: "ontic"
+  concept: "eternal / everlasting"
+  forms:
+    pali: ["sassata"]
+    sanskrit: ["śāśvata"]
+    chinese: ["常 (cháng)"]
+  frequency:
+    sutta_files: "~30"
+    sutta_occurrences: "~60"
+    commentary_ratio: "balanced"
+  representative_citation:
+    ref: "SN 22.97"
+    text: "natthi kho bhikkhu kiñci rūpaṁ yaṁ rūpaṁ niccaṁ dhuvaṁ sassataṁ avipariṇāmadhammaṁ"
+    note: "'there is no form that is permanent, stable, eternal, unchanging' — categorical denial"
+  drift_note: >
+    sassata in the suttas is ALWAYS DENIED — nothing is
+    eternal. but the very need to deny it repeatedly shows
+    that eternalism (sassatavāda) was a live option.
+    this marker tracks the POLEMIC against ontic permanence.
+
+c34_niccam:
+  id: "niccam"
+  register: "ontic"
+  concept: "permanent / constant"
+  forms:
+    pali: ["niccaṃ"]
+    sanskrit: ["nityam"]
+    chinese: ["常 (cháng)"]
+  frequency:
+    sutta_files: "~50"
+    sutta_occurrences: "~200"
+    commentary_ratio: "balanced"
+  representative_citation:
+    ref: "SN 22.59:2.1"
+    text: "rūpaṁ bhikkhave aniccaṁ"
+    note: "'form is impermanent' — the first statement of the anattalakkhaṇa sutta. niccaṁ is NEGATED (aniccaṁ)"
+  drift_note: >
+    niccaṁ is almost always encountered in its NEGATED form
+    (aniccaṁ = impermanent). the positive form tracks
+    the opponent view; the negation tracks the buddhist
+    response. both are ontic-register markers.
+
+c35_dhatu:
+  id: "dhatu"
+  register: "ontic"
+  concept: "element / realm / nature"
+  forms:
+    pali: ["dhātu"]
+    sanskrit: ["dhātu"]
+    chinese: ["界 (jiè)"]
+  frequency:
+    sutta_files: "~150"
+    sutta_occurrences: "~500"
+    commentary_ratio: "balanced"
+  representative_citation:
+    ref: "SN 14 (dhātu saṃyutta)"
+    text: "cha dhātuyo... paṭhavīdhātu āpodhātu tejodhātu vāyodhātu ākāsadhātu viññāṇadhātu"
+    note: "'six elements: earth, water, fire, wind, space, consciousness'"
+  drift_note: >
+    dhātu bridges registers: in early analysis it's a
+    PRAGMATIC classification (analyze experience into
+    elements to undercut self-identification). in
+    abhidhamma it becomes an ONTOLOGICAL classification
+    (the 18 dhātus as the exhaustive inventory of reality).
+    the same word, different register.

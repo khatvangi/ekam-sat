@@ -1,0 +1,1316 @@
+
+
+# ─────────────────────────────────────────────────────────────
+# ch4 — nibbāna drift: from fire-going-out to ontological category
+# ─────────────────────────────────────────────────────────────
+#
+# the drift tracked: nibbāna as fire metaphor (cessation of craving)
+# → asaṅkhata dhamma (the unconditioned, a classified reality)
+# → nirvāṇa = saṃsāra (ontological equation).
+#
+# index: H (hardening) — same as ch1.
+#   numerator: ontic/definitional language (asaṅkhata, nibbāna-dhātu, parinibbāna)
+#   denominator: release/practice language (vimutti, virāga, vossagga, nibbidā, taṇhākkhaya)
+#   primary: nibbāna (the anchor term)
+#   tracks hardening: amata, aggi, nirodha
+#
+# decolonization axis: "nirvana" is the most mistranslated buddhist
+# term in western languages. it is NOT "annihilation" (schopenhauer),
+# NOT "heaven" (christian), NOT "nothingness" (existentialist).
+# all three readings import abrahamic/enlightenment categories.
+# the fire metaphor operates within its own cultural frame: in vedic
+# india, fire that goes out does not "go somewhere" — the question
+# itself is grammatically wrong (MN 72).
+#
+# 12 entries, ~1100 lines.
+# ─────────────────────────────────────────────────────────────
+
+
+# ─────────────────────────────────────────────────────────────
+# 1. NIBBANA (extinction / unbinding / the going-out)
+# ─────────────────────────────────────────────────────────────
+nibbana:
+  id: nibbana
+  concept: extinction / unbinding / the going-out of the fires of craving
+  tier: primary
+  family: ["asankhata", "vimutti", "viraga", "amata", "nirodha", "aggi_nibbana"]
+  chapters: ["ch4", "ch1"]
+  semantic_field: soteriology
+  forms:
+    pali:
+    - term: nibbāna
+      grammar: neuter noun
+      root: nir-vā (to blow out, to extinguish) OR nir-vana (without binding/craving)
+      note: 'the soteriological goal. etymologically tied to the FIRE metaphor: the going-out
+        of the fires of rāga (craving), dosa (aversion), moha (delusion). the dual etymology
+        (nir-vā = blow out, nir-vana = without binding) is itself evidence that the term was
+        understood through METAPHOR, not definition. the fire does not "go somewhere" — it
+        ceases. this is the key to the entire chapter.
+
+        '
+    - term: nibbānaṁ
+      grammar: accusative/nominative
+      note: most common case form in the suttas — nibbāna as the object of realization
+    - term: nibbuto
+      grammar: past participle (nir + vā)
+      note: '''extinguished'' — applied to the fire in MN 72 and to the arahat. the SAME word
+        for both: the arahat IS the extinguished fire.
+
+        '
+    - term: parinibbāyati
+      grammar: verb (present indicative)
+      note: '''fully goes out'' — the verb form, used for the process of final cessation'
+    sanskrit:
+    - term: nirvāṇa
+      grammar: neuter noun
+      note: 'extinction — in mahāyāna: nirvāṇa = saṃsāra (nāgārjuna, MMK 25.19-20). the
+        early fire-metaphor is replaced by an ontological equation.'
+    - term: parinirvāṇa
+      grammar: neuter noun
+      note: 'final extinction — in mahāyāna narrative: the mahāparinirvāṇa becomes an
+        elaborate cosmological EVENT, not a simple cessation.'
+    chinese:
+    - term: 涅槃
+      pinyin: nièpán
+      translator: standard (phonetic transliteration)
+      translation_choice_note: 'phonetic transliteration — the chinese translators deemed nibbāna
+        UNTRANSLATABLE. this is itself significant: they did not attempt a semantic equivalent
+        (unlike most other terms). the phonetic approach preserves the non-translatability,
+        which is more honest than english "extinction" or "blowing out."
+
+        '
+    - term: 般涅槃
+      pinyin: bānnièpán
+      translator: standard
+      translation_choice_note: 'parinibbāna — phonetic with the pari- prefix'
+    - term: 滅度
+      pinyin: mièdù
+      translator: kumārajīva (semantic alternative)
+      translation_choice_note: '''extinction-and-crossing'' — a rare semantic translation attempt.
+        miè = extinction/cessation + dù = crossing/ferrying over. combines the fire metaphor
+        with the raft metaphor.'
+    jain:
+    - term: nirvāṇa
+      language: ardhamagadhi/sanskrit
+      note: 'jains ALSO use nirvāṇa — for the final liberation of the jīva (soul). but jain
+        nirvāṇa PRESERVES a permanent entity (the jīva). buddhist nibbāna does NOT. the shared
+        term masks a fundamental difference: jain nirvāṇa = soul freed from matter; buddhist
+        nibbāna = cessation of craving with no posited substrate.'
+  temporal_strata:
+  - period: ~450-250 BCE
+    dating_confidence: low
+    tradition: early buddhist
+    meaning: 'cessation of craving, hatred, and delusion — described VIA METAPHOR rather than
+      definition. the fire simile is central: the fire goes out when its fuel (upādāna) is
+      exhausted. the question "where did the fire go?" is grammatically wrong — it does not
+      "go" anywhere. LIKEWISE: nibbāna is not a place, not a state, not a thing. it is the
+      cessation of the process.
+
+      '
+    key_texts: ["MN 72 aggivacchagotta", "SN 43 asaṅkhata saṃyutta", "MN 26 ariyapariyesanā",
+      "SN 56.11 dhammacakkappavattana"]
+    citations:
+    - file: data/raw/pali_suttacentral/sc_bilara_data/root/pli/ms/sutta/mn/mn72_root-pli-ms.json
+      reference: MN 72:19.16
+      quote: yo te ayaṁ purato aggi nibbuto so aggi ito katamaṁ disaṁ gato
+      context: '''this fire that is extinguished before you — in what direction has it gone?''
+        the buddha asks vacchagotta about a fire that has gone out. the question exposes the
+        GRAMMATICAL ERROR in asking where nibbāna "is." fire does not "go" somewhere when it
+        goes out. nibbāna does not "go" somewhere when craving ceases. the question has the
+        wrong grammar.
+
+        '
+    - file: data/raw/pali_suttacentral/sc_bilara_data/root/pli/ms/sutta/mn/mn72_root-pli-ms.json
+      reference: MN 72:19.18
+      quote: aggi tiṇakaṭṭhupādānaṁ paṭicca ajali tassa ca pariyādānā aññassa ca anupahārā
+        anāhāro nibbutotveva saṅkhyaṁ gacchati
+      context: '''the fire burned dependent on grass-and-wood fuel; when that is exhausted and
+        nothing else is supplied, being fuelless, it is reckoned as extinguished.'' the fire
+        metaphor in its purest form: nibbāna = fuelless. upādāna (fuel/clinging) is what burns.
+        when the fuel is gone, the fire is gone. no direction, no destination, no residual entity.
+
+        '
+    - file: data/raw/pali_suttacentral/sc_bilara_data/root/pli/ms/sutta/mn/mn26_root-pli-ms.json
+      reference: MN 26:19.5
+      quote: sabbasaṅkhārasamatho sabbūpadhipaṭinissaggo taṇhākkhayo virāgo nirodho nibbānaṁ
+      context: '''the stilling of all formations, the relinquishment of all acquisitions,
+        the destruction of craving, dispassion, cessation, nibbāna.'' the SEQUENCE matters:
+        nibbāna is the END of a chain of release-language (taṇhākkhaya → virāga → nirodha →
+        nibbāna). it is not defined independently — it is pointed to through the process of
+        letting go.
+
+        '
+    - file: data/raw/pali_suttacentral/sc_bilara_data/root/pli/ms/sutta/sn/sn43/sn43.14-43_root-pli-ms.json
+      reference: SN 43.34:1.1
+      quote: Nibbānañca vo bhikkhave desessāmi nibbānagāmiñca maggaṁ
+      context: '''I will teach you nibbāna and the path leading to nibbāna.'' from the
+        asaṅkhata saṃyutta (SN 43), which lists 33 synonyms for nibbāna. the MULTIPLICITY of
+        epithets (amata, virāga, nirodha, taṇhākkhaya, etc.) is itself evidence that the early
+        texts POINT to nibbāna rather than DEFINE it. no single definition captures it.
+
+        '
+    corpus_count: ~2400 (nibbāna-terms across sutta piṭaka + chinese āgamas)
+    drift_from_previous: null
+  - period: ~200 BCE - 200 CE
+    dating_confidence: medium
+    tradition: abhidhamma / early scholastic
+    meaning: 'nibbāna becomes one of four paramattha dhammas (ultimate realities): citta
+      (consciousness), cetasika (mental factors), rūpa (matter), nibbāna. it is classified as
+      asaṅkhata dhamma (unconditioned reality) — the ONLY unconditioned dhamma. this is the
+      FIRST HARDENING: from fire-metaphor (pointing-language) to classified reality (defining-
+      language).
+
+      '
+    key_texts: ["dhammasaṅgaṇi", "abhidhammattha saṅgaha", "vibhaṅga"]
+    citations: []
+    corpus_count: ~50 (nibbāna in abhidhamma classification contexts)
+    drift_from_previous: 'FIRST HARDENING: the fire metaphor is replaced by CLASSIFICATION.
+      nibbāna becomes a dhamma — an item in an ontological inventory. the dhammasaṅgaṇi opens
+      with "katame dhammā asaṅkhatā? nibbānaṁ" — "what dhammas are unconditioned? nibbāna."
+      this is a DEFINITION, not a pointer. the multiplicity of 33 epithets (SN 43) is replaced
+      by a single category: asaṅkhata. the question shifts from "how do I get there?" to "what
+      IS it?"
+
+      '
+  - period: ~200-500 CE
+    dating_confidence: medium
+    tradition: madhyamaka
+    meaning: 'nirvāṇa = saṃsāra. nāgārjuna argues that there is no distinction whatsoever
+      between nirvāṇa and saṃsāra (MMK 25.19-20). the goal is not a separate realm but the
+      same reality seen without conceptual proliferation (prapañca).
+
+      '
+    key_texts: ["mūlamadhyamakakārikā ch25"]
+    citations:
+    - file: data/raw/sanskrit/mahayana/sa_nAgArjuna-mUlamadhyamakakArikA.txt
+      reference: MMK 25.19 (lines 1244-1245)
+      quote: na saṃsārasya nirvāṇāt kiṃcid asti viśeṣaṇam na nirvāṇasya saṃsārāt kiṃcid
+        asti viśeṣaṇam
+      context: '''there is no distinction whatsoever between saṃsāra and nirvāṇa. there is
+        no distinction whatsoever between nirvāṇa and saṃsāra.'' the EQUATION. the early texts
+        present nibbāna as the goal to be ATTAINED through practice. nāgārjuna presents nirvāṇa
+        as what saṃsāra ALREADY IS when seen correctly. the method (attaining liberation)
+        becomes a thesis (liberation is already the case).
+
+        '
+    - file: data/raw/sanskrit/mahayana/sa_nAgArjuna-mUlamadhyamakakArikA.txt
+      reference: MMK 25.20 (lines 1247-1248)
+      quote: nirvāṇasya ca yā koṭiḥ koṭiḥ saṃsaraṇasya ca na tayor antaraṁ kiṃcit
+        susūkṣmam api vidyate
+      context: '''the limit of nirvāṇa and the limit of saṃsāra — between them not even the
+        subtlest difference exists.'' the ontological equation pushed to its logical endpoint.
+        the fire metaphor is completely absent. this is THESIS-SHAPE language: a philosophical
+        proposition, not a practice instruction.
+
+        '
+    corpus_count: ~440 (nirvāṇa in sanskrit mahāyāna)
+    drift_from_previous: 'SECOND HARDENING (or DISSOLUTION): the classified "unconditioned
+      reality" of abhidhamma is now EQUATED with conditioned reality. the distinction between
+      goal and non-goal collapses. paradoxically, this is both the ultimate hardening (nirvāṇa
+      becomes a philosophical thesis) and the ultimate softening (the rigid goal/non-goal
+      distinction is dissolved). the fire metaphor would predict neither outcome: a fire that
+      has gone out is simply gone — it is not "the same as" the fuel.
+
+      '
+  - period: 19th-21st century CE
+    dating_confidence: high
+    tradition: western reception / colonial
+    meaning: 'nirvana = "annihilation" (schopenhauer), "heaven" (popular christianized reading),
+      "nothingness" (existentialist reading), or "secular well-being" (secular buddhist reading).
+      ALL of these import western categories onto a term that resists them.
+
+      '
+    key_texts: ["schopenhauer world as will", "rhys davids translations", "batchelor
+      buddhism without beliefs"]
+    citations: []
+    corpus_count: n/a (reception, not canonical)
+    drift_from_previous: 'COLONIAL OVERLAY: the western reception adds a FOURTH layer of drift.
+      "annihilation" imports the christian anxiety about nothingness. "heaven" imports the
+      christian eschatological framework. "nothingness" imports the existentialist problematic.
+      "well-being" imports the therapeutic-secular framework. NONE of these capture the fire
+      metaphor: a fire that goes out is not annihilated, is not in heaven, is not "nothing,"
+      and is not "well." it simply ceases to burn. the DECOLONIZATION CHECKLIST (section II)
+      recommends: keep nibbāna untranslated. closest gloss: "the going-out of the fires of
+      craving, aversion, and delusion."
+
+      '
+  valence:
+    buddhist_early: the goal — cessation of craving, pointed to through metaphor
+    buddhist_abhidhamma: a classified reality — the one unconditioned dhamma
+    buddhist_madhyamaka: not separate from saṃsāra — a way of seeing, not a place
+    jain: liberation of the permanent jīva (soul) — fundamentally different meaning
+    note: 'nibbāna is where the decolonization argument is most urgent. every english
+      "translation" (extinction, blowing out, liberation, nirvana-as-heaven) carries foreign
+      metaphysics. the fire metaphor works ONLY within its own cultural frame: vedic indian
+      fire does not "go somewhere" when extinguished — it returns to its unmanifest state.
+      the western question "where does the fire go?" is a category error, not a philosophical
+      puzzle. MN 72 makes this explicit.
+
+      '
+  standard_references:
+    pts_dictionary: 'nibbāna: going out, quenching, emancipation, the dying out of the
+      three fires of rāga, dosa, moha'
+    monier_williams: 'nirvāṇa: blowing out, extinction, cessation, complete happiness'
+    diff_notes: 'PTS preserves the fire metaphor ("going out, quenching") AND adds
+      "emancipation" — blending the metaphor with a soteriological gloss. MW gives "blowing
+      out, extinction" — accurate but then adds "complete happiness" which imports a positive
+      definition the early texts avoid. our dictionary insists: the early texts use POINTING
+      language (33 epithets, fire simile, release-chain), NOT defining language. the abhidhamma
+      shift to "asaṅkhata dhamma" is where definition begins. [!] FLAGGED — both PTS and MW
+      reflect post-abhidhamma consolidation, not the early multiplicity of epithets.
+
+      '
+  index_contribution:
+  - index: H
+    chapter: ch4
+    role: primary
+    note: 'the H index tracks nibbāna''s drift: fire-metaphor (denominator) → classified
+      reality (numerator)'
+
+
+# ─────────────────────────────────────────────────────────────
+# 2. ASANKHATA (the unconditioned / the unfabricated)
+# ─────────────────────────────────────────────────────────────
+asankhata:
+  id: asankhata
+  concept: the unconditioned / the unfabricated
+  tier: primary
+  family: ["nibbana", "nibbana_dhatu", "amata"]
+  chapters: ["ch4"]
+  semantic_field: ontology-soteriology
+  forms:
+    pali:
+    - term: asaṅkhata
+      grammar: adjective/neuter noun (a + saṅkhata, past participle of saṅkharoti)
+      root: a-saṃ-kṛ (not put-together, not fabricated)
+      note: 'unconditioned — grammatically a PAST PARTICIPLE used as adjective: "not
+        fabricated." in early usage, it DESCRIBES nibbāna (nibbāna is asaṅkhata). in
+        abhidhamma, asaṅkhata becomes a CATEGORY (asaṅkhata dhamma) — the adjective becomes
+        a noun. this grammatical shift (adjective → noun) parallels the anattā drift
+        (adjective → ontological claim).
+
+        '
+    sanskrit:
+    - term: asaṃskṛta
+      grammar: adjective/noun
+      note: unconditioned — same drift into category in abhidharma
+    chinese:
+    - term: 無為
+      pinyin: wúwéi
+      translator: standard
+      translation_choice_note: '''non-doing / non-fabrication'' — this is the SAME term as the
+        daoist wúwéi. the chinese translation imports daoist connotations of effortless
+        naturalness onto a buddhist technical term. this is translation-as-interpretation:
+        asaṅkhata becomes "wuwei" and carries an entire chinese philosophical tradition with
+        it. a decolonization point: chinese translators ALSO colonized buddhist terms, not
+        only westerners.
+
+        '
+  temporal_strata:
+  - period: ~450-250 BCE
+    dating_confidence: low
+    tradition: early buddhist
+    meaning: 'an ADJECTIVE applied to nibbāna — one of 33 epithets in SN 43. "asaṅkhata" is
+      listed alongside amata (deathless), virāga (dispassion), taṇhākkhaya (destruction of
+      craving), etc. it is NOT privileged above the other 32 synonyms. it is one way of
+      POINTING, not THE definition.
+
+      '
+    key_texts: ["SN 43 asaṅkhata saṃyutta"]
+    citations:
+    - file: data/raw/pali_suttacentral/sc_bilara_data/root/pli/ms/sutta/kn/iti/vagga5/iti44_root-pli-ms.json
+      reference: Iti 44:6.1
+      quote: Ye etadaññāya padaṁ asaṅkhataṁ
+      context: '''those who have known this unconditioned state'' — in Iti 44, asaṅkhata
+        appears in verse as one of several descriptors. it is an ADJECTIVE modifying pada
+        (state/footing), not a standalone noun. the verse uses asaṅkhata alongside other
+        pointing-language.
+
+        '
+    corpus_count: ~150 (asaṅkhata in sutta piṭaka — mostly in SN 43)
+    drift_from_previous: null
+  - period: ~200 BCE - 200 CE
+    dating_confidence: medium
+    tradition: abhidhamma
+    meaning: 'asaṅkhata becomes THE definition of nibbāna. the dhammasaṅgaṇi asks: "katame
+      dhammā asaṅkhatā? nibbānaṁ." the 33 synonyms of SN 43 are REDUCED to one category.
+      asaṅkhata becomes a formal classification term — the fourth paramattha dhamma alongside
+      citta, cetasika, rūpa.
+
+      '
+    key_texts: ["dhammasaṅgaṇi", "abhidhammattha saṅgaha"]
+    citations: []
+    corpus_count: ~30 (asaṅkhata in formal classification contexts)
+    drift_from_previous: 'THE KEY HARDENING: from one-of-33-epithets to THE-defining-category.
+      the early plurality of pointing-language is replaced by a single classificatory term.
+      this is the method→thesis shift applied to the goal itself: instead of 33 ways of
+      pointing at what cannot be defined, there is now ONE correct classification. the fire
+      metaphor disappears; the ontological category remains.
+
+      '
+  valence:
+    buddhist_early: one of many epithets — not privileged
+    buddhist_abhidhamma: THE defining category — the fourth paramattha dhamma
+    note: 'asaṅkhata is WHERE the hardening happens. the early texts give 33 different ways
+      to point at nibbāna (SN 43). the abhidhamma selects ONE of these (asaṅkhata) and makes
+      it THE category. the other 32 synonyms become subordinate. this selection process —
+      choosing one descriptor and elevating it to definitional status — is the mechanism of
+      drift.
+
+      '
+  standard_references:
+    pts_dictionary: 'asaṅkhata: unconditioned, not put together, not arranged'
+    diff_notes: 'PTS gives the grammatical sense correctly. our dictionary adds: in SN 43,
+      asaṅkhata is ONE of 33 epithets; in abhidhamma, it becomes THE category. the PTS
+      definition already reflects the post-abhidhamma privileging.
+
+      '
+  index_contribution:
+  - index: H
+    chapter: ch4
+    role: numerator
+    note: asaṅkhata as ontological category = definitional/system-register language
+
+
+# ─────────────────────────────────────────────────────────────
+# 3. VIMUTTI (liberation / release / freedom)
+# ─────────────────────────────────────────────────────────────
+vimutti:
+  id: vimutti
+  concept: liberation / release / freedom
+  tier: primary
+  family: ["nibbana", "viraga", "nibbida"]
+  chapters: ["ch4"]
+  semantic_field: soteriology
+  forms:
+    pali:
+    - term: vimutti
+      grammar: feminine noun (vi + mutti, from √muc, to release)
+      root: vi-mukti (release, freeing)
+      note: 'liberation — the EXPERIENTIAL term for what nibbāna IS. "vimutti" emphasizes
+        the PROCESS of being freed, not the STATE that results. the distinction matters:
+        vimutti = the releasing; nibbāna = the going-out.
+
+        '
+    - term: cetovimutti
+      grammar: compound (ceto + vimutti)
+      note: 'release of mind — liberation through concentration (samādhi). often paired with
+        paññāvimutti.'
+    - term: paññāvimutti
+      grammar: compound (paññā + vimutti)
+      note: release by wisdom — liberation through insight (paññā)
+    - term: vimutto
+      grammar: past participle (vimuccati)
+      note: '''released'' — the arahat as "one who is released"'
+    sanskrit:
+    - term: vimukti
+      grammar: feminine noun
+      note: same as pāli — release, liberation
+    chinese:
+    - term: 解脫
+      pinyin: jiětuō
+      translator: standard
+      translation_choice_note: '''untying-escaping'' — a semantic translation that preserves
+        the process-sense. jiě = untie + tuō = escape/shed. better than english "liberation"
+        which sounds like a political category.
+
+        '
+  temporal_strata:
+  - period: ~450-250 BCE
+    dating_confidence: low
+    tradition: early buddhist
+    meaning: 'the EXPERIENTIAL moment of release. the standard formula: "vimuttasmiṁ vimuttamiti
+      ñāṇaṁ hoti — when released, there is knowledge: released!" (SN 22.59). vimutti is
+      what the practitioner EXPERIENCES. it is practice-register language: you DO something
+      (the path), and vimutti HAPPENS.
+
+      '
+    key_texts: ["SN 22.59", "MN 1", "AN 9.36"]
+    citations:
+    - file: data/raw/pali_suttacentral/sc_bilara_data/root/pli/ms/sutta/sn/sn22/sn22.59_root-pli-ms.json
+      reference: SN 22.59:11.1-2
+      quote: nibbindaṁ virajjati virāgā vimuccati vimuttasmiṁ vimuttamiti ñāṇaṁ hoti
+      context: '''becoming disenchanted, one becomes dispassionate; through dispassion, one
+        is released; when released, there is knowledge: released!'' the release-chain:
+        nibbidā → virāga → vimutti → ñāṇa. vimutti is a MOMENT in a process, not a state
+        to be classified. this is pure practice-register language.
+
+        '
+    corpus_count: ~800 (vimutti/vimutta across sutta piṭaka)
+    drift_from_previous: null
+  - period: ~200-500 CE
+    dating_confidence: medium
+    tradition: abhidhamma / scholastic
+    meaning: vimutti analyzed into types (cetovimutti, paññāvimutti, samayavimutti,
+      asamayavimutti) and mapped onto path-stages
+    key_texts: ["vibhaṅga", "visuddhimagga"]
+    citations: []
+    corpus_count: moderate
+    drift_from_previous: 'SYSTEMATIZATION: the experiential moment of release becomes a
+      classified TYPE (what kind of vimutti? temporary or permanent? by concentration or by
+      wisdom?). the process becomes a taxonomy.
+
+      '
+  valence:
+    buddhist: the experiential moment of liberation — the PRACTICE-REGISTER name for the goal
+    note: 'vimutti vs nibbāna: vimutti emphasizes the PROCESS (being freed), nibbāna
+      emphasizes the RESULT (the fires going out). in early texts, both appear together.
+      in abhidhamma, nibbāna (as asaṅkhata) takes over as the formal term; vimutti becomes
+      a subordinate classification.'
+  standard_references:
+    pts_dictionary: 'vimutti: release, deliverance, emancipation'
+    diff_notes: PTS gives clear definition. no significant disagreement.
+  index_contribution:
+  - index: H
+    chapter: ch4
+    role: denominator
+    note: vimutti as experiential release = practice-register language
+
+
+# ─────────────────────────────────────────────────────────────
+# 4. PARINIBBANA (final extinction / the buddha's passing)
+# ─────────────────────────────────────────────────────────────
+parinibbana:
+  id: parinibbana
+  concept: final extinction / the buddha's passing / complete going-out
+  tier: primary
+  family: ["nibbana", "nibbana_dhatu"]
+  chapters: ["ch4"]
+  semantic_field: soteriology-narrative
+  forms:
+    pali:
+    - term: parinibbāna
+      grammar: neuter noun (pari + nibbāna)
+      note: 'complete/final nibbāna — the prefix pari- intensifies: "thoroughly extinguished."
+        in early usage, applied to any arahat''s death. in later usage, becomes a quasi-proper
+        noun for the BUDDHA''S death specifically.'
+    - term: parinibbāyati
+      grammar: verb (present indicative)
+      note: '''finally goes out'' — the process'
+    - term: parinibbuto
+      grammar: past participle
+      note: '''finally gone out'' — state of the arahat/buddha after death'
+    sanskrit:
+    - term: parinirvāṇa
+      grammar: neuter noun
+      note: 'in mahāyāna: the mahāparinirvāṇasūtra becomes an elaborate narrative. the
+        simple cessation becomes a cosmic event with relics, earthquakes, and laments.'
+    chinese:
+    - term: 般涅槃
+      pinyin: bānnièpán
+      translator: standard (phonetic)
+      translation_choice_note: 'phonetic — preserving the untranslatability'
+    - term: 入滅
+      pinyin: rùmiè
+      translator: semantic alternative
+      translation_choice_note: '''entering cessation'' — a semantic translation that makes
+        parinibbāna sound like ENTERING a state. the pāli says "going out" (cessation), not
+        "going in" (entering). the chinese reverses the direction.'
+  temporal_strata:
+  - period: ~450-250 BCE
+    dating_confidence: low
+    tradition: early buddhist
+    meaning: 'the complete cessation of any arahat at death. NOT special to the buddha — any
+      arahant who dies "parinibbāyati." the DN 16 mahāparinibbānasutta gives the narrative
+      of the buddha''s death but without the later cosmological elaboration.
+
+      '
+    key_texts: ["DN 16 mahāparinibbāna"]
+    citations:
+    - file: dn/dn16_root-pli-ms.json
+      reference: DN 16:3.20.1
+      quote: 'yadā tathāgato anupādisesāya nibbānadhātuyā parinibbāyati, tadāyaṁ pathavī
+        kampati saṅkampati sampakampati sampavedhati'
+      context: when the tathāgata finally goes out by the nibbāna-element without remainder,
+        the earth trembles — already in the early text, parinibbāna is associated with cosmic
+        reaction, though here it is one of eight causes for earthquakes, not yet THE event.
+    - file: dn/dn16_root-pli-ms.json
+      reference: DN 16:4.38.2
+      quote: 'yañca rattiṁ tathāgato anuttaraṁ sammāsambodhiṁ abhisambujjhati, yañca rattiṁ
+        anupādisesāya nibbānadhātuyā parinibbāyati'
+      context: the night of awakening and the night of final going-out are placed in parallel —
+        same verb (parinibbāyati), same structure. the going-out is not yet elaborated beyond
+        the simple cessation.
+    corpus_count: ~300 (parinibbāna/parinibbāyati across sutta piṭaka)
+    drift_from_previous: null
+  - period: ~200-500 CE
+    dating_confidence: medium
+    tradition: mahāyāna
+    meaning: 'the mahāparinirvāṇa becomes an elaborate cosmological EVENT: earthquakes, the
+      distribution of relics, the stūpa cult. the simple "going out" becomes a narrative of
+      cosmic significance. the buddha''s death is no longer like any arahat''s — it is THE
+      event of the age.
+
+      '
+    key_texts: ["mahāparinirvāṇasūtra (mahāyāna)", "stūpa literature"]
+    citations:
+    - reference: mahāparinirvāṇasūtra (not in our corpus)
+      quote: null
+      context: the mahāyāna mahāparinirvāṇasūtra is not in the early corpus — it belongs
+        to a later stratum. citations would come from the Chinese CBETA collection but the
+        sūtra is a large standalone text, not part of the āgama parallels our pipeline scans.
+    corpus_count: ~100 (parinirvāṇa in mahāyāna narrative contexts)
+    drift_from_previous: 'NARRATIVIZATION: from a simple cessation (any arahat''s death) to
+      a cosmic event (the BUDDHA''S death). the fire metaphor implies that going-out is
+      unremarkable — fire simply ceases. the mahāyāna narrative makes it the most remarkable
+      event possible. the non-event becomes THE event. this is hardening through narrative
+      amplification.
+
+      '
+  valence:
+    buddhist_early: any arahat's cessation at death — not special
+    buddhist_mahayana: THE cosmic event — the buddha's death as world-historical
+    note: 'the parinibbāna drift is uniquely visible because it tracks a narrative
+      transformation. the early text (DN 16) is relatively simple — the buddha eats bad food,
+      gets sick, lies down between two trees, and dies. the mahāyāna mahāparinirvāṇasūtra
+      adds doctrinal discourses, cosmic reactions, and soteriological significance to the
+      EVENT of death. the fire metaphor (going out is simple) is replaced by the cosmological
+      narrative (going out is momentous).'
+  standard_references:
+    pts_dictionary: 'parinibbāna: complete nibbāna, final passing away'
+    diff_notes: PTS correctly preserves the prefix-intensified sense. our dictionary adds the
+      early→mahāyāna narrative drift.
+  index_contribution:
+  - index: H
+    chapter: ch4
+    role: numerator
+    note: parinibbāna as cosmic event = narrativized/system-register language
+
+
+# ─────────────────────────────────────────────────────────────
+# 5. NIBBANA_DHATU (nibbāna-element / the two nibbānas)
+# ─────────────────────────────────────────────────────────────
+nibbana_dhatu:
+  id: nibbana_dhatu
+  concept: nibbāna-element / the two nibbānas (with and without remainder)
+  tier: primary
+  family: ["nibbana", "asankhata", "parinibbana"]
+  chapters: ["ch4"]
+  semantic_field: ontology-soteriology
+  forms:
+    pali:
+    - term: nibbānadhātu
+      grammar: compound (nibbāna + dhātu)
+      note: 'nibbāna-element — dhātu here means "element, realm, domain." applying dhātu
+        to nibbāna makes it a THING (an element/realm), not a process.'
+    - term: saupādisesā nibbānadhātu
+      grammar: compound
+      note: '''nibbāna-element with residue remaining'' — the living arahat'
+    - term: anupādisesā nibbānadhātu
+      grammar: compound
+      note: '''nibbāna-element without residue'' — the arahat at death'
+    sanskrit:
+    - term: nirvāṇadhātu
+      grammar: compound
+      note: same as pāli
+    chinese:
+    - term: 涅槃界
+      pinyin: nièpánjiè
+      translator: standard
+      translation_choice_note: 'nibbāna-realm — jiè (界) = realm/domain. makes nibbāna
+        sound like a PLACE.'
+    - term: 有餘涅槃
+      pinyin: yǒuyú nièpán
+      translator: standard
+      translation_choice_note: 'with-remainder nibbāna (sa-upādisesa)'
+    - term: 無餘涅槃
+      pinyin: wúyú nièpán
+      translator: standard
+      translation_choice_note: 'without-remainder nibbāna (an-upādisesa)'
+  temporal_strata:
+  - period: ~350-200 BCE
+    dating_confidence: medium
+    tradition: early buddhist (possibly late sutta stratum)
+    meaning: 'the Itivuttaka passage (Iti 44) distinguishes two nibbāna-dhātus: sa-upādisesa
+      (the living arahat — craving gone but body remains) and an-upādisesa (the arahat at
+      death — all sensation ceases). this is already a SYSTEMATIZATION within the sutta piṭaka.
+
+      '
+    key_texts: ["Iti 44"]
+    citations:
+    - file: data/raw/pali_suttacentral/sc_bilara_data/root/pli/ms/sutta/kn/iti/vagga5/iti44_root-pli-ms.json
+      reference: Iti 44:2.1-2.3
+      quote: Dvemā bhikkhave nibbānadhātuyo. Katamā dve? Saupādisesā ca nibbānadhātu
+        anupādisesā ca nibbānadhātu.
+      context: '''there are these two nibbāna-elements, monks. which two? the nibbāna-element
+        with residue remaining and the nibbāna-element without residue remaining.'' the TWO
+        NIBBĀNAS doctrine. this is an early systematization — possibly the earliest attempt
+        to DEFINE nibbāna rather than point to it. the fire metaphor does not naturally
+        distinguish "fire-going-out-while-fuel-remains" from "fire-going-out-when-all-fuel-
+        is-gone" — the distinction introduces a new dimension.
+
+        '
+    corpus_count: ~20 (nibbānadhātu in sutta piṭaka — concentrated in Iti 44)
+    drift_from_previous: null
+  - period: ~200 BCE - 500 CE
+    dating_confidence: medium
+    tradition: abhidhamma / scholastic
+    meaning: the two nibbānas become a standard classification. commentarial literature
+      elaborates on what exactly "remains" and what exactly "ceases."
+    key_texts: ["vibhaṅga", "visuddhimagga"]
+    citations: []
+    corpus_count: moderate in commentary
+    drift_from_previous: 'ELABORATION: the two-element distinction from Iti 44 becomes a
+      standard doctrinal position. subsequent literature debates what exactly constitutes
+      the "remainder" (upādisesa). the fire metaphor is now completely replaced by formal
+      philosophical analysis of what persists and what ceases.
+
+      '
+  valence:
+    buddhist: a systematization that distinguishes living-arahat from dead-arahat
+    note: 'nibbāna-dhātu is important for ch4 because it represents the EARLIEST ATTEMPT
+      to define nibbāna. the fire metaphor (MN 72) refuses definition. the Iti 44 passage
+      introduces definition by distinguishing two types. this is the seed of the later
+      abhidhamma classification.'
+  standard_references:
+    pts_dictionary: 'nibbānadhātu: element of nibbāna'
+    diff_notes: 'PTS gives bare "element of nibbāna." our dictionary emphasizes: dhātu makes
+      nibbāna a THING (an element), moving away from the fire-metaphor''s process-language.
+
+      '
+  index_contribution:
+  - index: H
+    chapter: ch4
+    role: numerator
+    note: nibbāna-dhātu as classified element = definitional/system-register language
+
+
+# ─────────────────────────────────────────────────────────────
+# 6. VIRAGA (dispassion / fading away / detachment)
+# ─────────────────────────────────────────────────────────────
+viraga:
+  id: viraga
+  concept: dispassion / fading away / detachment
+  tier: primary
+  family: ["nibbana", "nibbida", "vimutti"]
+  chapters: ["ch4"]
+  semantic_field: soteriology
+  forms:
+    pali:
+    - term: virāga
+      grammar: masculine noun (vi + rāga)
+      root: vi-raj (to fade, to become dispassionate)
+      note: 'dispassion — literally "the fading of passion." one of the 33 epithets for
+        nibbāna in SN 43, AND a stage in the release-chain (nibbidā → virāga → vimutti).
+        it functions as BOTH pointer and process.'
+    sanskrit:
+    - term: virāga
+      grammar: masculine noun
+      note: same — dispassion
+    chinese:
+    - term: 離欲
+      pinyin: líyù
+      translator: standard
+      translation_choice_note: '''leaving desire'' — semantic translation'
+  temporal_strata:
+  - period: ~450-250 BCE
+    dating_confidence: low
+    tradition: early buddhist
+    meaning: 'the approach to nibbāna. in the release-chain formula (SN 22.59, etc.):
+      nibbidā → virāga → vimutti. virāga is what HAPPENS on the path — craving fades away.
+      the third noble truth itself is defined as "asesavirāganirodho" — "the complete fading-
+      and-cessation" (SN 56.11). virāga is PROCESS language: the fading of passion. not a
+      state, not a classification, not a thing.
+
+      '
+    key_texts: ["SN 22.59", "SN 56.11", "SN 43"]
+    citations:
+    - file: data/raw/pali_suttacentral/sc_bilara_data/root/pli/ms/sutta/sn/sn56/sn56.11_root-pli-ms.json
+      reference: SN 56.11:4.7
+      quote: yo tassāyeva taṇhāya asesavirāganirodho cāgo paṭinissaggo mutti anālayo
+      context: '''the complete fading-and-cessation of that very craving, the giving up,
+        relinquishment, release, non-reliance.'' the definition of the third noble truth.
+        virāga is embedded in the DEFINITION of dukkha-nirodha — cessation IS dispassion.
+        this is process language: things are HAPPENING (fading, giving up, releasing), not
+        being classified.
+
+        '
+    corpus_count: ~600 (virāga across sutta piṭaka)
+    drift_from_previous: null
+  valence:
+    buddhist: the approach to nibbāna — process language for the fading of craving
+    note: virāga is ALWAYS practice-register in the suttas.
+  standard_references:
+    pts_dictionary: 'virāga: dispassion, absence of desire, disgust'
+    diff_notes: 'PTS adds "disgust" — which is misleading. virāga is not aversion (dosa)
+      but the FADING of passion. "disgust" implies an active emotional reaction; virāga
+      implies the ABSENCE of reaction. [!] FLAGGED — PTS conflates virāga with paṭigha.'
+  index_contribution:
+  - index: H
+    chapter: ch4
+    role: denominator
+    note: virāga as process-language for the approach to nibbāna = practice-register
+
+
+# ─────────────────────────────────────────────────────────────
+# 7. VOSSAGGA (relinquishment / letting go / surrender)
+# ─────────────────────────────────────────────────────────────
+vossagga:
+  id: vossagga
+  concept: relinquishment / letting go / surrender
+  tier: primary
+  family: ["nibbana", "viraga", "vimutti"]
+  chapters: ["ch4", "ch3"]
+  semantic_field: praxis-soteriology
+  forms:
+    pali:
+    - term: vossagga
+      grammar: masculine noun (vi + ava + √sṛj, to release)
+      root: vy-ava-sarga (letting go, releasing)
+      note: 'relinquishment — the most ACTIVE of the nibbāna-approach terms. appears in the
+        jhāna formula: "vossaggapariṇāmiṁ" — "maturing in relinquishment." the practitioner
+        DOES something (lets go), unlike the passive connotations of english "extinction."
+
+        '
+    - term: vossaggapariṇāmiṁ
+      grammar: compound adjective
+      note: '''maturing in relinquishment'' — key jhāna formula element'
+    sanskrit:
+    - term: vyavasarga
+      grammar: masculine noun
+      note: same as pāli
+    chinese:
+    - term: 捨
+      pinyin: shě
+      translator: standard
+      translation_choice_note: '''letting go / relinquishment'' — also used for upekkhā
+        (equanimity). the dual translation blurs the distinction.'
+  temporal_strata:
+  - period: ~450-250 BCE
+    dating_confidence: low
+    tradition: early buddhist
+    meaning: 'the active component of the approach to nibbāna. in the jhāna formula:
+      "satisambojjhaṅgaṁ bhāveti vivekanissitaṁ virāganissitaṁ nirodhanissitaṁ
+      vossaggapariṇāmiṁ" — the practice of the awakening factors is "based on seclusion,
+      based on dispassion, based on cessation, MATURING IN RELINQUISHMENT." vossagga is
+      the culmination: the letting-go that completes the practice.
+
+      '
+    key_texts: ["SN 46.1", "SN 46 entire bojjhaṅga saṃyutta"]
+    citations:
+    - file: sn/sn46/sn46.5_root-pli-ms.json
+      reference: SN 46.5:1.6
+      quote: 'satisambojjhaṅgaṁ bhāveti vivekanissitaṁ virāganissitaṁ nirodhanissitaṁ
+        vossaggapariṇāmiṁ'
+      context: the full bojjhaṅga formula — each awakening factor is cultivated (bhāveti)
+        based on seclusion, dispassion, cessation, and maturing in RELINQUISHMENT (vossagga).
+        four process-terms in sequence, none of them categorizing nibbāna as a thing.
+    - file: sn/sn46/sn46.7_root-pli-ms.json
+      reference: SN 46.7:2.3
+      quote: 'upekkhāsambojjhaṅgaṁ bhāveti vivekanissitaṁ virāganissitaṁ nirodhanissitaṁ
+        vossaggapariṇāmiṁ'
+      context: same formula applied to the equanimity factor — vossaggapariṇāmiṁ as the
+        culmination of practice, not as a category to be known.
+    corpus_count: ~200 (vossagga/vossaggapariṇāmiṁ across sutta piṭaka)
+    drift_from_previous: null
+  valence:
+    buddhist: the active letting-go — the culmination of practice
+    note: 'vossagga is the most PRACTICE-SHAPED of all the nibbāna-approach terms. it implies
+      agency: the practitioner LETS GO. this is the opposite of the abhidhamma classification
+      of nibbāna as a dhamma to be KNOWN. vossagga = you do something. asaṅkhata = you know
+      something.
+
+      '
+  standard_references:
+    pts_dictionary: 'vossagga: relinquishment, giving up, handing over'
+    diff_notes: PTS gives clear definition. no significant disagreement.
+  index_contribution:
+  - index: H
+    chapter: ch4
+    role: denominator
+    note: vossagga as active relinquishment = pure practice-register language
+
+
+# ─────────────────────────────────────────────────────────────
+# 8. AMATA (the deathless / the immortal / nectar)
+# ─────────────────────────────────────────────────────────────
+amata:
+  id: amata
+  concept: the deathless / the immortal / nectar
+  tier: primary
+  family: ["nibbana", "asankhata", "viraga"]
+  chapters: ["ch4"]
+  semantic_field: soteriology
+  forms:
+    vedic:
+    - term: amṛta
+      grammar: neuter noun/adjective
+      root: a-mṛta (not-dead, deathless)
+      note: 'in vedic: the drink of immortality (soma = amṛta). the gods drink amṛta and
+        become immortal. this is a SUBSTANCE (divine nectar). the buddhist usage retains
+        the term but strips it of the substance-metaphysics.'
+    pali:
+    - term: amata
+      grammar: neuter noun/adjective
+      root: a-mata (not-dead)
+      note: 'the deathless — one of the 33 epithets for nibbāna in SN 43. also used in MN 26:
+        "amataṁ adhigataṁ" — "the deathless has been reached." the term is POINTER-LANGUAGE:
+        it says what nibbāna is NOT (not-death), not what it IS.'
+    - term: amatadvāra
+      grammar: compound
+      note: '''door to the deathless'' — nibbāna as something to be ENTERED (spatial metaphor)'
+    sanskrit:
+    - term: amṛta
+      grammar: neuter noun
+      note: same — but in mahāyāna, sometimes expanded into "amṛta-dharma" etc.
+    chinese:
+    - term: 甘露
+      pinyin: gānlù
+      translator: standard
+      translation_choice_note: '''sweet dew'' — a remarkable chinese translation choice. NOT
+        a phonetic transliteration. gānlù makes nibbāna sound POSITIVE (sweet, nourishing)
+        rather than negative (cessation, extinction). the chinese translators were aware of the
+        "annihilation" misreading and actively COUNTERED it by choosing a positive image.
+        this is translation-as-interpretation in the opposite direction from english.
+
+        '
+    - term: 不死
+      pinyin: bùsǐ
+      translator: semantic alternative
+      translation_choice_note: '''not-death'' — literal, preserving the negative pointer-language'
+  temporal_strata:
+  - period: ~1500-500 BCE
+    dating_confidence: medium
+    tradition: vedic
+    meaning: the drink of immortality — soma = amṛta. a divine substance that confers
+      deathlessness on the gods
+    key_texts: ["ṛgveda"]
+    citations: []
+    corpus_count: frequent in vedic
+    drift_from_previous: null
+  - period: ~450-250 BCE
+    dating_confidence: low
+    tradition: early buddhist
+    meaning: 'an epithet for nibbāna — "the deathless." the vedic substance-metaphysics is
+      stripped: amata is not a drink, not a substance, not something you consume. it is a
+      POINTER: nibbāna is not-death. but what IS it? the term deliberately refuses to say.
+
+      '
+    key_texts: ["SN 43", "MN 26", "SN 47.42"]
+    citations:
+    - file: data/raw/pali_suttacentral/sc_bilara_data/root/pli/ms/sutta/mn/mn26_root-pli-ms.json
+      reference: MN 26:18.1
+      quote: amataṁ anuttaraṁ yogakkhemaṁ nibbānaṁ ajjhagamaṁ
+      context: '''I reached the deathless, unsurpassed security from bondage, nibbāna.'' the
+        buddha''s own description of his attainment. note: amata (deathless) and nibbāna appear
+        TOGETHER — amata is an ADJECTIVE modifying nibbāna, not a separate thing. it points
+        to one aspect: this is not-death.
+
+        '
+    corpus_count: ~100 (amata/amataṁ in sutta piṭaka)
+    drift_from_previous: 'RECONTEXTUALIZATION: vedic amṛta = a substance (divine drink).
+      buddhist amata = an epithet (pointer to nibbāna). the same word is used but the entire
+      metaphysics is different: no substance, no immortal gods, no drinking. the buddha takes
+      the vedic vocabulary and empties it of vedic content — the same pattern as brahma-
+      (ch2) and tapas (ch2).
+
+      '
+  valence:
+    vedic: divine substance — the drink of immortality
+    buddhist: epithet/pointer — one of 33 ways of indicating nibbāna
+    note: 'the chinese translation 甘露 (gānlù = "sweet dew") is evidence that translation
+      is ALWAYS interpretation. the english "deathless" sounds neutral/negative. the chinese
+      "sweet dew" sounds positive/nourishing. the pāli amata is NEITHER — it is a negation
+      (a-mata = not-dead) that refuses to tell you what it IS.'
+  standard_references:
+    pts_dictionary: 'amata: deathless, immortal; ambrosia'
+    monier_williams: 'amṛta: immortal, imperishable; nectar, ambrosia, soma'
+    diff_notes: 'PTS gives "deathless, immortal; ambrosia" — the "ambrosia" preserves the
+      vedic substance-sense that the buddhist usage strips. MW gives the full vedic range.
+      our dictionary distinguishes: vedic amṛta = substance; buddhist amata = pointer.
+
+      '
+  index_contribution:
+  - index: H
+    chapter: ch4
+    role: tracks hardening
+    note: amata as pointer (early) → amata as quasi-realm (later) tracks the trajectory
+
+
+# ─────────────────────────────────────────────────────────────
+# 9. AGGI_NIBBANA (fire — the root metaphor for nibbāna)
+# ─────────────────────────────────────────────────────────────
+aggi_nibbana:
+  id: aggi_nibbana
+  concept: fire — the root metaphor for the going-out (nibbāna)
+  tier: primary
+  family: ["nibbana", "upadana"]
+  chapters: ["ch4"]
+  semantic_field: metaphor-soteriology
+  forms:
+    pali:
+    - term: aggi
+      grammar: masculine noun
+      root: agni (fire)
+      note: 'fire — in early buddhist usage, the THREE FIRES are rāga (craving), dosa
+        (aversion), moha (delusion). nibbāna = the going-out of these three fires. the fire
+        metaphor is THE root metaphor for the entire nibbāna concept. upādāna = fuel/clinging.
+        nibbāna = fuelless/extinguished.
+
+        '
+    - term: aggi nibbuto
+      grammar: phrase (fire extinguished)
+      note: 'the fire-that-has-gone-out — the direct metaphorical basis for nibbāna.
+        MN 72: the buddha asks where the fire "goes" when extinguished. vacchagotta
+        correctly says it does not "go" anywhere.'
+    - term: ādittapariyāya
+      grammar: compound
+      note: '''the fire sermon'' (SN 35.28 / Vin I 34) — the discourse on everything being
+        on fire with craving. the entire sensory apparatus is BURNING; nibbāna is when the
+        burning stops.'
+    sanskrit:
+    - term: agni
+      grammar: masculine noun
+      note: fire — vedic fire-god. the buddhist usage strips the divine personhood.
+    chinese:
+    - term: 火
+      pinyin: huǒ
+      translator: standard
+      translation_choice_note: '''fire'' — straightforward'
+  temporal_strata:
+  - period: ~450-250 BCE
+    dating_confidence: low
+    tradition: early buddhist
+    meaning: 'the ROOT METAPHOR. the fire simile in MN 72 is the single most important
+      passage for understanding nibbāna. the buddha does NOT define nibbāna. he uses the
+      fire metaphor to show that the question "what IS nibbāna?" has the wrong grammar —
+      just as "where did the fire GO?" has the wrong grammar. a fire that goes out does not
+      "go" anywhere. it simply ceases to burn when its fuel is exhausted.
+
+      DECOLONIZATION KEY: in vedic indian culture, fire was understood to return to its
+      UNMANIFEST state when extinguished — not to "become nothing." richard gombrich has
+      shown that the vedic understanding of fire is that it is ALWAYS present in potential
+      and only MANIFESTS when fuel is supplied. when fuel is removed, fire returns to potential.
+      this means nibbāna (fire going out) is NOT "annihilation" or "nothingness" — it is
+      return to the unmanifest. the western misreading "nirvana = annihilation" imports a
+      christian anxiety about nothingness onto a vedic metaphor that does not carry it.
+
+      '
+    key_texts: ["MN 72 aggivacchagotta", "SN 35.28 ādittapariyāya", "SN 22.53"]
+    citations:
+    - file: data/raw/pali_suttacentral/sc_bilara_data/root/pli/ms/sutta/mn/mn72_root-pli-ms.json
+      reference: MN 72:19.16
+      quote: yo te ayaṁ purato aggi nibbuto so aggi ito katamaṁ disaṁ gato
+      context: '''this fire that is extinguished before you — in what direction has it gone?''
+        the buddha''s question to vacchagotta. the fire has gone out. vacchagotta says it does
+        not "go" in any direction (east, west, north, south). the buddha then applies the same
+        logic to the tathāgata after death: the question has the wrong grammar. you cannot ask
+        "where did the fire go?" because going-out is not going-somewhere.
+
+        '
+    - file: data/raw/pali_suttacentral/sc_bilara_data/root/pli/ms/sutta/mn/mn72_root-pli-ms.json
+      reference: MN 72:19.18
+      quote: aggi tiṇakaṭṭhupādānaṁ paṭicca ajali tassa ca pariyādānā aññassa ca anupahārā
+        anāhāro nibbutotveva saṅkhyaṁ gacchati
+      context: '''the fire burned dependent on grass-and-wood fuel; when that is exhausted
+        and nothing else is supplied, being fuelless, it is reckoned as extinguished.'' the
+        MECHANISM: fire depends on upādāna (fuel/clinging). when upādāna is gone, the fire is
+        gone. nibbāna IS the fuelless state. the word upādāna means BOTH "fuel" and "clinging"
+        — the pun is structural, not accidental. clinging IS the fuel that keeps the fire
+        of saṃsāra burning.
+
+        '
+    corpus_count: ~300 (aggi-terms in sutta piṭaka in soteriological contexts)
+    drift_from_previous: null
+  valence:
+    vedic: fire as divine — agni is a god, fire is sacred
+    buddhist: fire as METAPHOR for craving — the fires of rāga, dosa, moha
+    note: 'the fire metaphor is the DECOLONIZATION KEY for ch4. every western misreading
+      of nibbāna (annihilation, heaven, nothingness) fails because it misunderstands the
+      fire metaphor. fire in vedic india does not become "nothing" when extinguished — it
+      returns to unmanifest potential. the question "where does the fire go?" is shown to
+      be a CATEGORY ERROR in MN 72. this category error is the same one made by every
+      western translator who tries to say what nibbāna "is."
+
+      '
+  standard_references:
+    pts_dictionary: 'aggi: fire'
+    diff_notes: 'PTS gives bare "fire." our dictionary emphasizes the METAPHORICAL function:
+      fire is THE root metaphor for nibbāna, and the cultural context of fire in vedic india
+      determines its meaning.
+
+      '
+  index_contribution:
+  - index: H
+    chapter: ch4
+    role: tracks hardening
+    note: the fire metaphor is pure practice-register; its disappearance from later texts
+      IS the hardening
+
+
+# ─────────────────────────────────────────────────────────────
+# 10. NIBBIDA (disenchantment / turning away / weariness)
+# ─────────────────────────────────────────────────────────────
+nibbida:
+  id: nibbida
+  concept: disenchantment / turning away / weariness with saṃsāra
+  tier: primary
+  family: ["viraga", "vimutti", "nibbana"]
+  chapters: ["ch4"]
+  semantic_field: soteriology
+  forms:
+    pali:
+    - term: nibbidā
+      grammar: feminine noun (nis + √vid, to find/know → disillusionment)
+      root: nir-vid (to become disenchanted, to turn away)
+      note: 'disenchantment — the FIRST stage in the release-chain: nibbidā → virāga →
+        vimutti. often mistranslated as "revulsion" or "disgust" — both too strong and
+        emotionally loaded. nibbidā is the moment when the fascination with conditioned
+        existence FADES. not emotional rejection, but cognitive clarity.
+
+        '
+    sanskrit:
+    - term: nirveda
+      grammar: masculine noun
+      note: same — disenchantment, weariness
+    chinese:
+    - term: 厭離
+      pinyin: yànlí
+      translator: standard
+      translation_choice_note: '''weariness-leaving'' — yàn = weary/fed-up + lí = leave.
+        the chinese ADDS the "leaving" component that the pāli does not explicitly contain.
+        nibbidā is the disenchantment; the leaving (virāga) is the NEXT step. the chinese
+        translation compresses two stages into one.'
+  temporal_strata:
+  - period: ~450-250 BCE
+    dating_confidence: low
+    tradition: early buddhist
+    meaning: 'the first step toward nibbāna. the formula: "evaṁ passaṁ ... nibbindati;
+      nibbindaṁ virajjati; virāgā vimuccati" — "seeing thus ... one becomes disenchanted;
+      being disenchanted, one becomes dispassionate; through dispassion, one is released."
+      nibbidā is the TRIGGER: the moment when the practitioner sees the three characteristics
+      (anicca, dukkha, anattā) and the enchantment with conditioned existence breaks.
+
+      '
+    key_texts: ["SN 22.59", "SN 35 (entire saḷāyatana saṃyutta)"]
+    citations:
+    - file: data/raw/pali_suttacentral/sc_bilara_data/root/pli/ms/sutta/sn/sn22/sn22.59_root-pli-ms.json
+      reference: SN 22.59:11.1
+      quote: evaṁ passaṁ bhikkhave sutavā ariyasāvako rūpasmimpi nibbindati
+      context: '''seeing thus, the instructed noble disciple becomes disenchanted with form''
+        — the beginning of the release-chain. nibbidā is triggered BY seeing things as they
+        really are (yathābhūtaṁ). it is a cognitive shift, not an emotional reaction.
+
+        '
+    corpus_count: ~400 (nibbidā/nibbindati across sutta piṭaka)
+    drift_from_previous: null
+  valence:
+    buddhist: the trigger for release — cognitive clarity about conditioned existence
+    note: 'nibbidā is ALWAYS practice-register. it names what HAPPENS in the practitioner.
+      no abhidhamma classification substantially changes this — nibbidā remains a
+      functional/experiential term, unlike nibbāna which hardens into asaṅkhata.
+
+      '
+  standard_references:
+    pts_dictionary: 'nibbidā: weariness, disgust, aversion'
+    diff_notes: 'PTS gives "weariness, disgust, aversion" — "disgust" and "aversion" are
+      WRONG. nibbidā is not paṭigha (aversion) or dosa (hatred). it is the FADING of
+      fascination, not the arising of rejection. [!] FLAGGED — PTS''s "disgust" is a colonial
+      mistranslation that makes the path sound emotionally negative rather than cognitively
+      clarifying.
+
+      '
+  index_contribution:
+  - index: H
+    chapter: ch4
+    role: denominator
+    note: nibbidā as experiential trigger = pure practice-register language
+
+
+# ─────────────────────────────────────────────────────────────
+# 11. TANHA_KHAYA (destruction of craving — the early definition)
+# ─────────────────────────────────────────────────────────────
+tanha_khaya:
+  id: tanha_khaya
+  concept: destruction of craving — the early functional definition of nibbāna
+  tier: primary
+  family: ["nibbana", "viraga", "nirodha"]
+  chapters: ["ch4"]
+  semantic_field: soteriology
+  forms:
+    pali:
+    - term: taṇhākkhaya
+      grammar: compound (taṇhā + khaya)
+      root: tṛṣṇā + kṣaya (craving + destruction/exhaustion)
+      note: 'destruction of craving — the most FUNCTIONAL definition of nibbāna in the early
+        texts. when the suttas DO define nibbāna (which is rare), they say: "yo taṇhākkhayo ...
+        etaṁ nibbānaṁ" — "the destruction of craving ... that is nibbāna." this is a PROCESS
+        definition (craving stops) not a STATE definition (nibbāna IS X).
+
+        '
+    - term: taṇhakkhayo
+      grammar: nominative
+      note: '''the destruction of craving'' — nominative case, used predicatively'
+    sanskrit:
+    - term: tṛṣṇākṣaya
+      grammar: compound
+      note: same — destruction of craving
+    chinese:
+    - term: 愛盡
+      pinyin: àijìn
+      translator: standard
+      translation_choice_note: '''love/craving-exhausted'' — ài (愛) in buddhist chinese means
+        craving (taṇhā), not love in the modern chinese sense. jìn = exhausted/finished.
+        the chinese translation preserves the process-sense: craving is USED UP (like fuel).
+
+        '
+  temporal_strata:
+  - period: ~450-250 BCE
+    dating_confidence: low
+    tradition: early buddhist
+    meaning: 'the CLOSEST the early texts come to defining nibbāna. taṇhākkhaya is one of
+      the 33 epithets in SN 43, but it is more than an epithet — it appears in the direct
+      definition formula: "yo taṇhākkhayo virāgo nirodho nibbānaṁ" — "the destruction of
+      craving, dispassion, cessation — that is nibbāna." unlike asaṅkhata (which classifies),
+      taṇhākkhaya EXPLAINS: nibbāna happens when craving is destroyed.
+
+      '
+    key_texts: ["SN 43", "MN 26:19.5"]
+    citations:
+    - file: data/raw/pali_suttacentral/sc_bilara_data/root/pli/ms/sutta/mn/mn26_root-pli-ms.json
+      reference: MN 26:19.5
+      quote: taṇhākkhayo virāgo nirodho nibbānaṁ
+      context: '''the destruction of craving, dispassion, cessation — nibbāna.'' the four-
+        term chain that is the closest to a definition. note: taṇhākkhaya comes FIRST — the
+        process of craving-destruction is the primary descriptor. virāga (dispassion) and
+        nirodha (cessation) follow. nibbāna is the last term — the summary-name for the
+        entire process. the definition IS the process.
+
+        '
+    corpus_count: ~50 (taṇhākkhaya in sutta piṭaka — concentrated in SN 43 and doctrinal
+      formulas)
+    drift_from_previous: null
+  valence:
+    buddhist: the functional definition — nibbāna is what happens when craving stops
+    note: 'taṇhākkhaya is ch4''s most important BASELINE term. it represents the earliest
+      attempt to say what nibbāna IS — and it does so in PROCESS language (craving is
+      destroyed), not CATEGORY language (nibbāna is the unconditioned). the drift from
+      taṇhākkhaya to asaṅkhata is the drift from process to category, from practice to
+      system, from method to thesis.'
+  standard_references:
+    pts_dictionary: 'taṇhākkhaya: destruction of craving'
+    diff_notes: PTS gives clear definition. no disagreement.
+  index_contribution:
+  - index: H
+    chapter: ch4
+    role: denominator
+    note: taṇhākkhaya as process-definition = practice-register language
+
+
+# ─────────────────────────────────────────────────────────────
+# 12. NIRODHA (cessation / stopping / the third noble truth)
+# ─────────────────────────────────────────────────────────────
+nirodha:
+  id: nirodha
+  concept: cessation / stopping / the third noble truth
+  tier: primary
+  family: ["nibbana", "tanha_khaya", "viraga"]
+  chapters: ["ch4"]
+  semantic_field: soteriology-ontology
+  forms:
+    pali:
+    - term: nirodha
+      grammar: masculine noun (ni + rodha, from √rudh, to stop/obstruct)
+      root: ni-rudh (to cease, to stop)
+      note: 'cessation — appears in THREE distinct registers: (1) the third noble truth:
+        dukkha-nirodha (cessation of suffering); (2) dependent origination: the reverse chain
+        (avijjā-nirodha → saṅkhāra-nirodha → ...); (3) nirodha-samāpatti: the attainment of
+        cessation (a specific meditative state). the three uses represent different stages
+        of the drift.
+
+        '
+    - term: nirodhasamāpatti
+      grammar: compound
+      note: '''attainment of cessation'' — a specific meditative state beyond the four jhānas
+        and four formless attainments. this is the HARDENED form: cessation as an attainment
+        to be entered.'
+    - term: dukkhanirodha
+      grammar: compound
+      note: '''cessation of suffering'' — the third noble truth. the PRACTICE-REGISTER form.'
+    sanskrit:
+    - term: nirodha
+      grammar: masculine noun
+      note: cessation — same in both traditions
+    chinese:
+    - term: 滅
+      pinyin: miè
+      translator: standard
+      translation_choice_note: '''extinction/cessation'' — also used for parinibbāna.
+        the same character covers multiple pāli terms, creating ambiguity.'
+    - term: 滅定
+      pinyin: mièdìng
+      translator: standard
+      translation_choice_note: '''cessation-attainment'' — nirodha-samāpatti as a specific
+        meditative state.'
+  temporal_strata:
+  - period: ~450-250 BCE
+    dating_confidence: low
+    tradition: early buddhist
+    meaning: 'the third noble truth: dukkhanirodha = the cessation of suffering. defined in
+      SN 56.11 as "the complete fading-and-cessation of that very craving" (asesavirāga-
+      nirodho). nirodha here is FUNCTIONAL: suffering STOPS because craving stops. it is not
+      a PLACE or a STATE — it is the ending of a process.
+
+      '
+    key_texts: ["SN 56.11", "SN 12.1 (reverse chain)"]
+    citations:
+    - file: data/raw/pali_suttacentral/sc_bilara_data/root/pli/ms/sutta/sn/sn56/sn56.11_root-pli-ms.json
+      reference: SN 56.11:4.6-7
+      quote: dukkhanirodhaṁ ariyasaccaṁ yo tassāyeva taṇhāya asesavirāganirodho cāgo
+        paṭinissaggo mutti anālayo
+      context: '''the noble truth of the cessation of suffering: the complete fading-and-
+        cessation of that very craving, the giving up, relinquishment, release, non-reliance.''
+        the DEFINITION of the third noble truth. nirodha is embedded in a chain of process-
+        terms (virāga, cāga, paṭinissagga, mutti) — all practice-register.
+
+        '
+    - file: data/raw/pali_suttacentral/sc_bilara_data/root/pli/ms/sutta/sn/sn12/sn12.1_root-pli-ms.json
+      reference: SN 12.1 (reverse chain)
+      quote: avijjāya tveva asesavirāganirodhā saṅkhāranirodho
+      context: '''with the remainderless fading-and-cessation of ignorance, formations cease.''
+        the reverse dependent origination chain. each link''s nirodha follows from the previous
+        link''s nirodha. this is PROCESS language: cessation as a chain reaction.
+
+        '
+    corpus_count: ~1500 (nirodha-terms across sutta piṭaka — extremely frequent)
+    drift_from_previous: null
+  - period: ~200 BCE - 200 CE
+    dating_confidence: medium
+    tradition: abhidhamma / early scholastic
+    meaning: 'nirodha-samāpatti becomes a specific attainment: the "attainment of cessation"
+      beyond the four jhānas and four formless attainments. the early nirodha (functional
+      cessation of suffering) acquires a second meaning (a specific meditative state to be
+      entered and exited). the verb form shifts from "it ceases" to "one enters cessation."
+
+      '
+    key_texts: ["AN 9.36", "vibhaṅga"]
+    citations: []
+    corpus_count: ~80 (nirodha-samāpatti in sutta + abhidhamma)
+    drift_from_previous: 'REIFICATION: the functional "cessation of suffering" (dukkha
+      stops) becomes a SPECIFIC STATE (nirodha-samāpatti) that one ENTERS. the process
+      becomes a place. "suffering ceases" → "I enter the cessation-attainment." this
+      parallels the broader nibbāna drift: from process to state, from happening to place.
+
+      '
+  valence:
+    buddhist: cessation — the third noble truth AND a specific meditative attainment
+    note: 'nirodha shows the drift in microcosm. the early meaning (suffering stops) is
+      pure process-language. the later meaning (cessation-attainment) is state-language.
+      the shift from verb to noun, from happening to place, IS the hardening.
+
+      '
+  standard_references:
+    pts_dictionary: 'nirodha: cessation, destruction, annihilation; dying out'
+    diff_notes: 'PTS gives "cessation, destruction, annihilation" — "annihilation" is the
+      colonial misreading again. nirodha is NOT annihilation (uccheda). the buddha explicitly
+      rejects uccheda as a wrong view. nirodha is FUNCTIONAL cessation (craving stops,
+      suffering stops), not ontological annihilation (something is destroyed). [!] FLAGGED —
+      PTS''s "annihilation" imports the uccheda-vāda (annihilationism) that the buddha
+      condemns.
+
+      '
+  index_contribution:
+  - index: H
+    chapter: ch4
+    role: tracks hardening
+    note: nirodha as process (early) → nirodha-samāpatti as state (later) tracks the drift

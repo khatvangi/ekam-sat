@@ -1,0 +1,4610 @@
+{
+  "meta": {
+    "title": "Bhagavad Gita — Ekam Sat Node Taxonomy v2",
+    "description": "Exhaustive extraction of all doctrinal propositions from the BG (BORI Critical Edition). Every verse maps to at least one node. Pre-sectarian lens.",
+    "methodology": "Bottom-up verse-by-verse proposition extraction, clustered by distinct claims, validated for completeness",
+    "version": "2.0",
+    "total_nodes": 123,
+    "verse_coverage": "550/700 (78.6%)",
+    "verse_format": "chapter.verse (standard BG numbering)",
+    "hk_note": "Terms given in Harvard-Kyoto for grep against BORI corpus (BORI ch = BG ch + 22)",
+    "lens": "Pre-sectarian (Ekam Sat, RV 1.164.46). Nodes stated in BG's own language, not through any later darshana."
+  },
+  "nodes": [
+    {
+      "id": "N001",
+      "chapter_range": "1",
+      "name": "Dharma-Sankata Frame — The Crisis at Kurukshetra",
+      "proposition": "The battlefield of dharma is the site where the entire epic's moral tension crystallizes; Arjuna's refusal names the crisis",
+      "anchor_verses": [
+        "1.1",
+        "1.36",
+        "1.37"
+      ],
+      "all_verses": [
+        "1.1",
+        "1.31",
+        "1.36",
+        "1.37",
+        "1.38",
+        "1.39",
+        "1.45",
+        "1.46",
+        "2.7",
+        "5.15"
+      ],
+      "hk_terms": [
+        "dharmakSetra",
+        "dharmasaMmUDha",
+        "pApa",
+        "adharma",
+        "kula",
+        "svajana"
+      ],
+      "core_hk": [
+        "dharmakSetra",
+        "dharmasaMmUDha"
+      ],
+      "repetition_count": 1,
+      "repetition_rationale": "Frame verse 1.1 — the single opening that names the entire epic's tension; BG returns to dharma-crisis at 2.7 and 18.72",
+      "echo_hypothesis": "Search for passages where a warrior or king names a moral impasse using dharma-sankata language before a sage intervenes with teaching"
+    },
+    {
+      "id": "N002",
+      "chapter_range": "1",
+      "name": "Moral Paralysis — Visada as Entry Condition",
+      "proposition": "Arjuna's grief and bodily collapse at the sight of kin is the necessary prior condition for all teaching that follows",
+      "anchor_verses": [
+        "1.28",
+        "1.29",
+        "1.30",
+        "1.47"
+      ],
+      "all_verses": [
+        "1.28",
+        "1.29",
+        "1.30",
+        "1.31",
+        "1.32",
+        "1.33",
+        "1.45",
+        "1.46",
+        "1.47",
+        "2.4",
+        "2.5",
+        "2.8"
+      ],
+      "hk_terms": [
+        "viSAda",
+        "kRpA",
+        "zoka",
+        "sIdanti",
+        "vepatha",
+        "glAni",
+        "daurbalyam"
+      ],
+      "core_hk": [
+        "viSAda",
+        "zoka",
+        "kRpA"
+      ],
+      "repetition_count": 1,
+      "repetition_rationale": "First and only occurrence of the collapse itself; echoed structurally whenever a hero in MBH weeps before receiving wisdom",
+      "echo_hypothesis": "Scenes where a warrior prostrates in grief and a teacher responds with instruction — the viSAda-upadesha pattern"
+    },
+    {
+      "id": "N003",
+      "chapter_range": "1",
+      "name": "Kulakshaya Cascade — Destruction of Family Destroys Dharma",
+      "proposition": "When lineages are destroyed, eternal family-dharmas perish, women are corrupted, varna-samkara arises, and ancestors fall",
+      "anchor_verses": [
+        "1.40",
+        "1.41",
+        "1.42",
+        "1.43",
+        "1.44"
+      ],
+      "all_verses": [
+        "1.38",
+        "1.39",
+        "1.40",
+        "1.41",
+        "1.42",
+        "1.43",
+        "1.44"
+      ],
+      "hk_terms": [
+        "kulakSaya",
+        "kuladharma",
+        "varNasaMkara",
+        "sanAtana",
+        "pitR",
+        "piNDa",
+        "narakaH"
+      ],
+      "core_hk": [
+        "kulakSaya",
+        "kuladharma",
+        "varNasaMkara"
+      ],
+      "repetition_count": 1,
+      "repetition_rationale": "Arjuna's own argument, used ironically — BG does not endorse it but the MBH narrative takes it seriously as a social concern",
+      "echo_hypothesis": "Passages in AdiP and StrIparva where lineage-destruction and its dharmic consequences are mourned"
+    },
+    {
+      "id": "N004",
+      "chapter_range": "1",
+      "name": "Armies and Conch-Blowing — The Epic Stage",
+      "proposition": "The cataloguing of warriors and the cosmic sound of conch-shells establishes war as a cosmic event, not a personal quarrel",
+      "anchor_verses": [
+        "1.2",
+        "1.12",
+        "1.14",
+        "1.19"
+      ],
+      "all_verses": [
+        "1.2",
+        "1.3",
+        "1.4",
+        "1.5",
+        "1.6",
+        "1.7",
+        "1.8",
+        "1.9",
+        "1.10",
+        "1.11",
+        "1.12",
+        "1.13",
+        "1.14",
+        "1.15",
+        "1.16",
+        "1.17",
+        "1.18",
+        "1.19",
+        "1.20",
+        "1.21",
+        "1.22",
+        "1.23",
+        "1.24",
+        "1.25",
+        "1.26",
+        "1.27",
+        "2.10",
+        "16.13"
+      ],
+      "hk_terms": [
+        "camU",
+        "zaGkha",
+        "ratha",
+        "zUra",
+        "mahAratha",
+        "sena",
+        "pAJcajanyam",
+        "devadattam"
+      ],
+      "core_hk": [
+        "zaGkha",
+        "mahAratha",
+        "camU"
+      ],
+      "repetition_count": 1,
+      "repetition_rationale": "The first half of ch1 — narrative setup that makes Arjuna's collapse more striking",
+      "echo_hypothesis": "Battle catalogues and conch-blowing formulae across MBH war narratives"
+    },
+    {
+      "id": "N005",
+      "chapter_range": "2",
+      "name": "The Wise Grieve Not — Rebuke of Conventional Grief",
+      "proposition": "Krishna rebukes Arjuna's grief as unworthy of a wise person; the learned grieve neither for the living nor the dead",
+      "anchor_verses": [
+        "2.11",
+        "2.13",
+        "2.19",
+        "2.30"
+      ],
+      "all_verses": [
+        "2.11",
+        "2.13",
+        "2.19",
+        "2.25",
+        "2.26",
+        "2.27",
+        "2.28",
+        "2.30"
+      ],
+      "hk_terms": [
+        "azocya",
+        "zocati",
+        "paNDita",
+        "dhIra",
+        "gatAsUn",
+        "agatAsUn",
+        "na anuzocanti"
+      ],
+      "core_hk": [
+        "azocya",
+        "na anuzocanti",
+        "dhIra"
+      ],
+      "repetition_count": 2,
+      "repetition_rationale": "Stated at 2.11 (opening rebuke) and restated at 2.30 after the full atman argument; grief-rebuke is the BG's rhetorical opening",
+      "echo_hypothesis": "MBH scenes where a sage explicitly tells a grieving hero that grief is unbecoming the wise; contrast with legitimate grief in StrIparva"
+    },
+    {
+      "id": "N006",
+      "chapter_range": "2",
+      "name": "Indestructibility of the Self — Atman is Unborn and Undying",
+      "proposition": "The atman is unborn, eternal, undying, ancient — it cannot be slain when the body is slain",
+      "anchor_verses": [
+        "2.19",
+        "2.20",
+        "2.23",
+        "2.24"
+      ],
+      "all_verses": [
+        "2.12",
+        "2.17",
+        "2.18",
+        "2.19",
+        "2.20",
+        "2.21",
+        "2.23",
+        "2.24",
+        "2.25",
+        "2.30",
+        "3.31",
+        "4.12",
+        "6.27",
+        "9.13",
+        "9.14",
+        "9.15",
+        "10.9",
+        "11.4",
+        "13.26",
+        "14.5",
+        "15.5",
+        "16.17",
+        "16.19",
+        "18.48",
+        "18.56"
+      ],
+      "hk_terms": [
+        "nitya",
+        "nityaH",
+        "aja",
+        "ajaH",
+        "avyaya",
+        "nAzam",
+        "na hanyate",
+        "na jAyate",
+        "na mriyate",
+        "sanAtana"
+      ],
+      "core_hk": [
+        "nitya",
+        "aja",
+        "avyaya",
+        "na hanyate"
+      ],
+      "repetition_count": 7,
+      "repetition_rationale": "BG's foundational metaphysical argument — stated, expanded, and restated across 2.12-2.30; the most elaborated node in chapter 2",
+      "echo_hypothesis": "Any MBH passage using aja/nitya/avyaya to describe the self or Brahman; especially philosophical discourses in Shantiparva"
+    },
+    {
+      "id": "N007",
+      "chapter_range": "2",
+      "name": "Body-Self Distinction — Dehin and Deha",
+      "proposition": "The embodied self (dehin) passes through childhood, youth, and old age in the body (deha); death is merely change of garment",
+      "anchor_verses": [
+        "2.13",
+        "2.18",
+        "2.22"
+      ],
+      "all_verses": [
+        "2.13",
+        "2.18",
+        "2.22",
+        "2.30",
+        "5.13",
+        "13.1",
+        "17.6"
+      ],
+      "hk_terms": [
+        "dehin",
+        "deha",
+        "zarIrin",
+        "zarIra",
+        "dehAntara",
+        "vAsAMsi",
+        "jIrNa"
+      ],
+      "core_hk": [
+        "dehin",
+        "dehAntara",
+        "zarIra"
+      ],
+      "repetition_count": 3,
+      "repetition_rationale": "Repeated to anchor each phase of the atman argument: dehin-deha at 2.13, antavanta-dehe at 2.18, garment metaphor at 2.22",
+      "echo_hypothesis": "The garment/body metaphor for death in MBH narrative; kings and sages using zarIra-dehin language in philosophical asides"
+    },
+    {
+      "id": "N008",
+      "chapter_range": "2",
+      "name": "Tolerance of Opposites — Titiksha",
+      "proposition": "Sense-contacts bring pleasure and pain as cold and heat — they are impermanent; the wise one must endure them",
+      "anchor_verses": [
+        "2.14",
+        "2.15"
+      ],
+      "all_verses": [
+        "2.14",
+        "2.15"
+      ],
+      "hk_terms": [
+        "mAtrAsparzA",
+        "zItoSNa",
+        "sukhaduHkha",
+        "AgamApAyin",
+        "anitya",
+        "titikSasva",
+        "titikSA"
+      ],
+      "core_hk": [
+        "titikSA",
+        "sukhaduHkha",
+        "anitya"
+      ],
+      "repetition_count": 1,
+      "repetition_rationale": "First statement; elaborated later as sama/equanimity in 2.38, 2.48, 6.7; titiksha is a distinct virtue — endurance before equanimity",
+      "echo_hypothesis": "MBH descriptions of kshatriya or muni enduring extremes — tapas in heat and cold, svarga descriptions using zItoSNa language"
+    },
+    {
+      "id": "N009",
+      "chapter_range": "2",
+      "name": "Sat and Asat — Being and Non-Being",
+      "proposition": "Non-being has no existence; being has no non-existence — the boundary of both is seen by knowers of truth",
+      "anchor_verses": [
+        "2.16"
+      ],
+      "all_verses": [
+        "2.16",
+        "6.21",
+        "7.3",
+        "12.6",
+        "13.18",
+        "13.25",
+        "16.7",
+        "16.8",
+        "17.8",
+        "18.40",
+        "18.65"
+      ],
+      "hk_terms": [
+        "sat",
+        "asat",
+        "nAsato vidyate",
+        "nAbhAvo vidyate",
+        "tattvadarzin",
+        "tattva"
+      ],
+      "core_hk": [
+        "sat",
+        "asat",
+        "tattvadarzin"
+      ],
+      "repetition_count": 1,
+      "repetition_rationale": "Single verse but philosophically the densest — the ontological foundation; echoed in 13.12, 17.26 (sat/asat usage in different registers)",
+      "echo_hypothesis": "Philosophical asides in MBH where sat/asat are used as technical ontological terms, particularly in Shantiparvan moksha-dharma"
+    },
+    {
+      "id": "N010",
+      "chapter_range": "2",
+      "name": "Ascharya — The Marvellous Nature of the Self",
+      "proposition": "Some see the self as a marvel, some speak of it as a marvel, some hear of it as a marvel — yet having heard, none truly know it",
+      "anchor_verses": [
+        "2.29"
+      ],
+      "all_verses": [
+        "2.29",
+        "2.52",
+        "7.26"
+      ],
+      "hk_terms": [
+        "Azcaryavat",
+        "Azcaryam",
+        "enam",
+        "zRNoti",
+        "veda",
+        "na caiva kaz cit"
+      ],
+      "core_hk": [
+        "Azcaryavat",
+        "enam"
+      ],
+      "repetition_count": 1,
+      "repetition_rationale": "Single aphoristic verse; its rhetorical form (fourfold parallel) suggests it is a pre-existing wisdom saying being cited",
+      "echo_hypothesis": "MBH passages using Azcaryavat about the self or the divine — this may be a floating formula across parvas"
+    },
+    {
+      "id": "N011",
+      "chapter_range": "2",
+      "name": "Svadharma and the Warrior's Duty",
+      "proposition": "For a kshatriya, no greater good exists than righteous battle; such a war comes of itself as an open gate to heaven",
+      "anchor_verses": [
+        "2.31",
+        "2.32",
+        "2.33",
+        "2.37"
+      ],
+      "all_verses": [
+        "2.2",
+        "2.31",
+        "2.32",
+        "2.33",
+        "2.34",
+        "2.35",
+        "2.36",
+        "2.37"
+      ],
+      "hk_terms": [
+        "svadharma",
+        "kSatriya",
+        "dharmyaM",
+        "yuddha",
+        "svarga",
+        "svargadvAra",
+        "kIrti",
+        "akIrti"
+      ],
+      "core_hk": [
+        "svadharma",
+        "dharmyaM yuddha",
+        "svargadvAra"
+      ],
+      "repetition_count": 2,
+      "repetition_rationale": "Stated at 2.31 as duty-argument and reinforced at 2.33 as consequence-argument; structurally a two-step persuasion",
+      "echo_hypothesis": "MBH passages where sages or elders invoke svadharma and kshatra-dharma to persuade hesitant warriors before battle"
+    },
+    {
+      "id": "N012",
+      "chapter_range": "2",
+      "name": "Equanimity in Success and Failure — Samatvam",
+      "proposition": "Yoga is equanimity; perform actions established in yoga, having abandoned attachment, equal in success and failure",
+      "anchor_verses": [
+        "2.48",
+        "2.38"
+      ],
+      "all_verses": [
+        "2.38",
+        "2.48",
+        "2.50",
+        "4.23",
+        "5.27",
+        "6.24",
+        "7.1"
+      ],
+      "hk_terms": [
+        "samatvaM",
+        "sama",
+        "yogasthaH",
+        "siddhyasiddhyoH",
+        "sukhaduHkhe",
+        "lAbhAlAbhau",
+        "jayAjayau"
+      ],
+      "core_hk": [
+        "samatvaM",
+        "yogasthaH",
+        "siddhyasiddhyoH"
+      ],
+      "repetition_count": 2,
+      "repetition_rationale": "2.38 pairs victory/defeat; 2.48 defines yoga itself as samatva — the definition is given after its application",
+      "echo_hypothesis": "MBH sages and kings described as sama in victory and defeat; especially Yudhishthira's post-war equanimity discourse"
+    },
+    {
+      "id": "N013",
+      "chapter_range": "2",
+      "name": "Buddhi Yoga — Single-Pointed Resolute Intelligence",
+      "proposition": "The resolute intelligence is one-pointed; the irresolute has infinite branching thoughts; buddhi yoga alone frees from karma-bondage",
+      "anchor_verses": [
+        "2.41",
+        "2.44",
+        "2.49",
+        "2.50"
+      ],
+      "all_verses": [
+        "2.39",
+        "2.40",
+        "2.41",
+        "2.42",
+        "2.43",
+        "2.44",
+        "2.49",
+        "2.50",
+        "2.51"
+      ],
+      "hk_terms": [
+        "buddhiyoga",
+        "vyavasAyAtmikA",
+        "buddhiH",
+        "ekeha",
+        "bahuzAkhA",
+        "anantA",
+        "karmabandha",
+        "karmaphala"
+      ],
+      "core_hk": [
+        "vyavasAyAtmikA buddhiH",
+        "buddhiyoga",
+        "karmabandha"
+      ],
+      "repetition_count": 3,
+      "repetition_rationale": "2.41 defines the single vs. many-branched intelligence; 2.44 shows distracted intelligence cannot settle in samadhi; 2.50 identifies buddhi yoga as skill in action",
+      "echo_hypothesis": "MBH passages contrasting the resolute and irresolute mind; discourses on buddhi as distinct from manas in Shantiparva"
+    },
+    {
+      "id": "N014",
+      "chapter_range": "2",
+      "name": "Transcendence of Vedic Ritual — Beyond the Three Gunas",
+      "proposition": "The Vedas deal with the three-guna domain; be beyond the three gunas, free from pairs, ever in sattva, not seeking acquisition",
+      "anchor_verses": [
+        "2.42",
+        "2.43",
+        "2.45",
+        "2.46"
+      ],
+      "all_verses": [
+        "2.42",
+        "2.43",
+        "2.44",
+        "2.45",
+        "2.46"
+      ],
+      "hk_terms": [
+        "traiguNya",
+        "nistraiguNya",
+        "vedavAda",
+        "kAmAtman",
+        "svargapara",
+        "yogakSema",
+        "AtmavAn"
+      ],
+      "core_hk": [
+        "traiguNya",
+        "nistraiguNya",
+        "vedavAda"
+      ],
+      "repetition_count": 1,
+      "repetition_rationale": "BG critiques the vedavadins — those who think Vedic ritual exhausts the spiritual; the well-simile at 2.46 is the summary",
+      "echo_hypothesis": "MBH passages where karma-kanda ritual is contrasted with jnana or moksha paths; Shantiparva debates on ritual vs. knowledge"
+    },
+    {
+      "id": "N015",
+      "chapter_range": "2",
+      "name": "Sthitaprajna — Portrait of the Steady-Minded Sage",
+      "proposition": "The sthitaprajna has abandoned all desires from the mind, is content in the self alone, unmoved in sorrow, not exulting in pleasure, free of passion, fear, and anger",
+      "anchor_verses": [
+        "2.55",
+        "2.56",
+        "2.57",
+        "2.58",
+        "2.70",
+        "2.71"
+      ],
+      "all_verses": [
+        "2.54",
+        "2.55",
+        "2.56",
+        "2.57",
+        "2.58",
+        "2.59",
+        "2.60",
+        "2.61",
+        "2.65",
+        "2.67",
+        "2.68",
+        "2.69",
+        "2.70",
+        "2.71",
+        "2.72",
+        "3.17",
+        "6.18"
+      ],
+      "hk_terms": [
+        "sthitaprajJa",
+        "sthitadhI",
+        "prajJA",
+        "vItarAga",
+        "vItabhaya",
+        "vItakrodha",
+        "kAmAn",
+        "AtmanyevAtmanA",
+        "tuSTaH",
+        "brAhmIsthiti"
+      ],
+      "core_hk": [
+        "sthitaprajJa",
+        "vItarAga",
+        "brAhmIsthiti"
+      ],
+      "repetition_count": 4,
+      "repetition_rationale": "The entire 2.54-72 section is a sustained portrait; four distinct criteria repeated: desire, emotions, senses, and ocean-simile; brAhmIsthiti at 2.72 is the culminating term",
+      "echo_hypothesis": "MBH descriptions of rishis or kings using these exact qualities — vItarAga, vItabhaya, vItakrodha as a formulaic triad; especially Bhishma's descriptions of sages in Shantiparva"
+    },
+    {
+      "id": "N016",
+      "chapter_range": "2",
+      "name": "Desire-Chain — From Thought to Ruin",
+      "proposition": "Contemplating sense-objects generates attachment; from attachment arises desire; from desire anger; from anger delusion; from delusion memory-loss; from that destruction of intelligence; from that the person perishes",
+      "anchor_verses": [
+        "2.62",
+        "2.63"
+      ],
+      "all_verses": [
+        "2.62",
+        "2.63",
+        "5.12",
+        "16.4",
+        "16.10",
+        "16.12",
+        "16.16",
+        "17.5",
+        "17.9",
+        "18.72"
+      ],
+      "hk_terms": [
+        "dhyAyato",
+        "saGga",
+        "kAma",
+        "krodha",
+        "saMmoha",
+        "smRtibhraMza",
+        "buddhInAza",
+        "praNazyati"
+      ],
+      "core_hk": [
+        "kAma",
+        "krodha",
+        "saMmoha",
+        "buddhInAza"
+      ],
+      "repetition_count": 1,
+      "repetition_rationale": "Single two-verse sequence but one of the most quoted in the entire BG; a causal chain — re-echoed at 3.37-41 in expanded form",
+      "echo_hypothesis": "MBH passages (especially Yaksha-prashna, Shantiparva) where the causal sequence of kama-krodha-moha is explicitly stated"
+    },
+    {
+      "id": "N017",
+      "chapter_range": "2-3",
+      "name": "Nishkama Karma — Act Without Attachment to Fruit",
+      "proposition": "You have a right only to action, never to its fruits; let not fruit be your motive; let not inaction be your refuge",
+      "anchor_verses": [
+        "2.47",
+        "3.19",
+        "4.20"
+      ],
+      "all_verses": [
+        "2.47",
+        "2.48",
+        "3.9",
+        "3.19",
+        "4.14",
+        "4.20"
+      ],
+      "hk_terms": [
+        "mA phaleSu",
+        "karmaNy evAdhikAras te",
+        "karmaphala",
+        "phalAkAGkSA",
+        "phalatyAga",
+        "asakta",
+        "muktasaGga"
+      ],
+      "core_hk": [
+        "karmaNy evAdhikAras te",
+        "mA phaleshu",
+        "karmaphalatyAga"
+      ],
+      "repetition_count": 4,
+      "repetition_rationale": "2.47 is the core verse; 3.19 restates for the karma-yoga argument; 4.20 gives the liberated-while-acting form; this is the BG's most repeated practical teaching",
+      "echo_hypothesis": "MBH passages — particularly Janaka's teaching, Vyasa's discourses — on acting without desire for fruit"
+    },
+    {
+      "id": "N018",
+      "chapter_range": "3",
+      "name": "Compulsory Action — No One Can Be Without Action",
+      "proposition": "Not even for an instant can anyone exist without performing action; all are compelled to act by the gunas of prakriti",
+      "anchor_verses": [
+        "3.5",
+        "3.8"
+      ],
+      "all_verses": [
+        "3.4",
+        "3.5",
+        "3.6",
+        "3.7",
+        "3.8"
+      ],
+      "hk_terms": [
+        "akarmakRt",
+        "kSaNam api",
+        "avazaH",
+        "prakRtijair guNaiH",
+        "kAryate",
+        "niyataM karma"
+      ],
+      "core_hk": [
+        "akarmakRt",
+        "avazaH",
+        "prakRtijair guNaiH"
+      ],
+      "repetition_count": 2,
+      "repetition_rationale": "3.5 states the compulsion; 3.8 restates as prescription — do the necessary action; the argument counters the sannyasa-as-inaction misunderstanding",
+      "echo_hypothesis": "MBH philosophical passages arguing against pure inaction; debates in Shantiparva about whether the sannyasin truly ceases all action"
+    },
+    {
+      "id": "N019",
+      "chapter_range": "3",
+      "name": "Yajna as Cosmic Reciprocity — The Wheel of Sacrifice",
+      "proposition": "Creation was joined with sacrifice by Prajapati; by this shall you prosper; this is the wish-granting cow; the wheel thus set in motion must be kept turning",
+      "anchor_verses": [
+        "3.10",
+        "3.11",
+        "3.14",
+        "3.15",
+        "3.16"
+      ],
+      "all_verses": [
+        "3.9",
+        "3.10",
+        "3.11",
+        "3.12",
+        "3.13",
+        "3.14",
+        "3.15",
+        "3.16",
+        "7.30",
+        "8.2",
+        "17.12",
+        "17.13"
+      ],
+      "hk_terms": [
+        "yajJa",
+        "prajApati",
+        "sahayajJAH",
+        "iSTakAmadhuk",
+        "cakra",
+        "pravartitaM",
+        "brahmodbhava",
+        "annAd bhavanti"
+      ],
+      "core_hk": [
+        "yajJa",
+        "cakra",
+        "prajApati",
+        "brahmodbhava"
+      ],
+      "repetition_count": 3,
+      "repetition_rationale": "3.10 introduces cosmic yajna; 3.14-15 gives the anna-parjanya-yajna-karma-brahman chain; 3.16 names non-participation as sin",
+      "echo_hypothesis": "MBH cosmological passages linking yajna, rains, food, and cosmic order; creation myths in Adiparva where Prajapati establishes sacrifice"
+    },
+    {
+      "id": "N020",
+      "chapter_range": "3",
+      "name": "Lokasangraha — Acting for the Welfare of the World",
+      "proposition": "The wise person should act for the welfare of the world without attachment, having regard for the cohesion of peoples",
+      "anchor_verses": [
+        "3.20",
+        "3.21",
+        "3.25"
+      ],
+      "all_verses": [
+        "3.20",
+        "3.21",
+        "3.22",
+        "3.23",
+        "3.24",
+        "3.25",
+        "10.19"
+      ],
+      "hk_terms": [
+        "lokasaMgraha",
+        "lokazaMgraham",
+        "zreSTha",
+        "pramANaM",
+        "anuvartate",
+        "saktAH",
+        "asakta"
+      ],
+      "core_hk": [
+        "lokasaMgraha",
+        "zreSTha",
+        "pramANaM"
+      ],
+      "repetition_count": 2,
+      "repetition_rationale": "3.20 gives the Janaka example; 3.21 states the general principle; 3.25 contrasts attached and unattached action for the same social goal",
+      "echo_hypothesis": "MBH passages where a king or sage cites responsibility to the world as motive for action despite personal exhaustion"
+    },
+    {
+      "id": "N021",
+      "chapter_range": "3",
+      "name": "Gunas Act — Not the Self — False Doership",
+      "proposition": "In all cases it is the gunas of prakriti that act; one deluded by ego thinks 'I am the doer'",
+      "anchor_verses": [
+        "3.27",
+        "3.28"
+      ],
+      "all_verses": [
+        "3.27",
+        "3.28",
+        "3.29"
+      ],
+      "hk_terms": [
+        "prakRteH kriyamANAni",
+        "guNaiH",
+        "ahaMkAravimUDhAtmA",
+        "kartAham",
+        "tattvavit",
+        "guNakarmavibhAga"
+      ],
+      "core_hk": [
+        "ahaMkAravimUDhAtmA",
+        "kartAham",
+        "guNA guNeSu"
+      ],
+      "repetition_count": 2,
+      "repetition_rationale": "3.27 diagnoses the delusion; 3.28 gives the corrective view of the tattvavit; elaborated again at 5.8-9 and 13.29",
+      "echo_hypothesis": "Shantiparva moksha-dharma passages where the sage explicitly denies doership"
+    },
+    {
+      "id": "N022",
+      "chapter_range": "3",
+      "name": "Desire as the Enemy — Kama the Great Devourer",
+      "proposition": "It is desire, it is anger, born of rajas, all-devouring, greatly sinful — know this as the enemy here",
+      "anchor_verses": [
+        "3.37",
+        "3.38",
+        "3.39",
+        "3.43"
+      ],
+      "all_verses": [
+        "3.36",
+        "3.37",
+        "3.38",
+        "3.39",
+        "3.40",
+        "3.41",
+        "3.42",
+        "3.43"
+      ],
+      "hk_terms": [
+        "kAma",
+        "krodha",
+        "rajoguNa",
+        "mahAzana",
+        "mahApApmA",
+        "vairiNam",
+        "jJAnam AvRtya",
+        "duSpUreNa"
+      ],
+      "core_hk": [
+        "kAma",
+        "mahAzana",
+        "vairiNam",
+        "jJAnam AvRtya"
+      ],
+      "repetition_count": 3,
+      "repetition_rationale": "3.37 names desire-anger; 3.38 gives three metaphors (smoke/fire, dust/mirror, membrane/embryo); 3.43 concludes with the hierarchy",
+      "echo_hypothesis": "MBH moral discourses explicitly naming kama as enemy using mahAzana or duSpUra imagery"
+    },
+    {
+      "id": "N023",
+      "chapter_range": "3",
+      "name": "Sense-Desire Hierarchy — Intellect Above Senses",
+      "proposition": "Above the senses is mind; above mind is intellect (buddhi); above intellect is the Self — knowing the Self above intellect, subdue the self by the Self",
+      "anchor_verses": [
+        "3.42",
+        "3.43"
+      ],
+      "all_verses": [
+        "3.42",
+        "3.43"
+      ],
+      "hk_terms": [
+        "indriyANi parANi",
+        "indriyebhyaH paraM manaH",
+        "manasas tu parA buddhiH",
+        "yo buddheH paratas tu saH",
+        "saMstabhya"
+      ],
+      "core_hk": [
+        "indriyebhyaH paraM manaH",
+        "manasas parA buddhiH",
+        "buddheH para AtmA"
+      ],
+      "repetition_count": 1,
+      "repetition_rationale": "Culminating verse of ch. 3; the hierarchy recurs in Sankhya framework across BG; echoed at Katha Upanishad 3.10-11",
+      "echo_hypothesis": "Sankhya-style hierarchies in MBH philosophical discourses listing sense-mind-buddhi-atman"
+    },
+    {
+      "id": "N024",
+      "chapter_range": "4",
+      "name": "Guru-Parampara — The Eternal Teaching Passed Down",
+      "proposition": "This imperishable yoga was proclaimed to Vivasvat, by Vivasvat to Manu, by Manu to Ikshvaku — the royal seers thus knew it, but it was lost by time",
+      "anchor_verses": [
+        "4.1",
+        "4.2",
+        "4.3"
+      ],
+      "all_verses": [
+        "4.1",
+        "4.2",
+        "4.3",
+        "4.4"
+      ],
+      "hk_terms": [
+        "paraMparA",
+        "paraMparAprAptam",
+        "rAjarSi",
+        "vivasvat",
+        "manu",
+        "ikSvAku",
+        "naSTaH",
+        "purAtana"
+      ],
+      "core_hk": [
+        "paraMparA",
+        "rAjarSi",
+        "vivasvat manu"
+      ],
+      "repetition_count": 1,
+      "repetition_rationale": "Sets the BG within cosmic time and lineage — this teaching is not new; positions it as recovery of lost wisdom",
+      "echo_hypothesis": "MBH passages citing the Manu-Ikshvaku lineage; passages where an ancient teaching is said to have been lost and recovered"
+    },
+    {
+      "id": "N025",
+      "chapter_range": "4",
+      "name": "Avatara — Divine Incarnation to Restore Dharma",
+      "proposition": "Whenever dharma declines and adharma rises, the divine manifests age after age for protection of the good and destruction of the wicked",
+      "anchor_verses": [
+        "4.6",
+        "4.7",
+        "4.8"
+      ],
+      "all_verses": [
+        "4.5",
+        "4.6",
+        "4.7",
+        "4.8",
+        "4.9"
+      ],
+      "hk_terms": [
+        "saMbhavAmi",
+        "yuge yuge",
+        "dharmasya glAni",
+        "abhyutthAnam adharmasya",
+        "paritrANAya",
+        "duSkRtAm vinAzAya",
+        "dharmasaMsthApana",
+        "AtmamAyA"
+      ],
+      "core_hk": [
+        "saMbhavAmi yuge yuge",
+        "dharmasya glAni",
+        "dharmasaMsthApana"
+      ],
+      "repetition_count": 1,
+      "repetition_rationale": "The divine descent as response to dharmic crisis — which is precisely the situation of the MBH itself",
+      "echo_hypothesis": "MBH passages where Krishna's incarnation purpose is stated or acknowledged by other characters"
+    },
+    {
+      "id": "N026",
+      "chapter_range": "4",
+      "name": "Knowing Divine Birth Liberates",
+      "proposition": "One who truly knows the divine birth and action, having shed the body does not return to rebirth",
+      "anchor_verses": [
+        "4.9"
+      ],
+      "all_verses": [
+        "4.9",
+        "4.10"
+      ],
+      "hk_terms": [
+        "divyam janma",
+        "divyaM karma",
+        "tattvataH",
+        "tyaktvA deham",
+        "punarjanma naiti",
+        "mAm eti"
+      ],
+      "core_hk": [
+        "divyam janma karma",
+        "punarjanma naiti",
+        "mAm eti"
+      ],
+      "repetition_count": 1,
+      "repetition_rationale": "The soteriological payoff of the avatara doctrine — knowledge of divine birth itself liberates",
+      "echo_hypothesis": "MBH passages where knowing Krishna's true nature is described as liberating"
+    },
+    {
+      "id": "N027",
+      "chapter_range": "4",
+      "name": "All Paths Lead to Me — Reciprocal Divine Response",
+      "proposition": "In whatever way people approach the divine, the divine rewards them in that way — all paths are valid",
+      "anchor_verses": [
+        "4.11"
+      ],
+      "all_verses": [
+        "4.11"
+      ],
+      "hk_terms": [
+        "ye yathA mAM prapadyante",
+        "tAMs tathaiva bhajAmy aham",
+        "mama vartmAnuvartante",
+        "manuSyAH sarvazaH"
+      ],
+      "core_hk": [
+        "ye yathA mAM prapadyante",
+        "mama vartmAnuvartante"
+      ],
+      "repetition_count": 1,
+      "repetition_rationale": "One of the most universalist declarations in BG — all paths are valid; distinct from bhakti-exclusivism",
+      "echo_hypothesis": "MBH passages affirming the validity of multiple paths to the same goal"
+    },
+    {
+      "id": "N028",
+      "chapter_range": "4",
+      "name": "Varna is by Guna-Karma — Not Birth",
+      "proposition": "The fourfold varna-system was created according to guna and karma — not by birth",
+      "anchor_verses": [
+        "4.13"
+      ],
+      "all_verses": [
+        "4.13",
+        "4.14"
+      ],
+      "hk_terms": [
+        "cAturvarNyaM",
+        "guNakarmavibhAgazaH",
+        "akartAram avyayam"
+      ],
+      "core_hk": [
+        "cAturvarNyaM",
+        "guNakarmavibhAgazaH",
+        "akartAram"
+      ],
+      "repetition_count": 1,
+      "repetition_rationale": "Varna defined by guna/karma not birth — the BG's implicit critique of birth-based caste",
+      "echo_hypothesis": "MBH passages where varna is attributed to guna/karma rather than jati; Vanaparva debates and Shanti-Anushasana on Brahmin qualities"
+    },
+    {
+      "id": "N029",
+      "chapter_range": "4",
+      "name": "Action in Inaction — The Paradox of the Free Actor",
+      "proposition": "One who sees inaction in action and action in inaction is wise among humans — a yogi who has accomplished all action",
+      "anchor_verses": [
+        "4.18",
+        "4.19",
+        "4.20"
+      ],
+      "all_verses": [
+        "4.18",
+        "4.19",
+        "4.20",
+        "4.21",
+        "4.22"
+      ],
+      "hk_terms": [
+        "karmaNy akarma",
+        "akarmaNi karma",
+        "buddhimAn",
+        "jJAnAgnidagdhakarmANam",
+        "kAmasaMkalpavarjita",
+        "kRtsnakarmakRt"
+      ],
+      "core_hk": [
+        "karmaNy akarma",
+        "akarmaNi karma",
+        "jJAnAgni"
+      ],
+      "repetition_count": 2,
+      "repetition_rationale": "4.18 states the paradox; 4.19-22 give three modes of the free actor",
+      "echo_hypothesis": "MBH passages where a sage acts in the world but is explicitly said not to be bound — Janaka narratives"
+    },
+    {
+      "id": "N030",
+      "chapter_range": "4",
+      "name": "Jnana-Yajna — Knowledge as the Highest Sacrifice",
+      "proposition": "As fire reduces fuel to ash, the fire of knowledge reduces all actions to ash; no purifier equal to knowledge exists",
+      "anchor_verses": [
+        "4.33",
+        "4.37",
+        "4.38"
+      ],
+      "all_verses": [
+        "4.24",
+        "4.25",
+        "4.26",
+        "4.27",
+        "4.28",
+        "4.29",
+        "4.30",
+        "4.31",
+        "4.32",
+        "4.33",
+        "4.37",
+        "4.38"
+      ],
+      "hk_terms": [
+        "jJAnayajJa",
+        "jJAnAgni",
+        "sarvakarmANi bhasmasAt",
+        "jJAnena sadRzaM pavitram",
+        "dravyayajJa",
+        "tapoyajJa"
+      ],
+      "core_hk": [
+        "jJAnayajJa",
+        "jJAnAgni",
+        "bhasmasAt"
+      ],
+      "repetition_count": 3,
+      "repetition_rationale": "4.24 (brahmarpanam), 4.33 (jnana-yajna supremacy), and 4.37 (fire metaphor) form a triptych",
+      "echo_hypothesis": "MBH passages using jnana-agni or jnana-yajna as a metaphor; fire of knowledge burning karma in sage biographies"
+    },
+    {
+      "id": "N031",
+      "chapter_range": "4",
+      "name": "Seek the Teacher — Guru-Seva for Knowledge",
+      "proposition": "Know that by prostration, question, and service; the knowers of truth will teach you knowledge",
+      "anchor_verses": [
+        "4.34"
+      ],
+      "all_verses": [
+        "4.34",
+        "4.35",
+        "4.36",
+        "4.39",
+        "5.16",
+        "6.20"
+      ],
+      "hk_terms": [
+        "praNipAtena",
+        "paripraznena",
+        "sevayA",
+        "jJAninas tattvadarzinaH",
+        "upadekSyanti",
+        "zraddhAvAn",
+        "tatpara"
+      ],
+      "core_hk": [
+        "praNipAtena",
+        "tattvadarzinaH",
+        "zraddhAvAn"
+      ],
+      "repetition_count": 1,
+      "repetition_rationale": "The guru-shishya protocol stated explicitly; echoed throughout MBH as the standard opening of philosophical dialogues",
+      "echo_hypothesis": "MBH philosophical discourse scenes using the praNipAta-pariprazna-sevA triad"
+    },
+    {
+      "id": "N032",
+      "chapter_range": "4",
+      "name": "Doubt as the Root of Ruin",
+      "proposition": "The doubt-natured one perishes; for the doubting self there is neither this world nor the next nor happiness",
+      "anchor_verses": [
+        "4.40",
+        "4.42"
+      ],
+      "all_verses": [
+        "4.40",
+        "4.41",
+        "4.42",
+        "13.2"
+      ],
+      "hk_terms": [
+        "saMzayAtmA",
+        "vinazyati",
+        "ajJa",
+        "azraddadhAna",
+        "jJAnAsina",
+        "saMzayaM chittva"
+      ],
+      "core_hk": [
+        "saMzayAtmA vinazyati",
+        "jJAnAsina",
+        "saMzayaM chittva"
+      ],
+      "repetition_count": 1,
+      "repetition_rationale": "Both the diagnosis (doubt destroys) and the cure (cut doubt with sword of knowledge) in a single passage",
+      "echo_hypothesis": "MBH passages where a hero's doubt is identified as the root problem — notably Yudhishthira's recurring doubts"
+    },
+    {
+      "id": "N033",
+      "chapter_range": "5",
+      "name": "Sannyasa and Yoga Lead to the Same End",
+      "proposition": "Both renunciation and yoga lead to the highest good; of the two, karma yoga is superior to renunciation without yoga",
+      "anchor_verses": [
+        "5.2",
+        "5.4",
+        "5.5"
+      ],
+      "all_verses": [
+        "3.2",
+        "5.1",
+        "5.2",
+        "5.3",
+        "5.4",
+        "5.5",
+        "5.6"
+      ],
+      "hk_terms": [
+        "saMnyAsa",
+        "karmayoga",
+        "niHzreyasa",
+        "sAMkhyayogau",
+        "ekaM saMkhyaM ca yogaM ca",
+        "yaH pazyati sa pazyati"
+      ],
+      "core_hk": [
+        "saMnyAsa",
+        "karmayoga",
+        "niHzreyasa",
+        "ekaM"
+      ],
+      "repetition_count": 2,
+      "repetition_rationale": "5.2 asserts both paths lead to highest good; 5.4-5 states Sankhya and yoga see the same",
+      "echo_hypothesis": "MBH debates between sannyasins and active warriors about which path is superior; Suka-Janaka dialogue"
+    },
+    {
+      "id": "N034",
+      "chapter_range": "5",
+      "name": "The Non-Doer in Action — Senses Move Among Senses",
+      "proposition": "The yogi who knows truth thinks 'I do nothing at all'; the senses move among sense-objects like a lotus leaf untouched by water",
+      "anchor_verses": [
+        "5.8",
+        "5.9"
+      ],
+      "all_verses": [
+        "5.7",
+        "5.8",
+        "5.9",
+        "5.10",
+        "5.11"
+      ],
+      "hk_terms": [
+        "naiva kiM cit karomI",
+        "tattvavit",
+        "indriyANindriyArtheSu",
+        "vartanta iti dhArayan",
+        "padmapatram ivAmbhasA"
+      ],
+      "core_hk": [
+        "naiva kiM cit karomI",
+        "indriyANindriyArtheSu vartanta",
+        "padmapatram"
+      ],
+      "repetition_count": 2,
+      "repetition_rationale": "5.8-9 give the exhaustive list of actions performed without doership; 5.10 gives the lotus-leaf metaphor",
+      "echo_hypothesis": "MBH descriptions of sages active in the world but untouched — Janaka, Shuka — using lotus and water metaphors"
+    },
+    {
+      "id": "N035",
+      "chapter_range": "5",
+      "name": "Brahma-Nirvana — Extinction in Brahman",
+      "proposition": "The sage with inner joy, inner delight, inner light, being Brahman, attains brahma-nirvana",
+      "anchor_verses": [
+        "5.24",
+        "5.25",
+        "5.26"
+      ],
+      "all_verses": [
+        "5.19",
+        "5.20",
+        "5.21",
+        "5.22",
+        "5.23",
+        "5.24",
+        "5.25",
+        "5.26",
+        "5.29"
+      ],
+      "hk_terms": [
+        "brahmanirvANa",
+        "brahmabhUta",
+        "antaHsukha",
+        "antarArAma",
+        "antarjyoti",
+        "kSINakalmaSa",
+        "chinnadvaidha"
+      ],
+      "core_hk": [
+        "brahmanirvANa",
+        "brahmabhUta",
+        "antaHsukha"
+      ],
+      "repetition_count": 3,
+      "repetition_rationale": "brahmanirvANa appears at 5.24, 5.25, 5.26 — three consecutive verses; the term bridges Vedantic and Buddhist vocabulary",
+      "echo_hypothesis": "MBH passages using brahmanirvana or brahmabhuta as the goal of the sage"
+    },
+    {
+      "id": "N036",
+      "chapter_range": "5",
+      "name": "Samadarshin — Equal Vision Across All Beings",
+      "proposition": "The pandits see with equal eye the Brahmin, the cow, the elephant, the dog, and the dog-eater",
+      "anchor_verses": [
+        "5.18",
+        "5.19"
+      ],
+      "all_verses": [
+        "5.17",
+        "5.18",
+        "5.19"
+      ],
+      "hk_terms": [
+        "samadarzinaH",
+        "vidyAvinayasaMpanne",
+        "brAhmaNe gavi hastini",
+        "zuni ca zvapAke ca",
+        "sAmye sthitaM manaH"
+      ],
+      "core_hk": [
+        "samadarzinaH",
+        "sAmye sthitaM manaH"
+      ],
+      "repetition_count": 1,
+      "repetition_rationale": "The most radical social statement in ch. 5 — equal vision includes the outcaste; directly enacts ekam-sat",
+      "echo_hypothesis": "MBH passages where a sage is praised for treating all beings equally; Yaksha-prashna; Chandala episodes"
+    },
+    {
+      "id": "N037",
+      "chapter_range": "5",
+      "name": "Krishna as Enjoyer of All Sacrifice — Sarvalokamaheshvara",
+      "proposition": "Having known Krishna as the enjoyer of all sacrifices, the Lord of all worlds, the friend of all beings, one attains peace",
+      "anchor_verses": [
+        "5.29"
+      ],
+      "all_verses": [
+        "5.29"
+      ],
+      "hk_terms": [
+        "bhoktAraM yajJatapasAM",
+        "sarvalokamahezvaram",
+        "suhRdaM sarvabhUtAnAM",
+        "jJAtvA mAM zAntim Rcchati"
+      ],
+      "core_hk": [
+        "sarvalokamahezvaram",
+        "suhRdaM sarvabhUtAnAM"
+      ],
+      "repetition_count": 1,
+      "repetition_rationale": "Ch. 5 culminating verse — synthesizes the three roles: receiver of yajna, ruler of all worlds, friend of all",
+      "echo_hypothesis": "MBH hymns addressing Krishna or Vishnu using these three epithets"
+    },
+    {
+      "id": "N038",
+      "chapter_range": "6",
+      "name": "Sannyasa Equals Yoga — No Yoga Without Renouncing Sankalpa",
+      "proposition": "What they call sannyasa, know that as yoga; no one becomes a yogi who has not abandoned sankalpa",
+      "anchor_verses": [
+        "6.1",
+        "6.2"
+      ],
+      "all_verses": [
+        "6.1",
+        "6.2"
+      ],
+      "hk_terms": [
+        "karmaphalaM",
+        "anAzritaH",
+        "saMnyAsI ca yogI ca",
+        "asaMnyastasaMkalpaH"
+      ],
+      "core_hk": [
+        "saMnyAsI ca yogI ca",
+        "asaMnyastasaMkalpaH"
+      ],
+      "repetition_count": 1,
+      "repetition_rationale": "Ch. 6 opens by collapsing the sannyasa/yoga distinction — the real renunciation is of intention",
+      "echo_hypothesis": "MBH debates on true vs. false sannyasa"
+    },
+    {
+      "id": "N039",
+      "chapter_range": "6",
+      "name": "Self as Both Friend and Enemy",
+      "proposition": "Let the self elevate the self; let not the self depress the self; the self alone is the self's friend, the self alone the self's enemy",
+      "anchor_verses": [
+        "6.5",
+        "6.6"
+      ],
+      "all_verses": [
+        "6.5",
+        "6.6"
+      ],
+      "hk_terms": [
+        "uddhared AtmanAtmAnam",
+        "nAtmAnam avasAdayet",
+        "Atmaiva Atmano bandhur",
+        "Atmaiva ripur AtmanaH",
+        "jitAtman"
+      ],
+      "core_hk": [
+        "Atmaiva bandhur Atman",
+        "Atmaiva ripur",
+        "jitAtman"
+      ],
+      "repetition_count": 1,
+      "repetition_rationale": "The reflexive self-relationship — not an external enemy but the untamed mind itself is the obstacle",
+      "echo_hypothesis": "MBH passages on jita-atman and the inner enemy; descriptions of ideal kings and sages"
+    },
+    {
+      "id": "N040",
+      "chapter_range": "6",
+      "name": "The Yogi's Portrait — Sama in All Conditions",
+      "proposition": "The yogi who sees clod, stone, and gold as equal, is steady, sense-controlled — said to be truly integrated",
+      "anchor_verses": [
+        "6.7",
+        "6.8",
+        "6.9"
+      ],
+      "all_verses": [
+        "6.7",
+        "6.8",
+        "6.9"
+      ],
+      "hk_terms": [
+        "jJAnavijJAnatRpta",
+        "kUTastha",
+        "vijitendriya",
+        "samaloSTAzmakAJcana",
+        "samabuddhir viziSyate"
+      ],
+      "core_hk": [
+        "kUTastha",
+        "samaloSTAzmakAJcana",
+        "samabuddhir"
+      ],
+      "repetition_count": 1,
+      "repetition_rationale": "The kuta-stha portrait — unmoved as a peak — alongside the extreme equality (clod = stone = gold)",
+      "echo_hypothesis": "MBH character descriptions using samaloSTa-ashma-kanchana or kuta-stha as praise of sages"
+    },
+    {
+      "id": "N041",
+      "chapter_range": "6",
+      "name": "Dhyana Method — The Actual Practice of Meditation",
+      "proposition": "The yogi should practice seated, in a clean place, holding body neck and head erect, gazing at the nose-tip, mind controlled, established in brahmacharya",
+      "anchor_verses": [
+        "6.10",
+        "6.11",
+        "6.12",
+        "6.13",
+        "6.14"
+      ],
+      "all_verses": [
+        "6.10",
+        "6.11",
+        "6.12",
+        "6.13",
+        "6.14",
+        "6.15",
+        "6.16",
+        "6.17"
+      ],
+      "hk_terms": [
+        "rahasi sthitaH",
+        "ekAkI",
+        "yatacittAtmA",
+        "nAsikAgraM",
+        "brahmacArivrate",
+        "yuktAhAra"
+      ],
+      "core_hk": [
+        "ekAkI",
+        "nAsikAgraM",
+        "brahmacArivrate",
+        "yuktAhAra"
+      ],
+      "repetition_count": 1,
+      "repetition_rationale": "The only fully systematic description of meditation posture and technique in the BG; prescriptive not descriptive",
+      "echo_hypothesis": "MBH ascetic descriptions using the same technical posture vocabulary; Vanaparva tapas descriptions"
+    },
+    {
+      "id": "N042",
+      "chapter_range": "6",
+      "name": "Mind as the Restless Enemy — Abhyasa and Vairagya",
+      "proposition": "The mind is restless, turbulent, powerful — yet by practice and dispassion it is restrained",
+      "anchor_verses": [
+        "6.33",
+        "6.34",
+        "6.35"
+      ],
+      "all_verses": [
+        "6.33",
+        "6.34",
+        "6.35",
+        "6.36"
+      ],
+      "hk_terms": [
+        "caJcalaM manaH",
+        "pramAthi",
+        "balavad dRDham",
+        "vAyor iva suduSkaram",
+        "abhyAsena",
+        "vairAgyeNa"
+      ],
+      "core_hk": [
+        "caJcalaM manaH",
+        "abhyAsena vairAgyeNa"
+      ],
+      "repetition_count": 1,
+      "repetition_rationale": "Arjuna's doubt articulates the universal problem; Krishna's answer (abhyasa + vairagya) is the complete practical prescription",
+      "echo_hypothesis": "MBH passages using the formula abhyasa-vairagya as the two-limbed path"
+    },
+    {
+      "id": "N043",
+      "chapter_range": "6",
+      "name": "The Fallen Yogi — Continuity Across Births",
+      "proposition": "The yogi who falls from yoga is not lost — reborn in a pure or wise family, the previous practice carries forward",
+      "anchor_verses": [
+        "6.40",
+        "6.41",
+        "6.43",
+        "6.44"
+      ],
+      "all_verses": [
+        "6.37",
+        "6.38",
+        "6.39",
+        "6.40",
+        "6.41",
+        "6.42",
+        "6.43",
+        "6.44",
+        "6.45"
+      ],
+      "hk_terms": [
+        "yogabhraSTA",
+        "puNyakRtAM lokAn",
+        "zucInAM zrImatAM gehe",
+        "pUrvAbhyAsena"
+      ],
+      "core_hk": [
+        "yogabhraSTA",
+        "pUrvAbhyAsena"
+      ],
+      "repetition_count": 1,
+      "repetition_rationale": "The reassurance to the incomplete yogi — effort is never wasted across births",
+      "echo_hypothesis": "MBH passages on rebirth carrying forward spiritual merit; stories of sages reborn with memory of previous attainment"
+    },
+    {
+      "id": "N044",
+      "chapter_range": "6",
+      "name": "The Yogi is Supreme — Above Ascetics, Scholars, and Ritualists",
+      "proposition": "The yogi is superior to ascetics, scholars, and ritualists — therefore be a yogi",
+      "anchor_verses": [
+        "6.46"
+      ],
+      "all_verses": [
+        "6.46"
+      ],
+      "hk_terms": [
+        "tapasvibhyo dhiko yogI",
+        "jJAnibhyo pi mato dhikaH",
+        "karmibhyaz cAdhiko yogI"
+      ],
+      "core_hk": [
+        "tapasvibhyo dhiko yogI",
+        "jJAnibhyo dhikaH"
+      ],
+      "repetition_count": 1,
+      "repetition_rationale": "A ranking verse — BG places yoga above tapas, jnana, and karma separately",
+      "echo_hypothesis": "MBH passages ranking paths — tapas vs. jnana vs. yajna vs. yoga; Shantiparva comparative debates"
+    },
+    {
+      "id": "N045",
+      "chapter_range": "6",
+      "name": "Bhakta-Yogi as the Highest Yogi",
+      "proposition": "Among all yogis, the one devoted with inner self gone to Me, worshipping with faith — that one I consider the most integrated",
+      "anchor_verses": [
+        "6.47"
+      ],
+      "all_verses": [
+        "6.47"
+      ],
+      "hk_terms": [
+        "yoginAm api sarveSAm",
+        "madgatenAntarAtmanA",
+        "zraddhAvAn bhajate",
+        "sa me yuktatamo mataH"
+      ],
+      "core_hk": [
+        "madgatenAntarAtmanA",
+        "zraddhAvAn bhajate",
+        "yuktatamo"
+      ],
+      "repetition_count": 1,
+      "repetition_rationale": "Ch. 6 culminating verse — the bhakta-yogi tops the hierarchy; bridges dhyana to devotion",
+      "echo_hypothesis": "MBH passages where a devotee-sage is ranked above mere ascetic or scholar"
+    },
+    {
+      "id": "N046",
+      "chapter_range": "6",
+      "name": "Vision of Self in All Beings — Sarvabhutastham Atmanam",
+      "proposition": "The yogi established in oneness worships the divine abiding in all beings — sees the self in all and all in the self",
+      "anchor_verses": [
+        "6.29",
+        "6.30",
+        "6.31",
+        "6.32"
+      ],
+      "all_verses": [
+        "6.29",
+        "6.30",
+        "6.31",
+        "6.32"
+      ],
+      "hk_terms": [
+        "sarvabhUtastham AtmAnam",
+        "sarvabhUtAni cAtmani",
+        "samadarzanaH",
+        "yo mAM pazyati sarvatra",
+        "ekatvam AsthitaH"
+      ],
+      "core_hk": [
+        "sarvabhUtastham AtmAnaM",
+        "yo mAM pazyati sarvatra",
+        "ekatvam AsthitaH"
+      ],
+      "repetition_count": 2,
+      "repetition_rationale": "6.29-6.32 — four consecutive verses consolidating the ekam-sat vision; the clearest statement of the project's central thesis",
+      "echo_hypothesis": "MBH passages where a sage sees the one in all — Shantiparva descriptions of brahmajna sages and Narayaniya section"
+    },
+    {
+      "id": "N047",
+      "chapter_range": "7",
+      "name": "Two Prakritis — Para and Apara",
+      "proposition": "The divine has two natures: the lower eightfold material nature and the higher living nature (jivabhuta) that sustains the world",
+      "anchor_verses": [
+        "7.4",
+        "7.5"
+      ],
+      "all_verses": [
+        "3.33",
+        "5.28",
+        "7.4",
+        "7.5",
+        "7.6",
+        "9.34",
+        "10.15",
+        "14.1",
+        "16.14"
+      ],
+      "hk_terms": [
+        "aparA",
+        "parA",
+        "prakRti",
+        "aSTadhA",
+        "jIvabhUta",
+        "dhAryate",
+        "jagat"
+      ],
+      "core_hk": [
+        "aparA",
+        "parA",
+        "prakRti"
+      ],
+      "repetition_count": 1,
+      "repetition_rationale": "First statement of the two-nature doctrine. Ch9 and Ch13 develop it further.",
+      "echo_hypothesis": "Search for para/apara prakrti distinction in Sankhya passages, Moksha-dharma of Shantiparva"
+    },
+    {
+      "id": "N048",
+      "chapter_range": "7",
+      "name": "The Divine as Origin and Dissolution of All",
+      "proposition": "Both natures together are the womb of all beings; the divine is the origin (prabhava) and the dissolution (pralaya) of the entire world",
+      "anchor_verses": [
+        "7.6"
+      ],
+      "all_verses": [
+        "7.6",
+        "7.7",
+        "11.2",
+        "16.9",
+        "16.20"
+      ],
+      "hk_terms": [
+        "prabhava",
+        "pralaya",
+        "yoni",
+        "sarvabhUtAni",
+        "jagataH"
+      ],
+      "core_hk": [
+        "prabhava",
+        "pralaya",
+        "yoni"
+      ],
+      "repetition_count": 3,
+      "repetition_rationale": "Stated again at 9.18, 10.8, 14.4 — BG insists that all emergence and dissolution trace to the one source",
+      "echo_hypothesis": "Cosmogonic passages in Adiparva, Shanti-parva creation hymns"
+    },
+    {
+      "id": "N049",
+      "chapter_range": "7",
+      "name": "Nothing Higher Than the Divine — Beads on a Thread",
+      "proposition": "There is nothing higher than the divine; all of this is strung on it as beads on a thread",
+      "anchor_verses": [
+        "7.7"
+      ],
+      "all_verses": [
+        "7.7",
+        "7.8",
+        "7.9",
+        "7.10",
+        "7.11",
+        "7.12",
+        "10.8"
+      ],
+      "hk_terms": [
+        "mattaH",
+        "parataraM",
+        "nAnyat",
+        "sUtre",
+        "maNigaNA",
+        "protaM",
+        "sarvaM"
+      ],
+      "core_hk": [
+        "mattaH",
+        "parataraM",
+        "protaM"
+      ],
+      "repetition_count": 2,
+      "repetition_rationale": "Repeated in essence at 9.4-5 and 10.42. The string-of-beads metaphor is distinctive.",
+      "echo_hypothesis": "String/thread metaphors for cosmic unity in MBH philosophical passages"
+    },
+    {
+      "id": "N050",
+      "chapter_range": "7",
+      "name": "The Divine Is the Essence in All Things",
+      "proposition": "The divine is the taste in water, the light of sun and moon, the sacred syllable in the Vedas, sound in space, the vital force in all beings",
+      "anchor_verses": [
+        "7.8",
+        "7.9",
+        "7.10",
+        "7.11"
+      ],
+      "all_verses": [
+        "7.8",
+        "7.9",
+        "7.10",
+        "7.11",
+        "13.3",
+        "17.10"
+      ],
+      "hk_terms": [
+        "rasa",
+        "prabhA",
+        "praNava",
+        "zabda",
+        "gandha",
+        "tejas",
+        "jIvana",
+        "bIja",
+        "balaM"
+      ],
+      "core_hk": [
+        "rasa",
+        "prabhA",
+        "bIja"
+      ],
+      "repetition_count": 2,
+      "repetition_rationale": "Anticipates the vibhuti catalogue of ch10; here stated as inner essence (rasa) not outward glory",
+      "echo_hypothesis": "Immanence language — divinity as essence of natural phenomena — in MBH hymns"
+    },
+    {
+      "id": "N051",
+      "chapter_range": "7",
+      "name": "The Three Gunas Originate from the Divine — But the Divine Transcends Them",
+      "proposition": "The three-guna states all arise from the divine, yet the divine is not in them; the world, deluded by these three, does not know the divine",
+      "anchor_verses": [
+        "7.12",
+        "7.13"
+      ],
+      "all_verses": [
+        "7.12",
+        "7.13"
+      ],
+      "hk_terms": [
+        "guNamayair",
+        "matta",
+        "teSu",
+        "te mayi",
+        "mohitaM",
+        "param avyayam"
+      ],
+      "core_hk": [
+        "guNamayair",
+        "te mayi",
+        "param avyayam"
+      ],
+      "repetition_count": 2,
+      "repetition_rationale": "The asymmetric relation: gunas in the divine, not divine in gunas. Restated in 9.4-5.",
+      "echo_hypothesis": "Passages distinguishing the absolute from guna-bound existence in Shantiparva Mokshadharma"
+    },
+    {
+      "id": "N052",
+      "chapter_range": "7",
+      "name": "Maya as Divine and Difficult to Cross",
+      "proposition": "This divine maya made of gunas is difficult to cross; only those who take refuge in the divine cross beyond it",
+      "anchor_verses": [
+        "7.14"
+      ],
+      "all_verses": [
+        "7.14",
+        "7.15"
+      ],
+      "hk_terms": [
+        "mAyA",
+        "mAyAM",
+        "duratyayA",
+        "daivI",
+        "guNamayI",
+        "prapadyante",
+        "taranti"
+      ],
+      "core_hk": [
+        "mAyA",
+        "duratyayA",
+        "taranti"
+      ],
+      "repetition_count": 2,
+      "repetition_rationale": "Maya as divine (not inferior) power — repeated at 18.61. Only surrender crosses it.",
+      "echo_hypothesis": "Maya as divine delusion in Shantiparva, Indra-maya episodes in Adiparva"
+    },
+    {
+      "id": "N053",
+      "chapter_range": "7",
+      "name": "Four Types of Devotees — Arta Jijnasu Artharthi Jnani",
+      "proposition": "Four kinds worship the divine: the distressed, the seeker of knowledge, the seeker of benefit, and the wise; the wise is highest",
+      "anchor_verses": [
+        "7.16",
+        "7.17",
+        "7.18"
+      ],
+      "all_verses": [
+        "2.6",
+        "7.16",
+        "7.17",
+        "7.18",
+        "7.19"
+      ],
+      "hk_terms": [
+        "Arta",
+        "jijJAsu",
+        "arthArthI",
+        "jJAnI",
+        "nityayukta",
+        "ekabhakti",
+        "viziSyate"
+      ],
+      "core_hk": [
+        "Arta",
+        "jijJAsu",
+        "jJAnI",
+        "ekabhakti"
+      ],
+      "repetition_count": 1,
+      "repetition_rationale": "Typology of seekers unique to ch7. The jnani-as-atman-of-God claim (7.18) is the most radical.",
+      "echo_hypothesis": "Typologies of seekers in MBH — distressed devotees, philosophers, pragmatic worshippers"
+    },
+    {
+      "id": "N054",
+      "chapter_range": "7",
+      "name": "Vasudeva Is All — Rare Knowledge",
+      "proposition": "After many births, the wise one who knows that Vasudeva is all takes refuge — such a great soul is exceedingly rare",
+      "anchor_verses": [
+        "7.19"
+      ],
+      "all_verses": [
+        "7.19",
+        "8.28",
+        "10.14",
+        "16.11"
+      ],
+      "hk_terms": [
+        "vAsudevaH",
+        "sarvam",
+        "iti",
+        "jJAnavAn",
+        "mahAtmA",
+        "sudurlabhaH"
+      ],
+      "core_hk": [
+        "vAsudevaH",
+        "sarvam",
+        "sudurlabha"
+      ],
+      "repetition_count": 1,
+      "repetition_rationale": "The ekam sat proposition made explicit — vAsudevaH sarvam. The theological nucleus of the project.",
+      "echo_hypothesis": "Any passage where a sage declares the unity of all in one divine principle"
+    },
+    {
+      "id": "N055",
+      "chapter_range": "7",
+      "name": "Worship of Other Deities — Limited but Valid",
+      "proposition": "Those whose knowledge is stolen by desires worship other gods, but even that worship reaches the divine — though the fruits are limited",
+      "anchor_verses": [
+        "7.20",
+        "7.21",
+        "7.22",
+        "7.23"
+      ],
+      "all_verses": [
+        "7.20",
+        "7.21",
+        "7.22",
+        "7.23"
+      ],
+      "hk_terms": [
+        "anyadevatA",
+        "zraddhA",
+        "tanuM",
+        "devayajaH",
+        "antavat",
+        "alpamedhasAm"
+      ],
+      "core_hk": [
+        "anyadevatA",
+        "devayajaH",
+        "antavat"
+      ],
+      "repetition_count": 2,
+      "repetition_rationale": "Restated at 9.23-24. All worship is redirected to the one — with a soteriological hierarchy.",
+      "echo_hypothesis": "Debates on relative merit of worshipping different deities in MBH"
+    },
+    {
+      "id": "N056",
+      "chapter_range": "7",
+      "name": "The Divine Conceals Itself Through Yoga-Maya",
+      "proposition": "The divine is not manifest to all, veiled by yoga-maya; the deluded world does not recognize the divine as unborn and imperishable",
+      "anchor_verses": [
+        "7.24",
+        "7.25"
+      ],
+      "all_verses": [
+        "7.24",
+        "7.25",
+        "10.3"
+      ],
+      "hk_terms": [
+        "yogamAyA",
+        "avyaktaM",
+        "vyaktim",
+        "mUDha",
+        "ajam",
+        "avyayam",
+        "nAbhijAnAti"
+      ],
+      "core_hk": [
+        "yogamAyA",
+        "avyaktaM",
+        "ajam"
+      ],
+      "repetition_count": 1,
+      "repetition_rationale": "The epistemology of concealment — why the divine is not universally recognized.",
+      "echo_hypothesis": "Passages on divine concealment, disguise episodes in MBH"
+    },
+    {
+      "id": "N057",
+      "chapter_range": "7",
+      "name": "Duality-Delusion Veils All Beings at Birth",
+      "proposition": "All beings are born into the delusion of duality arising from desire and aversion",
+      "anchor_verses": [
+        "7.27",
+        "7.28"
+      ],
+      "all_verses": [
+        "1.35",
+        "2.64",
+        "3.34",
+        "7.27",
+        "7.28",
+        "11.3",
+        "13.6"
+      ],
+      "hk_terms": [
+        "dvaMdvamoha",
+        "icchA",
+        "dveSa",
+        "saMmoha",
+        "sarge",
+        "antagataM",
+        "pApaM"
+      ],
+      "core_hk": [
+        "dvaMdvamoha",
+        "icchA",
+        "dveSa"
+      ],
+      "repetition_count": 2,
+      "repetition_rationale": "The structural diagnosis of bondage: dvandva-moha at the moment of birth.",
+      "echo_hypothesis": "Birth-bondage passages, desire/aversion as the root of samsara in Shantiparva"
+    },
+    {
+      "id": "N058",
+      "chapter_range": "8",
+      "name": "Aksara Brahman — the Imperishable Supreme",
+      "proposition": "The imperishable (akshara) is the supreme Brahman; its own nature is called the adhyatma; the creative impulse that produces beings is called karma",
+      "anchor_verses": [
+        "8.3"
+      ],
+      "all_verses": [
+        "3.1",
+        "3.3",
+        "3.26",
+        "4.15",
+        "4.16",
+        "4.17",
+        "5.14",
+        "6.3",
+        "6.4",
+        "6.28",
+        "7.29",
+        "8.1",
+        "8.3",
+        "8.4",
+        "8.8",
+        "8.11",
+        "10.1",
+        "10.12",
+        "11.1",
+        "11.9",
+        "13.4",
+        "13.24",
+        "15.6",
+        "18.12",
+        "18.47",
+        "18.64"
+      ],
+      "hk_terms": [
+        "akSaraM",
+        "brahma",
+        "paramaM",
+        "svabhAva",
+        "adhyAtma",
+        "visarga",
+        "karma"
+      ],
+      "core_hk": [
+        "akSaraM",
+        "brahma",
+        "paramaM"
+      ],
+      "repetition_count": 2,
+      "repetition_rationale": "The technical vocabulary of ch8 — defining terms for cosmic levels.",
+      "echo_hypothesis": "Akshara Brahman as technical term in Upanishad-influenced sections of Shantiparva"
+    },
+    {
+      "id": "N059",
+      "chapter_range": "8",
+      "name": "Last Thought at Death Determines Rebirth",
+      "proposition": "Whatever state of being one remembers at the moment of death, to that state alone one goes",
+      "anchor_verses": [
+        "8.5",
+        "8.6"
+      ],
+      "all_verses": [
+        "8.5",
+        "8.6",
+        "8.7",
+        "14.19"
+      ],
+      "hk_terms": [
+        "antakAle",
+        "smaran",
+        "madbhAvaM",
+        "tyajati",
+        "kalevaram",
+        "tadbhAvabhAvitaH"
+      ],
+      "core_hk": [
+        "antakAle",
+        "smaran",
+        "tadbhAvabhAvitaH"
+      ],
+      "repetition_count": 2,
+      "repetition_rationale": "The death-moment doctrine is repeated at 8.13 for the specific case of remembering the divine.",
+      "echo_hypothesis": "Death-moment teachings in Shantiparva, instructions to dying warriors in Drona/Karna parvas"
+    },
+    {
+      "id": "N060",
+      "chapter_range": "8",
+      "name": "OM as the Imperishable — Dying While Remembering",
+      "proposition": "Uttering the single syllable OM, which is Brahman, remembering the divine, one who departs attains the highest goal",
+      "anchor_verses": [
+        "8.13"
+      ],
+      "all_verses": [
+        "8.13",
+        "8.14"
+      ],
+      "hk_terms": [
+        "om",
+        "ekAkSaraM",
+        "brahma",
+        "vyAharan",
+        "anusmaran",
+        "paramAM gatim"
+      ],
+      "core_hk": [
+        "om",
+        "ekAkSaraM",
+        "anusmaran"
+      ],
+      "repetition_count": 1,
+      "repetition_rationale": "OM as the sonic form of the imperishable — specific yogic instruction at death.",
+      "echo_hypothesis": "OM as salvific sound in MBH — dying sages who utter OM"
+    },
+    {
+      "id": "N061",
+      "chapter_range": "8",
+      "name": "The Great-Souled Do Not Return — Moksha as Non-Return",
+      "proposition": "Having attained the highest perfection, the great-souled ones do not take rebirth in this impermanent home of suffering",
+      "anchor_verses": [
+        "8.15",
+        "8.16"
+      ],
+      "all_verses": [
+        "8.15",
+        "8.16"
+      ],
+      "hk_terms": [
+        "mAm upetya",
+        "punarjanma",
+        "mahAtmAnaH",
+        "dukkhAlaya",
+        "azAzvata"
+      ],
+      "core_hk": [
+        "punarjanma",
+        "mAm upetya",
+        "dukkhAlaya"
+      ],
+      "repetition_count": 2,
+      "repetition_rationale": "The negative definition of liberation: non-return. Contrasted with all worlds up to Brahmaloka being subject to return.",
+      "echo_hypothesis": "Non-return teachings in Shantiparva Mokshadharma"
+    },
+    {
+      "id": "N062",
+      "chapter_range": "8",
+      "name": "Cyclic Cosmic Time — Brahma's Day and Night",
+      "proposition": "Brahma's day spans a thousand yugas; his night another thousand; at dawn all beings emerge from the unmanifest, at nightfall they dissolve back",
+      "anchor_verses": [
+        "8.17",
+        "8.18",
+        "8.19"
+      ],
+      "all_verses": [
+        "8.17",
+        "8.18",
+        "8.19",
+        "8.20",
+        "13.5"
+      ],
+      "hk_terms": [
+        "sahasrayuga",
+        "ahar",
+        "rAtriM",
+        "brahmaNaH",
+        "avyakta",
+        "prabhavanty",
+        "pralIyante"
+      ],
+      "core_hk": [
+        "sahasrayuga",
+        "ahar",
+        "rAtriM",
+        "brahmaNaH"
+      ],
+      "repetition_count": 1,
+      "repetition_rationale": "The kalpa-yuga cosmology — unique to ch8. Establishes cosmic time scale.",
+      "echo_hypothesis": "Yuga-cycle cosmology passages in Shantiparva, Adiparva creation narratives, Markandeya's teachings"
+    },
+    {
+      "id": "N063",
+      "chapter_range": "8",
+      "name": "Beyond the Unmanifest — The Eternal Unperishing Abode",
+      "proposition": "Beyond the unmanifest there is another eternal unmanifest which does not perish when all beings perish — this is the highest goal",
+      "anchor_verses": [
+        "8.20",
+        "8.21",
+        "8.22"
+      ],
+      "all_verses": [
+        "8.20",
+        "8.21",
+        "8.22"
+      ],
+      "hk_terms": [
+        "paras tasmAt",
+        "bhAvo nyo",
+        "avyakto",
+        "sanAtanaH",
+        "na vinazyati",
+        "paramAM gatim"
+      ],
+      "core_hk": [
+        "avyakto",
+        "sanAtanaH",
+        "paramAM gatim"
+      ],
+      "repetition_count": 1,
+      "repetition_rationale": "The metaphysical stratification: manifest -> unmanifest -> beyond-unmanifest.",
+      "echo_hypothesis": "Three-level ontology passages in Shantiparva — vyakta/avyakta/akshara discussions"
+    },
+    {
+      "id": "N064",
+      "chapter_range": "8",
+      "name": "The Two Paths — Light and Dark (Uttarayana and Daksinayana)",
+      "proposition": "Fire, light, day, bright fortnight, northern sun — departing this way one goes to Brahman; smoke, night, dark fortnight, southern sun — one returns",
+      "anchor_verses": [
+        "8.24",
+        "8.25",
+        "8.26"
+      ],
+      "all_verses": [
+        "8.23",
+        "8.24",
+        "8.25",
+        "8.26",
+        "8.27"
+      ],
+      "hk_terms": [
+        "uttarAyaNa",
+        "dakSiNAyana",
+        "jyotir",
+        "zuklakRSNa",
+        "dhUma",
+        "rAtri",
+        "cAndramasaM",
+        "anAvRtti"
+      ],
+      "core_hk": [
+        "uttarAyaNa",
+        "dakSiNAyana",
+        "anAvRtti"
+      ],
+      "repetition_count": 1,
+      "repetition_rationale": "The two-paths doctrine (devayana/pitriyana) is ancient Vedic — BG appropriates it.",
+      "echo_hypothesis": "Devayana/pitriyana passages in Shantiparva and cosmological discourse"
+    },
+    {
+      "id": "N065",
+      "chapter_range": "9",
+      "name": "Rajavidya — The Royal Knowledge, Royal Secret",
+      "proposition": "This knowledge is the royal knowledge, the royal secret, supremely purifying, directly known by experience",
+      "anchor_verses": [
+        "9.1",
+        "9.2"
+      ],
+      "all_verses": [
+        "9.1",
+        "9.2",
+        "9.3"
+      ],
+      "hk_terms": [
+        "rAjavidyA",
+        "rAjaguhyaM",
+        "pavitram",
+        "pratyakSAvagamaM",
+        "dharmyaM",
+        "avyayam"
+      ],
+      "core_hk": [
+        "rAjavidyA",
+        "rAjaguhyaM"
+      ],
+      "repetition_count": 1,
+      "repetition_rationale": "The self-designating claim of the BG as supreme knowledge.",
+      "echo_hypothesis": "Brahmavidya / rajavidya language in Shantiparva"
+    },
+    {
+      "id": "N066",
+      "chapter_range": "9",
+      "name": "God Pervades All Yet Does Not Dwell in Beings — Cosmic Paradox",
+      "proposition": "All beings subsist in the divine yet the divine does not dwell in them — the great wind dwells in space yet space is not in the wind",
+      "anchor_verses": [
+        "9.4",
+        "9.5",
+        "9.6"
+      ],
+      "all_verses": [
+        "9.4",
+        "9.5",
+        "9.6"
+      ],
+      "hk_terms": [
+        "matsthAni",
+        "na aham teSu",
+        "bhUtabhRt",
+        "na bhUtasthaH",
+        "yathAkAza",
+        "vAyu"
+      ],
+      "core_hk": [
+        "matsthAni",
+        "na aham teSu",
+        "bhUtabhRt"
+      ],
+      "repetition_count": 2,
+      "repetition_rationale": "The simultaneous immanence and transcendence paradox.",
+      "echo_hypothesis": "Philosophical passages on immanence without dependence in Shantiparva"
+    },
+    {
+      "id": "N067",
+      "chapter_range": "9",
+      "name": "God as Cosmic Creator Through Prakriti — Unmoved Mover",
+      "proposition": "At the end of each kalpa all beings flow back into prakriti; at the beginning the divine sends them forth again — seated like an indifferent witness",
+      "anchor_verses": [
+        "9.7",
+        "9.8",
+        "9.9"
+      ],
+      "all_verses": [
+        "9.7",
+        "9.8",
+        "9.9",
+        "9.10"
+      ],
+      "hk_terms": [
+        "kalpakSaye",
+        "kalpAdau",
+        "prakRtiM",
+        "visRjAmi",
+        "udAsInavad",
+        "asaktaM",
+        "mayAdhyakSeNa"
+      ],
+      "core_hk": [
+        "kalpakSaye",
+        "visRjAmi",
+        "udAsInavad"
+      ],
+      "repetition_count": 2,
+      "repetition_rationale": "God as unmoved first mover of cosmic cycles.",
+      "echo_hypothesis": "Passages on the unmoved mover of cosmic cycles in Shantiparva"
+    },
+    {
+      "id": "N068",
+      "chapter_range": "9",
+      "name": "The Foolish Mistake the Human Form",
+      "proposition": "The deluded disregard the divine when it takes human form, not knowing its higher nature",
+      "anchor_verses": [
+        "9.11"
+      ],
+      "all_verses": [
+        "3.32",
+        "9.11",
+        "9.12"
+      ],
+      "hk_terms": [
+        "mAnuSIM",
+        "tanum",
+        "avajAnanti",
+        "mUDhA",
+        "paraM bhAvam",
+        "bhUtamahezvara"
+      ],
+      "core_hk": [
+        "mAnuSIM",
+        "tanum",
+        "avajAnanti"
+      ],
+      "repetition_count": 1,
+      "repetition_rationale": "The avatar-recognition problem — crucial for MBH narrative.",
+      "echo_hypothesis": "Episodes where Krishna's divinity is unrecognized — Duryodhana's rejection, Shishupala"
+    },
+    {
+      "id": "N069",
+      "chapter_range": "9",
+      "name": "The Divine Is All Cosmic Relations",
+      "proposition": "The divine is father, mother, sustainer, grandfather, the way, supporter, lord, witness, dwelling, refuge, friend, origin, dissolution, ground, and imperishable seed",
+      "anchor_verses": [
+        "9.17",
+        "9.18"
+      ],
+      "all_verses": [
+        "1.34",
+        "8.9",
+        "9.16",
+        "9.17",
+        "9.18",
+        "9.19"
+      ],
+      "hk_terms": [
+        "pitA",
+        "mAtA",
+        "dhAtA",
+        "pitAmahaH",
+        "gatiH",
+        "bhartA",
+        "prabhuH",
+        "sAkSI",
+        "zaraNaM",
+        "suhRt",
+        "bIjam avyayam"
+      ],
+      "core_hk": [
+        "pitA",
+        "mAtA",
+        "sAkSI",
+        "zaraNaM",
+        "bIjam avyayam"
+      ],
+      "repetition_count": 1,
+      "repetition_rationale": "The total-relation litany: every possible relational category is claimed.",
+      "echo_hypothesis": "Prayers and hymns to the divine as all-relations in MBH"
+    },
+    {
+      "id": "N070",
+      "chapter_range": "9",
+      "name": "Svarga Through Ritual Is Temporary",
+      "proposition": "Those who worship through Vedic ritual attain heaven — but when merit is exhausted they return to the mortal world",
+      "anchor_verses": [
+        "9.20",
+        "9.21"
+      ],
+      "all_verses": [
+        "9.20",
+        "9.21"
+      ],
+      "hk_terms": [
+        "traividyA",
+        "somapAH",
+        "svargatiM",
+        "kSINe puNye",
+        "martyalokaM",
+        "gatAgataM"
+      ],
+      "core_hk": [
+        "kSINe puNye",
+        "gatAgataM",
+        "svargatiM"
+      ],
+      "repetition_count": 2,
+      "repetition_rationale": "The critique of svarga-seeking religion: effective but impermanent.",
+      "echo_hypothesis": "Critiques of svarga-seeking in Shantiparva, Markandeya's discourses"
+    },
+    {
+      "id": "N071",
+      "chapter_range": "9",
+      "name": "Ananya Bhakti — Undivided Devotion, Divine Provides",
+      "proposition": "Those who worship with undivided attention — the divine carries what they lack and preserves what they have",
+      "anchor_verses": [
+        "9.22"
+      ],
+      "all_verses": [
+        "9.22"
+      ],
+      "hk_terms": [
+        "ananyAz cintayanto",
+        "nityAbhiyuktAnAM",
+        "yogakSemaM",
+        "vahAmy aham"
+      ],
+      "core_hk": [
+        "ananyAz",
+        "yogakSemaM",
+        "vahAmy aham"
+      ],
+      "repetition_count": 2,
+      "repetition_rationale": "Yoga-kshema as divine promise to undivided devotees.",
+      "echo_hypothesis": "Divine protection of devotees in MBH — Draupadi's rescue, Prahlada"
+    },
+    {
+      "id": "N072",
+      "chapter_range": "9",
+      "name": "All Worship Reaches the Divine — One Recipient Behind All Gods",
+      "proposition": "Even those who worship other gods with faith worship the divine alone, though by an improper method",
+      "anchor_verses": [
+        "9.23",
+        "9.24"
+      ],
+      "all_verses": [
+        "9.23",
+        "9.24",
+        "9.25"
+      ],
+      "hk_terms": [
+        "anyadevatA",
+        "mAm eva",
+        "avidhipUrvakam",
+        "sarvayajJAnAM",
+        "bhoktA",
+        "prabhuH"
+      ],
+      "core_hk": [
+        "anyadevatA",
+        "mAm eva",
+        "sarvayajJAnAM"
+      ],
+      "repetition_count": 2,
+      "repetition_rationale": "All yajna has one true recipient. Foundational for the ekam sat thesis.",
+      "echo_hypothesis": "Universalist religious passages in MBH — Bhishma's teaching on one god behind many names"
+    },
+    {
+      "id": "N073",
+      "chapter_range": "9",
+      "name": "Even a Leaf Offered with Devotion Is Accepted",
+      "proposition": "Whoever offers a leaf, flower, fruit, or water with devotion — the divine accepts that gift",
+      "anchor_verses": [
+        "9.26"
+      ],
+      "all_verses": [
+        "8.10",
+        "9.26"
+      ],
+      "hk_terms": [
+        "patraM",
+        "puSpaM",
+        "phalaM",
+        "toyaM",
+        "bhaktyA",
+        "prayacchati"
+      ],
+      "core_hk": [
+        "bhaktyA",
+        "patraM puSpaM"
+      ],
+      "repetition_count": 1,
+      "repetition_rationale": "The democratization of worship — any offering with pure devotion is received.",
+      "echo_hypothesis": "Stories of humble offerings accepted by the divine in MBH"
+    },
+    {
+      "id": "N074",
+      "chapter_range": "9",
+      "name": "Offer All Actions to the Divine — Madarpana",
+      "proposition": "Whatever you do, eat, offer, give — do that as an offering to the divine; thus freed from karma-bonds",
+      "anchor_verses": [
+        "9.27",
+        "9.28"
+      ],
+      "all_verses": [
+        "9.27",
+        "9.28",
+        "12.7",
+        "14.20"
+      ],
+      "hk_terms": [
+        "madarpaNam",
+        "saMnyAsayoga",
+        "karmabandha",
+        "zubhAzubha",
+        "vimukto"
+      ],
+      "core_hk": [
+        "madarpaNam",
+        "karmabandha",
+        "vimukto"
+      ],
+      "repetition_count": 2,
+      "repetition_rationale": "Karma-yoga distilled to its simplest: all action as divine offering.",
+      "echo_hypothesis": "Arpana language in MBH — any sage teaching that all action should be dedicated to the divine"
+    },
+    {
+      "id": "N075",
+      "chapter_range": "9",
+      "name": "Equal Vision — The Divine Is the Same Toward All",
+      "proposition": "The divine is the same toward all beings; no one is hateful or dear — but those who worship with devotion are in the divine, and the divine is in them",
+      "anchor_verses": [
+        "9.29"
+      ],
+      "all_verses": [
+        "3.18",
+        "9.29",
+        "9.30",
+        "9.31"
+      ],
+      "hk_terms": [
+        "samo haM",
+        "sarvabhUteSu",
+        "na dveSyo",
+        "na priyaH",
+        "bhajanti",
+        "mayi te"
+      ],
+      "core_hk": [
+        "samo haM",
+        "sarvabhUteSu",
+        "na dveSyo na priyaH"
+      ],
+      "repetition_count": 2,
+      "repetition_rationale": "Divine impartiality as baseline — but devotion creates reciprocal inhabitation.",
+      "echo_hypothesis": "Teachings on divine impartiality in Shantiparva"
+    },
+    {
+      "id": "N076",
+      "chapter_range": "9",
+      "name": "Even the Worst Sinner Is Saved by Devotion",
+      "proposition": "Even the most sinful person who worships with undivided devotion should be considered righteous — my devotee does not perish",
+      "anchor_verses": [
+        "9.30",
+        "9.31"
+      ],
+      "all_verses": [
+        "9.30",
+        "9.31"
+      ],
+      "hk_terms": [
+        "sudurAcAra",
+        "ananyabhAk",
+        "sAdhu",
+        "dharmAtmA",
+        "na me bhaktaH praNazyati"
+      ],
+      "core_hk": [
+        "sudurAcAra",
+        "ananyabhAk",
+        "na me bhaktaH praNazyati"
+      ],
+      "repetition_count": 1,
+      "repetition_rationale": "The radical soteriology of devotion — overcoming all karmic weight.",
+      "echo_hypothesis": "Redemption through devotion stories in MBH"
+    },
+    {
+      "id": "N077",
+      "chapter_range": "9",
+      "name": "All Beings Can Attain the Highest Goal",
+      "proposition": "Even those of sinful birth — women, vaishyas, shudras — taking refuge in the divine, they too attain the highest goal",
+      "anchor_verses": [
+        "9.32",
+        "9.33"
+      ],
+      "all_verses": [
+        "9.32",
+        "9.33"
+      ],
+      "hk_terms": [
+        "pApayonayaH",
+        "striyo",
+        "vaizyAH",
+        "zUdrAs",
+        "parAM gatim"
+      ],
+      "core_hk": [
+        "pApayonayaH",
+        "striyo",
+        "parAM gatim"
+      ],
+      "repetition_count": 1,
+      "repetition_rationale": "The universalism of liberation — across all social strata.",
+      "echo_hypothesis": "Liberation across social classes in Shantiparva — stories of shudras and women attaining moksha"
+    },
+    {
+      "id": "N078",
+      "chapter_range": "10",
+      "name": "The Divine Is the Origin of Gods and Great Seers",
+      "proposition": "The seven great seers and the four Manus were born from the divine's mind — the world's progeny descend from them",
+      "anchor_verses": [
+        "10.2",
+        "10.6"
+      ],
+      "all_verses": [
+        "10.2",
+        "10.6",
+        "10.7"
+      ],
+      "hk_terms": [
+        "maharSayaH",
+        "sapta pUrve",
+        "catvAro manavas",
+        "madbhAvA",
+        "mAnasA",
+        "prajAH"
+      ],
+      "core_hk": [
+        "maharSayaH",
+        "madbhAvA",
+        "mAnasA jAtA"
+      ],
+      "repetition_count": 1,
+      "repetition_rationale": "The genealogy of cosmic authority — all teachers trace to the divine.",
+      "echo_hypothesis": "Seven sages and Manu lineages in MBH — Adiparva genealogies"
+    },
+    {
+      "id": "N079",
+      "chapter_range": "10",
+      "name": "All Qualities and States Arise from the Divine",
+      "proposition": "Intelligence, knowledge, freedom from delusion, patience, truth — all arise from the divine alone",
+      "anchor_verses": [
+        "10.4",
+        "10.5"
+      ],
+      "all_verses": [
+        "2.66",
+        "10.4",
+        "10.5"
+      ],
+      "hk_terms": [
+        "buddhir",
+        "jJAnam",
+        "asaMmoha",
+        "kSamA",
+        "satyaM",
+        "dama",
+        "zama",
+        "matta eva"
+      ],
+      "core_hk": [
+        "matta eva",
+        "buddhir jJAnam"
+      ],
+      "repetition_count": 1,
+      "repetition_rationale": "All categories — even opposites — originate from the divine. Anticipates vibhuti list.",
+      "echo_hypothesis": "Passages attributing all virtues to divine origin in Shantiparva"
+    },
+    {
+      "id": "N080",
+      "chapter_range": "10",
+      "name": "The Divine Is the Self in the Heart — Beginning Middle End",
+      "proposition": "The divine is the self abiding in the heart of all beings; the beginning, middle, and end of all beings",
+      "anchor_verses": [
+        "10.20"
+      ],
+      "all_verses": [
+        "10.20",
+        "10.32",
+        "10.39"
+      ],
+      "hk_terms": [
+        "aham AtmA",
+        "sarvabhUtAzayasthitaH",
+        "Adiz ca madhyaM ca",
+        "anta eva ca"
+      ],
+      "core_hk": [
+        "aham AtmA",
+        "sarvabhUtAzayasthita",
+        "Adiz ca madhyaM"
+      ],
+      "repetition_count": 3,
+      "repetition_rationale": "The triple formula (adi-madhya-anta) is the most concentrated ekam sat formulation.",
+      "echo_hypothesis": "Adi-madhya-anta formula as divine epithet in MBH hymns"
+    },
+    {
+      "id": "N081",
+      "chapter_range": "10",
+      "name": "Vibhutis — Manifest Excellence as Divine Fragment",
+      "proposition": "Whatever being has glory, grace, or power — know that to have sprung from a fragment of the divine's splendor; the divine pervades the world with a single portion",
+      "anchor_verses": [
+        "10.41",
+        "10.42"
+      ],
+      "all_verses": [
+        "10.16",
+        "10.17",
+        "10.18",
+        "10.21",
+        "10.22",
+        "10.23",
+        "10.24",
+        "10.25",
+        "10.26",
+        "10.27",
+        "10.28",
+        "10.29",
+        "10.30",
+        "10.31",
+        "10.32",
+        "10.33",
+        "10.34",
+        "10.35",
+        "10.36",
+        "10.37",
+        "10.38",
+        "10.39",
+        "10.40",
+        "10.41",
+        "10.42"
+      ],
+      "hk_terms": [
+        "vibhUti",
+        "vibhUtimat",
+        "zrImat",
+        "Urjitam",
+        "tejoMzasaMbhavam",
+        "ekAMzena",
+        "sthito jagat"
+      ],
+      "core_hk": [
+        "vibhUti",
+        "tejoMza",
+        "ekAMzena"
+      ],
+      "repetition_count": 1,
+      "repetition_rationale": "The entire vibhuti catalogue is one extended claim: excellence anywhere is a vibhuti.",
+      "echo_hypothesis": "Vibhuti lists and divine excellence enumerations in MBH"
+    },
+    {
+      "id": "N082",
+      "chapter_range": "10",
+      "name": "The Divine Gives Liberating Wisdom to Devotees",
+      "proposition": "For those constantly united in devotion, the divine gives the yoga of understanding and destroys the darkness of ignorance with the lamp of knowledge",
+      "anchor_verses": [
+        "10.10",
+        "10.11"
+      ],
+      "all_verses": [
+        "10.10",
+        "10.11"
+      ],
+      "hk_terms": [
+        "buddiyogaM",
+        "dadAmi",
+        "jJAnadIpena",
+        "ajJAnajaM tamaH",
+        "nAzayAmy",
+        "AtmabhAvastho"
+      ],
+      "core_hk": [
+        "buddiyogaM",
+        "jJAnadIpena",
+        "ajJAnajaM tamaH"
+      ],
+      "repetition_count": 1,
+      "repetition_rationale": "Divine grace as the final cause of liberating knowledge.",
+      "echo_hypothesis": "Divine grace enabling liberation in MBH — passages where divine intervention brings sudden clarity"
+    },
+    {
+      "id": "N083",
+      "chapter_range": "11",
+      "name": "Vishvarupa — The Entire Universe in One Body",
+      "proposition": "Arjuna beholds in the divine body the entire world standing as one — all creation gathered at one point",
+      "anchor_verses": [
+        "11.7",
+        "11.13"
+      ],
+      "all_verses": [
+        "11.5",
+        "11.6",
+        "11.7",
+        "11.10",
+        "11.11",
+        "11.12",
+        "11.13"
+      ],
+      "hk_terms": [
+        "vizvarUpa",
+        "ihaikasthaM",
+        "jagat kRtsnaM",
+        "sacarAcaram",
+        "anekavaktra",
+        "ananta"
+      ],
+      "core_hk": [
+        "vizvarUpa",
+        "ihaikasthaM",
+        "jagat kRtsnaM"
+      ],
+      "repetition_count": 1,
+      "repetition_rationale": "A direct vision rather than inferential teaching. The visual datum for ekam sat.",
+      "echo_hypothesis": "Cosmic vision episodes in MBH — Sanjaya's vision, Narada's vision of Narayana"
+    },
+    {
+      "id": "N084",
+      "chapter_range": "11",
+      "name": "Divya Drishti — Only Devotion Reveals the Cosmic Form",
+      "proposition": "The divine form cannot be seen with ordinary eyes; only by undivided devotion can it be known, seen, and entered",
+      "anchor_verses": [
+        "11.8",
+        "11.48",
+        "11.53",
+        "11.54"
+      ],
+      "all_verses": [
+        "11.8",
+        "11.48",
+        "11.53",
+        "11.54"
+      ],
+      "hk_terms": [
+        "divyaM cakSuH",
+        "vedayajJa",
+        "tapas",
+        "dAna",
+        "bhaktyA tv ananyayA",
+        "zakya",
+        "draSTum"
+      ],
+      "core_hk": [
+        "divyaM cakSuH",
+        "bhaktyA tv ananyayA"
+      ],
+      "repetition_count": 2,
+      "repetition_rationale": "The epistemology of bhakti: only love reveals what intellect and austerity cannot.",
+      "echo_hypothesis": "Passages on special vision given by grace in MBH — Sanjaya's divya-drishti"
+    },
+    {
+      "id": "N085",
+      "chapter_range": "11",
+      "name": "Kala — The Divine as Time the Destroyer",
+      "proposition": "The divine reveals itself as Time the destroyer — even without Arjuna, all warriors shall not exist; Arjuna is merely the instrument",
+      "anchor_verses": [
+        "11.32",
+        "11.33"
+      ],
+      "all_verses": [
+        "11.32",
+        "11.33"
+      ],
+      "hk_terms": [
+        "kAlo smi",
+        "lokakSayakRt",
+        "pravRddhaH",
+        "nimittamAtraM",
+        "nihatAH pUrvam eva"
+      ],
+      "core_hk": [
+        "kAlo smi",
+        "lokakSayakRt",
+        "nimittamAtraM"
+      ],
+      "repetition_count": 2,
+      "repetition_rationale": "The nimittamatra (mere instrument) claim reframes all human agency.",
+      "echo_hypothesis": "Kala-as-divine-destroyer passages in MBH — Dhritarashtra's laments, Markandeya's kala teachings"
+    },
+    {
+      "id": "N086",
+      "chapter_range": "11",
+      "name": "Terror and Devotion — Seeking the Familiar Form",
+      "proposition": "Having seen the terrifying cosmic form, Arjuna begs to see the familiar form — the devotee needs an approachable form",
+      "anchor_verses": [
+        "11.45",
+        "11.46",
+        "11.49"
+      ],
+      "all_verses": [
+        "11.14",
+        "11.15",
+        "11.16",
+        "11.17",
+        "11.18",
+        "11.19",
+        "11.20",
+        "11.21",
+        "11.22",
+        "11.23",
+        "11.24",
+        "11.25",
+        "11.26",
+        "11.27",
+        "11.28",
+        "11.29",
+        "11.30",
+        "11.31",
+        "11.34",
+        "11.35",
+        "11.36",
+        "11.37",
+        "11.38",
+        "11.39",
+        "11.40",
+        "11.41",
+        "11.42",
+        "11.43",
+        "11.44",
+        "11.45",
+        "11.46",
+        "11.47",
+        "11.49",
+        "11.50",
+        "11.51",
+        "11.52",
+        "11.55"
+      ],
+      "hk_terms": [
+        "bhayena pravyathitaM",
+        "caturbhujena",
+        "saumyavapur",
+        "prakRtiM gataH"
+      ],
+      "core_hk": [
+        "bhayena pravyathitaM",
+        "caturbhujena",
+        "saumyavapur"
+      ],
+      "repetition_count": 1,
+      "repetition_rationale": "The dialectic of the cosmic and the intimate: absolute terror answered by the comfort of the personal form.",
+      "echo_hypothesis": "Terror-to-comfort devotion arcs in MBH"
+    },
+    {
+      "id": "N087",
+      "chapter_range": "12",
+      "name": "Saguna Bhakti Is Easier for the Embodied",
+      "proposition": "Those who worship the formless imperishable face greater hardship; the path through the personal divine is easier for embodied beings",
+      "anchor_verses": [
+        "12.2",
+        "12.3",
+        "12.4",
+        "12.5"
+      ],
+      "all_verses": [
+        "12.1",
+        "12.2",
+        "12.3",
+        "12.4",
+        "12.5"
+      ],
+      "hk_terms": [
+        "mayy Avezya mano",
+        "yuktatamA",
+        "akSaram",
+        "avyaktam",
+        "klezo dhikataras",
+        "dehavadbhir"
+      ],
+      "core_hk": [
+        "yuktatamA",
+        "klezo dhikataras",
+        "dehavadbhir"
+      ],
+      "repetition_count": 1,
+      "repetition_rationale": "The pragmatic hierarchy: saguna over nirguna for embodied seekers.",
+      "echo_hypothesis": "Debates on saguna vs nirguna paths in Shantiparva"
+    },
+    {
+      "id": "N088",
+      "chapter_range": "12",
+      "name": "Graduated Path — From Mind-Fixing to Fruit-Renunciation",
+      "proposition": "If you cannot fix your mind, try abhyasa-yoga; if that fails, act for the divine; if that fails, renounce fruits; even this gives peace",
+      "anchor_verses": [
+        "12.8",
+        "12.9",
+        "12.10",
+        "12.11"
+      ],
+      "all_verses": [
+        "12.8",
+        "12.9",
+        "12.10",
+        "12.11"
+      ],
+      "hk_terms": [
+        "mana Adhatsva",
+        "abhyAsayogena",
+        "matkarmaparamo",
+        "sarvakarmaphalatyAgaM",
+        "zAntiH"
+      ],
+      "core_hk": [
+        "abhyAsayogena",
+        "matkarmaparamo",
+        "sarvakarmaphalatyAgaM"
+      ],
+      "repetition_count": 1,
+      "repetition_rationale": "The pedagogical descending ladder — BG's practical concession to different capacities.",
+      "echo_hypothesis": "Graded instruction passages in MBH"
+    },
+    {
+      "id": "N089",
+      "chapter_range": "12",
+      "name": "Fruit-Renunciation Surpasses Meditation",
+      "proposition": "Knowledge is better than practice; meditation better than knowledge; renunciation of fruit is better than meditation — from renunciation peace immediately follows",
+      "anchor_verses": [
+        "12.12"
+      ],
+      "all_verses": [
+        "12.12"
+      ],
+      "hk_terms": [
+        "zreyo hi jJAnam",
+        "abhyAsAt",
+        "dhyAnam",
+        "karmaphalatyAgas",
+        "zAntiH anantaram"
+      ],
+      "core_hk": [
+        "zreyo jJAnam",
+        "karmaphalatyAga",
+        "zAntiH anantaram"
+      ],
+      "repetition_count": 1,
+      "repetition_rationale": "A complete comparative ranking in a single verse.",
+      "echo_hypothesis": "Comparative hierarchies of spiritual practices in Shantiparva"
+    },
+    {
+      "id": "N090",
+      "chapter_range": "12",
+      "name": "Portrait of the Ideal Devotee",
+      "proposition": "The ideal devotee is free of hatred, friendly, compassionate, without ego or possessiveness, equal in pain and pleasure, patient, content, self-restrained — such a one is supremely dear to the divine",
+      "anchor_verses": [
+        "12.13",
+        "12.14",
+        "12.15",
+        "12.16",
+        "12.17",
+        "12.18",
+        "12.19"
+      ],
+      "all_verses": [
+        "3.30",
+        "12.13",
+        "12.14",
+        "12.15",
+        "12.16",
+        "12.17",
+        "12.18",
+        "12.19",
+        "12.20"
+      ],
+      "hk_terms": [
+        "adveSTA",
+        "maitraH",
+        "karuNa",
+        "nirmamo",
+        "nirahaMkAra",
+        "samaduHkhasukha",
+        "kSamI",
+        "saMtuSTaH",
+        "dRDhanizcaya",
+        "tulyanindAstutiH",
+        "maunI",
+        "aniketaH",
+        "bhaktimAn"
+      ],
+      "core_hk": [
+        "adveSTA",
+        "maitraH",
+        "nirmamo",
+        "nirahaMkAra",
+        "tulyanindAstutiH"
+      ],
+      "repetition_count": 1,
+      "repetition_rationale": "The most extensive character portrait in BG — 8 verses defining the ideal devotee.",
+      "echo_hypothesis": "Character descriptions of ideal sages in MBH — Bhishma's deathbed portrait of the wise"
+    },
+    {
+      "id": "N091",
+      "chapter_range": "13",
+      "name": "Twenty Items of Knowledge — Amanitvadi",
+      "proposition": "True knowledge consists of twenty virtues beginning with humility (amānitva), non-hypocrisy, non-harm, patience, uprightness — these are the conditions for jñāna, not its content",
+      "anchor_verses": [
+        "13.7",
+        "13.8",
+        "13.9",
+        "13.10",
+        "13.11"
+      ],
+      "all_verses": [
+        "13.7",
+        "13.8",
+        "13.9",
+        "13.10",
+        "13.11"
+      ],
+      "hk_terms": [
+        "amAnitva",
+        "adambhitva",
+        "ahiMsA",
+        "kSAnti",
+        "Arjava",
+        "AcAryopAsana",
+        "zauca",
+        "sthairya",
+        "AtmavinIgraha",
+        "vairAgya",
+        "anahaMkAra",
+        "viviktadeza",
+        "adhyAtmajJAna",
+        "tattvajJAna"
+      ],
+      "core_hk": [
+        "amAnitva",
+        "adhyAtmajJAna",
+        "tattvajJAna"
+      ],
+      "repetition_count": 1,
+      "repetition_rationale": "First and only full enumeration of these twenty virtues as jñāna-conditions; the BG treats these as a unified set",
+      "echo_hypothesis": "Search for amānitva, adhyātmanityatva, viviktadevasevitva as a cluster — any MBH sage or description using this vocabulary is echoing this node"
+    },
+    {
+      "id": "N092",
+      "chapter_range": "13",
+      "name": "Brahman as the Knowable — Anadi Para Brahma",
+      "proposition": "Brahman is the object of knowledge — beginningless, called neither sat nor asat, pervading all, the light of lights, seated in the heart of all",
+      "anchor_verses": [
+        "13.12",
+        "13.13",
+        "13.14",
+        "13.15",
+        "13.16",
+        "13.17"
+      ],
+      "all_verses": [
+        "8.12",
+        "13.12",
+        "13.13",
+        "13.14",
+        "13.15",
+        "13.16",
+        "13.17",
+        "18.18"
+      ],
+      "hk_terms": [
+        "jJeya",
+        "anAdimat",
+        "paraM brahma",
+        "na sat",
+        "na asat",
+        "jyotiSAm",
+        "jyotiH",
+        "hRdi",
+        "sarvatra",
+        "sarvabhRt",
+        "nirguNam",
+        "guNabhoktR"
+      ],
+      "core_hk": [
+        "jJeya",
+        "anAdimat",
+        "paraM brahma",
+        "hRdi"
+      ],
+      "repetition_count": 1,
+      "repetition_rationale": "Unique to ch13 — the fullest description of Brahman as the object of knowledge (jñeya), with paradoxical attributes",
+      "echo_hypothesis": "Search for jñeya + brahma, anādi + brahma, jyotiṣām jyotiḥ — sages describing the knowable absolute in paradoxical terms"
+    },
+    {
+      "id": "N093",
+      "chapter_range": "13",
+      "name": "Purusha-Prakriti Duality — Both Beginningless",
+      "proposition": "Purusha and Prakriti are both beginningless; Prakriti is the cause of effects and instruments, Purusha is the experiencer of pleasure and pain",
+      "anchor_verses": [
+        "13.19",
+        "13.20",
+        "13.21"
+      ],
+      "all_verses": [
+        "13.19",
+        "13.20",
+        "13.21",
+        "13.22",
+        "13.23"
+      ],
+      "hk_terms": [
+        "puruSa",
+        "prakRti",
+        "anAdI",
+        "kAryakAraNa",
+        "kartRtva",
+        "bhoktRtva",
+        "sukhaduHkha",
+        "guNasaGga",
+        "sadasadyoni",
+        "upadrazTA",
+        "anumantA",
+        "mahezvaraH"
+      ],
+      "core_hk": [
+        "puruSa",
+        "prakRti",
+        "bhoktRtva",
+        "upadrazTA"
+      ],
+      "repetition_count": 2,
+      "repetition_rationale": "The purusha-prakriti framework appears in ch3 and ch7 but ch13 gives the fullest Sāṃkhya-inflected account, with the witness-self portrait (13.22-23) as a sub-claim",
+      "echo_hypothesis": "Search for puruṣa + prakṛti + anādi, bhoktṛtva paired with kartṛtva — Sāṃkhya passages in Śāntiparva and Anugītā will echo this"
+    },
+    {
+      "id": "N094",
+      "chapter_range": "13",
+      "name": "Liberation Through Vision — Seeing the Same Lord in All",
+      "proposition": "One who sees the supreme Lord dwelling equally in all perishable beings, the imperishable within the perishable — that one truly sees",
+      "anchor_verses": [
+        "13.27",
+        "13.28",
+        "13.29",
+        "13.30"
+      ],
+      "all_verses": [
+        "13.27",
+        "13.28",
+        "13.29",
+        "13.30",
+        "13.31",
+        "13.32",
+        "13.33",
+        "13.34"
+      ],
+      "hk_terms": [
+        "samaM",
+        "paramezvaram",
+        "avinazyantam",
+        "vinazyatsu",
+        "akartAram",
+        "prakRtyaiva",
+        "bhUtapRthagbhAva",
+        "ekastham",
+        "brahma",
+        "AkAza",
+        "nopalipyate"
+      ],
+      "core_hk": [
+        "samaM paramezvaram",
+        "avinazyantam",
+        "akartAram"
+      ],
+      "repetition_count": 3,
+      "repetition_rationale": "Restates N09 (same self in all) from a different angle — the vision of the imperishable in the perishable; the non-doer in the doer; these are three distinct but related perceptions converging on liberation",
+      "echo_hypothesis": "Search for paśyati + samaṃ + sarvabhūteṣu, or the sky/ākāśa metaphor (like space not being stained) — this simile appears in Upaniṣads and may recur in MBH"
+    },
+    {
+      "id": "N095",
+      "chapter_range": "14",
+      "name": "Brahman as the Womb of All Beings",
+      "proposition": "The great Brahman is the womb; the Lord places the seed in it — all beings are born from this union of the field and the knower",
+      "anchor_verses": [
+        "14.3",
+        "14.4"
+      ],
+      "all_verses": [
+        "14.3",
+        "14.4"
+      ],
+      "hk_terms": [
+        "mahad brahma",
+        "yoni",
+        "garbha",
+        "bIja",
+        "saMbhava",
+        "sarvabhUtAnAM",
+        "pitA"
+      ],
+      "core_hk": [
+        "mahad brahma",
+        "yoni",
+        "bIja",
+        "pitA"
+      ],
+      "repetition_count": 1,
+      "repetition_rationale": "Unique cosmogonic image — Brahman as the cosmic womb, Ishvara as the father-seed — establishes the origin of diversity from a single source",
+      "echo_hypothesis": "Search for mahad brahma + yoni, bīja + garbha in cosmogonic contexts — creation hymns and Brahma-creation narratives in Ādi and Śāntiparva"
+    },
+    {
+      "id": "N096",
+      "chapter_range": "14",
+      "name": "How Each Guna Binds the Embodied Self",
+      "proposition": "Sattva binds through attachment to happiness and knowledge; rajas binds through attachment to action; tamas binds through delusion, sloth, and sleep",
+      "anchor_verses": [
+        "14.6",
+        "14.7",
+        "14.8",
+        "14.9"
+      ],
+      "all_verses": [
+        "14.6",
+        "14.7",
+        "14.8",
+        "14.9",
+        "14.10",
+        "14.11",
+        "14.12",
+        "14.13"
+      ],
+      "hk_terms": [
+        "sattva",
+        "rajas",
+        "tamas",
+        "nibadhnAti",
+        "sukhasaGga",
+        "jJAnasaGga",
+        "karmasaGga",
+        "tRSNA",
+        "pramAda",
+        "Alasya",
+        "nidrA",
+        "moha",
+        "prakAza",
+        "pravRtti"
+      ],
+      "core_hk": [
+        "nibadhnAti",
+        "sukhasaGga",
+        "karmasaGga",
+        "pramAda"
+      ],
+      "repetition_count": 2,
+      "repetition_rationale": "While N06 names the three gunas, this node is a distinct claim: the mechanism of bondage differs for each guna; even sattva binds",
+      "echo_hypothesis": "Search for nibadhnāti + guṇa, sattvena badhnāti — Sāṃkhya expositions in Śāntiparva on how the gunas produce bondage"
+    },
+    {
+      "id": "N097",
+      "chapter_range": "14",
+      "name": "Cosmic Destinations by Dominant Guna at Death",
+      "proposition": "At death, if sattva dominates one goes to higher worlds; if rajas, one is reborn among action-attached; if tamas, one is born in deluded wombs",
+      "anchor_verses": [
+        "14.14",
+        "14.15",
+        "14.16",
+        "14.17",
+        "14.18"
+      ],
+      "all_verses": [
+        "6.23",
+        "14.14",
+        "14.15",
+        "14.16",
+        "14.17",
+        "14.18",
+        "16.15"
+      ],
+      "hk_terms": [
+        "pralaya",
+        "sattve",
+        "rajasi",
+        "tamasi",
+        "uttamavidAM",
+        "karmasaGgiSu",
+        "mUDhayoniSu",
+        "UrdhvaM",
+        "adhogacchanti",
+        "sukRtasya",
+        "duHkha",
+        "ajJAna"
+      ],
+      "core_hk": [
+        "pralaya",
+        "guNe",
+        "UrdhvaM",
+        "adhaH",
+        "yoni"
+      ],
+      "repetition_count": 1,
+      "repetition_rationale": "The eschatological corollary of guna theory — where you go depends on which guna predominates at the moment of death; unique to ch14",
+      "echo_hypothesis": "Search for ūrdhvaṃ gacchanti sattvasthāḥ + adho gacchanti tāmasāḥ — this trisection of cosmic destinations appears in Sāṃkhya contexts in Śāntiparva"
+    },
+    {
+      "id": "N098",
+      "chapter_range": "14",
+      "name": "Portrait of the Gunatita — Beyond the Three Qualities",
+      "proposition": "One who neither hates illumination, activity, and delusion when present, nor desires them when absent, who is indifferent like a witness — that one has transcended the gunas",
+      "anchor_verses": [
+        "14.22",
+        "14.23",
+        "14.24",
+        "14.25"
+      ],
+      "all_verses": [
+        "14.22",
+        "14.23",
+        "14.24",
+        "14.25"
+      ],
+      "hk_terms": [
+        "guNAtIta",
+        "prakAzaM",
+        "pravRttiM",
+        "moham",
+        "na dveSTi",
+        "na kAGkSati",
+        "udAsIna",
+        "na vicAlyate",
+        "samaduHkhasukha",
+        "samaloSTAzmakAJcana",
+        "sarvArambhaparityAgI"
+      ],
+      "core_hk": [
+        "guNAtIta",
+        "udAsIna",
+        "na dveSTi",
+        "sarvArambhaparityAgI"
+      ],
+      "repetition_count": 2,
+      "repetition_rationale": "Parallel to the sthitaprajña portrait (N05) but now from the guna-framework angle; distinct because the criterion is not-hating-not-desiring the three qualities themselves",
+      "echo_hypothesis": "Search for guṇātīta + udāsīna, sarvārambhaparityāgī — any sage described as unmoved by the three qualities, described from this vocabulary"
+    },
+    {
+      "id": "N099",
+      "chapter_range": "14",
+      "name": "Bhakti as the Vehicle Beyond the Gunas",
+      "proposition": "By unswerving devotion one transcends the three gunas and becomes fit for Brahman — Brahman itself is the ground of the immortal, the eternal, the everlasting happiness",
+      "anchor_verses": [
+        "14.26",
+        "14.27"
+      ],
+      "all_verses": [
+        "14.26",
+        "14.27"
+      ],
+      "hk_terms": [
+        "avyabhicAreNa",
+        "bhaktiyoga",
+        "guNAn samatItya",
+        "brahmabhUyAya",
+        "brahmaNo pratiSThA",
+        "amRtasya",
+        "avyayasya",
+        "zAzvatasya",
+        "dharmasya",
+        "sukhasya"
+      ],
+      "core_hk": [
+        "avyabhicAreNa",
+        "bhaktiyoga",
+        "brahmabhUyAya"
+      ],
+      "repetition_count": 2,
+      "repetition_rationale": "Ch14 closes with an unexpected move — after the entire guna analysis, it is bhakti (not jñāna or sāṃkhya) that lifts one beyond; unique synthesis here",
+      "echo_hypothesis": "Search for bhaktiyogena guṇātīta — devotion framed as the means of transcending the guna-structure; rare formulation to track in MBH"
+    },
+    {
+      "id": "N100",
+      "chapter_range": "15",
+      "name": "The Cosmic Ashvattha Tree — World as Inverted Tree",
+      "proposition": "The cosmic tree has its roots above and branches below — its leaves are the Vedas; one who knows it is a Veda-knower; cut it with the axe of non-attachment",
+      "anchor_verses": [
+        "15.1",
+        "15.2",
+        "15.3",
+        "15.4"
+      ],
+      "all_verses": [
+        "15.1",
+        "15.2",
+        "15.3",
+        "15.4"
+      ],
+      "hk_terms": [
+        "azvattham",
+        "UrdhvamUlam",
+        "adhaHzAkham",
+        "avyayam",
+        "chandAMsi",
+        "parNAni",
+        "asaGgazastra",
+        "chittvA",
+        "suvirUDhamUla",
+        "padaM",
+        "puruSam",
+        "prapadye"
+      ],
+      "core_hk": [
+        "azvattham",
+        "UrdhvamUlam",
+        "asaGgazastra",
+        "chittvA"
+      ],
+      "repetition_count": 1,
+      "repetition_rationale": "The inverted tree is a unique cosmological image in BG — roots above = Brahman, branches below = manifest world; the whole world is a proliferating tree that must be cut",
+      "echo_hypothesis": "Search for aśvattham + ūrdhvamūlam — this specific image appears in KaṭhaU 2.3.1 and may recur in Śāntiparva cosmological sections"
+    },
+    {
+      "id": "N101",
+      "chapter_range": "15",
+      "name": "The Jiva as Eternal Fragment of the Divine",
+      "proposition": "The living soul in the world of life is an eternal fragment of Me — it draws to itself the mind and the five senses dwelling in Prakriti",
+      "anchor_verses": [
+        "15.7",
+        "15.8",
+        "15.9",
+        "15.10"
+      ],
+      "all_verses": [
+        "15.7",
+        "15.8",
+        "15.9",
+        "15.10",
+        "15.11"
+      ],
+      "hk_terms": [
+        "mamaivAMzo",
+        "jIvaloke",
+        "jIvabhUtaH",
+        "sanAtanaH",
+        "manaHSaSThAni",
+        "indriyANi",
+        "prakRtisthAni",
+        "karSati",
+        "zarIram",
+        "utkrAmantam",
+        "jJAnacakSuSa"
+      ],
+      "core_hk": [
+        "mamaivAMzo",
+        "jIvabhUtaH",
+        "sanAtanaH"
+      ],
+      "repetition_count": 1,
+      "repetition_rationale": "Unique claim: the individual jīva is not separate from but is a fragment (aṃśa) of the divine — this is the metaphysical basis for devotion and oneness simultaneously",
+      "echo_hypothesis": "Search for mamaivāṃśo jīvaloke — this exact phrase or its paraphrase; also jīvabhūta + sanātana in contexts of individual-divine relationship"
+    },
+    {
+      "id": "N102",
+      "chapter_range": "15",
+      "name": "The Lord as the Inner Power in All — Vaisvanara",
+      "proposition": "The Lord enters the earth and sustains beings; becomes the fire (Vaiśvānara) in the body and digests the four kinds of food; enters the heart as memory and knowledge",
+      "anchor_verses": [
+        "15.12",
+        "15.13",
+        "15.14",
+        "15.15"
+      ],
+      "all_verses": [
+        "7.2",
+        "14.2",
+        "15.12",
+        "15.13",
+        "15.14",
+        "15.15",
+        "18.63",
+        "18.73"
+      ],
+      "hk_terms": [
+        "vaizvAnara",
+        "prANApAna",
+        "pacAmi",
+        "gAm",
+        "dhArayAmi",
+        "puSNAmi",
+        "auSadhIH",
+        "smRti",
+        "jJAnam",
+        "apohanam",
+        "vedaiH",
+        "vedya",
+        "vedAntakRt"
+      ],
+      "core_hk": [
+        "vaizvAnara",
+        "hRdi",
+        "smRti",
+        "jJAnam",
+        "vedya"
+      ],
+      "repetition_count": 1,
+      "repetition_rationale": "Distinct from the antaryāmin node (N31): here the emphasis is on the Lord's identity with elemental cosmic functions — earth-sustainer, fire-digester, vedic knower — not just the inner witness",
+      "echo_hypothesis": "Search for vaiśvānara + deha, smṛtir jñānam apohanaṃ ca — the Lord as digester and as the source of memory/forgetting; tracks across hymns to Viṣṇu/Brahman in MBH"
+    },
+    {
+      "id": "N103",
+      "chapter_range": "15",
+      "name": "Three Purushas — Kshara, Akshara, Purushottama",
+      "proposition": "Two purushas exist in the world — the perishable (all beings) and the imperishable (the immovable kūṭastha); the highest is a third, the Purushottama who pervades and sustains all three worlds",
+      "anchor_verses": [
+        "15.16",
+        "15.17",
+        "15.18",
+        "15.19",
+        "15.20"
+      ],
+      "all_verses": [
+        "15.16",
+        "15.17",
+        "15.18",
+        "15.19",
+        "15.20"
+      ],
+      "hk_terms": [
+        "kzara",
+        "akzara",
+        "kUTastha",
+        "purUSottama",
+        "uttamaH puruSaH",
+        "paramAtmA",
+        "lokatrayam",
+        "bibharti",
+        "avyaya",
+        "IzvaraH",
+        "sarvavit",
+        "sarvabhAvena"
+      ],
+      "core_hk": [
+        "kzara",
+        "akzara",
+        "purUSottama",
+        "paramAtmA"
+      ],
+      "repetition_count": 2,
+      "repetition_rationale": "This node refines N16 — while N16 names purushottama, this node provides the full tripartite ontology: kṣara (manifold becoming), akṣara (immovable being), and Purushottama (the transcendent who surpasses both)",
+      "echo_hypothesis": "Search for kṣaraḥ sarvāṇi bhūtāni + kūṭastho 'kṣara — and the beyond-both formulation; Anugītā and Śāntiparva Sāṃkhya sections will deploy this triad"
+    },
+    {
+      "id": "N104",
+      "chapter_range": "16",
+      "name": "The Daivi Sampad — Divine Qualities as Liberation's Equipment",
+      "proposition": "Fearlessness, purity of being, steadiness in jñāna-yoga, charity, self-restraint, sacrifice, study, austerity, uprightness — these constitute the divine estate that leads to liberation",
+      "anchor_verses": [
+        "16.1",
+        "16.2",
+        "16.3",
+        "16.5"
+      ],
+      "all_verses": [
+        "6.25",
+        "16.1",
+        "16.2",
+        "16.3",
+        "16.5",
+        "16.6",
+        "17.7"
+      ],
+      "hk_terms": [
+        "abhayam",
+        "sattvasaMzuddhi",
+        "jJAnayogavyavasthiti",
+        "dAna",
+        "dama",
+        "yajJa",
+        "svAdhyAya",
+        "tapa",
+        "Arjava",
+        "ahiMsA",
+        "satya",
+        "akrodha",
+        "tyAga",
+        "zAnti",
+        "apaizuna",
+        "dayA",
+        "mArdava",
+        "hrI",
+        "acApala",
+        "teja",
+        "kSamA",
+        "dhRti",
+        "zauca",
+        "adroha",
+        "nAtimAnitA",
+        "daivIm",
+        "vimokSAya"
+      ],
+      "core_hk": [
+        "abhayam",
+        "sattvasaMzuddhi",
+        "daivIm",
+        "vimokSAya"
+      ],
+      "repetition_count": 2,
+      "repetition_rationale": "While N30 contrasts daivi/āsuri natures, this node specifically maps the daivī sampad as soteriological equipment — a positive list of twenty-six virtues; it echoes the amānitva list of ch13 (N36) but extends it",
+      "echo_hypothesis": "Search for abhayaṃ sattvasaṃśuddhi + daivīm — also any enumeration of virtue lists in MBH where sages describe the qualities of the good; these recur in Anuśāsanaparva"
+    },
+    {
+      "id": "N105",
+      "chapter_range": "16",
+      "name": "The Three Gates of Hell — Kama Krodha Lobha",
+      "proposition": "Desire, anger, and greed are the three gates of hell — the destruction of the self; abandoning these three, one should act for one's own good",
+      "anchor_verses": [
+        "16.21",
+        "16.22"
+      ],
+      "all_verses": [
+        "6.19",
+        "16.21",
+        "16.22"
+      ],
+      "hk_terms": [
+        "trividhaM",
+        "narakasya",
+        "dvAraM",
+        "kAmaH",
+        "krodhaH",
+        "lobhaH",
+        "nAzanam",
+        "AtmanaH",
+        "tamodvArais",
+        "tribhiH",
+        "zreyas",
+        "parAM gatim"
+      ],
+      "core_hk": [
+        "narakasya dvAraM",
+        "kAmaH krodhaH lobhaH",
+        "tyajet"
+      ],
+      "repetition_count": 2,
+      "repetition_rationale": "While N12 covers kāma as root of bondage, this is a distinct claim: the triple-gate formula — kāma-krodha-lobha as the three specific portals to self-destruction; this triad appears repeatedly in MBH",
+      "echo_hypothesis": "Search for kāmaḥ krodhas tathā lobhas — this exact triad is one of the most grep-stable clusters; it appears verbatim in Śāntiparva and Anuśāsanaparva ethical sections"
+    },
+    {
+      "id": "N106",
+      "chapter_range": "16",
+      "name": "Shastra as the Authority for Action",
+      "proposition": "One who abandons the injunction of śāstra and acts from personal desire attains neither perfection nor happiness nor the highest goal — let śāstra be your authority for what is to be done",
+      "anchor_verses": [
+        "16.23",
+        "16.24"
+      ],
+      "all_verses": [
+        "16.23",
+        "16.24",
+        "17.1"
+      ],
+      "hk_terms": [
+        "zAstravidhim",
+        "utsRjya",
+        "kAmakArataH",
+        "na siddhim",
+        "na sukhaM",
+        "na parAM gatim",
+        "zAstraM pramANaM",
+        "kAryAkArya",
+        "zAstravidhAna"
+      ],
+      "core_hk": [
+        "zAstraM pramANaM",
+        "zAstravidhim",
+        "kAryAkArya"
+      ],
+      "repetition_count": 1,
+      "repetition_rationale": "Unique node: BG explicitly validates śāstra as the epistemological standard for action — this is the only place it makes this meta-claim about scriptural authority",
+      "echo_hypothesis": "Search for śāstraṃ pramāṇaṃ — this formulation or śāstravidhim utsṛjya as a negative marker; dharmaśāstra-oriented passages in Anuśāsanaparva will echo this"
+    },
+    {
+      "id": "N107",
+      "chapter_range": "17",
+      "name": "Shraddha Traya — Three Types of Faith",
+      "proposition": "Faith is of three kinds born of each person's own nature — the sattvic worship the devas, the rajasic worship yakṣas and rākṣasas, the tamasic worship pretas and bhūtas",
+      "anchor_verses": [
+        "17.2",
+        "17.3",
+        "17.4"
+      ],
+      "all_verses": [
+        "3.35",
+        "10.13",
+        "17.2",
+        "17.3",
+        "17.4"
+      ],
+      "hk_terms": [
+        "zraddhA",
+        "trividhA",
+        "svabhAvajA",
+        "sAttvikI",
+        "rAjasI",
+        "tAmasI",
+        "zraddhAmayo",
+        "yaH",
+        "devAn",
+        "yakSarakSAMsi",
+        "pretAn",
+        "bhUtagaNAn"
+      ],
+      "core_hk": [
+        "zraddhA trividhA",
+        "svabhAvajA",
+        "zraddhAmayo yaM puruSaH"
+      ],
+      "repetition_count": 1,
+      "repetition_rationale": "The claim that a person is constituted by their śraddhā (yo yacchraddhāḥ sa eva saḥ) is among the most psychologically profound in BG; the tripartition by guna then applies this to worship",
+      "echo_hypothesis": "Search for śraddhāmayo 'yaṃ puruṣaḥ — this is the most quotable formulation; also śraddhā + trividhā + svabhāvajā; track in texts on religious duty and devotional practice"
+    },
+    {
+      "id": "N108",
+      "chapter_range": "17",
+      "name": "Three Types of Tapas — Bodily, Speech, Mental",
+      "proposition": "Austerity is of three kinds: of body (reverence, purity, non-harm), of speech (true, pleasant, beneficial words, recitation), and of mind (serenity, gentleness, silence, self-restraint, purity of intention)",
+      "anchor_verses": [
+        "17.14",
+        "17.15",
+        "17.16",
+        "17.17",
+        "17.18",
+        "17.19"
+      ],
+      "all_verses": [
+        "2.3",
+        "2.9",
+        "17.11",
+        "17.14",
+        "17.15",
+        "17.16",
+        "17.17",
+        "17.18",
+        "17.19"
+      ],
+      "hk_terms": [
+        "tapa",
+        "zArIram",
+        "vAGmayam",
+        "mAnasam",
+        "devadvija",
+        "pUjanam",
+        "zauca",
+        "brahmacaryam",
+        "ahiMsA",
+        "anudvegakaram",
+        "vAkyam",
+        "satyam",
+        "svAdhyAya",
+        "manaHprasAda",
+        "saumyatva",
+        "mauna",
+        "AtmavinIgraha",
+        "bhAvasaMzuddhi",
+        "aphalAkAGkSi",
+        "sAttvikaM"
+      ],
+      "core_hk": [
+        "tapa",
+        "zArIram",
+        "vAGmayam",
+        "mAnasam",
+        "aphalAkAGkSi"
+      ],
+      "repetition_count": 2,
+      "repetition_rationale": "While tapas is mentioned often in BG, this is the only systematic threefold analysis of tapas by mode (body/speech/mind) and by guna quality (sāttvika/rājasa/tāmasa)",
+      "echo_hypothesis": "Search for śārīraṃ tapa + vāṅmayaṃ tapa + mānasam — this classification recurs in Anuśāsanaparva on tapas; also manaḥprasāda + saumyatva + mauna as a cluster"
+    },
+    {
+      "id": "N109",
+      "chapter_range": "17",
+      "name": "Three Types of Dana — Sattvic Rajasic Tamasic",
+      "proposition": "Sattvic giving is to one who cannot repay, in the right place, time, and to a worthy person; rājasic giving expects return; tāmasic giving is done with contempt in wrong circumstances",
+      "anchor_verses": [
+        "17.20",
+        "17.21",
+        "17.22"
+      ],
+      "all_verses": [
+        "17.20",
+        "17.21",
+        "17.22"
+      ],
+      "hk_terms": [
+        "dAna",
+        "dAtavyam",
+        "anupakAriNe",
+        "deze kAle",
+        "pAtre",
+        "sAttvikam",
+        "pratyupakArArtham",
+        "phalam",
+        "rAjasam",
+        "adezakAle",
+        "apAtrebhyaH",
+        "asatkRtam",
+        "avajJAtam",
+        "tAmasam"
+      ],
+      "core_hk": [
+        "dAna",
+        "dAtavyam",
+        "anupakAriNe",
+        "deze kAle pAtre"
+      ],
+      "repetition_count": 1,
+      "repetition_rationale": "The three-guna analysis of dāna is unique to ch17; emphasizes context (deśa-kāla-pātra) as constitutive of the quality of giving",
+      "echo_hypothesis": "Search for dānaṃ + deśa + kāla + pātra — this tetrad appears in dharmaśāstra and is echoed in Anuśāsanaparva chapters on dānadharma"
+    },
+    {
+      "id": "N110",
+      "chapter_range": "17",
+      "name": "OM TAT SAT — Three Designations of Brahman",
+      "proposition": "OM, TAT, SAT are the three-fold designation of Brahman from which all rites, Vedas, and brahmins were instituted; actions without śraddhā are called asat and are naught in this world or the next",
+      "anchor_verses": [
+        "17.23",
+        "17.24",
+        "17.25",
+        "17.26",
+        "17.27",
+        "17.28"
+      ],
+      "all_verses": [
+        "6.22",
+        "6.26",
+        "14.21",
+        "17.23",
+        "17.24",
+        "17.25",
+        "17.26",
+        "17.27",
+        "17.28"
+      ],
+      "hk_terms": [
+        "oM",
+        "tat",
+        "sat",
+        "nirdezo",
+        "brahmaNas",
+        "trividhaH",
+        "brAhmaNAs",
+        "vedAz",
+        "yajJAz",
+        "mokSakAGkSibhiH",
+        "sadbhAve",
+        "sAdhubhAve",
+        "azraddhayA",
+        "asad",
+        "pretya"
+      ],
+      "core_hk": [
+        "oM tat sat",
+        "brahmaNas trividhaH",
+        "azraddhayA asad"
+      ],
+      "repetition_count": 1,
+      "repetition_rationale": "Unique ritual-ontological node: OM TAT SAT as three names of Brahman; the chapter ends with the negative — action without śraddhā is asat, real neither here nor hereafter",
+      "echo_hypothesis": "Search for oṃ tat sad iti nirdeśo — this exact phrase; also aśraddhayā hutaṃ dattaṃ as the negative marker; track in ritual and Brahman-naming contexts across MBH"
+    },
+    {
+      "id": "N111",
+      "chapter_range": "18",
+      "name": "Sannyasa vs Tyaga — Resolution of the Distinction",
+      "proposition": "Sannyāsa is the abandonment of desire-motivated actions; tyāga is the abandonment of the fruit of all actions; the tyāgī performs yajña-dāna-tapas without attachment to fruit — this is sattvic tyāga",
+      "anchor_verses": [
+        "18.2",
+        "18.3",
+        "18.4",
+        "18.5",
+        "18.6",
+        "18.7",
+        "18.8",
+        "18.9"
+      ],
+      "all_verses": [
+        "18.1",
+        "18.2",
+        "18.3",
+        "18.4",
+        "18.5",
+        "18.6",
+        "18.7",
+        "18.8",
+        "18.9",
+        "18.10",
+        "18.11"
+      ],
+      "hk_terms": [
+        "saMnyAsa",
+        "tyAga",
+        "kAmyAnAM karmaNAM nyAsam",
+        "sarvakarmaphalatyAgam",
+        "yajJadAnatapaHkarma",
+        "na tyAjyam",
+        "saGgaM tyaktvA",
+        "phalAni",
+        "sAttviko",
+        "rAjasaM",
+        "tAmasaH",
+        "niyatasya",
+        "phalatyAgI"
+      ],
+      "core_hk": [
+        "tyAga",
+        "saMnyAsa",
+        "phalatyAgI",
+        "sAttviko mataH"
+      ],
+      "repetition_count": 3,
+      "repetition_rationale": "Ch18 opens with the question Arjuna posed at the start — the BG's entire arc resolves here; this node is the final answer to N10 (tyāga vs sannyāsa), now with a clear verdict: sattvic tyāga = perform duty, drop the fruit",
+      "echo_hypothesis": "Search for kāmyānāṃ karmaṇāṃ nyāsaṃ + sarvakarmaphalatyāgam — the technical pairing of sannyāsa and tyāga definitions; also phalatyāgī as a descriptor in MBH ethical passages"
+    },
+    {
+      "id": "N112",
+      "chapter_range": "18",
+      "name": "Five Causes of All Action — The Samkhya Account",
+      "proposition": "All actions are accomplished by five causes: the locus (body), the agent, the instruments, the various operations, and the fifth — fate (daiva); one who sees only the self as agent is of perverted understanding",
+      "anchor_verses": [
+        "18.13",
+        "18.14",
+        "18.15",
+        "18.16",
+        "18.17"
+      ],
+      "all_verses": [
+        "18.13",
+        "18.14",
+        "18.15",
+        "18.16",
+        "18.17"
+      ],
+      "hk_terms": [
+        "paJcaitAni",
+        "kAraNAni",
+        "adhiSThAnam",
+        "kartA",
+        "karaNam",
+        "ceSTA",
+        "daivaM",
+        "paJcamam",
+        "zarIravAGmanaHkarma",
+        "akRtabuddhitva",
+        "nAhaMkRta",
+        "na hanti",
+        "na nibadhyate"
+      ],
+      "core_hk": [
+        "paJcakAraNa",
+        "adhiSThAnam",
+        "daivaM",
+        "akRtabuddhitva"
+      ],
+      "repetition_count": 1,
+      "repetition_rationale": "Unique Sāṃkhya-inflected analysis of action causation; the five-cause theory distributes agency and undoes the ego's claim to sole authorship; daiva as the fifth cause is crucial",
+      "echo_hypothesis": "Search for pañcaitāni kāraṇāni + adhiṣṭhānaṃ tathā kartā — this exact enumeration; Sāṃkhya discussions in Śāntiparva on the causes of action will echo this"
+    },
+    {
+      "id": "N113",
+      "chapter_range": "18",
+      "name": "Knowledge Karma Karta in Three Gunas",
+      "proposition": "Knowledge, action, and the agent are each of three kinds according to the gunas: sattvic knowledge sees one imperishable in all; sattvic action is obligatory and non-attached; the sattvic doer is free of ego and fortitude",
+      "anchor_verses": [
+        "18.20",
+        "18.21",
+        "18.22",
+        "18.23",
+        "18.24",
+        "18.25",
+        "18.26",
+        "18.27",
+        "18.28"
+      ],
+      "all_verses": [
+        "18.19",
+        "18.20",
+        "18.21",
+        "18.22",
+        "18.23",
+        "18.24",
+        "18.25",
+        "18.26",
+        "18.27",
+        "18.28"
+      ],
+      "hk_terms": [
+        "jJAnaM",
+        "karma",
+        "kartA",
+        "guNabhedataH",
+        "sarvabhUteSu ekam",
+        "avibhaktam",
+        "vibhakteSu",
+        "nAnAbhAvan",
+        "kRtsnavad",
+        "niyatam",
+        "saGgarahitam",
+        "arAgadveSataH",
+        "aphalaprepsunA",
+        "muktasaGga",
+        "anahaMvAdI",
+        "dhRtyutsAha",
+        "siddhyasiddhyor nirvikAra",
+        "rAgI",
+        "karmaphalaprepsur",
+        "harSazoka",
+        "ayukta",
+        "prAkRta",
+        "stabdha"
+      ],
+      "core_hk": [
+        "jJAnaM karma kartA trividhaH",
+        "sarvabhUteSu ekam",
+        "muktasaGga",
+        "siddhyasiddhyor nirvikAra"
+      ],
+      "repetition_count": 2,
+      "repetition_rationale": "The triplication of jñāna-karma-kartā by gunas is ch18's systematic exposition; it operationalizes the guna framework (N06) into the three fundamental categories of every action",
+      "echo_hypothesis": "Search for jñānaṃ karma ca kartā ca tridhaiva guṇabhedataḥ — this exact formula or its paraphrase in Sāṃkhya-Yoga expositions; also muktasaṅgo 'nahaṃvādī as a quality-descriptor"
+    },
+    {
+      "id": "N114",
+      "chapter_range": "18",
+      "name": "Buddhi and Dhrti in Three Gunas",
+      "proposition": "Intellect (buddhi) that knows pravṛtti and nivṛtti, what is to be done and not done, bondage and liberation — that is sattvic; dhṛti that maintains mind, prāṇa, and senses by yoga without wavering — that is sattvic",
+      "anchor_verses": [
+        "18.29",
+        "18.30",
+        "18.31",
+        "18.32",
+        "18.33",
+        "18.34",
+        "18.35"
+      ],
+      "all_verses": [
+        "2.53",
+        "18.29",
+        "18.30",
+        "18.31",
+        "18.32",
+        "18.33",
+        "18.34",
+        "18.35"
+      ],
+      "hk_terms": [
+        "buddhi",
+        "dhRti",
+        "pravRttiM",
+        "nivRttiM",
+        "kAryAkArye",
+        "bandhaM mokSaM",
+        "sAttvikI",
+        "yayA dharmam adharmaM",
+        "rAjasI",
+        "adharmaM dharmam",
+        "tAmasI",
+        "manaHprANendriya",
+        "yogenAvyabhicAriNyA",
+        "dhRtyA"
+      ],
+      "core_hk": [
+        "buddhi trividhA",
+        "dhRti trividhA",
+        "bandhaM mokSaM",
+        "yogenAvyabhicAriNyA"
+      ],
+      "repetition_count": 1,
+      "repetition_rationale": "Unique to ch18 — the application of the three-guna framework to the faculties of intellect and resolve; distinct from knowledge or action, these are the meta-capacities that govern how knowledge and action unfold",
+      "echo_hypothesis": "Search for pravṛttiṃ ca nivṛttiṃ ca kāryākārye + bandhaṃ mokṣaṃ — this tetrad of what buddhi must discern; also dhṛtyā dhārayate manaḥprāṇendriyakriyāḥ"
+    },
+    {
+      "id": "N115",
+      "chapter_range": "18",
+      "name": "Three Types of Pleasure — Sattvic Pleasure Through Practice",
+      "proposition": "Sattvic pleasure is like poison at first, nectar at the end — born of the clarity of self-knowledge through practice; rājasic is nectar at first and poison at the end; tāmasic deludes from beginning to end",
+      "anchor_verses": [
+        "18.36",
+        "18.37",
+        "18.38",
+        "18.39"
+      ],
+      "all_verses": [
+        "18.36",
+        "18.37",
+        "18.38",
+        "18.39"
+      ],
+      "hk_terms": [
+        "sukham",
+        "trividham",
+        "abhyAsAt",
+        "ramate",
+        "viSam iva",
+        "amRtopamam",
+        "AtmabuddhiprasAdajam",
+        "viSayendriyasaMoga",
+        "nidrAlasyapramAdottham",
+        "tAmasam",
+        "sAttvikaM"
+      ],
+      "core_hk": [
+        "sukham trividham",
+        "abhyAsAt",
+        "viSam iva pariNAme amRtopamam",
+        "AtmabuddhiprasAdajam"
+      ],
+      "repetition_count": 1,
+      "repetition_rationale": "The only explicit discussion of pleasure's quality by guna — the paradox that real happiness is hard at first; this reverses ordinary preference and gives a criterion for discriminating practice",
+      "echo_hypothesis": "Search for viṣam iva pariṇāme 'mṛtopamam — the poison-nectar reversal metaphor for sattvic pleasure; also ātmabuddhiprasādajaṃ as the source of authentic happiness"
+    },
+    {
+      "id": "N116",
+      "chapter_range": "18",
+      "name": "Varnashrama as Nature-Born — Svabhava Prabhava",
+      "proposition": "The duties of brāhmaṇa, kṣatriya, vaiśya, and śūdra are distributed according to their own nature-born qualities; by devotion to one's own duty one attains perfection",
+      "anchor_verses": [
+        "18.41",
+        "18.42",
+        "18.43",
+        "18.44",
+        "18.45",
+        "18.46"
+      ],
+      "all_verses": [
+        "18.41",
+        "18.42",
+        "18.43",
+        "18.44",
+        "18.45",
+        "18.46"
+      ],
+      "hk_terms": [
+        "brAhmaNa",
+        "kSatriya",
+        "vaizya",
+        "zUdra",
+        "svabhAvaprabhavaiH guNaiH",
+        "brahmakarmA",
+        "kSatrakarmA",
+        "vaizyakarmA",
+        "zUdrasyApi",
+        "svakarmanirata",
+        "saMsiddhi",
+        "svakarmaNA",
+        "abhyarcya"
+      ],
+      "core_hk": [
+        "svabhAvaprabhavaiH",
+        "svakarmanirata",
+        "saMsiddhi"
+      ],
+      "repetition_count": 2,
+      "repetition_rationale": "This node extends N13 (svadharma) by grounding it in svabhāva — one's nature-born guna configuration determines one's proper field of action; perfection is available to each through one's own domain",
+      "echo_hypothesis": "Search for svabhāvaprabhavair guṇaiḥ + karmāṇi pravibhaktāni — the nature-basis for duty-distribution; also svakarmaṇā tam abhyarcya + siddhim — worship through one's own work as path to perfection"
+    },
+    {
+      "id": "N117",
+      "chapter_range": "18",
+      "name": "Naiskarmasiddhi — Perfection Through Non-Action",
+      "proposition": "With unattached intellect, victorious self, gone beyond desire, one attains through renunciation the supreme perfection of non-action (naiṣkarmya)",
+      "anchor_verses": [
+        "18.49",
+        "18.50"
+      ],
+      "all_verses": [
+        "16.18",
+        "18.49",
+        "18.50",
+        "18.51",
+        "18.52",
+        "18.53"
+      ],
+      "hk_terms": [
+        "asaktabuddhi",
+        "jitAtmA",
+        "vigataspRhA",
+        "naiSkarmyasiddhi",
+        "paramAM",
+        "saMnyAsena",
+        "brahma",
+        "niSThA",
+        "jJAnasya",
+        "buddhyA vizuddhayA",
+        "dhRtyAtmAnam",
+        "rAgadveSau vyudasya",
+        "viviktasevI",
+        "vairAgyam",
+        "ahaMkAra",
+        "bala",
+        "darpa",
+        "kAma",
+        "krodha",
+        "parigraha",
+        "nirmama",
+        "zAnto",
+        "brahmabhUyAya"
+      ],
+      "core_hk": [
+        "naiSkarmyasiddhi",
+        "asaktabuddhi",
+        "brahmabhUyAya"
+      ],
+      "repetition_count": 2,
+      "repetition_rationale": "The culminating practical path before the highest devotional teaching — naiṣkarmyasiddhi is the Vedantic goal described through the qualities of the liberated intellect; this node bridges the action discussion with the brahma-bhūta state",
+      "echo_hypothesis": "Search for naiṣkarmyasiddhiṃ paramāṃ + saṃnyāsenādhigacchati — the phrase is rare and specific; also asaktabuddhi + sarvatra + jitātmā as a descriptor cluster for the renunciant"
+    },
+    {
+      "id": "N118",
+      "chapter_range": "18",
+      "name": "Brahma-Bhuta — The State of Becoming Brahman",
+      "proposition": "Having become Brahman, one is serene, neither grieving nor craving, equal to all beings — in that state one attains supreme devotion to Me",
+      "anchor_verses": [
+        "18.54",
+        "18.55"
+      ],
+      "all_verses": [
+        "18.54",
+        "18.55"
+      ],
+      "hk_terms": [
+        "brahmabhUta",
+        "prasannAtmA",
+        "na zocati",
+        "na kAGkSati",
+        "samaH sarveSu bhUteSu",
+        "madbhaktiM parAm",
+        "bhaktyA",
+        "abhijAnAti",
+        "yAvAn yaz cAsmi",
+        "vizate"
+      ],
+      "core_hk": [
+        "brahmabhUta",
+        "prasannAtmA",
+        "madbhaktiM parAm",
+        "vizate"
+      ],
+      "repetition_count": 2,
+      "repetition_rationale": "The brahma-bhūta state is the pivot — not the end but the platform from which supreme bhakti arises; the sequence brahma-bhūta → parā bhakti → tattvaṃ jñātvā → viśate is the BG's final soteriological map",
+      "echo_hypothesis": "Search for brahmabhūtaḥ prasannātmā + na śocati na kāṅkṣati + samaḥ sarvabhūteṣu — this triple is a complete formula; any MBH sage described in these terms is echoing this node"
+    },
+    {
+      "id": "N119",
+      "chapter_range": "18",
+      "name": "Buddhi Yoga — Surrendering All Actions to Krishna",
+      "proposition": "Fix the mind on Me, take refuge in Me by buddhi-yoga; surrendering all actions to Me with mind on Me, you will cross all difficulties by My grace — if ego prevents, nature will compel",
+      "anchor_verses": [
+        "18.57",
+        "18.58",
+        "18.59",
+        "18.60"
+      ],
+      "all_verses": [
+        "18.57",
+        "18.58",
+        "18.59",
+        "18.60"
+      ],
+      "hk_terms": [
+        "cetasA sarvakarmANi",
+        "mayi saMnyasya",
+        "matparaH",
+        "buddhiyogam",
+        "maccittaH",
+        "matprasAdAt",
+        "tariSyasi",
+        "ahaMkArAt",
+        "na yotsya",
+        "mithyaiSa vyavasAyaH",
+        "prakRtis tvAM niyokSyati",
+        "svabhAvajenakarmaNA",
+        "nibaddhaH",
+        "mochAt"
+      ],
+      "core_hk": [
+        "buddhiyogam",
+        "mayi saMnyasya",
+        "matprasAdAt",
+        "prakRtis tvAM niyokSyati"
+      ],
+      "repetition_count": 3,
+      "repetition_rationale": "This node restates N11 (yoga as equanimity in action) but now in its most personal and theistic register — mat-para, mat-citta, mat-prasāda; also adds the counter-claim: if ego refuses, prakṛti will enforce anyway",
+      "echo_hypothesis": "Search for cetasā sarvakarmāṇi mayi saṃnyasya + buddhiyogam — the combination of surrendering all actions with buddhi-yoga; also prakṛtis tvāṃ niyokṣyati as a statement about nature's compulsion"
+    },
+    {
+      "id": "N120",
+      "chapter_range": "18",
+      "name": "Ishvara as the Mover — Yantrarudhani Mayaya",
+      "proposition": "The Lord dwells in the heart of all beings, causing all beings to revolve as if mounted on a machine by māyā — take refuge in Him alone with all your being",
+      "anchor_verses": [
+        "18.61",
+        "18.62"
+      ],
+      "all_verses": [
+        "18.61",
+        "18.62"
+      ],
+      "hk_terms": [
+        "IzvaraH",
+        "sarvabhUtAnAM",
+        "hRddeze",
+        "bhrAmayan",
+        "sarvabhUtAni",
+        "yantrArUDhAni",
+        "mAyayA",
+        "zaraNaM gaccha",
+        "sarvabhAvena",
+        "tatprasAdAt",
+        "parAM zAntiM",
+        "sthAnaM zAzvatam"
+      ],
+      "core_hk": [
+        "yantrArUDhAni mAyayA",
+        "IzvaraH hRddeze",
+        "zaraNaM gaccha sarvabhAvena"
+      ],
+      "repetition_count": 2,
+      "repetition_rationale": "Refines N31 (Ishvara as inner ruler) by adding the mechanical metaphor — beings are puppets on a machine, moved by māyā; the response to this vision is total surrender (zaraNam), leading directly into 18.66",
+      "echo_hypothesis": "Search for yantrārūḍhāni māyayā + bhrāmayan — this mechanical metaphor is striking; also hṛddeśe 'rjuna tiṣṭhati as a statement of divine immanence in the heart"
+    },
+    {
+      "id": "N121",
+      "chapter_range": "18",
+      "name": "Sarva-Dharman Parityajya — The Final Teaching",
+      "proposition": "Abandon all dharmas and take refuge in Me alone — I will liberate you from all sins; do not grieve",
+      "anchor_verses": [
+        "18.66"
+      ],
+      "all_verses": [
+        "18.66"
+      ],
+      "hk_terms": [
+        "sarvadharmAn",
+        "parityajya",
+        "mAm ekaM",
+        "zaraNaM vraja",
+        "ahaM tvA",
+        "sarvapApebhyo",
+        "mokSayiSyAmi",
+        "mA zucaH"
+      ],
+      "core_hk": [
+        "sarvadharmAn parityajya",
+        "mAm ekaM zaraNaM",
+        "mokSayiSyAmi"
+      ],
+      "repetition_count": 1,
+      "repetition_rationale": "The caramopadeśa — the final secret teaching; alone in the BG as a direct divine promise of liberation; distinct from N17 (which is the thematic node) because this node is anchored in the single verse as the BG's irreducible core",
+      "echo_hypothesis": "Search for sarvadharmān parityajya + mām ekaṃ śaraṇaṃ vraja — this is one of the most-quoted BG verses; its echo in MBH would be any statement where a god or sage promises liberation to one who takes total refuge"
+    },
+    {
+      "id": "N122",
+      "chapter_range": "18",
+      "name": "Gita as Sacred Teaching — Transmission and Reception",
+      "proposition": "This Gītā should not be taught to one who has no austerity, devotion, or who finds fault; one who teaches it to devotees renders the highest service and will come to Me; one who merely hears it with faith is liberated",
+      "anchor_verses": [
+        "18.67",
+        "18.68",
+        "18.69",
+        "18.70",
+        "18.71"
+      ],
+      "all_verses": [
+        "18.67",
+        "18.68",
+        "18.69",
+        "18.70",
+        "18.71"
+      ],
+      "hk_terms": [
+        "atapaskAya",
+        "abhaktAya",
+        "azuzrUSave",
+        "abhyasUyati",
+        "paramaM guhyam",
+        "madbhaktezu",
+        "bhaktiM mayi parAM",
+        "priyakRttama",
+        "dharmyaM saMvAdam",
+        "jJAnayajJena",
+        "zraddhAvAn",
+        "anasUya",
+        "muktaH",
+        "zubhAl lokAn"
+      ],
+      "core_hk": [
+        "paramaM guhyam",
+        "madbhaktezu abhidhAsyati",
+        "zraddhAvAn anasUya"
+      ],
+      "repetition_count": 1,
+      "repetition_rationale": "The Gītā-māhātmya (praise and transmission rules) frames the teaching as self-referentially sacred; the BG is itself a node in the MBH — this node marks the meta-level of the BG-within-MBH structure",
+      "echo_hypothesis": "Search for idaṃ te nātapaskāya — the restriction formula; also jñānayajñena + iṣṭaḥ syām as the frame of the Gītā as a jñāna-sacrifice; the BG's self-designation matters for the Ekam Sat project"
+    },
+    {
+      "id": "N123",
+      "chapter_range": "18",
+      "name": "Sanjaya's Witness — The BG as a Reported Event",
+      "proposition": "Sañjaya reports: I heard this wondrous dialogue between Vāsudeva and Pārtha through Vyāsa's grace; wherever Yoga's Lord and Arjuna the archer are, there is prosperity, victory, and right conduct",
+      "anchor_verses": [
+        "18.74",
+        "18.75",
+        "18.76",
+        "18.77",
+        "18.78"
+      ],
+      "all_verses": [
+        "2.1",
+        "18.74",
+        "18.75",
+        "18.76",
+        "18.77",
+        "18.78"
+      ],
+      "hk_terms": [
+        "saMjaya",
+        "vAsudevasya",
+        "pArthasya",
+        "saMvAdam",
+        "adbhutam",
+        "vyAsaprasAdAt",
+        "guhyam",
+        "yogezvaraH",
+        "kRSNaH",
+        "pArtho dhanurdharaH",
+        "zrIH",
+        "vijayaH",
+        "bhUtiH",
+        "dhruvaM",
+        "nItiH"
+      ],
+      "core_hk": [
+        "saMjaya uvAca",
+        "vAsudevasya saMvAdam",
+        "yogezvaraH kRSNaH",
+        "zrIr vijayo bhUtiH"
+      ],
+      "repetition_count": 1,
+      "repetition_rationale": "The BG is embedded in the MBH through Sañjaya — this narrative frame node is essential for the Ekam Sat project: the BG is not a separate text but a discourse within the MBH, reported by a witness to Dhṛtarāṣṭra",
+      "echo_hypothesis": "Search for yogeśvaraḥ kṛṣṇo yatra pārtho dhanurdharaḥ — the closing śloka is itself echoed and quoted in MBH; also sañjaya uvāca + saMvAdam as the embedded-discourse framing device"
+    }
+  ]
+}

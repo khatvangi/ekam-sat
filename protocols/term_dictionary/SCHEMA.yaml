@@ -1,0 +1,184 @@
+# drift dictionary schema definition
+# each term entry follows this structure
+# ─────────────────────────────────────
+
+# example entry (not real data — schema illustration only)
+_schema_example:
+
+  id: "brahman"                          # unique identifier, matches inventory
+  concept: "the absolute / cosmic principle"
+  tier: "primary"                        # primary (full card) | secondary (register marker)
+
+  family:                                # related term IDs in this dictionary
+    - "atman"
+    - "brahmana_true"
+    - "deva"
+
+  chapters: ["ch2", "ch5"]              # which chapters this term feeds
+  semantic_field: "theology"             # theology, ontology, soteriology, praxis, epistemology
+
+  # ─── forms across languages ──────────────────────────
+
+  forms:
+    vedic:
+      - term: "bráhman"
+        grammar: "neuter noun"
+        root: "bṛh (to grow, expand)"
+        note: "prayer-power, sacred utterance — NOT a deity, NOT 'the absolute' yet"
+
+    sanskrit:
+      - term: "brahman"
+        grammar: "neuter noun"
+        note: "the absolute, cosmic principle (upanishadic development)"
+      - term: "brahmā"
+        grammar: "masculine noun"
+        note: "the deity, creator god (distinct from neuter brahman)"
+
+    pali:
+      - term: "brahma"
+        grammar: "noun (both senses conflated in pāli)"
+        note: "context determines: cosmic principle vs. deity"
+      - term: "brahmā"
+        grammar: "proper noun"
+        note: "the deity in buddhist cosmology"
+
+    chinese:
+      - term: "梵"
+        pinyin: "fàn"
+        translator: "standard across translators"
+        translation_choice_note: "phonetic transliteration of brahma-"
+      - term: "梵天"
+        pinyin: "fàntiān"
+        translator: "standard"
+        translation_choice_note: "brahma + heaven/deva — specifically the deity"
+
+    jain:
+      - term: "brahma"
+        language: "ardhamagadhi"
+        note: "used but not central to jain soteriology"
+
+    gandhari:
+      - term: "brahma"
+        note: "attested in gandhari manuscripts (standard form)"
+
+  # ─── temporal strata (the drift) ─────────────────────
+  # each stratum: when, where, what it meant, how confident is the dating,
+  # what texts evidence it, and what changed from the previous stratum
+
+  temporal_strata:
+    - period: "~1500-1200 BCE"
+      dating_confidence: "medium"
+      tradition: "vedic"
+      meaning: "sacred utterance, prayer-power, the force behind ritual speech"
+      key_texts: ["ṛgveda"]
+      citations:
+        - file: "abinitio_audit/data/raw/vedic/rgveda_aufrecht_gretil.txt"
+          reference: "RV_10,090.12"
+          quote: "brāhmaṇo 'sya mukham āsīd ..."
+          context: "puruṣa sūkta — brahman as ritual class, not cosmic absolute"
+      drift_from_previous: null  # first stratum, no prior
+
+    - period: "~800-500 BCE"
+      dating_confidence: "medium"
+      tradition: "upanishadic"
+      meaning: "the absolute reality, cosmic ground of being, identical with ātman"
+      key_texts: ["bṛhadāraṇyaka", "chāndogya"]
+      citations:
+        - file: "abinitio_audit/data/raw/upanishads/primary/brhadaranyaka.txt"
+          reference: "BU 1.4.10"
+          quote: "ahaṃ brahmāsmi"
+          context: "the great equation: self = brahman"
+      drift_from_previous: "prayer-power → cosmic absolute. massive semantic expansion. the ritual utterance becomes the ground of all being."
+
+    - period: "~450-250 BCE"
+      dating_confidence: "low"
+      tradition: "early buddhist"
+      meaning: "brahmā as deity in cosmology (retained but demoted); brahma- as ethical prefix (brahmacariya, brahmavihāra)"
+      key_texts: ["DN 1 brahmajāla", "DN 11 kevaddha", "DN 13 tevijja"]
+      citations:
+        - file: "abinitio_audit/data/raw/pali_suttacentral/sc_bilara_data/root/pli/ms/sutta/dn/dn11_root-pli-ms.json"
+          reference: "DN 11"
+          quote: "brahmā ... attānaṃ sassataṃ maññati"
+          context: "brahmā mistakenly thinks himself eternal — deliberate demotion"
+      drift_from_previous: "cosmic absolute → cosmological being (demoted). the absolute is recast as a deluded deity who mistakes himself for eternal. simultaneously, brahma- prefix retained for highest ethical qualities (brahmavihāra = divine abidings)."
+
+    - period: "~5th century CE"
+      dating_confidence: "high"
+      tradition: "theravāda commentary"
+      meaning: "brahmā as cosmological being in systematic cosmology; brahma- prefix fully conventionalized"
+      key_texts: ["visuddhimagga"]
+      citations:
+        - file: "abinitio_audit/data/raw/pali_commentary/visuddhimagga.txt"
+          reference: "Vism IX"
+          quote: "[brahmavihāra section]"
+          context: "brahmavihāra systematized into a meditation technique with specific procedures"
+      drift_from_previous: "cosmological being → systematized cosmological category. brahmavihāra → systematic meditation method rather than ethical orientation."
+
+  # ─── valence across traditions ────────────────────────
+
+  valence:
+    vedic: "sacred — prayer-power, the force of ritual"
+    upanishadic: "supreme — the absolute, ground of being"
+    buddhist: "split — deity (demoted/retained) + ethical prefix (affirmed)"
+    jain: "peripheral — not central to jain metaphysics"
+    note: "buddhist treatment is neither rejection nor acceptance but STRATEGIC REINTERPRETATION: brahman-as-absolute is ignored, brahmā-as-deity is retained but demoted, brahma-as-adjective ('sublime') is fully embraced"
+
+  # ─── standard references ──────────────────────────────
+
+  standard_references:
+    pts_dictionary: "brahma: the supreme being, a brahmin, holy, sacred"
+    monier_williams: "brahman: n. the one self-existent Spirit, the Absolute"
+    wisdomlib: "Brahma: 47 definitions across hinduism, buddhism, jainism"
+    edgerton_bhs: "brahman: standard from sanskrit"
+    diff_notes: |
+      PTS conflates neuter brahman (absolute) with masculine brahmā (deity).
+      this conflation is itself evidence of drift — in pāli, the vedic/upanishadic
+      distinction between neuter-absolute and masculine-deity has partially
+      collapsed, making the buddhist strategic reinterpretation harder to see.
+      our dictionary maintains the distinction because it matters for the
+      stance index.
+
+  # ─── index contribution ───────────────────────────────
+  # two valid formats:
+  #   list (ch1/ch2/ch5 — SI/H indices):
+  #     [{index, chapter, role, note}]
+  #   dict (ch3 — MHI index):
+  #     {MHI_register, collocational_markers, drift_direction}
+
+  index_contribution:
+    - index: "SI"           # stance index
+      chapter: "ch2"
+      role: "engagement"    # brahma- compounds count as engagement, not opposition
+      note: "brahmavihāra, brahmacariya = vedic terminology positively retained"
+    - index: "SI"
+      chapter: "ch2"
+      role: "opposition"
+      note: "brahmā-as-creator in DN 1, DN 11 = explicit vedic stance challenged"
+
+  # ch3 entries use dict format instead:
+  # index_contribution:
+  #   MHI_register: "practice → system"
+  #   collocational_markers: [bhaveti, viharati, pajānāti]
+  #   drift_direction: "practice instruction → mental factor category"
+
+# ─── secondary tier schema (collocational markers) ─────
+
+_schema_collocational:
+
+  id: "pahana"
+  concept: "abandoning"
+  tier: "secondary"
+  register: "practice"                   # practice | system | ontic
+  chapters: ["ch3"]
+
+  forms:
+    pali: "pahāna"
+    sanskrit: "prahāṇa"
+    chinese:
+      term: "斷"
+      pinyin: "duàn"
+
+  note: "practice-register verb. when surrounding a primary term, indicates method-shape language. high frequency near sati/jhāna in early suttas, low frequency in abhidhamma."
+
+  # no temporal_strata, valence, or standard_references for secondary tier
+  # they are register markers, not full concept cards

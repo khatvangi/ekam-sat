@@ -47,14 +47,9 @@ BG_KEY_VERSES = {
     "11.32": "kālo 'smi lokakṣayakṛt pravṛddho lokān samāhartum iha pravṛttaḥ ṛte 'pi tvāṁ na bhaviṣyanti sarve ye 'vasthitāḥ pratyanīkeṣu yodhāḥ",
 }
 
-# HK versions of the same for corpus matching
-BG_KEY_VERSES_HK = {
-    "2.47": "karmaNy evAdhikAras te mA phaleshu kadAcana mA karmaphalaheturbhUr mA te saMgo stvakarmaRAi",
-    "2.20": "na jAyate mriyate vA kadAcin nAyaM bhUtvA bhavitA vA na bhUyaH ajo nityaH zAzvato yaM purANo na hanyate hanyamAne zarIre",
-    "6.29": "sarvabhUtastham AtmAnaM sarvabhUtAni cAtmani Ikzate yogayuktAtmA sarvatra samadarzanaH",
-    "13.27": "samaM sarveshu bhUteshu tiShThantaM paramezvaram vinazyatsvA vinazyantaM yaH pazyati sa pazyati",
-    "18.66": "sarvAdharmAn parityajya mAm ekaM zaraNaM vraja ahaM tvAM sarvapApebhyo mokzayiShyAmi mA zucaH",
-}
+# NOTE: HK versions removed — they had encoding errors and were never used.
+# the embedding model works on meaning, not transliteration scheme.
+# BG_KEY_VERSES (IAST) is used for all semantic queries.
 
 
 def load_corpus_verses(corpus_dir, max_verses=None):
@@ -69,7 +64,7 @@ def load_corpus_verses(corpus_dir, max_verses=None):
             with open(filepath, "r", encoding="utf-8", errors="replace") as f:
                 for line in f:
                     line = line.rstrip()
-                    m = re.match(r'^(\d{8}[abcd]?)\s+(.*)', line)
+                    m = re.match(r'^(\d{8}[a-e]?)\s+(.*)', line)
                     if m:
                         verse_id = m.group(1)
                         text = m.group(2).strip()
@@ -138,36 +133,54 @@ def build_embeddings(corpus_dir, output_dir, model_name="sentence-transformers/p
 
 
 def search_similar(query_text, output_dir, top_k=50, exclude_parva=None,
-                   model_name="sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2"):
-    """Find verses most semantically similar to query text."""
+                   model_name="sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2",
+                   _cache={}):
+    """Find verses most semantically similar to query text.
+    _cache: internal cache for model/embeddings across calls (e.g. sweep mode).
+    """
     try:
         from sentence_transformers import SentenceTransformer
     except ImportError:
         print("ERROR: pip install sentence-transformers")
         return []
-    
+
     output_dir = Path(output_dir)
     emb_path = output_dir / "embeddings.npy"
     ids_path = output_dir / "verse_ids.json"
-    
+
     if not emb_path.exists():
         print("ERROR: Embeddings not found. Run --mode build first.")
         return []
-    
-    print("Loading embeddings...")
-    embeddings = np.load(emb_path)
-    with open(ids_path) as f:
-        verse_ids = json.load(f)
-    
-    print(f"Loading model: {model_name}")
-    model = SentenceTransformer(model_name)
-    
+
+    # cache embeddings and model across calls
+    cache_key = str(output_dir)
+    if cache_key not in _cache:
+        print("Loading embeddings...")
+        embeddings = np.load(emb_path)
+        with open(ids_path) as f:
+            verse_ids = json.load(f)
+
+        if len(verse_ids) != len(embeddings):
+            print(f"ERROR: embeddings ({len(embeddings)}) and verse_ids ({len(verse_ids)}) count mismatch!")
+            return []
+
+        print(f"Loading model: {model_name}")
+        model = SentenceTransformer(model_name)
+
+        # pre-normalize embeddings once
+        norms = np.linalg.norm(embeddings, axis=1, keepdims=True)
+        norms[norms == 0] = 1
+        normalized = embeddings / norms
+
+        _cache[cache_key] = {"model": model, "verse_ids": verse_ids, "normalized": normalized}
+
+    model = _cache[cache_key]["model"]
+    verse_ids = _cache[cache_key]["verse_ids"]
+    normalized = _cache[cache_key]["normalized"]
+
     query_emb = model.encode([query_text])
     
-    # Cosine similarity
-    norms = np.linalg.norm(embeddings, axis=1, keepdims=True)
-    norms[norms == 0] = 1
-    normalized = embeddings / norms
+    # cosine similarity (embeddings already normalized in cache)
     query_norm = query_emb / np.linalg.norm(query_emb)
     
     similarities = (normalized @ query_norm.T).flatten()

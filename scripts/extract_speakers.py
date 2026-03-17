@@ -67,7 +67,6 @@ SPEAKERS = [
     (r"janaka", "Janaka", "philosopher-king"),
     (r"sulabhA", "Sulabha", "female philosopher"),
     (r"paMcazikha", "Panchashikha", "Sankhya sage"),
-    (r"zuka", "Shuka", "sage"),
     (r"yAjJavalkya", "Yajnavalkya", "sage"),
     (r"kapila", "Kapila", "Sankhya founder"),
     (r"parAzara", "Parashara", "sage"),
@@ -82,8 +81,7 @@ SPEAKERS = [
 ]
 
 UVACA_PATTERN = re.compile(
-    r'(' + '|'.join(p for p, _, _ in SPEAKERS) + r')\s+uvAca',
-    re.IGNORECASE
+    r'(' + '|'.join(p for p, _, _ in SPEAKERS) + r')\s+uvAca'
 )
 
 
@@ -125,7 +123,7 @@ def extract_discourses(corpus_dir):
                 continue
             
             # Check for verse ID
-            m = re.match(r'^(\d{8}[abcd]?)\s*(.*)', line)
+            m = re.match(r'^(\d{8}[a-e]?)\s*(.*)', line)
             if not m:
                 continue
             
@@ -139,12 +137,12 @@ def extract_discourses(corpus_dir):
                 if current_discourse and current_discourse["verses"]:
                     discourses.append(current_discourse)
                 
-                # Identify speaker
-                matched_name = speaker_match.group(1).lower()
+                # Identify speaker (HK is case-sensitive — don't lowercase)
+                matched_name = speaker_match.group(1)
                 speaker_name = "Unknown"
                 speaker_role = "unknown"
                 for pattern, name, role in SPEAKERS:
-                    if re.search(pattern, matched_name, re.IGNORECASE):
+                    if re.search(pattern, matched_name):
                         speaker_name = name
                         speaker_role = role
                         break

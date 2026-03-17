@@ -1,199 +1,288 @@
-# Ekam Sat Project — MBH Corpus Analysis Pipeline
-## "One truth, many voices across 89,000 verses"
+# Ekam Sat — Mahābhārata Corpus Analysis
 
----
+> *ekam sad viprā bahudhā vadanti*
+> "Truth is one; the wise call it by many names" — Ṛg Veda 1.164.46
 
-## What This Does
+A computational analysis pipeline proving that the Bhagavad Gītā's teachings are not unique to the Gītā — they are scattered across the entire Mahābhārata (~89,000 verses, BORI Critical Edition), spoken by different sages in different contexts, all converging on a single doctrinal core.
 
-Three-layer analysis of the BORI Critical Edition to prove that the teaching Krishna
-crystallizes in the Bhagavad Gita is scattered across the entire Mahabharata —
-spoken by different sages, in different contexts, to different people, but converging
-on one point.
+## the thesis
 
-### Layer 1: Terminological (grep-based)
-`scan_corpus.py` — Searches all 18 parvas for 35 BG doctrinal nodes using Harvard-Kyoto
-term clusters. Finds: every verse containing core BG terminology *outside* the BG itself.
+The Bhagavad Gītā is traditionally read as Kṛṣṇa's singular revelation to Arjuna. This project demonstrates computationally that:
 
-### Layer 2: Discourse (structural)
-`extract_speakers.py` — Identifies who is speaking in each discourse segment. Maps
-sage-discourses across the corpus, then cross-references with Layer 1 results. Answers:
-which sages carry the most concentrated BG teaching? Who echoes Krishna without being Krishna?
+1. **Every BG doctrine echoes elsewhere in the MBH.** 90.3% of the Gītā's 700 verses have terminological parallels across the epic.
+2. **The same teachings come from different mouths.** Nārada echoes 80 of 123 BG doctrinal nodes — more than Kṛṣṇa himself (72). Bhīṣma, Vyāsa, Yājñavalkya, Parāśara all teach the same core.
+3. **Śāntiparva dominates.** Bhīṣma's deathbed teachings (parva 12) produce the most echoes across every method — term overlap, semantic similarity, and hybrid analysis.
+4. **The traditional commentator saw this too.** Nīlakaṇṭha's Bhāratabhāvadīpa commentary discusses the same echoed terms in 97.4% of cross-referenced cases.
 
-### Layer 3: Semantic (embedding-based)
-`semantic_search.py` — Uses sentence embeddings to find *meaning-level* echoes — verses
-that express the same idea without the same vocabulary. Surfaces the hidden, minor,
-unnoticed passages.
+The implication: the Gītā is not an interpolation or a standalone text grafted onto the epic. It is the densest expression of a doctrinal tradition that permeates the entire Mahābhārata. *Ekam sat* — one truth, many voices.
 
----
+## results summary
 
-## Setup
+| analysis layer | method | key result |
+|---|---|---|
+| layer 1a: node scan | 123 curated doctrinal nodes, HK term regex | 43,303 echoes, 2,352 strong (2+ core terms) |
+| layer 1b: verse scan | all 700 BG verses, content word co-occurrence | 57,139 echoes, 632/700 verses have parallels |
+| layer 1c: semantic | sentence-transformer embeddings (MiniLM) | 21,000 meaning-level echoes, all >0.7 similarity |
+| layer 1d: hybrid | term + semantic merge | 77,848 pairs, 263 dual-evidence (strongest) |
+| layer 1e: english | 28 english meaning queries cross-lingually | 840 matches across all parvas |
+| layer 2: speakers | `X uvāca` discourse segmentation | 1,488 segments; Nārada echoes 80/123 nodes |
+| layer 3: commentary | Nīlakaṇṭha OCR cross-reference | 1,001 xrefs at 97.4% hit rate |
 
-```bash
-# Install Python dependencies
-pip install sentence-transformers numpy pandas scikit-learn
+### echo density by parva (all methods converge)
 
-# Verify corpus exists
-ls /storage/mbh/bori/hk/   # Should show .hk or .txt files with verse IDs
+```
+Śāntiparva (12)      ████████████████████████████████████████  9,153
+Āraṇyaka (03)        ██████████████████████████               6,298
+Anuśāsana (13)       ██████████████████                       4,574
+Ādiparva (01)        █████████████████                        4,158
+Droṇaparva (07)      ███████████████                          3,794
+Udyogaparva (05)     ██████████████                           3,485
+...all 18 non-BG parvas have echoes (including Mahāprasthānika: 51)
 ```
 
----
+## methodology
 
-## Run Order
+### pre-sectarian lens
 
-### Step 1: Terminological scan (fast, run first)
+all analysis uses a pre-sectarian reading framework (following RV 1.164.46). the 123 doctrinal nodes are NOT advaita, dvaita, or any post-BG school. they represent what the text says before interpretive traditions diverge. methodology documented in `protocols/node_extraction_methodology.md`.
+
+### what we search
+
+the BORI Critical Edition in Harvard-Kyoto (HK) ASCII transliteration. HK is case-sensitive by design: `A` = ā (long vowel), `a` = a (short); `S` = ṣ (retroflex), `s` = s (dental). this distinction is phonemically significant in Sanskrit — our pipeline respects it (no case-insensitive matching).
+
+### what we exclude
+
+the BG itself (parva 06, chapters 23-40 in BORI numbering; BG ch1 = BORI 06.023, ch18 = BORI 06.040). we search the MBH *outside* the Gītā for echoes of what the Gītā teaches.
+
+### three-layer pipeline
+
+```
+Layer 1: TERMINOLOGICAL SCAN
+  input:  123 BG nodes (hk_terms, core_hk) + 700 BG verses
+  method: regex search across 72,744 non-BG verses
+  output: verse-level echo database with strength scoring
+
+Layer 2: SPEAKER EXTRACTION
+  input:  echo database + full corpus
+  method: "X uvāca" pattern detection → discourse segmentation
+  output: who says what, annotated with BG node echoes
+
+Layer 3: COMMENTARY CROSS-REFERENCE
+  input:  echo database + Nīlakaṇṭha OCR (1,957 pages, 6 volumes)
+  method: term co-occurrence search in HK transliterated commentary
+  output: traditional commentator's discussion of echoed terms
+```
+
+## setup
+
+### requirements
+
 ```bash
-cd scripts/
+pip install sentence-transformers numpy pandas scikit-learn
+```
 
-# Full scan, all 35 nodes
-python scan_corpus.py \
-    --corpus /storage/mbh/bori/hk \
-    --nodes ../data/bg_nodes.json \
-    --output ../output/ \
+for nīlakaṇṭha OCR (optional):
+```bash
+pip install pdf2image Pillow indic-transliteration
+pip install surya-ocr  # local GPU OCR, free
+```
+
+### corpus
+
+the BORI Critical Edition corpus is not included (copyrighted). place HK transliteration files at `bori/hk/`:
+```
+bori/hk/MBh00.txt   # metadata only
+bori/hk/MBh01.txt   # Ādiparva
+...
+bori/hk/MBh18.txt   # Svargārohaṇaparva
+```
+
+verse ID format: `PPcccvvvx` (PP=parva, ccc=chapter, vvv=verse, x=half-verse a/b/c/d/e).
+
+## running the pipeline
+
+all commands from project root.
+
+### layer 1a: node-based term scan
+
+```bash
+# full scan with 123 nodes (v2, exhaustive)
+python scripts/scan_corpus.py \
+    --corpus bori/hk \
+    --nodes data/bg_nodes_v2.json \
+    --output output/v3/ \
     --freq-map
 
-# Output:
-#   ../output/echo_results.csv     — every echo, cited by BORI verse ID
-#   ../output/frequency_map.csv   — heat map: nodes × parvas
-#   ../output/scan_report.txt     — human-readable summary
+# single node deep dive
+python scripts/scan_corpus.py \
+    --corpus bori/hk \
+    --nodes data/bg_nodes_v2.json \
+    --node N006 \
+    --output output/N006/
 ```
 
-### Step 2: Single node deep dive
+### layer 1b: verse-level scan (all 700 BG verses)
+
 ```bash
-# Example: trace N03 (Nishkama Karma) across entire MBH
-python scan_corpus.py \
-    --corpus /storage/mbh/bori/hk \
-    --node N03 \
-    --output ../output/N03/
+python scripts/scan_bg_verses.py \
+    --corpus bori/hk \
+    --bg-dir data/bg_chapters/ \
+    --output output/bg_verses/
 ```
 
-### Step 3: Speaker/discourse extraction
-```bash
-python extract_speakers.py \
-    --corpus /storage/mbh/bori/hk \
-    --echoes ../output/echo_results.csv \
-    --output ../output/
+### layer 1c: semantic embedding search
 
-# Output:
-#   ../output/discourse_inventory.csv  — every speaker segment
-#   ../output/discourse_report.txt    — who echoes BG most
-#   ../output/discourses.json         — machine-readable
-```
-
-### Step 4: Build semantic embeddings (slow — run overnight)
 ```bash
-python semantic_search.py \
-    --corpus /storage/mbh/bori/hk \
+# build embeddings (slow, 30-90 min, run once)
+python scripts/semantic_search.py \
+    --corpus bori/hk \
     --mode build \
-    --output ../output/embeddings/
+    --output output/embeddings/
 
-# This takes 30-90 minutes. Only needs to run once.
-# Saves embeddings.npy (~500MB) and verse_ids.json
-```
+# semantic sweep of all 700 BG verses
+python scripts/scan_bg_semantic.py \
+    --bg-dir data/bg_chapters/ \
+    --embeddings output/embeddings/ \
+    --output output/bg_semantic/
 
-### Step 5: Semantic sweep (after embeddings are built)
-```bash
-# Sweep all key BG verses for semantic echoes
-python semantic_search.py \
-    --mode sweep \
-    --output ../output/embeddings/
-
-# Search for a specific BG verse's echoes
-python semantic_search.py \
-    --mode search \
-    --bg-verse 2.47 \
-    --output ../output/embeddings/
-
-# Search by meaning (English or transliterated Sanskrit)
-python semantic_search.py \
+# search by meaning (english works best with this model)
+python scripts/semantic_search.py \
     --mode query \
-    --text "the self is eternal, it does not die when the body dies" \
-    --output ../output/embeddings/
+    --text "the self is eternal and indestructible" \
+    --output output/embeddings/
 ```
 
----
+### layer 1d+e: hybrid merge + english queries
 
-## Output Files
+```bash
+python scripts/scan_bg_hybrid.py \
+    --mode both \
+    --term-echoes output/bg_verses/bg_verse_echoes.csv \
+    --sem-echoes output/bg_semantic/bg_semantic_echoes.csv \
+    --embeddings output/embeddings/ \
+    --output output/bg_hybrid/
+```
 
-| File | Contents |
-|------|----------|
-| `echo_results.csv` | All verse-level echoes, BORI cited |
-| `frequency_map.csv` | Node × Parva heat map |
-| `scan_report.txt` | Human summary of findings |
-| `discourse_inventory.csv` | Sage discourse segments |
-| `discourse_report.txt` | Which sages carry the teaching |
-| `embeddings/semantic_echoes.csv` | Meaning-level echoes beyond grep |
+### layer 2: speaker/discourse extraction
 
----
+```bash
+python scripts/extract_speakers.py \
+    --corpus bori/hk \
+    --echoes output/v3/echo_results.csv \
+    --output output/v3/
+```
 
-## The 35 BG Nodes
+### layer 3: nīlakaṇṭha cross-reference
 
-| ID | Teaching |
-|----|----------|
-| N01 | Indestructibility of the Self |
-| N02 | Self vs Body Distinction |
-| N03 | Nishkama Karma — Action Without Fruit-Attachment |
-| N04 | Equanimity — Sama in Pleasure and Pain |
-| N05 | The Sthitaprajna — Portrait of the Realized |
-| N06 | Three Gunas — Sattva Rajas Tamas |
-| N07 | Field and Knower of the Field |
-| N08 | Brahman Pervades All |
-| N09 | Self is the Same in All Beings |
-| N10 | Renunciation vs Abandonment |
-| N11 | Yoga as Equanimity in Action |
-| N12 | Desire as Root of All Bondage |
-| N13 | Duty According to One's Nature — Svadharma |
-| N14 | Knowledge Destroys Ignorance |
-| N15 | Brahman as Origin and End of All |
-| N16 | The Imperishable Beyond All Dualities |
-| N17 | Surrender — Sarva Dharman Parityajya |
-| N18 | Devotion — Bhakti as Highest Path |
-| N19 | The Wise Grieve for Neither Living nor Dead |
-| N20 | Non-Attachment — Nirmama Nirahankara |
-| N21 | Silence and Self-Control |
-| N22 | Impermanence of the World |
-| N23 | The Cosmic Person — Vishwarupa |
-| N24 | Time as the Destroyer — Kala |
-| N25 | Liberation — Moksha as Highest Goal |
-| N26 | Friend of All Beings |
-| N27 | The Witness Self — Sakshi |
-| N28 | True Sacrifice — Yajna as Inner Fire |
-| N29 | He Who Sees Inaction in Action |
-| N30 | The Divine and Demonic Natures |
-| N31 | Ishvara as Inner Ruler of All Hearts |
-| N32 | Practice and Dispassion — Abhyasa Vairagya |
-| N33 | Purification of Mind |
-| N34 | Not the Doer — Ahamkara as False Agent |
-| N35 | Brahmavidya — Knowledge of Brahman as Supreme |
+```bash
+# requires OCR output at nilakantha/ocr_clean/
+python scripts/cross_ref_nilakantha.py \
+    --echoes output/v3/echo_results.csv \
+    --ocr-dir nilakantha/ocr_clean/ \
+    --output output/nilakantha_xref/
 
----
+# build commentary alignment index
+python scripts/build_commentary_index.py \
+    --ocr-dir nilakantha/ocr_clean/ \
+    --output output/commentary_index/
+```
 
-## What the Data Will Tell You
+## repository structure
 
-The scan reveals:
+```
+data/
+├── bg_nodes_v2.json           # 123 BG doctrinal nodes (exhaustive, pre-sectarian)
+├── bg_nodes.json              # original 35 nodes (superseded)
+├── bg_nodes_ch1_6.json        # intermediate extraction files
+├── bg_nodes_ch7_12.json
+├── bg_nodes_ch13_18.json
+└── bg_chapters/               # BG text in BORI HK format
+    ├── bg_ch01.txt            # BG chapter 1 (= BORI 06.023)
+    └── ...bg_ch18.txt         # BG chapter 18 (= BORI 06.040)
 
-1. **Which parvas are densest** — Shantiparva (12) and Aranyakaparva (03) will likely
-   dominate, but the *surprises* will be in Adiparva, Sabhaparva, Striparva.
+scripts/
+├── scan_corpus.py             # layer 1a: node-based term scan
+├── scan_bg_verses.py          # layer 1b: verse-level content word scan
+├── semantic_search.py         # layer 1c: embedding build + query
+├── scan_bg_semantic.py        # layer 1c: full 700-verse semantic sweep
+├── scan_bg_hybrid.py          # layer 1d+e: hybrid merge + english queries
+├── extract_speakers.py        # layer 2: speaker/discourse extraction
+├── cross_ref_nilakantha.py    # layer 3: commentary cross-reference
+└── build_commentary_index.py  # layer 3: page-chapter alignment index
 
-2. **Which sages carry the most concentrated teaching** — Markandeya, Vidura, Bhishma
-   are known. But who are the minor voices? The scan finds them.
+nilakantha/
+└── scripts/
+    ├── ocr_pipeline.py        # Gemini Vision OCR (paid, high quality)
+    ├── ocr_surya.py           # Surya OCR (local GPU, free, ~80% quality)
+    └── run_surya_all.sh       # batch OCR for all 6 volumes
 
-3. **Which nodes are most broadly distributed** — N01 (Indestructibility), N03
-   (Nishkama Karma), N04 (Equanimity) will likely appear in every parva. Track which
-   nodes appear in *unexpected* parvas.
+protocols/
+├── node_extraction_methodology.md  # how the 123 nodes were derived
+├── sanskrit_non_translatables.md   # terms kept untranslated and why
+├── DECOLONIZATION_CHECKLIST.md     # epistemic decolonization framework
+├── term_dictionary/                # structured term entries (from parallel project)
+└── ...
+```
 
-4. **The hidden minor passages** — Semantic search finds these. A 3-verse exchange
-   between a forest sage and Yudhishthira that contains the core of BG 13.27 in
-   different vocabulary. These are your strongest proofs.
+## node data format
 
----
+each of the 123 nodes in `bg_nodes_v2.json` contains:
 
-## For the Book
+```json
+{
+  "id": "N006",
+  "name": "Indestructibility of the Self — Atman is Unborn and Undying",
+  "proposition": "The atman is never born, never dies...",
+  "anchor_verses": ["2.20"],
+  "all_verses": ["2.17", "2.18", "2.19", "2.20", "2.21", "2.23", "2.24", "2.25"],
+  "hk_terms": ["nitya", "aja", "avyaya", "avinAzin", "zarIrin", "dehin"],
+  "core_hk": ["nitya", "aja", "avyaya"],
+  "repetition_count": 6,
+  "repetition_rationale": "Core atman-eternality terms...",
+  "echo_hypothesis": "Expect strong echoes in Shantiparva..."
+}
+```
 
-Each chapter of the book corresponds to one or more BG nodes. The data provides:
-- Primary BORI citations (verse IDs → full text from corpus)
-- Speaker context (who says it, to whom, in what situation)
-- Distribution map (how widely this teaching appears across the epic)
-- The minor/hidden passages that academic scholarship has missed
+- `hk_terms`: all Harvard-Kyoto terms used for regex search
+- `core_hk`: subset of terms whose co-occurrence defines a "strong" echo (match_strength >= 2)
+- `echo_hypothesis`: pre-registered prediction about where echoes should appear (tested, not retrofitted)
 
-The argument: not just the famous discourses, but the texture of the entire epic
-converges on ekam sat.
+## nilakantha OCR
+
+Nilakantha Caturdhara's *Bharatabhavadipa* (17th c.) is the most comprehensive traditional commentary on the Mahabharata. we OCR'd 1,957 pages from the Archaeological Survey of India 600 DPI scans (6 volumes, catalog numbers 8995-9000).
+
+| volume | parvas | pages | engine |
+|--------|--------|-------|--------|
+| 8995 | Adi + Sabha | 275 | Surya |
+| 8996 | Aranyaka + Virata | 318 | Surya |
+| 8997 | Udyoga + Bhishma | 312 | Surya |
+| 8998 | Drona + Karna | 344 | Surya |
+| 8999 | Sauptika + Stri (pp1-41) | 41 | Surya |
+| 8999 | Shantiparva (pp42-422) | 380 | Gemini |
+| 9000 | Anushasana + rest | 287 | Surya |
+
+OCR output is not in the repo (too large). scripts to reproduce are in `nilakantha/scripts/`.
+
+## bugs found and fixed
+
+three critical bugs were discovered during a code audit on 2026-03-13. all have been fixed and results re-run:
+
+| bug | impact | fix |
+|-----|--------|-----|
+| `re.IGNORECASE` on HK regex | conflated case-significant phonemes (A/a, S/s, R/r), inflating echoes by ~56% | removed; HK case is phonemically significant |
+| BG exclusion range `range(23, 43)` | excluded 2 post-BG chapters (41-42) that should be searched | fixed to `range(23, 41)` |
+| half-verse regex `[abcd]?` | missed 5,378 verses with half-verse marker `e` | fixed to `[a-e]?` |
+
+pre-fix numbers (v2): 98,658 echoes — **stale, do not cite**
+post-fix numbers (v3): 43,303 echoes — **current, publication-grade**
+
+## limitations
+
+1. **MiniLM on Sanskrit**: the multilingual sentence-transformer finds mostly verbatim repetitions in HK transliterated Sanskrit. true meaning-level echoes are better found via english queries (`--mode query --text "..."`)
+2. **speaker detection**: relies on `X uvAca` pattern. misses speakers introduced by other formulae (e.g., narrative description of who speaks)
+3. **commentary alignment**: chapter numbers in Nilakantha's commentary use vulgate (Chitrashala) edition numbering, not BORI. a full concordance between editions does not exist in machine-readable form
+4. **OCR quality**: Surya achieves ~80% character accuracy on Devanagari. ligature/spacing errors are common but key terms remain readable
+
+## license
+
+code: MIT. node data and analysis: CC-BY-4.0. corpus data (BORI) is not included and is subject to its own copyright.

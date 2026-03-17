@@ -3,8 +3,13 @@ bori/
 gretil/
 sanskritdocs/
 
-# output artifacts
+# output artifacts (regenerable from scripts)
 output/
+
+# nilakantha OCR data and PDFs (too large for github)
+nilakantha/600dpi/
+nilakantha/chitrashala/
+nilakantha/ocr_clean/
 
 # zip archives
 *.zip

@@ -1,0 +1,1807 @@
+
+
+# ─────────────────────────────────────────────────────────────
+# 1. BRAHMAN (the sacred / the absolute / the priestly)
+# ─────────────────────────────────────────────────────────────
+brahman:
+  id: brahman
+  concept: the sacred / the absolute / the priestly
+  tier: primary
+  family: ["atman", "brahmana_true", "tevijja"]
+  chapters: ["ch2", "ch5"]
+  semantic_field: theology
+  forms:
+    vedic:
+    - term: bráhman
+      grammar: neuter noun
+      root: bṛh (to grow, to expand)
+      note: sacred utterance, mantra-force — NOT the absolute, NOT a deity
+    - term: brahmā
+      grammar: masculine nominative
+      note: used as epithet; brahmāṇas pati (lord of sacred utterance) is a distinct deity
+    - term: brāhmaṇa
+      grammar: masculine noun
+      note: one who possesses brahman (sacred-utterance knowledge); ritual specialist
+    sanskrit:
+    - term: brahman
+      grammar: neuter noun
+      note: the absolute, cosmic ground (upanishadic development)
+    - term: brahmā
+      grammar: masculine noun
+      note: the deity, creator-brahmā (distinct from neuter brahman)
+    pali:
+    - term: brahma
+      grammar: noun
+      note: 'context-dependent: cosmic principle vs prefix meaning ''sublime'''
+    - term: brahmā
+      grammar: proper noun
+      note: the deity in buddhist cosmology — mahābrahmā
+    - term: brāhmaṇa
+      grammar: masculine noun
+      note: brahmin priest; ALSO reinterpreted as 'true brahmin' (ethical sense)
+    chinese:
+    - term: 梵
+      pinyin: fàn
+      translator: standard across translators
+      translation_choice_note: phonetic transliteration preserving the vedic root
+    - term: 梵天
+      pinyin: fàntiān
+      translator: standard
+      translation_choice_note: brahmā + celestial realm — specifically the deity
+    - term: 婆羅門
+      pinyin: póluómén
+      translator: standard
+      translation_choice_note: phonetic transliteration of brāhmaṇa
+    jain:
+    - term: brahma
+      language: ardhamagadhi
+      note: used but peripheral to jain soteriology
+    gandhari:
+    - term: brahma
+      note: standard form attested in manuscripts
+  temporal_strata:
+  - period: ~1500-1200 BCE
+    dating_confidence: medium
+    tradition: vedic
+    meaning: sacred utterance, mantra-force, the power inherent in ritual speech
+    key_texts: ["ṛgveda"]
+    citations:
+    - file: data/raw/vedic/rgveda_aufrecht_gretil.txt
+      reference: RV_1,003.05
+      quote: upa brahmāṇi vāghataḥ
+      context: come toward the sacred utterances — plural, referring to hymns
+    - file: data/raw/vedic/rgveda_aufrecht_gretil.txt
+      reference: RV_1,018.03
+      quote: rakṣā ṇo brahmaṇas pate
+      context: protect us, lord of brahman (= lord of sacred utterance, a deity)
+    corpus_count: 355
+    drift_from_previous: null
+  - period: ~800-500 BCE
+    dating_confidence: medium
+    tradition: upanishadic
+    meaning: the absolute reality, cosmic ground of being, identical with ātman
+    key_texts: ["bṛhadāraṇyaka", "chāndogya", "māṇḍūkya"]
+    citations:
+    - file: data/raw/upanishads/primary/brhadaranyaka.txt
+      reference: BU 1.4.10
+      quote: ahaṃ brahmāsmi
+      context: 'the great equation: I am brahman — self = absolute'
+    - file: data/raw/upanishads/primary/brhadaranyaka.txt
+      reference: BU 2.3.6
+      quote: dve vāva brahmaṇo rūpe | mūrtaṃ caivāmūrtaṃ ca
+      context: 'brahman has two forms: embodied and disembodied'
+    corpus_count: 786
+    drift_from_previous: 'MASSIVE semantic expansion: mantra-force → cosmic absolute. the ritual utterance becomes the ground
+      of all being. neuter brahman (impersonal absolute) distinguished from masculine brahmā (creator deity) — a distinction
+      that becomes crucial for the buddhist response.
+
+      '
+  - period: ~450-250 BCE
+    dating_confidence: low
+    tradition: early buddhist
+    meaning: 'brahmā = deity in cosmology (retained but DEMOTED — thinks himself eternal but is deluded). brahma- prefix =
+      ''sublime'' (brahmavihāra, brahmacariya — positively retained). brāhmaṇa = reinterpreted as ethical status, not birth.
+
+      '
+    key_texts: ["DN 1 brahmajāla", "DN 11 kevaddha", "DN 13 tevijja"]
+    citations:
+    - file: data/raw/pali_suttacentral/sc_bilara_data/root/pli/ms/sutta/dn/dn1_root-pli-ms.json
+      reference: DN 1:2.5.2
+      quote: 'ahamasmi brahmā mahābrahmā abhibhū anabhibhūto aññadatthudaso vasavattī issaro kattā nimmātā seṭṭho sajitā vasī
+        pitā bhūtabhabyānaṁ
+
+        '
+      context: 'brahmā''s self-description — "I am brahmā, the great brahmā, unconquered, lord, creator, maker, father of
+        beings." the buddha presents this as DELUSION, not truth. note: this passage contains issaro kattā nimmātā — the exact
+        formula ch5 tracks.
+
+        '
+    corpus_count: 454
+    drift_from_previous: 'STRATEGIC TRIFURCATION: the buddha does three distinct things: (1) demotes brahmā from absolute
+      to cosmological being (2) retains brahma- prefix for highest ethical qualities (3) redefines brāhmaṇa from birth-status
+      to ethical achievement. this is not simple rejection — it is selective appropriation.
+
+      '
+  - period: ~5th century CE
+    dating_confidence: high
+    tradition: theravāda commentary
+    meaning: brahmā as category in systematic cosmology; brahmavihāra as formal meditation technique
+    key_texts: ["visuddhimagga IX"]
+    citations:
+    - file: data/raw/pali_commentary/visuddhimagga.txt
+      reference: Vism ch.9 (brahmavihāraniddeso)
+      quote: '[brahmavihāra systematization]'
+      context: brahmavihāra codified into specific meditation procedure with stages, objects, and results
+    corpus_count: ~50+ (brahman-references in buddhist systematic texts)
+    drift_from_previous: 'systematization: brahmavihāra moves from ethical orientation to codified meditation technique with
+      prescribed objects and stages. the method-register language increases.
+
+      '
+  valence:
+    vedic: sacred — mantra-force, the power of ritual speech
+    upanishadic: supreme — the absolute, ground of being, identical with ātman
+    buddhist: SPLIT — deity (demoted), prefix (affirmed as 'sublime'), brāhmaṇa (reinterpreted as ethical)
+    jain: peripheral — not central to jain metaphysics
+    note: 'the buddhist treatment is NEITHER rejection NOR acceptance but STRATEGIC REINTERPRETATION. brahman-as-absolute
+      is ignored (never directly argued against in early suttas). brahmā-as-deity is retained but demoted. brahma-as-adjective
+      (''sublime'') is fully embraced.
+
+      '
+  standard_references:
+    pts_dictionary: 'brahma: the supreme being, a brahmin, holy, sacred'
+    monier_williams: 'brahman: n. the one self-existent Spirit, the Absolute'
+    wisdomlib: 'Brahma: 47 definitions across hinduism, buddhism, jainism'
+    diff_notes: 'PTS CONFLATES neuter brahman (absolute) with masculine brahmā (deity). this conflation is itself evidence
+      of drift — in pāli, the vedic/upanishadic distinction between neuter-absolute and masculine-deity has partially collapsed,
+      making the buddhist strategic reinterpretation harder to see. our dictionary maintains the distinction because it matters
+      for the stance index. [!] FLAGGED DISAGREEMENT WITH PTS.
+
+      '
+  index_contribution:
+  - index: SI
+    chapter: ch2
+    role: engagement
+    note: brahmavihāra, brahmacariya = vedic terminology positively retained
+  - index: SI
+    chapter: ch2
+    role: opposition
+    note: brahmā-as-creator in DN 1 = explicit vedic stance challenged
+
+
+# ─────────────────────────────────────────────────────────────
+# 2. ATMAN (self / vital principle / the absolute subject)
+# ─────────────────────────────────────────────────────────────
+atman:
+  id: atman
+  concept: self / vital principle / the absolute subject
+  tier: primary
+  family: ["anatta", "brahman", "khandha", "sakkayaditthi"]
+  chapters: ["ch2", "ch1"]
+  semantic_field: ontology
+  forms:
+    vedic:
+    - term: ātman
+      grammar: masculine noun
+      root: at (to breathe) or an (to breathe)
+      note: breath, vital force, essential self — NOT yet transcendent subject
+    sanskrit:
+    - term: ātman
+      grammar: masculine noun
+      note: the eternal self, identical with brahman (upanishadic)
+    - term: anātman
+      grammar: masculine noun (negation)
+      note: non-self, selflessness (buddhist philosophical term)
+    - term: nairātmya
+      grammar: neuter abstract noun
+      note: selflessness (yogācāra/madhyamaka technical term)
+    pali:
+    - term: attā
+      grammar: masculine noun
+      note: self — the target of anattā negation
+    - term: anattā
+      grammar: adjective/noun
+      note: not-self (therapeutic) → no-self (ontological) — THE ch1 drift
+    chinese:
+    - term: 我
+      pinyin: wǒ
+      translator: standard
+      translation_choice_note: self/I — used in both affirmative (ātman) and negative (anātman) contexts
+    - term: 無我
+      pinyin: wúwǒ
+      translator: standard
+      translation_choice_note: no-self — standard translation of anātman/anattā
+    - term: 神我
+      pinyin: shénwǒ
+      translator: xuanzang
+      translation_choice_note: spirit-self — xuanzang's rendering emphasizing the metaphysical claim
+    jain:
+    - term: jīva
+      language: ardhamagadhi
+      note: CONTRASTIVE — jains AFFIRM the self (jīva). NOT equivalent to ātman but parallel concept.
+    - term: ātman
+      language: sanskrit (jain philosophical)
+      note: jains accept ātman with finite spatial extent (vs. brahmanical infinite ātman)
+    gandhari:
+    - term: atma
+      note: standard gandhari form
+    - term: aṇatma
+      note: gandhari negative form
+  temporal_strata:
+  - period: ~1500-1200 BCE
+    dating_confidence: medium
+    tradition: vedic
+    meaning: breath, vital force, the animating principle in living beings
+    key_texts: ["ṛgveda"]
+    citations:
+    - file: data/raw/vedic/rgveda_aufrecht_gretil.txt
+      reference: RV_1,115.01
+      quote: sūrya ātmā jagatas tasthuṣaś ca
+      context: the sun is the ātman of all that moves and stands — cosmic vital principle
+    - file: data/raw/vedic/rgveda_aufrecht_gretil.txt
+      reference: RV_10,016.03
+      quote: sūryaṁ cakṣur gacchatu vātam ātmā
+      context: let the eye go to the sun, the ātman to the wind — funeral hymn, ātman = breath
+    corpus_count: 26
+    drift_from_previous: null
+  - period: ~800-500 BCE
+    dating_confidence: medium
+    tradition: upanishadic
+    meaning: the eternal conscious subject, invariant witness, identical with brahman
+    key_texts: ["bṛhadāraṇyaka", "chāndogya", "taittirīya", "kaṭha"]
+    citations:
+    - file: data/raw/upanishads/primary/chandogya.txt
+      reference: CU 6.8.7
+      quote: tat tvam asi śvetaketo
+      context: thou art that — ātman = brahman, the great equation
+    - file: data/raw/upanishads/primary/brhadaranyaka.txt
+      reference: BU 4.4.25
+      quote: ajaro 'maro 'mṛto 'bhayaḥ
+      context: unaging, immortal, deathless, fearless — attributes of the liberated ātman
+    corpus_count: 1422
+    drift_from_previous: 'RADICAL ELEVATION: from 26 occurrences (breath/vital force) to 1,422 (central philosophical concept).
+      ātman becomes THE concept around which upanishadic philosophy organizes. the shift from "breath" to "absolute subject"
+      is the foundational metaphysical innovation that buddhism will later negate.
+
+      '
+  - period: ~450-250 BCE
+    dating_confidence: low
+    tradition: early buddhist
+    meaning: 'attā = the self-concept that is negated. anattā = not-self as therapeutic instruction (early stratum) hardening
+      into no-self as ontological claim (later stratum). see ch1 for detailed drift.
+
+      '
+    key_texts: ["SN 22 khandha saṃyutta", "MN 22 alagaddūpama"]
+    citations:
+    - file: data/raw/pali_suttacentral/sc_bilara_data/root/pli/ms/sutta/sn/sn22/
+      reference: SN 22.11
+      quote: rūpaṁ, bhikkhave, anattā atītānāgataṁ
+      context: form is not-self, whether past, future, or present — applied to all five aggregates
+    corpus_count: 3000
+    drift_from_previous: 'DIRECT NEGATION of the upanishadic ātman. but critically, buddha argues against the UPANISHADIC
+      ātman (eternal subject), not the VEDIC ātman (breath). the buddhist critique presupposes the upanishadic elevation.
+      without the upanishadic development, there would be nothing to negate.
+
+      '
+  - period: ~400-700 CE
+    dating_confidence: high
+    tradition: mahāyāna systematic
+    meaning: 'anātman/nairātmya becomes dual: pudgalanairātmya (no-self of persons) + dharmanairātmya (no-self of phenomena)'
+    key_texts: ["madhyamakakārikā", "yogācārabhūmi"]
+    citations:
+    - file: data/raw/sanskrit/mahayana/sa_nAgArjuna-mUlamadhyamakakArikA.txt
+      reference: MMK 18
+      quote: '[ātmavāda refutation chapter]'
+      context: nāgārjuna systematically refutes all possible ātman theories
+    corpus_count: ~200+ (ātman in MMK, yogācārabhūmi, abhidharmakośa — extensively discussed)
+    drift_from_previous: 'SYSTEMATIC EXPANSION: not-self of persons (the early teaching) extended to not-self of all phenomena.
+      the therapeutic instruction becomes a comprehensive ontological framework. this is method→thesis drift in its philosophical
+      dimension.
+
+      '
+  valence:
+    vedic: natural — breath, vital force (descriptive, not philosophical)
+    upanishadic: supreme — identical with brahman, the highest truth
+    buddhist: NEGATED — but the negation itself evolves from therapeutic to ontological
+    jain: AFFIRMED — jīva/ātman affirmed as real but finite (contrastive with both vedānta and buddhism)
+    note: 'the four-way valence is crucial: vedic (descriptive) → upanishadic (metaphysical affirmation) → buddhist (negation)
+      → jain (qualified affirmation). each position presupposes knowledge of the others.
+
+      '
+  standard_references:
+    pts_dictionary: 'attā: self, soul [PTS''s term — we use ''self'' not ''soul'']'
+    monier_williams: 'ātman: the breath, the soul, the principle of life and sensation'
+    wisdomlib: 'Atman: 47 definitions'
+    diff_notes: 'monier-williams correctly notes "breath" as primary meaning but lists it alongside "soul" without marking
+      the temporal shift. our dictionary insists on temporal stratification: RV ātman (breath) ≠ upanishadic ātman (absolute
+      self). this is not pedantic — the buddhist negation targets the latter, not the former.
+
+      '
+  index_contribution:
+  - index: SI
+    chapter: ch2
+    role: engagement
+    note: buddha engages with the upanishadic ātman concept (not the vedic one)
+  - index: H
+    chapter: ch1
+    role: denominator
+    note: attā-language in early suttas = experiential register (release-oriented)
+
+
+# ─────────────────────────────────────────────────────────────
+# 3. RTA (cosmic order / truth / law → dharma)
+# ─────────────────────────────────────────────────────────────
+rta:
+  id: rta
+  concept: cosmic order / truth / law → dharma
+  tier: primary
+  family: ["veda", "yajna", "karma"]
+  chapters: ["ch2"]
+  semantic_field: cosmology
+  forms:
+    vedic:
+    - term: ṛta
+      grammar: neuter noun
+      root: ṛ (to move, to rise)
+      note: cosmic order, truth, natural law, ritual propriety
+    - term: ṛtasya
+      grammar: genitive
+      note: of ṛta — extremely common in RV
+    sanskrit:
+    - term: dharma
+      grammar: masculine noun
+      root: dhṛ (to hold, to support)
+      note: law, duty, cosmic order — replaces ṛta in post-vedic discourse
+    pali:
+    - term: dhamma
+      grammar: masculine noun
+      note: 'multiple senses: teaching, truth, phenomenon, cosmic law, mental quality'
+    chinese:
+    - term: 法
+      pinyin: fǎ
+      translator: standard across all translators
+      translation_choice_note: 'fǎ covers ALL senses of dhamma — teaching, phenomena, cosmic law. this polysemy is itself
+        evidence of how much semantic weight the term accumulated through drift.
+
+        '
+    jain:
+    - term: dhamma
+      language: ardhamagadhi
+      note: used with similar range of meaning as in buddhism
+    gandhari:
+    - term: dharma
+      note: standard gandhari form
+  temporal_strata:
+  - period: ~1500-1200 BCE
+    dating_confidence: medium
+    tradition: vedic
+    meaning: cosmic order, truth, natural regularity, ritual propriety — the fundamental structuring principle
+    key_texts: ["ṛgveda"]
+    citations:
+    - file: data/raw/vedic/rgveda_aufrecht_gretil.txt
+      reference: RV_1,001.08
+      quote: rājantam adhvarāṇāṁ gopām ṛtasya dīdivim
+      context: agni as guardian of ṛta — ṛta governs sacrifice and cosmos
+    - file: data/raw/vedic/rgveda_aufrecht_gretil.txt
+      reference: RV_1,002.08
+      quote: ṛtena mitrāvaruṇāv ṛtāvṛdhāv ṛtaspṛśā
+      context: mitra-varuṇa strengthened by ṛta, touching ṛta — guardians of cosmic order
+    corpus_count: 775
+    drift_from_previous: null
+  - period: ~800-500 BCE
+    dating_confidence: medium
+    tradition: upanishadic
+    meaning: ṛta DISAPPEARS — replaced by dharma (law/duty) and satya (truth)
+    key_texts: ["bṛhadāraṇyaka"]
+    citations:
+    - file: data/raw/upanishads/primary/brhadaranyaka.txt
+      reference: BU [dharma passages]
+      quote: '[75 dharma occurrences in BU, 0 ṛta as cosmic order]'
+      context: dharma replaces ṛta as the organizing concept for cosmic and moral law
+    corpus_count_rta: 0
+    corpus_count_dharma: 75
+    drift_from_previous: 'LEXICAL REPLACEMENT: ṛta (775× in RV) vanishes from philosophical discourse, replaced by dharma.
+      this is not just a word change — ṛta is impersonal cosmic regularity; dharma carries the additional sense of duty, ethical
+      obligation, and eventually (in buddhism) the buddha''s teaching itself. the replacement OPENS semantic space that buddhism
+      will fill.
+
+      '
+    corpus_count: ~30 (ṛta in later vedic — declining as dharma takes over)
+  - period: ~450-250 BCE
+    dating_confidence: low
+    tradition: early buddhist
+    meaning: 'dhamma = polysemous: (1) the buddha''s teaching, (2) cosmic truth/law, (3) mental/physical phenomena (in abhidhamma
+      sense), (4) ethical quality. the polysemy is itself the product of drift — one word accumulates the semantic weight
+      that ṛta, satya, and dharma previously distributed.
+
+      '
+    key_texts: ["DN, MN, SN, AN — ubiquitous"]
+    citations:
+    - file: data/raw/pali_suttacentral/sc_bilara_data/root/pli/ms/sutta/sn/
+      reference: SN 56.11 (dhammacakkappavattana)
+      quote: dhammacakkam pavattitam appativattiyam
+      context: the wheel of dhamma set in motion, irreversible — dhamma as teaching/truth
+    corpus_count: ubiquitous — tens of thousands
+    drift_from_previous: 'SEMANTIC EXPLOSION: dharma/dhamma becomes the most overloaded term in buddhism. it simultaneously
+      means: the buddha''s teaching, cosmic truth, individual phenomena (in abhidhamma), and ethical quality. this polysemy
+      is the product of centuries of semantic accumulation from ṛta → dharma → dhamma.
+
+      '
+  valence:
+    vedic: foundational — the structuring principle of cosmos and ritual
+    upanishadic: REPLACED by dharma — shift from cosmic regularity to moral/ontological law
+    buddhist: APPROPRIATED — dhamma becomes the buddha's own teaching and cosmic truth simultaneously
+    jain: parallel — dhamma used similarly as cosmic-ethical principle
+    note: 'the ṛta → dharma → dhamma trajectory is one of the most complete semantic transformations in indian intellectual
+      history. a term for impersonal cosmic regularity becomes a term for a specific teacher''s soteriological program.
+
+      '
+  standard_references:
+    pts_dictionary: 'dhamma: nature, condition, quality, thing, idea, phenomenon, truth, teaching'
+    monier_williams: 'dharma: that which is established, law, duty, justice, virtue, religion'
+    diff_notes: 'neither PTS nor MW captures the ṛta → dharma trajectory. PTS treats dhamma as if it always had its buddhist
+      range of meaning. MW treats dharma as primarily hindu-legal. our dictionary shows the historical sequence: ṛta (cosmic
+      order) → dharma (duty/law) → dhamma (teaching + phenomena + truth). the polysemy of dhamma is the RESULT of accumulating
+      the semantic weight of ṛta + dharma + satya.
+
+      '
+  index_contribution:
+  - index: SI
+    chapter: ch2
+    role: engagement
+    note: dhamma appropriates the semantic space of ṛta — this is engagement, not opposition
+
+
+# ─────────────────────────────────────────────────────────────
+# 4. YAJNA (sacrifice / ritual offering)
+# ─────────────────────────────────────────────────────────────
+yajna:
+  id: yajna
+  concept: sacrifice / ritual offering
+  tier: primary
+  family: ["tapas", "karma", "veda"]
+  chapters: ["ch2"]
+  semantic_field: praxis
+  forms:
+    vedic:
+    - term: yajña
+      grammar: masculine noun
+      root: yaj (to offer ritually, to sacrifice)
+      note: the central ritual technology of vedic religion
+    pali:
+    - term: yañña
+      grammar: masculine noun
+      note: sacrifice — retained but ethicized
+    chinese:
+    - term: 祭祀
+      pinyin: jìsì
+      translator: standard
+      translation_choice_note: sacrificial rite — literal translation
+  temporal_strata:
+  - period: ~1500-1200 BCE
+    dating_confidence: medium
+    tradition: vedic
+    meaning: ritual sacrifice — the primary technology for maintaining cosmic order and securing deva-reciprocity
+    key_texts: ["ṛgveda"]
+    citations:
+    - file: data/raw/vedic/rgveda_aufrecht_gretil.txt
+      reference: RV_1,001.01
+      quote: agnim īḻe purohitaṁ yajñasya devam ṛtvijam
+      context: the very first verse of the ṛgveda invokes agni as priest of sacrifice
+    - file: data/raw/vedic/rgveda_aufrecht_gretil.txt
+      reference: RV_9,002.10
+      quote: ātmā yajñasya pūrvyaḥ
+      context: soma is the ātman of the primordial sacrifice
+    corpus_count: 578
+    drift_from_previous: null
+  - period: ~800-500 BCE
+    dating_confidence: medium
+    tradition: upanishadic
+    meaning: sacrifice metaphorized — used cosmologically but beginning to internalize
+    key_texts: ["bṛhadāraṇyaka", "chāndogya"]
+    citations:
+    - file: data/raw/upanishads/primary/brhadaranyaka.txt
+      reference: BU 1.1-1.2
+      quote: aśvamedho vai yajño
+      context: the horse-sacrifice is indeed sacrifice — cosmic equation of universe = sacrifice
+    corpus_count: 105
+    drift_from_previous: 'METAPHORIZATION: yajña moves from literal ritual to cosmic metaphor. the universe itself is described
+      as a sacrifice. but importantly, upanishads do NOT yet fully internalize it (meditation-as-sacrifice is a later development).
+
+      '
+  - period: ~450-250 BCE
+    dating_confidence: low
+    tradition: early buddhist
+    meaning: sacrifice critiqued for animal killing; true sacrifice = ethical action, relinquishment of greed/hatred/delusion
+    key_texts: ["MN 94", "MN 99", "DN 5 kūṭadanta"]
+    citations:
+    - file: data/raw/pali_suttacentral/sc_bilara_data/root/pli/ms/sutta/mn/
+      reference: MN 94
+      quote: ettakā usabhā haññantu yaññatthāya
+      context: so many bulls slaughtered for sacrifice — then critiqued as contrary to ethical conduct
+    corpus_count: 35
+    drift_from_previous: 'ETHICIZATION: frequency drops from 578 (vedic) to 105 (upanishadic) to 35 (buddhist). the word is
+      retained but its meaning inverted: the highest sacrifice is not animal offering but relinquishment of the three poisons.
+      DN 5 kūṭadanta sutta explicitly describes a sacrifice "without slaughter" as superior.
+
+      '
+  valence:
+    vedic: central — the primary religious technology
+    upanishadic: metaphorical — cosmos-as-sacrifice
+    buddhist: ETHICIZED — animal sacrifice critiqued, true sacrifice = ethical relinquishment
+    jain: REJECTED — ahiṃsā (non-violence) directly opposes animal sacrifice
+  standard_references:
+    pts_dictionary: 'yañña: sacrifice, almsgiving'
+    monier_williams: 'yajña: worship, devotion, prayer, sacrifice'
+    diff_notes: 'PTS adds "almsgiving" as a buddhist-specific meaning — this is itself evidence of the ethicization. the word
+      shifts from "animal sacrifice" to "generous giving." our dictionary tracks this shift explicitly.
+
+      '
+  index_contribution:
+  - index: SI
+    chapter: ch2
+    role: opposition
+    note: buddhist critique of animal sacrifice = opposition to vedic ritual
+  - index: SI
+    chapter: ch2
+    role: engagement
+    note: retention of yañña vocabulary (even with new meaning) = continued engagement
+
+
+# ─────────────────────────────────────────────────────────────
+# 5. KARMA (action / deed / moral causation)
+# ─────────────────────────────────────────────────────────────
+karma:
+  id: karma
+  concept: action / deed / moral causation
+  tier: primary
+  family: ["samsara", "moksha", "yajna"]
+  chapters: ["ch2", "ch5"]
+  semantic_field: soteriology
+  forms:
+    vedic:
+    - term: karman
+      grammar: neuter noun
+      root: kṛ (to do, to make)
+      note: action, deed, work — primarily ritual action in RV
+    pali:
+    - term: kamma
+      grammar: neuter noun
+      note: action = ethical intention (cetanā). NOT ritual.
+    chinese:
+    - term: 業
+      pinyin: yè
+      translator: standard
+      translation_choice_note: covers all senses — action, deed, moral accumulation
+    jain:
+    - term: kamma
+      language: ardhamagadhi
+      note: karma as material substance (karmic particles) binding the jīva — MATERIALIST conception
+  temporal_strata:
+  - period: ~1500-1200 BCE
+    dating_confidence: medium
+    tradition: vedic
+    meaning: action, deed, ritual work — consequences follow from correct/incorrect ritual performance
+    key_texts: ["ṛgveda"]
+    citations:
+    - file: data/raw/vedic/rgveda_aufrecht_gretil.txt
+      reference: RV_1,011.04
+      quote: indro viśvasya karmaṇo dhartā vajrī puruṣṭutaḥ
+      context: indra upholder of all action — karman = action/deed, primarily ritual
+    corpus_count: 1069
+    drift_from_previous: null
+  - period: ~800-500 BCE
+    dating_confidence: medium
+    tradition: upanishadic
+    meaning: moral causation — action determines rebirth; knowledge supersedes karma
+    key_texts: ["bṛhadāraṇyaka", "kaṭha"]
+    citations:
+    - file: data/raw/upanishads/primary/brhadaranyaka.txt
+      reference: BU 3.2.13
+      quote: puṇyo vai puṇena karmaṇā bhavati pāpaḥ pāpena
+      context: one becomes pure through pure action, impure through impure action — MORAL causation
+    corpus_count: 446
+    drift_from_previous: 'MORALIZATION: karman shifts from ritual efficacy to moral causation. actions determine not just
+      ritual outcomes but rebirth destinations. critically, upanishads add that KNOWLEDGE (jñāna) can supersede karma — this
+      creates the soteriological problem buddhism inherits.
+
+      '
+  - period: ~450-250 BCE
+    dating_confidence: low
+    tradition: early buddhist
+    meaning: kamma = INTENTION (cetanā). 'cetanāhaṃ bhikkhave kammaṃ vadāmi' — I call intention action.
+    key_texts: ["AN 6.63"]
+    citations:
+    - file: data/raw/pali_suttacentral/sc_bilara_data/root/pli/ms/sutta/an/
+      reference: AN 6.63
+      quote: cetanāhaṃ bhikkhave kammaṃ vadāmi
+      context: intention is what I call action — the buddha's radical redefinition
+    corpus_count: 2000
+    drift_from_previous: 'INTERNALIZATION: karma shifts from external action (vedic) to moral causation (upanishadic) to PSYCHOLOGICAL
+      INTENTION (buddhist). a perfectly performed ritual with impure intention generates bad kamma. this completes the trajectory
+      from external → internal.
+
+      '
+  valence:
+    vedic: ritual — action has consequences through correct performance
+    upanishadic: moral — action determines rebirth; knowledge supersedes
+    buddhist: intentional — kamma = cetanā (intention); radical psychological internalization
+    jain: material — karma as physical substance (karmic particles) — CONTRASTIVE with buddhist psychological model
+  standard_references:
+    pts_dictionary: 'kamma: act, action, deed, work'
+    monier_williams: 'karman: act, action, performance, work'
+    diff_notes: 'neither dictionary marks the vedic → upanishadic → buddhist trajectory. PTS treats kamma as straightforwardly
+      "action." MW treats karman as "work." our dictionary insists on the three-stage drift: ritual action → moral causation
+      → psychological intention. the buddhist innovation (cetanā = kamma) is invisible if you don''t track the shift.
+
+      '
+  index_contribution:
+  - index: SI
+    chapter: ch2
+    role: engagement
+    note: buddha accepts karma doctrine from upanishadic tradition — this is ENGAGEMENT
+
+
+# ─────────────────────────────────────────────────────────────
+# 6. SAMSARA (cycle of rebirth / transmigration)
+# ─────────────────────────────────────────────────────────────
+samsara:
+  id: samsara
+  concept: cycle of rebirth / transmigration
+  tier: primary
+  family: ["karma", "moksha", "bhava"]
+  chapters: ["ch2"]
+  semantic_field: cosmology
+  forms:
+    vedic:
+    - term: null
+      note: ABSENT from ṛgveda — concept does not exist in early vedic thought
+    sanskrit:
+    - term: saṃsāra
+      grammar: masculine noun
+      root: saṃ-sṛ (to flow together, to go around)
+    pali:
+    - term: saṃsāra
+      grammar: masculine noun
+    chinese:
+    - term: 輪迴
+      pinyin: lúnhuí
+      translator: standard
+      translation_choice_note: '''wheel-turning'' — vivid metaphor for cyclic rebirth'
+    jain:
+    - term: saṃsāra
+      language: ardhamagadhi
+      note: shared concept — cycle of rebirth from which jīva seeks liberation
+  temporal_strata:
+  - period: ~1500-1200 BCE
+    dating_confidence: medium
+    tradition: vedic
+    meaning: CONCEPT DOES NOT EXIST
+    key_texts: ["ṛgveda"]
+    citations: []
+    corpus_count: 0
+    drift_from_previous: null
+  - period: ~800-500 BCE
+    dating_confidence: medium
+    tradition: upanishadic
+    meaning: cyclic transmigration governed by karma — NEW philosophical problem
+    key_texts: ["bṛhadāraṇyaka", "chāndogya"]
+    citations:
+    - file: data/raw/upanishads/primary/brhadaranyaka.txt
+      reference: BU 4.4
+      quote: '[description of rebirth cycle based on karma]'
+      context: systematic doctrine of transmigration — the metaphysical problem that requires mokṣa
+    corpus_count: 108
+    drift_from_previous: 'EMERGENCE: from 0 to 108. saṃsāra is an INNOVATION of the upanishadic period. vedic religion focused
+      on this-worldly prosperity and post-mortem continuation in ancestral realms. the concept of CYCLIC rebirth is new —
+      and it creates the soteriological problem that both hinduism, buddhism, and jainism try to solve.
+
+      '
+  - period: ~450-250 BCE
+    dating_confidence: low
+    tradition: early buddhist
+    meaning: the round of rebirth driven by craving (taṇhā) and ignorance (avijjā) — the problem that the four noble truths
+      address
+    key_texts: ["SN 15 anamatagga saṃyutta"]
+    corpus_count: standard doctrine — frequent
+    drift_from_previous: 'ACCEPTED AND REFRAMED: buddhism accepts saṃsāra wholesale from upanishadic tradition but changes
+      the CAUSE (from ignorance of ātman to craving/ignorance in general) and the SOLUTION (from ātman-knowledge to cessation
+      of craving). this is adoption-with-transformation.
+
+      '
+  valence:
+    vedic: ABSENT
+    upanishadic: problem — the cycle from which one seeks escape through ātman-knowledge
+    buddhist: problem — accepted, but reframed with different cause (taṇhā) and solution (nibbāna)
+    jain: problem — shared, but with material karma particles as mechanism
+  standard_references:
+    pts_dictionary: 'saṃsāra: journeying, transmigration'
+    monier_williams: 'saṃsāra: going about, wandering, transmigration'
+    diff_notes: 'CRITICAL: neither dictionary notes that saṃsāra is ABSENT from the ṛgveda. this absence is foundational evidence
+      for the temporal stratification thesis. the concept emerges in the upanishadic period and is then inherited by both
+      buddhism and jainism. [!] FLAGGED — standard references miss this.
+
+      '
+  index_contribution:
+  - index: SI
+    chapter: ch2
+    role: engagement
+    note: acceptance of saṃsāra = engagement with upanishadic metaphysical framework
+
+
+# ─────────────────────────────────────────────────────────────
+# 7. ISSARA_VEDIC (lord / ruler / creator)
+# ─────────────────────────────────────────────────────────────
+issara_vedic:
+  id: issara
+  concept: lord / ruler / creator
+  tier: primary
+  family: ["issariya", "issaranimmana", "vasavatti", "katta"]
+  chapters: ["ch2", "ch5"]
+  semantic_field: theology
+  forms:
+    vedic:
+    - term: īśāna
+      grammar: present participle used as adjective/noun
+      root: īś (to own, to possess, to be master of)
+      note: ruling, commanding — applied to MULTIPLE deities (indra, varuṇa, rudra)
+    sanskrit:
+    - term: īśvara
+      grammar: masculine noun
+      note: lord, supreme ruler — theological development in late upanishads
+    pali:
+    - term: issara
+      grammar: masculine noun
+      note: lord, creator — REJECTED in the creation sense
+    - term: issariya
+      grammar: neuter noun
+      note: sovereignty, mastery — RETAINED and applied to tathāgata
+    chinese:
+    - term: 自在
+      pinyin: zìzài
+      translator: standard
+      translation_choice_note: '''self-existing/sovereign'' — critically, this translation captures the POSITIVE valence (sovereignty)
+        rather than the negative (creator). the translator''s choice itself reflects the issara/issariya split.
+
+        '
+  temporal_strata:
+  - period: ~1500-1200 BCE
+    dating_confidence: medium
+    tradition: vedic
+    meaning: ruling, commanding — epithet for powerful deities, NOT a supreme deity concept
+    key_texts: ["ṛgveda"]
+    citations:
+    - file: data/raw/vedic/rgveda_aufrecht_gretil.txt
+      reference: RV_1,005.10
+      quote: īśāno yavayā vadham
+      context: indra the lord, wielding destruction — applied to indra, not a unique supreme deva
+    - file: data/raw/vedic/rgveda_aufrecht_gretil.txt
+      reference: RV_2,033.09
+      quote: īśānād asya bhuvanasya bhūrer
+      context: the lord of this abundant world — applied to rudra here
+    corpus_count: 20
+    drift_from_previous: null
+  - period: ~500-200 BCE
+    dating_confidence: medium
+    tradition: late upanishadic
+    meaning: supreme lord, controller of all, identified with brahman/paramātman
+    key_texts: ["śvetāśvatara", "īśa upanishad"]
+    citations:
+    - file: data/raw/upanishads/primary/svetasvatara.txt
+      reference: ŚU 3.2
+      quote: sa īśvaraḥ paramātmā
+      context: he is the lord, the supreme self — theistic vedānta developing
+    - file: data/raw/upanishads/primary/isa.txt
+      reference: ĪU 1
+      quote: īśā vāsyam idaṃ sarvaṃ
+      context: all this is pervaded by the lord — foundational theistic claim
+    corpus_count: 116
+    drift_from_previous: 'ELEVATION: from 20 (epithet for various deities) to 116 (supreme theological concept). the generic
+      "ruler" becomes THE ruler — unique, supreme, identified with brahman. this elevation creates the theological target
+      that buddhism will later reject.
+
+      '
+  - period: ~450-250 BCE
+    dating_confidence: low
+    tradition: early buddhist
+    meaning: issaranimmāna (creation by a lord) REJECTED; issariya (sovereignty) RETAINED
+    key_texts: ["DN 1", "AN 3.58"]
+    citations:
+    - file: data/raw/pali_suttacentral/sc_bilara_data/root/pli/ms/sutta/dn/dn1_root-pli-ms.json
+      reference: DN 1:2.5.2
+      quote: issaro kattā nimmātā
+      context: lord, creator, maker — part of brahmā's deluded self-description
+    corpus_count: 24
+    drift_from_previous: 'SPLIT VALENCE: this is the key ch5 finding. the buddha does NOT reject issara wholesale. he rejects
+      issara-as-creator (issaranimmāna) while RETAINING issariya-as-sovereignty. the tathāgata is described as vasavattī (wielding
+      power) but never as kattā nimmātā (creator-maker). see ch5 entries for full analysis.
+
+      '
+  valence:
+    vedic: distributed — epithet for multiple devas, not a supreme-being concept
+    upanishadic: elevated — supreme lord, controller, identified with brahman
+    buddhist: SPLIT — creator-function REJECTED, sovereignty-function RETAINED
+    jain: rejected — parallel to buddhist rejection of creator-lord (issaranimmāna)
+  standard_references:
+    pts_dictionary: 'issara: lord, ruler, master, chief'
+    monier_williams: 'īśvara: able to do, master, lord, supreme being, god'
+    wisdomlib: 'Issara: 6 definitions; Ishvara: 50 definitions'
+    diff_notes: 'PTS correctly lists "lord, ruler, master, chief" — all POWER terms, not creation terms. this supports the
+      split: issara = power/sovereignty (retained) vs. issaranimmāna = creation (rejected). MW adds "supreme being, god" —
+      the upanishadic elevation that buddhism targets. wisdomlib''s 6 vs 50 definitions reflects the pāli vs sanskrit semantic
+      range difference.
+
+      '
+  index_contribution:
+  - index: SI
+    chapter: ch2
+    role: opposition
+    note: rejection of issaranimmāna = opposition to vedic/upanishadic theology
+  - index: SI
+    chapter: ch5
+    role: both
+    note: issara feeds both opposition (creator rejected) and engagement (sovereignty retained)
+
+
+# ─────────────────────────────────────────────────────────────
+# 8. TAPAS (heat / austerity / spiritual power)
+# ─────────────────────────────────────────────────────────────
+tapas:
+  id: tapas
+  concept: heat / austerity / spiritual power
+  tier: primary
+  family: ["yajna", "karma", "brahmana_true"]
+  chapters: ["ch2"]
+  semantic_field: praxis
+  forms:
+    vedic:
+    - term: tápas
+      grammar: neuter noun
+      root: tap (to heat, to burn, to glow)
+      note: cosmic generative heat — the creative force before the devas
+    sanskrit:
+    - term: tapas
+      grammar: neuter noun
+      note: austerity, spiritual discipline, ascetic practice
+    pali:
+    - term: tapo
+      grammar: neuter noun (nom./acc.)
+      note: austerity — retained for moderate discipline, REJECTED as extreme self-mortification
+    - term: tapojigucchā
+      grammar: compound
+      note: austerity-and-scrupulousness — term of critique for jain/ājīvika practices
+    chinese:
+    - term: 苦行
+      pinyin: kǔxíng
+      translator: standard
+      translation_choice_note: '''bitter practice'' — translation captures the buddhist NEGATIVE valence, not the vedic cosmic
+        sense'
+    jain:
+    - term: tava / tapa
+      language: ardhamagadhi
+      note: CENTRAL to jain soteriology — burning off karmic particles through austerity
+    gandhari:
+    - term: tapa
+      note: standard gandhari form
+  temporal_strata:
+  - period: ~1500-1200 BCE
+    dating_confidence: medium
+    tradition: vedic
+    meaning: cosmic generative heat — the primordial creative force, not human austerity
+    key_texts: ["ṛgveda (nāsadīya sūkta)"]
+    citations:
+    - file: data/raw/vedic/rgveda_aufrecht_gretil.txt
+      reference: RV_10,129.03
+      quote: tucchyenābhv apihitaṁ yad āsīt tapasas tan mahinājāyataikam
+      context: 'nāsadīya sūkta (creation hymn): ''from the power of tapas was born that one'' — tapas as the creative force
+        BEFORE the devas come into being. this is cosmogonic heat, not ascetic practice.
+
+        '
+    - file: data/raw/vedic/rgveda_aufrecht_gretil.txt
+      reference: RV_6,005.04
+      quote: tam ajarebhir vṛṣabhis tava svais tapā tapiṣṭha tapasā tapasvān
+      context: agni addressed as 'most burning, burning with tapas' — fire as embodiment of cosmic heat
+    corpus_count: 25
+    drift_from_previous: null
+  - period: ~800-500 BCE
+    dating_confidence: medium
+    tradition: upanishadic
+    meaning: spiritual discipline preliminary to knowledge; the means by which brahman is sought
+    key_texts: ["taittirīya"]
+    citations:
+    - file: data/raw/upanishads/primary/taittiriya.txt
+      reference: TaittU_3,1.1
+      quote: tadvijijñāsasva tadbrahmeti sa tapo 'tapyata sa tapastaptvā
+      context: 'bhṛgu seeks brahman from his father varuṇa: ''seek to know brahman through tapas'' — tapas as the METHOD for
+        brahma-knowledge. still powerful, but now human spiritual discipline, not cosmogonic heat.
+
+        '
+    corpus_count: 42
+    drift_from_previous: 'HUMANIZATION: tapas shifts from cosmic generative heat (RV 10.129) to human spiritual discipline
+      (TaittU 3.1). the force that created the universe becomes the effort a student applies to seek brahman. still highly
+      valued, but the register has changed from cosmological to soteriological.
+
+      '
+  - period: ~450-250 BCE
+    dating_confidence: low
+    tradition: early buddhist
+    meaning: 'extreme tapas (self-mortification) REJECTED as the middle way; moderate tapas retained as element of practice.
+      MN 101 directly critiques jain tapas theory (burning off past karma through austerity).
+
+      '
+    key_texts: ["MN 101 devadaha", "MN 36 mahāsaccaka"]
+    citations:
+    - file: data/raw/pali_suttacentral/sc_bilara_data/root/pli/ms/sutta/mn/mn101_root-pli-ms.json
+      reference: MN 101:2.6
+      quote: purāṇānaṁ kammānaṁ tapasā byantībhāvā navānaṁ kammānaṁ akaraṇā āyatiṁ anavassavo
+      context: 'the jain/nigaṇṭha formula that buddha critiques: ''through tapas old karma is destroyed, through non-action
+        no new karma arises.'' the buddha''s middle way rejects this mechanical model of tapas.
+
+        '
+    - file: data/raw/pali_suttacentral/sc_bilara_data/root/pli/ms/sutta/mn/mn101_root-pli-ms.json
+      reference: MN 101:10.5
+      quote: atthi kho vo āvuso nigaṇṭhā pubbeva pāpakammaṁ kataṁ taṁ imāya kaṭukāya dukkarakārikāya nijjīretha
+      context: '''you nigaṇṭhas say old bad karma is exhausted through bitter difficult practice'' — direct critique of tapas
+        as karma-burning'
+    corpus_count: 525
+    drift_from_previous: 'MIDDLE WAY SPLIT: cosmic heat → spiritual discipline → REJECTED as extreme, RETAINED as moderate.
+      the buddhist position is nuanced: not anti-tapas wholesale, but anti-self-mortification. the buddha''s own six years
+      of extreme austerity (MN 36) and subsequent rejection makes this personal, not merely doctrinal.
+
+      '
+  valence:
+    vedic: cosmogonic — the creative power that precedes even the devas
+    upanishadic: soteriological — the discipline through which brahman is known
+    buddhist: SPLIT — extreme tapas rejected (middle way), moderate effort retained
+    jain: CENTRAL — tapas burns karmic matter, the primary liberation technology
+    note: 'the four-way comparison is critical: vedic (cosmic), upanishadic (spiritual discipline), buddhist (rejected as
+      extreme), jain (central and physical). the buddhist-jain contrast on tapas is more acute than the buddhist-vedic one.
+
+      '
+  standard_references:
+    pts_dictionary: 'tapo: austerity, self-control, asceticism'
+    monier_williams: 'tapas: warmth, heat, pain, suffering, austerity'
+    diff_notes: 'MW correctly preserves "warmth, heat" as primary meaning before "austerity." PTS jumps straight to "austerity"
+      — missing the vedic cosmogonic sense entirely. our dictionary insists: RV tapas (cosmic heat) ≠ pāli tapo (ascetic practice).
+
+      '
+  index_contribution:
+  - index: SI
+    chapter: ch2
+    role: opposition
+    note: rejection of extreme tapas = opposition to śramaṇa/jain practice tradition
+  - index: SI
+    chapter: ch2
+    role: engagement
+    note: retention of moderate self-discipline = engagement with pan-indian praxis
+
+
+# ─────────────────────────────────────────────────────────────
+# 9. DEVA (celestial being / shining one)
+# ─────────────────────────────────────────────────────────────
+deva:
+  id: deva
+  concept: celestial being / shining one
+  tier: primary
+  family: ["agni", "indra", "soma", "brahman"]
+  chapters: ["ch2"]
+  semantic_field: theology
+  forms:
+    vedic:
+    - term: devá
+      grammar: masculine noun
+      root: div (to shine)
+      note: shining one — devas as reciprocal partners in ritual exchange
+    sanskrit:
+    - term: deva
+      grammar: masculine noun
+      note: celestial being — increasingly subordinated to brahman in upanishads
+    pali:
+    - term: deva
+      grammar: masculine noun
+      note: celestial being — cosmological category, subject to rebirth like all beings
+    - term: devā
+      grammar: nominative plural
+      note: the devas (as a class) — demoted to saṃsāric beings
+    chinese:
+    - term: 天
+      pinyin: tiān
+      translator: standard
+      translation_choice_note: '''sky/celestial'' — same character used for sky, celestial realm, and celestial beings. covers
+        both location and beings.'
+    - term: 天人
+      pinyin: tiānrén
+      translator: standard
+      translation_choice_note: '''celestial-person'' — celestial being, more specific than 天 alone'
+    jain:
+    - term: deva
+      language: ardhamagadhi
+      note: celestial beings in jain cosmology — parallel demotion to buddhist treatment
+    gandhari:
+    - term: deva
+      note: standard form
+  temporal_strata:
+  - period: ~1500-1200 BCE
+    dating_confidence: medium
+    tradition: vedic
+    meaning: shining ones — cosmic powers addressed through sacrifice; reciprocal relationship with humans
+    key_texts: ["ṛgveda"]
+    citations:
+    - file: data/raw/vedic/rgveda_aufrecht_gretil.txt
+      reference: RV_1,001.01
+      quote: agnim īḻe purohitaṁ yajñasya devam ṛtvijam
+      context: 'the very first verse: agni invoked as deva, ritual intermediary of sacrifice'
+    - file: data/raw/vedic/rgveda_aufrecht_gretil.txt
+      reference: RV_1,003.07
+      quote: viśve devāsa ā gata
+      context: '''all devas come here'' — the viśvedevas (all-devas) as collective ritual partners'
+    corpus_count: 1233
+    drift_from_previous: null
+  - period: ~800-500 BCE
+    dating_confidence: medium
+    tradition: upanishadic
+    meaning: devas subordinated to brahman — they are WITHIN the cosmic structure, not the ultimate reality
+    key_texts: ["bṛhadāraṇyaka", "kaṭha"]
+    citations:
+    - file: data/raw/upanishads/primary/brhadaranyaka.txt
+      reference: BU 1.4
+      quote: '[creation narrative — devas as products of brahman''s self-projection]'
+      context: the devas are produced beings, products of the absolute — no longer ultimate powers
+    corpus_count: 859
+    drift_from_previous: 'SUBORDINATION: from 1,233 (cosmic powers addressed through sacrifice) to 859 (beings within brahman''s
+      cosmos). the devas remain, but they are no longer the highest reality. this philosophical demotion in the upanishads
+      PREPARES the buddhist further demotion.
+
+      '
+  - period: ~450-250 BCE
+    dating_confidence: low
+    tradition: early buddhist
+    meaning: cosmological beings subject to saṃsāra — long-lived but impermanent, needing the dhamma like all beings
+    key_texts: ["DN 11 kevaddha", "DN 20 mahāsamaya", "SN 11 sakka saṃyutta"]
+    citations:
+    - file: data/raw/pali_suttacentral/sc_bilara_data/root/pli/ms/sutta/sn/sn11/sn11.19_root-pli-ms.json
+      reference: SN 11.19:1.7
+      quote: sakko devānamindo vejayantapāsādā orohanto añjaliṁ katvā sudaṁ bhagavantaṁ namassati
+      context: 'sakka (= indra), king of the devas, BOWS WITH JOINED PALMS to the buddha. the king of the vedic devas pays
+        homage to a human teacher.
+
+        '
+    corpus_count: 700
+    drift_from_previous: 'FURTHER DEMOTION: the steady count decline (1233 → 859 → 700) tracks the steady demotion of devas
+      across strata. in buddhist cosmology, devas are beings in favorable rebirths but still trapped in saṃsāra. they can
+      attend teachings, bow to the buddha, and even become his followers — but they are NOT the ultimate reality and NOT liberated.
+
+      '
+  valence:
+    vedic: central — cosmic powers, reciprocal ritual partners
+    upanishadic: subordinated — created beings within brahman's cosmic structure
+    buddhist: DEMOTED — cosmological beings subject to rebirth, needing the dhamma
+    jain: parallel demotion — celestial beings in jain cosmology, not ultimate
+    note: 'the progressive demotion of the devas is one of the cleanest drift trajectories: ritual partners → subordinated
+      beings → cosmological category. each stage preserves the vocabulary while reducing the ontological status.
+
+      '
+  standard_references:
+    pts_dictionary: 'deva: a god, a deity'
+    monier_williams: 'deva: a deity, a god, a heavenly or divine being'
+    diff_notes: 'neither dictionary marks the progressive demotion. "god" in vedic context ≠ "god" in buddhist context. PTS
+      should specify: deva in pāli = cosmological being subject to rebirth, not = vedic ritual partner.
+
+      '
+  index_contribution:
+  - index: SI
+    chapter: ch2
+    role: engagement
+    note: retention of deva vocabulary and cosmology = continued engagement with vedic framework
+  - index: SI
+    chapter: ch2
+    role: opposition
+    note: demotion of devas from ritual partners to saṃsāric beings = stance against vedic cosmology
+
+
+# ─────────────────────────────────────────────────────────────
+# 10. AGNI (fire / fire deity / ritual fire)
+# ─────────────────────────────────────────────────────────────
+agni:
+  id: agni
+  concept: fire / fire deity / ritual fire
+  tier: primary
+  family: ["deva", "yajna", "soma"]
+  chapters: ["ch2"]
+  semantic_field: theology-praxis
+  forms:
+    vedic:
+    - term: agní
+      grammar: masculine noun
+      root: Latin ignis, Slavic ogon — PIE fire word
+      note: fire deva — the intermediary between devas and humans, the ritual intermediary
+    pali:
+    - term: aggi
+      grammar: masculine noun
+      note: fire — STRIPPED of deity status, retained as metaphor (fire of craving)
+    chinese:
+    - term: 火
+      pinyin: huǒ
+      translator: standard
+      translation_choice_note: fire — literal. no trace of deity connotation.
+  temporal_strata:
+  - period: ~1500-1200 BCE
+    dating_confidence: medium
+    tradition: vedic
+    meaning: fire deva — the ritual intermediary (hotṛ), who carries offerings to the devas
+    key_texts: ["ṛgveda"]
+    citations:
+    - file: data/raw/vedic/rgveda_aufrecht_gretil.txt
+      reference: RV_1,001.01
+      quote: agnim īḻe purohitaṁ yajñasya devam ṛtvijam
+      context: 'the FIRST WORD of the ṛgveda is agni. ''I praise agni, the foremost priest, the deva-ritualist of sacrifice.''
+        agni = the foundational deity of vedic religion.
+
+        '
+    - file: data/raw/vedic/rgveda_aufrecht_gretil.txt
+      reference: RV_1,001.04
+      quote: agne yaṁ yajñam adhvaraṁ viśvataḥ paribhūr asi
+      context: agni addressed as the one who surrounds sacrifice from all sides
+    corpus_count: 1135
+    drift_from_previous: null
+  - period: ~450-250 BCE
+    dating_confidence: low
+    tradition: early buddhist
+    meaning: 'aggi = fire as METAPHOR. the ādittapariyāya sutta (fire sermon) declares everything ''burning'' — but with craving,
+      hatred, and delusion, not with sacred fire. the deity is erased; the metaphor is repurposed.
+
+      '
+    key_texts: ["SN 35.28 ādittapariyāya"]
+    citations:
+    - file: data/raw/pali_suttacentral/sc_bilara_data/root/pli/ms/sutta/sn/sn35/sn35.28_root-pli-ms.json
+      reference: SN 35.28:1.3-1.7
+      quote: sabbaṁ bhikkhave ādittaṁ ... rāgagginā dosagginā mohagginā ādittaṁ
+      context: 'the fire sermon: ''all is burning. burning with the fire of passion (rāgagginā), the fire of hatred (dosagginā),
+        the fire of delusion (mohagginā).'' agni the deity → aggi the metaphor for the three poisons. perhaps the most concentrated
+        transformation of a vedic term in a single sutta.
+
+        '
+    corpus_count: moderate (aggi as noun), but ādittapariyāya = landmark sutta
+    drift_from_previous: 'VEDIC CENTRALITY → METAPHORIZATION: agni as ritual intermediary carrying offerings to the devas
+      becomes aggi as the fire of craving consuming beings. the first word of the ṛgveda (agni) is recast as a diagnostic
+      term for suffering. this is not rejection — it is radical repurposing.
+
+      '
+  valence:
+    vedic: supreme — the ritual intermediary, first word of the ṛgveda
+    buddhist: METAPHORIZED — fire retained as diagnostic metaphor for craving, deity erased
+    note: 'the agni → aggi trajectory is one of the most dramatic in the dictionary. a deity who opens the oldest text becomes
+      a metaphor for the problem the buddha diagnoses.
+
+      '
+  standard_references:
+    pts_dictionary: 'aggi: fire, flame'
+    monier_williams: 'agni: fire, sacrificial fire, the fire-deity'
+    diff_notes: 'PTS treats aggi as just "fire" — missing the vedic deity background. MW preserves the deity sense. our dictionary
+      tracks the transformation: deva-priest → metaphor for craving. PTS''s bare "fire" is itself evidence that the demotion
+      was so complete it was forgotten.
+
+      '
+  index_contribution:
+  - index: SI
+    chapter: ch2
+    role: opposition
+    note: stripping agni of deity status = opposition to vedic theology
+  - index: SI
+    chapter: ch2
+    role: engagement
+    note: retaining fire as central metaphor = continued engagement with fire imagery
+
+
+# ─────────────────────────────────────────────────────────────
+# 11. INDRA (king of gods / thunder deity)
+# ─────────────────────────────────────────────────────────────
+indra:
+  id: indra
+  concept: king of gods / thunder deity
+  tier: primary
+  family: ["deva", "soma", "yajna"]
+  chapters: ["ch2"]
+  semantic_field: theology
+  forms:
+    vedic:
+    - term: índra
+      grammar: masculine proper noun
+      root: uncertain — possibly 'lord' or 'conqueror'
+      note: king of gods, thunder-wielder, soma-drinker, dragon-slayer — most frequent deity in RV
+    pali:
+    - term: sakka
+      grammar: masculine proper noun
+      note: = śakra (the mighty one). the buddhist name for indra — NOT 'indra' itself
+    - term: devānaminda
+      grammar: compound (genitive + proper noun)
+      note: '''lord of the gods'' — used in pāli but derived from vedic indra'
+    chinese:
+    - term: 帝釋
+      pinyin: dìshì
+      translator: standard
+      translation_choice_note: '''emperor śakra'' — phonetic + semantic rendering. preserves the title.'
+    jain:
+    - term: inda / sakkā
+      language: ardhamagadhi
+      note: indra as celestial being in jain cosmology — parallel demotion
+  temporal_strata:
+  - period: ~1500-1200 BCE
+    dating_confidence: medium
+    tradition: vedic
+    meaning: the supreme warrior deva — dragon-slayer, fortress-breaker, soma-drinker, protector of the ārya
+    key_texts: ["ṛgveda — over 250 hymns dedicated to indra"]
+    citations:
+    - file: data/raw/vedic/rgveda_aufrecht_gretil.txt
+      reference: RV_1,004.05
+      quote: dadhānā indra id duvaḥ
+      context: assigning to indra alone the ritual offerings — indra as the primary recipient of ritual attention
+    - file: data/raw/vedic/rgveda_aufrecht_gretil.txt
+      reference: RV_1,005.02
+      quote: indraṁ some sacā sute
+      context: indra together with soma at the pressing — the soma-indra ritual complex
+    corpus_count: 1747
+    drift_from_previous: null
+  - period: ~450-250 BCE
+    dating_confidence: low
+    tradition: early buddhist
+    meaning: sakka devānaminda = a celestial king who BOWS TO THE BUDDHA, seeks his teaching, and admits limited understanding
+    key_texts: ["SN 11 sakka saṃyutta", "DN 21 sakkapañha"]
+    citations:
+    - file: data/raw/pali_suttacentral/sc_bilara_data/root/pli/ms/sutta/sn/sn11/sn11.19_root-pli-ms.json
+      reference: SN 11.19:1.7
+      quote: sakko devānamindo vejayantapāsādā orohanto añjaliṁ katvā sudaṁ bhagavantaṁ namassati
+      context: 'sakka, lord of the gods, descending from his palace, making añjali (joined palms), BOWS to the blessed one.
+        the vedic supreme warrior-deva pays homage to a human teacher.
+
+        '
+    - file: data/raw/pali_suttacentral/sc_bilara_data/root/pli/ms/sutta/sn/sn11/sn11.9_root-pli-ms.json
+      reference: SN 11.9:1.5
+      quote: paṭaliyo upāhanā orohitvā khaggaṁ aññesaṁ datvā chattaṁ apanāmetvā
+      context: 'sakka removes his sandals, gives away his sword, sets aside his parasol — surrendering ALL symbols of kingly
+        power before entering the hermitage. the king of devas disarms himself to show respect.
+
+        '
+    - file: data/raw/pali_suttacentral/sc_bilara_data/root/pli/ms/sutta/dn/dn21_root-pli-ms.json
+      reference: DN 21:1.1.3-4
+      quote: sakkassa devānamindassa ussukkaṁ udapādi bhagavantaṁ dassanāya
+      context: sakka felt an urge to see the blessed one — the deva-king as seeker, not ruler
+    corpus_count: ~100 as sakka; 1747 as indra in RV
+    drift_from_previous: 'THE MOST DRAMATIC INDIVIDUAL DEMOTION: from 1,747× supreme warrior-deva to bowing disciple. indra/sakka
+      is renamed (not even called ''indra'' in pāli — called sakka/śakra), disarmed (literally surrenders his sword), and
+      repositioned as a devotee of the buddha. the frequency drop (1,747 → ~100) understates the transformation. it is not
+      just fewer mentions but a total inversion of the power relationship.
+
+      '
+  valence:
+    vedic: supreme — the highest active deity, most hymns, most soma
+    buddhist: INVERTED — the supreme deva becomes a devoted student who bows to a human teacher
+    jain: parallel — indra as celestial attendant, not ultimate
+    note: 'the indra → sakka transformation is the single most vivid image of vedic demotion in the entire corpus. the deva
+      who slew vṛtra and split mountains removes his sandals and bows with joined palms.
+
+      '
+  standard_references:
+    pts_dictionary: 'sakka: name of the ruler of the tāvatiṁsa devas'
+    monier_williams: 'indra: the god of the atmosphere and sky'
+    diff_notes: 'PTS doesn''t even cross-reference sakka with indra — the vedic identity is so buried that it is invisible
+      in the pāli dictionary. MW treats indra purely in vedic terms. our dictionary bridges the two: the same entity, renamed
+      and inverted.
+
+      '
+  index_contribution:
+  - index: SI
+    chapter: ch2
+    role: opposition
+    note: inverting indra from supreme deity to bowing disciple = opposition to vedic theology
+  - index: SI
+    chapter: ch2
+    role: engagement
+    note: retaining sakka as a character in buddhist narrative = engagement with vedic mythology
+
+
+# ─────────────────────────────────────────────────────────────
+# 12. SOMA (sacred plant / ritual drink / deity)
+# ─────────────────────────────────────────────────────────────
+soma:
+  id: soma
+  concept: sacred plant / ritual drink / deity
+  tier: primary
+  family: ["indra", "yajna", "agni"]
+  chapters: ["ch2"]
+  semantic_field: praxis
+  forms:
+    vedic:
+    - term: sóma
+      grammar: masculine noun
+      root: su (to press, to extract)
+      note: the pressed/extracted juice — simultaneously plant, drink, deity, and ritual technology
+    pali:
+    - term: soma
+      grammar: masculine noun
+      note: rare — appears mostly in compound names, not as ritual substance
+    chinese:
+    - term: 蘇摩
+      pinyin: sūmó
+      translator: phonetic transliteration
+      translation_choice_note: purely phonetic — the referent had no Chinese equivalent
+  temporal_strata:
+  - period: ~1500-1200 BCE
+    dating_confidence: medium
+    tradition: vedic
+    meaning: sacred intoxicant — deva-communion through ritual pressing and drinking; entire maṇḍala 9 devoted to soma hymns
+    key_texts: ["ṛgveda maṇḍala 9 (114 hymns to soma)"]
+    citations:
+    - file: data/raw/vedic/rgveda_aufrecht_gretil.txt
+      reference: RV_1,002.03
+      quote: urūcī somapītaye
+      context: room for soma-drinking — the ritual context of deva-communion
+    - file: data/raw/vedic/rgveda_aufrecht_gretil.txt
+      reference: RV_1,008.10
+      quote: indrāya somapītaye
+      context: soma-drinking for indra — the indra-soma ritual complex
+    corpus_count: 669
+    drift_from_previous: null
+  - period: ~450-250 BCE
+    dating_confidence: low
+    tradition: early buddhist
+    meaning: VIRTUAL DISAPPEARANCE — soma ritual replaced by mindfulness (sati); intoxicants explicitly prohibited
+    key_texts: ["fifth precept", "AN 9.28"]
+    citations:
+    - file: data/raw/pali_suttacentral/sc_bilara_data/root/pli/ms/sutta/an/an9/an9.28_root-pli-ms.json
+      reference: AN 9.28:3.2
+      quote: surāmerayamajjapamādaṭṭhāyī surāmerayamajjapamādaṭṭhānapaccayā diṭṭhadhammikampi bhayaṁ veraṁ pasavati
+      context: '''one who indulges in intoxicants produces fear and enmity in this very life'' — the fifth precept prohibiting
+        surāmeraya (liquor/intoxicants). the DIRECT INVERSION of the soma ritual.
+
+        '
+    corpus_count: rare (as soma); surāmeraya prohibition = common
+    drift_from_previous: 'DISAPPEARANCE AND INVERSION: from 669× (central ritual substance with entire maṇḍala dedicated to
+      it) to virtual absence. the vedic means of deva-communion through intoxication is REPLACED by sati (mindfulness) and
+      PROHIBITED by the fifth precept (surāmerayamajjapamādaṭṭhānā veramaṇī). what was sacred technology becomes moral transgression.
+      this is the most complete inversion of any vedic ritual term in the corpus.
+
+      '
+  valence:
+    vedic: CENTRAL — sacred technology for deva-communion, deity in its own right
+    buddhist: ELIMINATED — replaced by mindfulness, prohibited as intoxicant
+    note: 'soma is the only major vedic concept that is neither demoted, reinterpreted, nor ethicized — it is simply REPLACED.
+      no buddhist sutta argues against soma; it is treated as irrelevant. the silence is as significant as the arguments against
+      brahman or ātman. what you don''t even bother to argue against, you have truly left behind.
+
+      '
+  standard_references:
+    pts_dictionary: 'soma: [not a main entry — almost absent from PTS]'
+    monier_williams: 'soma: juice, extract (especially of the soma plant), the moon-god, an intoxicating beverage'
+    diff_notes: 'PTS''s near-absence of soma is itself data — the concept was so thoroughly excluded from buddhist vocabulary
+      that the pāli dictionary barely registers it. MW preserves the full vedic range. the gap between PTS and MW for this
+      term is the widest in the dictionary.
+
+      '
+  index_contribution:
+  - index: SI
+    chapter: ch2
+    role: opposition
+    note: elimination of soma ritual (via fifth precept) = opposition to vedic ritual technology
+
+
+# ─────────────────────────────────────────────────────────────
+# 13. MOKSHA (liberation / release)
+# ─────────────────────────────────────────────────────────────
+moksha:
+  id: moksha
+  concept: liberation / release
+  tier: primary
+  family: ["samsara", "karma", "atman"]
+  chapters: ["ch2"]
+  semantic_field: soteriology
+  forms:
+    vedic:
+    - term: muc
+      grammar: verbal root
+      root: muc (to release, to loosen, to set free)
+      note: ONLY the verb, in concrete contexts — releasing horses, loosening bonds. NO mokṣa concept.
+    sanskrit:
+    - term: mokṣa
+      grammar: masculine noun
+      note: liberation from saṃsāra — the soteriological goal of upanishadic and classical hinduism
+    - term: mukti
+      grammar: feminine noun
+      note: release, liberation (synonym of mokṣa)
+    pali:
+    - term: vimutti
+      grammar: feminine noun
+      note: release, deliverance — the buddhist near-equivalent
+    - term: nibbāna
+      grammar: neuter noun
+      root: nir-vā (to blow out, to extinguish)
+      note: extinction/unbinding — the DISTINCTIVE buddhist term, different metaphor from mokṣa
+    chinese:
+    - term: 涅槃
+      pinyin: nièpán
+      translator: standard (phonetic)
+      translation_choice_note: phonetic transliteration of nirvāṇa — NOT translated as 'liberation'
+    - term: 解脫
+      pinyin: jiětuō
+      translator: standard
+      translation_choice_note: '''release-escape'' — used for vimutti/mokṣa. semantic, not phonetic.'
+    jain:
+    - term: mokkha / mokṣa
+      language: ardhamagadhi / sanskrit
+      note: liberation of jīva from karmic matter — shared goal, different mechanism
+  temporal_strata:
+  - period: ~1500-1200 BCE
+    dating_confidence: medium
+    tradition: vedic
+    meaning: CONCEPT DOES NOT EXIST as philosophical liberation. verb muc = to release (concrete)
+    key_texts: ["ṛgveda"]
+    citations:
+    - file: data/raw/vedic/rgveda_aufrecht_gretil.txt
+      reference: '[verbal root muc in concrete contexts]'
+      quote: '[releasing horses from yoke, loosening bonds — physical, not philosophical]'
+      context: 34 occurrences of muc verbal root, all in concrete physical sense. no mokṣa noun.
+    corpus_count: 34
+    drift_from_previous: null
+  - period: ~800-500 BCE
+    dating_confidence: medium
+    tradition: upanishadic
+    meaning: mokṣa as liberation from saṃsāra through ātman-knowledge
+    key_texts: ["māṇḍūkya", "bṛhadāraṇyaka"]
+    citations:
+    - file: data/raw/upanishads/primary/mandukya.txt
+      reference: MāṇḍU-kārikā 2.32
+      quote: na mumukṣur na vai mukta ity eṣā paramārthatā
+      context: '''neither one seeking liberation nor one liberated — this is the ultimate truth.'' even mokṣa is transcended
+        in advaita.'
+    corpus_count: 86
+    drift_from_previous: 'EMERGENCE: from 0 (as philosophical concept) to 86. like saṃsāra, mokṣa is an UPANISHADIC INNOVATION.
+      the problem (saṃsāra) and the solution (mokṣa) emerge together. vedic religion had no need for mokṣa because it had
+      no saṃsāra to escape from.
+
+      '
+  - period: ~450-250 BCE
+    dating_confidence: low
+    tradition: early buddhist
+    meaning: 'buddhism uses BOTH vimutti (release, parallel to mokṣa) AND nibbāna (extinction/unbinding — a distinctive metaphor).
+      the choice of nibbāna over mokṣa is significant: not ''release OF the self'' but ''extinction of craving.''
+
+      '
+    key_texts: ["SN 12.23", "SN 43.34", "SN 12.70"]
+    citations:
+    - file: data/raw/pali_suttacentral/sc_bilara_data/root/pli/ms/sutta/sn/sn12/sn12.23_root-pli-ms.json
+      reference: SN 12.23:6.21
+      quote: virāgūpanisā vimutti
+      context: '''dispassion is the proximate cause of release'' — vimutti in the upanisā chain'
+    - file: data/raw/pali_suttacentral/sc_bilara_data/root/pli/ms/sutta/sn/sn12/sn12.70_root-pli-ms.json
+      reference: SN 12.70:17.2
+      quote: nibbindaṁ virajjati virāgā vimuccati vimuttasmiṁ vimuttamiti ñāṇaṁ hoti
+      context: '''becoming disenchanted, one becomes dispassionate; through dispassion, released; in release, knowledge: released.''
+        the vimutti sequence.'
+    - file: data/raw/pali_suttacentral/sc_bilara_data/root/pli/ms/sutta/sn/sn43/sn43.14-43_root-pli-ms.json
+      reference: SN 43.34:1.1
+      quote: nibbānañca vo bhikkhave desessāmi nibbānagāmiñca maggaṁ
+      context: '''I will teach you nibbāna and the path leading to nibbāna'' — nibbāna as the distinctive buddhist goal'
+    corpus_count: 'vimutti: ~300; nibbāna: ~450'
+    drift_from_previous: 'METAPHOR REPLACEMENT: mokṣa (release of the self from bondage) is replaced by TWO buddhist terms
+      — vimutti (release, parallel vocabulary) and nibbāna (extinction, distinctive vocabulary). the PREFERRED term is nibbāna,
+      whose metaphor (extinguishing a fire) avoids implying a self that is released. this is not mere renaming but a metaphysical
+      decision embedded in lexical choice.
+
+      '
+  valence:
+    vedic: ABSENT as concept
+    upanishadic: supreme goal — liberation of ātman from saṃsāra
+    buddhist: REPLACED — different metaphor (nibbāna = extinction, not release), different mechanism (no self to release)
+    jain: shared goal — but mechanism is physical (burning karmic matter), not psychological
+    note: 'the mokṣa → nibbāna replacement is one of the most philosophically significant lexical choices in the entire tradition.
+      choosing ''extinction'' over ''release'' encodes anattā at the level of VOCABULARY — if there is no self, there is nothing
+      to ''release.''
+
+      '
+  standard_references:
+    pts_dictionary: 'nibbāna: going out, quenching, emancipation, the final goal'
+    monier_williams: 'mokṣa: emancipation, liberation, release from worldly existence'
+    diff_notes: 'PTS lists "going out, quenching" first — preserving the fire metaphor. MW''s "liberation, release" implies
+      an agent being released. our dictionary insists the metaphor difference IS the philosophical difference: mokṣa assumes
+      a self being freed; nibbāna does not. [!] FLAGGED — this lexical observation is a contribution.
+
+      '
+  index_contribution:
+  - index: SI
+    chapter: ch2
+    role: engagement
+    note: accepting the soteriological goal (liberation from saṃsāra) = engagement
+  - index: SI
+    chapter: ch2
+    role: opposition
+    note: replacing the metaphor (release → extinction) = opposition to ātman-based soteriology
+
+
+# ─────────────────────────────────────────────────────────────
+# 14. TEVIJJA (three vedas / three knowledges)
+# ─────────────────────────────────────────────────────────────
+tevijja:
+  id: tevijja
+  concept: three vedas / three knowledges
+  tier: primary
+  family: ["veda", "brahman", "brahmana_true"]
+  chapters: ["ch2"]
+  semantic_field: epistemology
+  forms:
+    vedic:
+    - term: traividya
+      grammar: neuter noun/adjective
+      note: 'knowledge of the three vedas: ṛg, yajur, sāma — the mark of a learned brahmin'
+    pali:
+    - term: tevijja
+      grammar: adjective (bahuvrihi compound)
+      note: 'DOUBLE MEANING: (1) vedic: ''possessing the three vedas'' — used of brahmins. (2) buddhist: ''possessing the
+        three knowledges'' — meditative attainments. the word is IDENTICAL; the content is INVERTED.
+
+        '
+    chinese:
+    - term: 三明
+      pinyin: sānmíng
+      translator: standard
+      translation_choice_note: '''three clarities/illuminations'' — semantic translation using 明 (clarity) rather than 吠陀
+        (veda)'
+  temporal_strata:
+  - period: ~1500-500 BCE
+    dating_confidence: medium
+    tradition: vedic-brahmanical
+    meaning: mastery of the three vedas (ṛg, yajur, sāma) — the qualification for priestly authority
+    key_texts: ["brahmanical tradition"]
+    citations: []
+    corpus_count: traditional category — not counted in RV (the vedas ARE the thing being mastered)
+    drift_from_previous: null
+  - period: ~450-250 BCE
+    dating_confidence: low
+    tradition: early buddhist
+    meaning: 'DELIBERATE APPROPRIATION: tevijjā redefined as three meditative knowledges — (1) pubbenivāsānussatiñāṇa (recollection
+      of past lives), (2) cutūpapātañāṇa (knowledge of beings'' rebirth), (3) āsavānaṁ khayañāṇa (knowledge of the destruction
+      of the āsavas).
+
+      '
+    key_texts: ["DN 13 tevijja", "MN 36 mahāsaccaka"]
+    citations:
+    - file: data/raw/pali_suttacentral/sc_bilara_data/root/pli/ms/sutta/dn/dn13_root-pli-ms.json
+      reference: DN 13:12.1
+      quote: kiṁ pana vāseṭṭha atthi koci tevijjānaṁ brāhmaṇānaṁ ekabrāhmaṇopi yena brahmā sakkhidiṭṭho
+      context: '''is there among the three-veda brahmins even a single one who has seen brahmā face to face?'' — the buddha''s
+        devastating question. the brahmins claim expertise in the three vedas but NONE has directly experienced what they
+        teach. textual mastery ≠ experiential knowledge.
+
+        '
+    - file: data/raw/pali_suttacentral/sc_bilara_data/root/pli/ms/sutta/dn/dn13_root-pli-ms.json
+      reference: DN 13:14.1-2
+      quote: natthi koci tevijjānaṁ brāhmaṇānaṁ ekabrāhmaṇopi yena brahmā sakkhidiṭṭho
+      context: '''there is NOT among the three-veda brahmins even one who has seen brahmā'' — the conclusion'
+    - file: data/raw/pali_suttacentral/sc_bilara_data/root/pli/ms/sutta/mn/mn98_root-pli-ms.json
+      reference: MN 98:13.13
+      quote: tīhi vijjāhi sampanno
+      context: '''endowed with the three knowledges'' — the buddhist tevijjā as meditative attainment'
+    corpus_count: 24
+    drift_from_previous: 'DELIBERATE APPROPRIATION: the buddha keeps the EXACT SAME WORD (tevijja) but replaces the ENTIRE
+      CONTENT. vedic tevijja = mastering three texts. buddhist tevijjā = three experiential knowledges (past lives, rebirth
+      of others, destruction of āsavas). DN 13 is the site of this appropriation: the brahmins'' textual mastery is shown
+      to be empty (they''ve never seen brahmā), while the buddha''s experiential three knowledges are presented as the TRUE
+      tevijjā. this is the clearest case of terminological jiu-jitsu in the canon.
+
+      '
+  valence:
+    vedic: marker of authority — mastery of three vedas = priestly qualification
+    buddhist: APPROPRIATED — same word, content inverted from textual to experiential knowledge
+    note: 'tevijja is the most elegant case of buddhist terminological appropriation. unlike brahmā (demoted) or yajña (ethicized),
+      tevijja is STOLEN — the word itself is claimed, and the old content is shown to be empty.
+
+      '
+  standard_references:
+    pts_dictionary: 'tevijja: possessing threefold knowledge, either of the 3 vedas or the 3 ñāṇas'
+    diff_notes: 'PTS correctly registers BOTH meanings in a single entry. this is rare — most entries flatten the temporal
+      dimension. PTS''s double listing is itself evidence that the appropriation was so obvious it could not be ignored even
+      in a synchronic dictionary.
+
+      '
+  index_contribution:
+  - index: SI
+    chapter: ch2
+    role: both
+    note: tevijja = opposition (vedic content rejected) AND engagement (vedic term appropriated)
+  - index: MHI
+    chapter: ch3
+    role: numerator
+    note: the three vijjā as formal system (enumerated, ordered) = system-register language
+
+
+# ─────────────────────────────────────────────────────────────
+# 15. VEDA (sacred knowledge / feeling)
+# ─────────────────────────────────────────────────────────────
+veda:
+  id: veda
+  concept: sacred knowledge / feeling
+  tier: primary
+  family: ["tevijja", "brahmana_true"]
+  chapters: ["ch2"]
+  semantic_field: epistemology
+  forms:
+    vedic:
+    - term: véda
+      grammar: masculine noun
+      root: vid (to know, to find, to experience)
+      note: sacred knowledge — the revealed texts; the root vid produces both 'knowledge' and 'experience'
+    pali:
+    - term: veda
+      grammar: masculine noun
+      note: the vedas (as texts brahmins study) — used in buddhist texts in that reference
+    - term: vedanā
+      grammar: feminine noun
+      note: 'FEELING/SENSATION — one of the five aggregates, one of the four satipaṭṭhāna. shares root vid but COMPLETELY
+        DIFFERENT CONCEPT. FALSE FRIEND.
+
+        '
+    chinese:
+    - term: 吠陀
+      pinyin: fèituó
+      translator: phonetic
+      translation_choice_note: phonetic transliteration — no Chinese equivalent for the vedas
+    - term: 受
+      pinyin: shòu
+      translator: standard
+      translation_choice_note: '''receiving/feeling'' — vedanā translated semantically. NO connection to 吠陀 in Chinese.'
+  temporal_strata:
+  - period: ~1500-500 BCE
+    dating_confidence: medium
+    tradition: vedic-brahmanical
+    meaning: sacred revealed knowledge — the ṛg, yajur, sāma (later atharva) vedas as the foundation of dharma
+    key_texts: ["the vedas themselves"]
+    citations: []
+    corpus_count: the vedas = the corpus itself
+    drift_from_previous: null
+  - period: ~450-250 BCE
+    dating_confidence: low
+    tradition: early buddhist
+    meaning: 'veda (the texts) = referenced but authority denied. vedanā (feeling) = central buddhist analytical category
+      with NO semantic connection to vedic sacred knowledge despite shared root.
+
+      '
+    key_texts: ["SN 36 vedanā saṃyutta", "DN 13"]
+    citations:
+    - file: data/raw/pali_suttacentral/sc_bilara_data/root/pli/ms/sutta/sn/sn36/sn36.18_root-pli-ms.json
+      reference: SN 36.18:1.6-7
+      quote: tisso imā bhikkhave vedanā sukhā vedanā dukkhā vedanā adukkhamasukhā vedanā
+      context: '''there are these three feelings: pleasant feeling, painful feeling, neither-pleasant-nor-painful feeling.''
+        vedanā as the second aggregate — a term for lived experience, not sacred text.
+
+        '
+    corpus_count: 'vedanā: extremely frequent; veda (as sacred text): moderate'
+    drift_from_previous: 'FALSE FRIEND DIVERGENCE: this is NOT drift but homophonic divergence. the root vid (to know/experience)
+      yields both veda (knowledge → sacred texts) and vedanā (what is experienced → feeling/sensation). the ETYMOLOGICAL connection
+      is real, but the SEMANTIC fields are entirely separate by the time of the pāli canon. this entry exists to PREVENT false
+      correlation: a computational analysis that counts ''ved-'' roots and treats them as one concept will generate garbage.
+      the dictionary must mark this as a false friend.
+
+      '
+  valence:
+    vedic: foundational — the vedas ARE the tradition's self-understanding
+    buddhist: SPLIT — veda (texts) = authority denied; vedanā (feeling) = central analytical tool (unrelated)
+    note: 'this is the only entry where the ABSENCE of drift is the finding. veda and vedanā share a root but not a history.
+      tracking this prevents false correlations in computational analysis.
+
+      '
+  standard_references:
+    pts_dictionary: 'veda: sacred lore; vedanā: feeling, sensation'
+    monier_williams: 'veda: knowledge, sacred knowledge, the vedas'
+    diff_notes: 'PTS correctly treats veda and vedanā as separate entries. MW does not include vedanā (it''s pāli). our dictionary
+      adds the explicit FALSE FRIEND WARNING because computational corpus analysis could erroneously conflate them.
+
+      '
+  index_contribution:
+  - index: SI
+    chapter: ch2
+    role: opposition
+    note: denying vedic textual authority = opposition
+  - index: note
+    chapter: all
+    role: methodological
+    note: ved- root must be SPLIT in any corpus frequency analysis to avoid false correlation
+
+
+# ─────────────────────────────────────────────────────────────
+# 16. BRAHMANA_TRUE (the 'true brahmin' — ethical reinterpretation)
+# ─────────────────────────────────────────────────────────────
+brahmana_true:
+  id: brahmana_true
+  concept: the 'true brahmin' — ethical reinterpretation
+  tier: primary
+  family: ["brahman", "tevijja", "veda"]
+  chapters: ["ch2"]
+  semantic_field: social-ethics
+  forms:
+    vedic:
+    - term: brāhmaṇa
+      grammar: masculine noun
+      root: brahman + suffix -a (one who possesses brahman)
+      note: one born into the priestly class — status determined by birth (jāti)
+    pali:
+    - term: brāhmaṇa
+      grammar: masculine noun
+      note: 'DOUBLE MEANING: (1) a brahmin by birth (sociological use, retained). (2) a ''true brahmin'' by ethical achievement
+        (buddhist redefinition). the buddha uses the SAME word for both, forcing the hearer to confront which meaning is real.
+
+        '
+    chinese:
+    - term: 婆羅門
+      pinyin: póluómén
+      translator: standard (phonetic)
+      translation_choice_note: phonetic transliteration. the chinese does NOT carry the dual meaning.
+  temporal_strata:
+  - period: ~1500-500 BCE
+    dating_confidence: medium
+    tradition: vedic-brahmanical
+    meaning: one born into the priestly varṇa — birth-determined status, custodian of sacred knowledge
+    key_texts: ["ṛgveda (puruṣa sūkta)", "brahmanical dharmaśāstra"]
+    citations:
+    - file: data/raw/vedic/rgveda_aufrecht_gretil.txt
+      reference: RV_10,090.12 (puruṣa sūkta)
+      quote: '[brāhmaṇo ''sya mukham āsīt — the brahmin was his mouth]'
+      context: 'the puruṣa sūkta: the brahmin emerges from the mouth of the cosmic person. birth-status is COSMICALLY ordained.
+
+        '
+    corpus_count: 7,000+ in RV + later vedic literature
+    drift_from_previous: null
+  - period: ~450-250 BCE
+    dating_confidence: low
+    tradition: early buddhist
+    meaning: 'the ''true brahmin'' is defined by ETHICAL ACHIEVEMENT, not birth. the buddha systematically redefines brāhmaṇa
+      from birth-class to ethical status, using the brahmins'' own most prestigious title against the birth-system.
+
+      '
+    key_texts: ["MN 98 vāseṭṭha", "SN 7.7-8", "Dhammapada ch.26 brāhmaṇavagga"]
+    citations:
+    - file: data/raw/pali_suttacentral/sc_bilara_data/root/pli/ms/sutta/mn/mn98_root-pli-ms.json
+      reference: MN 98:12.9-11
+      quote: na jaccā brāhmaṇo hoti na jaccā hoti abrāhmaṇo kammunā brāhmaṇo hoti
+      context: '''not by birth is one a brahmin; not by birth is one a non-brahmin. by ACTION (kamma) is one a brahmin.''
+        the definitive verse — brāhmaṇa redefined from jāti (birth) to kamma (action).
+
+        '
+    - file: data/raw/pali_suttacentral/sc_bilara_data/root/pli/ms/sutta/sn/sn7/sn7.8_root-pli-ms.json
+      reference: SN 7.8:4.2
+      quote: na jaccā hoti brāhmaṇo
+      context: '''not by birth is one a brahmin'' — the formula repeated across multiple suttas'
+    - file: data/raw/pali_suttacentral/sc_bilara_data/root/pli/ms/sutta/mn/mn39_root-pli-ms.json
+      reference: MN 39:24.1
+      quote: kathañca bhikkhave bhikkhu brāhmaṇo hoti
+      context: '''and how, monks, does a monk become a brahmin?'' — the buddha TEACHES monks how to become brahmins'
+    corpus_count: 7,000+ (brāhmaṇa appears throughout the canon)
+    drift_from_previous: 'THE MOST RADICAL SINGLE REINTERPRETATION: the buddha takes the most prestigious title in indian
+      society — brāhmaṇa, cosmically ordained by the puruṣa sūkta — and redefines it as ethical achievement open to anyone
+      regardless of birth. the form is vedic; the content is anti-vedic. this is not mere critique — it is APPROPRIATION of
+      the enemy''s most valued term. ''na jaccā brāhmaṇo hoti'' directly contradicts ''brāhmaṇo ''sya mukham āsīt.''
+
+      '
+  valence:
+    vedic: birth-determined — cosmically ordained priestly status
+    buddhist: ETHICIZED — redefined as ethical achievement, not birth; the system's own term turned against it
+    jain: parallel challenge to brāhmaṇa birth-status, though less systematically developed
+    note: 'the brāhmaṇa redefinition is the social-ethical counterpart to the ontological ātman negation. where anattā challenges
+      the metaphysical foundation, ''na jaccā brāhmaṇo hoti'' challenges the social foundation. both use vedic vocabulary
+      to dismantle vedic structures.
+
+      '
+  standard_references:
+    pts_dictionary: 'brāhmaṇa: a brahmin; the ideal man, the perfected man'
+    monier_williams: 'brāhmaṇa: a man belonging to the first of the four castes'
+    diff_notes: 'PTS''s dual definition ("brahmin; the ideal man") PRESERVES the buddhist redefinition. MW gives only the
+      birth-class meaning. this divergence between PTS and MW maps directly onto the vedic→buddhist drift we are tracking.
+      our dictionary shows WHY the two dictionaries disagree: they are recording different strata of the same word.
+
+      '
+  index_contribution:
+  - index: SI
+    chapter: ch2
+    role: opposition
+    note: '''na jaccā brāhmaṇo hoti'' = opposition to birth-based social hierarchy'
+  - index: SI
+    chapter: ch2
+    role: engagement
+    note: using brāhmaṇa as the HIGHEST praise for ethical achievement = engagement with the term's prestige

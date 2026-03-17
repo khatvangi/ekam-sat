@@ -1,0 +1,1095 @@
+
+
+# ─────────────────────────────────────────────────────────────
+# 1. ANATTA (not-self / no-self / selflessness)
+# ─────────────────────────────────────────────────────────────
+anatta:
+  id: anatta
+  concept: not-self / no-self / selflessness
+  tier: primary
+  family: ["atta_self", "khandha", "sakkayaditthi", "sunna"]
+  chapters: ["ch1"]
+  semantic_field: ontology-soteriology
+  forms:
+    pali:
+    - term: anattā
+      grammar: adjective (an + attā)
+      root: a-ātman (not-self)
+      note: 'THE central term. grammatically an ADJECTIVE — ''not-self'', applied to the five aggregates. NOT a noun meaning
+        ''no-self.'' the grammatical form itself encodes the therapeutic sense.
+
+        '
+    - term: anatta
+      grammar: in compounds (anattasaññā, anattalakkhaṇa)
+      note: perception of not-self, characteristic of not-self
+    sanskrit:
+    - term: anātman
+      grammar: masculine noun/adjective
+      note: non-self — in mahāyāna, expands to nairātmya (selflessness as abstract noun)
+    - term: nairātmya
+      grammar: neuter abstract noun
+      note: selflessness — NOMINALIZATION that converts the adjective into an ontological category
+    - term: pudgalanairātmya
+      grammar: compound
+      note: selflessness of persons — the FIRST layer of anātman
+    - term: dharmanairātmya
+      grammar: compound
+      note: selflessness of phenomena — the SECOND layer, mahāyāna extension
+    chinese:
+    - term: 無我
+      pinyin: wúwǒ
+      translator: standard
+      translation_choice_note: '''no-self'' — the chinese ALREADY translates as ontological negation (wú = without/none).
+        the therapeutic ''not-self'' sense is lost in translation. this is itself evidence of drift AT THE TRANSLATION LEVEL.
+
+        '
+    - term: 非我
+      pinyin: fēiwǒ
+      translator: rare alternative
+      translation_choice_note: '''not-I/not-self'' — preserves the adjective sense better than 無我'
+    jain:
+    - term: anattā (NOT used)
+      note: jains AFFIRM the ātman/jīva — anattā is contrastive, not shared
+    gandhari:
+    - term: aṇatma
+      note: gandhari form — attested in manuscripts
+  temporal_strata:
+  - period: ~450-250 BCE
+    dating_confidence: low
+    tradition: early buddhist
+    meaning: 'anattā as ADJECTIVE applied to the five aggregates: ''form is not-self'' (rūpaṁ anattā). the teaching is DIAGNOSTIC:
+      these aggregates do not behave as a self would (you cannot control them). it is NOT a claim that ''there is no self.''
+
+      '
+    key_texts: ["SN 22.59 anattalakkhaṇa", "SN 22.17", "MN 22 alagaddūpama"]
+    citations:
+    - file: data/raw/pali_suttacentral/sc_bilara_data/root/pli/ms/sutta/sn/sn22/sn22.59_root-pli-ms.json
+      reference: SN 22.59:2.1-2.4
+      quote: rūpaṁ bhikkhave anattā. rūpañca hidaṁ bhikkhave attā abhavissa nayidaṁ rūpaṁ ābādhāya saṁvatteyya
+      context: 'the anattalakkhaṇa sutta (second discourse): ''form is not-self. IF form were self, form would not lead to
+        affliction, and one could command: let my form be thus.'' the argument is PRAGMATIC: you cannot control it, therefore
+        it is not your self. NOT: ''there is no self anywhere.''
+
+        '
+    - file: data/raw/pali_suttacentral/sc_bilara_data/root/pli/ms/sutta/sn/sn22/sn22.59_root-pli-ms.json
+      reference: SN 22.59:7.1
+      quote: sabbaṁ rūpaṁ netaṁ mama nesohamasmi na meso attāti evametaṁ yathābhūtaṁ sammappaññāya daṭṭhabbaṁ
+      context: '''all form should be seen as it really is with right wisdom: this is not mine, I am not this, this is not
+        my self.'' the triple formula — EACH clause is a negation of a specific identification, not a metaphysical denial.
+
+        '
+    - file: data/raw/pali_suttacentral/sc_bilara_data/root/pli/ms/sutta/sn/sn22/sn22.59_root-pli-ms.json
+      reference: SN 22.59:11.1-2
+      quote: evaṁ passaṁ bhikkhave sutavā ariyasāvako rūpasmimpi nibbindati ... nibbindaṁ virajjati virāgā vimuccati
+      context: 'the RESULT: ''seeing thus, the instructed noble disciple becomes disenchanted ... through disenchantment,
+        becomes dispassionate; through dispassion, liberated.'' the PURPOSE of anattā is LIBERATION, not ontological truth-claiming.
+
+        '
+    corpus_count: ~3000+
+    drift_from_previous: null
+  - period: ~200 BCE - 200 CE
+    dating_confidence: medium
+    tradition: abhidhamma / early scholastic
+    meaning: anattā becomes one of the three characteristics (tilakkhaṇa) — formalized as universal truth, not just practical
+      observation
+    key_texts: ["abhidhamma classifications", "paṭisambhidāmagga"]
+    citations: []
+    corpus_count: ~50 (anātman/nairātmya in abhidhamma-era texts)
+    drift_from_previous: 'FIRST HARDENING: anattā moves from practical diagnostic (applied to the five aggregates in meditation)
+      to UNIVERSAL CHARACTERISTIC (one of three marks of all conditioned existence: anicca, dukkha, anattā). this is the beginning
+      of the method→thesis shift. still therapeutically oriented, but now systematized.
+
+      '
+  - period: ~200-500 CE
+    dating_confidence: medium
+    tradition: mahāyāna (madhyamaka, yogācāra)
+    meaning: 'anātman/nairātmya expanded: (1) pudgalanairātmya (no-self of persons — the early teaching), (2) dharmanairātmya
+      (no-self of phenomena — NEW). the early therapeutic observation becomes a comprehensive ontological framework.
+
+      '
+    key_texts: ["mūlamadhyamakakārikā", "yogācārabhūmi"]
+    citations:
+    - file: data/raw/sanskrit/mahayana/sa_nAgArjuna-mUlamadhyamakakArikA.txt
+      reference: MMK 13.8
+      quote: śūnyatā sarvadṛṣṭīnāṃ proktā niḥsaraṇaṃ jinaiḥ yeṣāṃ tu śūnyatādṛṣṭis tān asādhyān babhāṣire
+      context: '''emptiness is declared by the conquerors as the way out of all views. but those who hold emptiness as a VIEW
+        are declared incurable.'' nāgārjuna''s self-aware warning: even śūnyatā/anattā can become a diṭṭhi if clung to as
+        ontological truth.
+
+        '
+    corpus_count: ~127 (anātman/nairātmya in sanskrit mahāyāna)
+    drift_from_previous: 'THE FULL DRIFT: therapeutic not-self → ontological no-self of persons → ontological no-self of ALL
+      phenomena. the early teaching says "don''t identify with the aggregates." nāgārjuna says "no phenomenon has inherent
+      existence." the scope expands from soteriological tool to comprehensive metaphysics. CRITICALLY: nāgārjuna HIMSELF warns
+      against this drift (MMK 13.8).
+
+      '
+  valence:
+    buddhist_early: therapeutic — diagnostic tool for disidentification from the aggregates
+    buddhist_later: ontological — metaphysical claim about the nature of all reality
+    jain: CONTRASTIVE — jains affirm the jīva/ātman
+    hindu: CONTRASTIVE — vedānta affirms the ātman as identical with brahman
+    note: 'the anattā → nairātmya drift is THE subject of ch1. every other term in this chapter supports this central trajectory.
+
+      '
+  standard_references:
+    pts_dictionary: 'anattā: not self, without a self'
+    monier_williams: 'anātman: not self, not the soul'
+    diff_notes: 'PTS gives "not self, without a self" — preserving the adjective sense. MW gives "not self, not the soul"
+      — ''soul'' is MW''s import (no pāli equivalent carries the Abrahamic substance-soul sense); reading is closer to the
+      ontological interpretation. our dictionary insists: the PĀLI grammatical form (adjective, not noun) is evidence that
+      the early teaching is ''not-self'' (applied to aggregates), not ''no-self'' (universal metaphysical claim). [!] FLAGGED
+      — the adjective→noun shift in translations is itself the drift.
+
+      '
+  index_contribution:
+  - index: H
+    chapter: ch1
+    role: primary
+    note: 'the H index tracks this term''s drift: therapeutic (denominator) → ontological (numerator)'
+
+
+# ─────────────────────────────────────────────────────────────
+# 2. ATTA_SELF (self — the concept that anattā negates)
+# ─────────────────────────────────────────────────────────────
+atta_self:
+  id: atta_self
+  concept: self — the concept that anattā negates
+  tier: primary
+  family: ["anatta", "atman", "sakkayaditthi"]
+  chapters: ["ch1", "ch2"]
+  semantic_field: ontology
+  forms:
+    pali:
+    - term: attā
+      grammar: masculine noun
+      note: 'the self-concept. in early suttas, attā appears in TWO registers: (1) conventional: ''attanā coday'' attānaṁ''
+        (exhort yourself) — reflexive, no metaphysical weight. (2) metaphysical: ''eso me attā'' (this is my self) — the identification
+        that anattā negates.
+
+        '
+    sanskrit:
+    - term: ātman
+      grammar: masculine noun
+      note: see ch2 atman entry for full vedic→upanishadic trajectory
+    chinese:
+    - term: 我
+      pinyin: wǒ
+      translator: standard
+      translation_choice_note: '''I/self'' — used in both conventional and metaphysical senses'
+  temporal_strata:
+  - period: ~450-250 BCE
+    dating_confidence: low
+    tradition: early buddhist
+    meaning: 'attā in early suttas is the TARGET of the triple negation formula. ''na meso attā'' = ''this is not my self.''
+      the buddha does NOT say ''attā does not exist'' — he says ''this [aggregate] is not attā.'' the distinction is between
+      denying identification and denying existence.
+
+      '
+    key_texts: ["SN 22.59", "SN 22.17", "SN 22.125"]
+    citations:
+    - file: data/raw/pali_suttacentral/sc_bilara_data/root/pli/ms/sutta/sn/sn22/sn22.59_root-pli-ms.json
+      reference: SN 22.59:6.7
+      quote: etaṁ mama esohamasmi eso me attā
+      context: 'the three identifications that anattā undoes: ''this is mine'' (ownership), ''I am this'' (identity), ''this
+        is my self'' (metaphysical claim). each is a different LEVEL of identification.
+
+        '
+    - file: data/raw/pali_suttacentral/sc_bilara_data/root/pli/ms/sutta/sn/sn22/sn22.17_root-pli-ms.json
+      reference: SN 22.17:1.3
+      quote: yadanattā taṁ netaṁ mama nesohamasmi na meso attāti evametaṁ yathābhūtaṁ sammappaññāya daṭṭhabbaṁ
+      context: '''what is not-self should be seen as: this is not mine, I am not this, this is not my self'''
+    corpus_count: ~3000+ (attā as self-reference ubiquitous)
+    drift_from_previous: null
+  - period: ~200-500 CE
+    dating_confidence: medium
+    tradition: madhyamaka / yogācāra
+    meaning: 'ātman shifts from being the target of therapeutic disidentification to being the subject of DIALECTICAL DECONSTRUCTION.
+      nāgārjuna shows that the buddhas teach neither ātman nor anātman — the pedagogical strategy itself is contextual. asaṅga
+      rehabilitates ātman-language pragmatically (''ātmano buddhadharmaparipākaḥ'' = the self''s cultivation of buddha-dharmas).
+
+      '
+    key_texts: ["MMK ch18", "yogācārabhūmi"]
+    citations:
+    - file: data/raw/sanskrit/mahayana/sa_nAgArjuna-mUlamadhyamakakArikA.txt
+      reference: MMK 18.6 (line 774)
+      quote: buddhair nātmā na cānātmā kaścid ity api deśitam
+      context: '''by the buddhas, neither self nor non-self has been taught as anything whatsoever.'' this is the meta-linguistic
+        move: ātman is no longer simply negated (as in the suttas) but recognized as a PEDAGOGICAL DESIGNATION that is itself
+        empty.
+
+        '
+    - file: data/raw/sanskrit/mahayana/sa_nAgArjuna-mUlamadhyamakakArikA.txt
+      reference: MMK 18.2 (line 762)
+      quote: nirmamo nirahaṃkāraḥ śamād ātmātmanīnayoḥ
+      context: '''free from "mine," free from "I-making," through the peace of both ātman and ātmanīna [what pertains to self].''
+        the therapy targets ātma-graha (self-grasping), not ātman as a metaphysical entity.
+
+        '
+    - file: data/raw/sanskrit/mahayana/sa_asanga-yogacarabhumi.txt
+      reference: yogācārabhūmi (line 163)
+      quote: ātmano buddhadharmaparipākaḥ anuttarā ca samyaksaṃbodhiḥ saptamaṃ sthānam
+      context: '''the self''s ripening of buddha-dharmas and unsurpassed perfect awakening — this is the seventh level.''
+        ātman here = the practitioner''s OWN development. the term is rehabilitated for practical use within the bodhisattva
+        path, no longer the target of negation.
+
+        '
+    corpus_count: 'ātman: ~200+ across MMK, yogācārabhūmi, abhidharmakośa'
+    drift_from_previous: 'from THERAPEUTIC TARGET (the identification to be dropped: ''this is not my self'') to DIALECTICAL
+      OBJECT (neither affirmed nor negated: ''buddhas teach neither ātman nor anātman'') to PRAGMATICALLY REHABILITATED TERM
+      (used conventionally in bodhisattva cultivation). the trajectory: negation of identification → deconstruction of the
+      negation itself → conventional re-use. the original PRACTICE register (drop the identification) is replaced by the SYSTEM
+      register (neither-self-nor-non-self).
+
+      '
+  valence:
+    buddhist: the target of therapeutic disidentification — NOT claimed to be non-existent
+    note: 'the conventional vs metaphysical use of attā in pāli is crucial. the buddha uses attā conventionally (''exhort
+      yourself'') throughout the canon. the negation targets the METAPHYSICAL identification (''this is my eternal self''),
+      not the conventional pronoun.
+
+      '
+  standard_references:
+    pts_dictionary: 'attā: self, soul; also reflexive pronoun'
+    diff_notes: 'PTS correctly notes both uses. our dictionary emphasizes: the conventional use (reflexive) CONTINUES throughout
+      the canon even as the metaphysical use is negated. the co-existence of both uses in the same texts is evidence that
+      anattā ≠ "the self doesn''t exist."
+
+      '
+  index_contribution:
+  - index: H
+    chapter: ch1
+    role: denominator
+    note: attā-language in early suttas = experiential/release register
+
+
+# ─────────────────────────────────────────────────────────────
+# 3. KHANDHA (aggregate / heap / collection)
+# ─────────────────────────────────────────────────────────────
+khandha:
+  id: khandha
+  concept: aggregate / heap / collection
+  tier: primary
+  family: ["anatta", "atta_self", "namarupa"]
+  chapters: ["ch1"]
+  semantic_field: ontology-phenomenology
+  forms:
+    pali:
+    - term: khandha
+      grammar: masculine noun
+      root: skandh (to mount, to climb) → 'trunk, bulk, heap'
+      note: 'aggregate — the five constituents of experience: rūpa, vedanā, saññā, saṅkhāra, viññāṇa'
+    - term: pañcupādānakkhandha
+      grammar: compound
+      note: five aggregates affected by clinging — the specific TARGET of the anattā analysis
+    sanskrit:
+    - term: skandha
+      grammar: masculine noun
+      note: aggregate — same five in abhidharma systems
+    chinese:
+    - term: 蘊
+      pinyin: yùn
+      translator: xuanzang
+      translation_choice_note: '''collection/heap'' — xuanzang''s translation. kumārajīva used 陰 (yīn, ''shade/shadow'')'
+    - term: 陰
+      pinyin: yīn
+      translator: kumārajīva
+      translation_choice_note: '''shade/shadow'' — kumārajīva''s earlier translation, suggesting aggregates as coverings'
+  temporal_strata:
+  - period: ~450-250 BCE
+    dating_confidence: low
+    tradition: early buddhist
+    meaning: 'the five khandhas are the DOMAIN to which anattā is applied. ''form is not-self, feeling is not-self, perception
+      is not-self, formations are not-self, consciousness is not-self.'' the khandhas are not denied — they are the FIELD
+      of analysis.
+
+      '
+    key_texts: ["SN 22.59 anattalakkhaṇa", "SN 22 entire khandha saṃyutta"]
+    citations:
+    - file: data/raw/pali_suttacentral/sc_bilara_data/root/pli/ms/sutta/sn/sn22/sn22.59_root-pli-ms.json
+      reference: SN 22.59:2.1-5.1
+      quote: rūpaṁ bhikkhave anattā ... vedanā anattā ... saññā anattā ... saṅkhārā anattā ... viññāṇaṁ anattā
+      context: anattā applied systematically to each of the five aggregates — the complete formula
+    corpus_count: thousands — SN 22 alone has 159 suttas on the khandhas
+    drift_from_previous: null
+  - period: ~200 BCE - 200 CE
+    dating_confidence: medium
+    tradition: abhidhamma
+    meaning: khandhas analyzed into ultimate constituents (paramattha dhamma) — from experiential description to ontological
+      inventory
+    key_texts: ["dhammasaṅgaṇi", "abhidhammattha saṅgaha"]
+    citations: []
+    corpus_count: ~307 (skandha in sanskrit mahāyāna)
+    drift_from_previous: 'ANALYSIS → INVENTORY: the early khandha analysis = ''observe these five aspects of experience and
+      see they are not-self.'' the abhidhamma khandha analysis = ''here is the complete inventory of ultimate realities classified
+      by aggregate.'' the same framework becomes an ontological catalogue.
+
+      '
+  valence:
+    buddhist: central — the domain of the anattā analysis
+    note: 'the khandha framework is WHERE anattā is applied. the drift tracked: khandha as experiential field (early) → khandha
+      as ontological inventory (abhidhamma) → khandha as items denied inherent existence (madhyamaka). each stage uses the
+      same five categories for a different philosophical purpose.
+
+      '
+  standard_references:
+    pts_dictionary: 'khandha: bulk, mass, collection, aggregate'
+    monier_williams: 'skandha: shoulder, the trunk of a tree, a large branch'
+    diff_notes: 'MW preserves the pre-philosophical meaning (tree trunk, branch). PTS gives the philosophical meaning (aggregate,
+      collection). the shift from ''trunk/heap'' to ''component of experience'' is itself a significant semantic development
+      within buddhist technical vocabulary.
+
+      '
+  index_contribution:
+  - index: H
+    chapter: ch1
+    role: tracks hardening
+    note: khandha as experiential field (early) → ontological inventory (abhidhamma)
+
+
+# ─────────────────────────────────────────────────────────────
+# 4. NAMARUPA (name-and-form / mind-body / psychophysical complex)
+# ─────────────────────────────────────────────────────────────
+namarupa:
+  id: namarupa
+  concept: name-and-form / mind-body / psychophysical complex
+  tier: primary
+  family: ["khandha", "vinnana", "paticcasamuppada"]
+  chapters: ["ch1"]
+  semantic_field: ontology
+  forms:
+    vedic:
+    - term: nāmarūpa
+      grammar: dvandva compound
+      root: nāma (name) + rūpa (form)
+      note: 'in vedic/upanishadic: the totality of manifestation — ''all this is name and form'''
+    pali:
+    - term: nāmarūpa
+      grammar: dvandva compound
+      note: 'in buddhist usage: the psychophysical complex, link 4 in paṭiccasamuppāda'
+    chinese:
+    - term: 名色
+      pinyin: míng sè
+      translator: standard
+      translation_choice_note: '''name-form'' — literal translation preserving the dvandva structure'
+  temporal_strata:
+  - period: ~800-500 BCE
+    dating_confidence: medium
+    tradition: upanishadic
+    meaning: the totality of manifest reality — all that exists is either name or form
+    key_texts: ["bṛhadāraṇyaka"]
+    citations: []
+    corpus_count: moderate in upanishads
+    drift_from_previous: null
+  - period: ~450-250 BCE
+    dating_confidence: low
+    tradition: early buddhist
+    meaning: the psychophysical complex conditioned by consciousness — link 4 in dependent origination
+    key_texts: ["SN 12.1", "SN 12.19"]
+    citations:
+    - file: data/raw/pali_suttacentral/sc_bilara_data/root/pli/ms/sutta/sn/sn12/sn12.1_root-pli-ms.json
+      reference: SN 12.1:2.4-5
+      quote: viññāṇapaccayā nāmarūpaṁ nāmarūpapaccayā saḷāyatanaṁ
+      context: '''consciousness conditions name-and-form; name-and-form conditions the six sense bases'' — the paṭiccasamuppāda
+        chain'
+    corpus_count: frequent in SN 12
+    drift_from_previous: 'RECONTEXTUALIZATION: upanishadic nāmarūpa = the manifest totality. buddhist nāmarūpa = a link in
+      a causal chain, conditioned and conditioning. same term, but within a radically different framework: not ''all that
+      exists'' but ''one conditioned factor among many.''
+
+      '
+  valence:
+    upanishadic: the totality of manifestation
+    buddhist: a conditioned link in dependent origination — not ultimate
+  standard_references:
+    pts_dictionary: 'nāmarūpa: name and form, mind and body'
+    diff_notes: 'PTS gives both renderings. our dictionary emphasizes the upanishadic → buddhist shift: from ''all that exists''
+      to ''one link in the chain.''
+
+      '
+  index_contribution:
+  - index: H
+    chapter: ch1
+    role: tracks hardening
+    note: nāmarūpa as experiential description → technical link in formal chain
+
+
+# ─────────────────────────────────────────────────────────────
+# 5. VINNANA (consciousness / cognition / awareness)
+# ─────────────────────────────────────────────────────────────
+vinnana:
+  id: vinnana
+  concept: consciousness / cognition / awareness
+  tier: primary
+  family: ["khandha", "namarupa", "paticcasamuppada"]
+  chapters: ["ch1"]
+  semantic_field: phenomenology
+  forms:
+    pali:
+    - term: viññāṇa
+      grammar: neuter noun
+      root: vi-jñā (to discern, to cognize)
+      note: consciousness — both the 5th aggregate AND link 3 in paṭiccasamuppāda
+    sanskrit:
+    - term: vijñāna
+      grammar: neuter noun
+      note: 'in yogācāra: expanded to ālayavijñāna (store-consciousness) — fundamental transformation'
+    chinese:
+    - term: 識
+      pinyin: shí
+      translator: standard
+      translation_choice_note: '''cognition/discernment'' — covers all buddhist senses'
+    - term: 阿賴耶識
+      pinyin: ālàiyēshí
+      translator: xuanzang (phonetic + semantic)
+      translation_choice_note: ālaya-consciousness — the yogācāra development
+  temporal_strata:
+  - period: ~450-250 BCE
+    dating_confidence: low
+    tradition: early buddhist
+    meaning: awareness at a sense-door — viññāṇa arises when sense + object + attention converge. impermanent, conditioned,
+      not-self.
+    key_texts: ["SN 22.53", "SN 22.59", "SN 12.1"]
+    citations:
+    - file: data/raw/pali_suttacentral/sc_bilara_data/root/pli/ms/sutta/sn/sn22/sn22.53_root-pli-ms.json
+      reference: SN 22.53:2.2
+      quote: ahamaññatra rūpā aññatra vedanāya aññatra saññāya aññatra saṅkhārehi viññāṇassa āgatiṁ vā gatiṁ vā cutiṁ vā upapattiṁ
+        vā ... paññāpessāmīti netaṁ ṭhānaṁ vijjati
+      context: '''apart from form, feeling, perception, and formations, I could posit a coming or going or passing away or
+        rebirth of consciousness — that is not possible.'' viññāṇa is NOT independent of the other aggregates — it cannot
+        be the permanent self because it DEPENDS on conditions.
+
+        '
+    - file: data/raw/pali_suttacentral/sc_bilara_data/root/pli/ms/sutta/sn/sn22/sn22.53_root-pli-ms.json
+      reference: SN 22.53:3.8
+      quote: tadappatiṭṭhitaṁ viññāṇaṁ avirūḷhaṁ anabhisaṅkhacca vimuttaṁ
+      context: '''that consciousness, not landing anywhere, not growing, without fabricating, is liberated.'' the early description
+        of viññāṇa''s cessation = liberation.
+
+        '
+    corpus_count: extremely frequent
+    drift_from_previous: null
+  - period: ~300-500 CE
+    dating_confidence: medium
+    tradition: yogācāra
+    meaning: ālayavijñāna (store-consciousness) — a quasi-permanent substrate of experience. the tension with anattā is acute.
+    key_texts: ["yogācārabhūmi", "triṃśikā"]
+    citations: []
+    corpus_count: ~848 (vijñāna/vijñapti in sanskrit mahāyāna — highest of all terms due to yogācāra focus)
+    drift_from_previous: 'THE MOST SIGNIFICANT INTERNAL TENSION: early viññāṇa is explicitly impermanent and not-self (''cannot
+      be posited apart from the other aggregates''). yogācāra''s ālayavijñāna functions as a near-permanent substrate — critics
+      (including some buddhists) see it as a covert reintroduction of the ātman. this tension is evidence of the anattā drift
+      in action.
+
+      '
+  valence:
+    buddhist_early: impermanent, conditioned, not-self — explicitly denied as permanent substrate
+    buddhist_yogacara: 'ālayavijñāna: persistent stream of consciousness — tension with anattā'
+    note: 'viññāṇa is where the anattā drift becomes most visible within buddhism itself. the early teaching says consciousness
+      cannot exist apart from conditions. the yogācāra development posits a kind of consciousness that persists through lifetimes.
+      this is not a contradiction from within yogācāra, but it is the kind of development that ch1 tracks.
+
+      '
+  standard_references:
+    pts_dictionary: 'viññāṇa: consciousness, sensory or mental awareness'
+    diff_notes: 'PTS gives the early sense. our dictionary adds the yogācāra development because the viññāṇa → ālayavijñāna
+      trajectory is a specific instance of the anattā drift.
+
+      '
+  index_contribution:
+  - index: H
+    chapter: ch1
+    role: tracks hardening
+    note: viññāṇa as conditioned awareness → ālayavijñāna as quasi-persistent substrate
+
+
+# ─────────────────────────────────────────────────────────────
+# 6. SAKKAYADITTHI (identity view / personality belief)
+# ─────────────────────────────────────────────────────────────
+sakkayaditthi:
+  id: sakkayaditthi
+  concept: identity view / personality belief
+  tier: primary
+  family: ["anatta", "atta_self", "khandha", "ditthi"]
+  chapters: ["ch1"]
+  semantic_field: soteriology
+  forms:
+    pali:
+    - term: sakkāyadiṭṭhi
+      grammar: compound (sakkāya + diṭṭhi)
+      root: sat-kāya (existing body/group) + dṛṣṭi (view)
+      note: '''view of the existing body as self'' — the first fetter, abandoned at stream-entry'
+    sanskrit:
+    - term: satkāyadṛṣṭi
+      grammar: compound
+      note: same as pāli — identity view
+    chinese:
+    - term: 身見
+      pinyin: shēnjiàn
+      translator: standard
+      translation_choice_note: '''body-view'' — partial translation, misses the ''identifying as self'' component'
+  temporal_strata:
+  - period: ~450-250 BCE
+    dating_confidence: low
+    tradition: early buddhist
+    meaning: the wrong view that identifies any of the five aggregates as self — the PRIMARY fetter
+    key_texts: ["SN 22.105", "SN 22.103"]
+    citations:
+    - file: data/raw/pali_suttacentral/sc_bilara_data/root/pli/ms/sutta/sn/sn22/sn22.105_root-pli-ms.json
+      reference: SN 22.105:1.2
+      quote: sakkāyañca vo bhikkhave desessāmi sakkāyasamudayañca sakkāyanirodhañca sakkāyanirodhagāminiñca paṭipadaṁ
+      context: '''I will teach you the sakkāya, the arising of sakkāya, the cessation of sakkāya, and the path leading to
+        its cessation'' — structured EXACTLY like the four noble truths. sakkāya analysis IS suffering analysis.
+
+        '
+    corpus_count: ~500 (sakkāya-compounds across SN, MN, DN)
+    drift_from_previous: null
+  - period: ~200-500 CE
+    dating_confidence: medium
+    tradition: abhidharma / yogācāra
+    meaning: 'sakkāyadiṭṭhi (satkāyadṛṣṭi) hardens from a fetter to be experientially abandoned at stream-entry into a SYSTEMATIC
+      CATEGORY in formal dṛṣṭi- classification. vasubandhu lists it as the first of five dṛṣṭis. asaṅga identifies it as the
+      ROOT generating both eternalism and annihilationism. buddhaghosa maps it onto the four noble truths: dukkha-ñāṇa specifically
+      overcomes sakkāyadiṭṭhi.
+
+      '
+    key_texts: ["abhidharmakośa ch5", "yogācārabhūmi", "visuddhimagga"]
+    citations:
+    - file: data/raw/sanskrit/mahayana/sa_vasubandhu-abhidharmakoza.txt
+      reference: abhidharmakośa 5.3 (line 1144)
+      quote: dṛṣṭayaḥ pañca satkāyamithyāntagrahadṛṣṭayaḥ
+      context: '''the five views are: satkāya[-dṛṣṭi], mithyā[-dṛṣṭi], anta-graha- dṛṣṭi [and two more].'' satkāyadṛṣṭi is
+        now the FIRST item in a formal five-view classification — no longer a lived fetter but a logical category in a scholastic
+        taxonomy.
+
+        '
+    - file: data/raw/sanskrit/mahayana/sa_asanga-yogacarabhumi.txt
+      reference: yogācārabhūmi (line 2452)
+      quote: satkāyadṛṣṭimūla-śāśatocchedāntagrāhavivarjitāṃ madhyamāṃ pratipadaṃ vyapadiśati
+      context: '''he teaches the middle way, free from satkāyadṛṣṭi-ROOTED eternalism-annihilationism extreme-grasping.''
+        satkāyadṛṣṭi is now the META-ROOT of all wrong views — the view that generates both sassata and uccheda. this is a
+        substantial promotion from ''one fetter among ten'' to ''the root of all doxographic errors.''
+
+        '
+    - file: data/raw/pali_commentary/visuddhimagga_gretil.txt
+      reference: visuddhimagga (line 13952)
+      quote: dukkhañāṇaṃ ... sakkāyadiṭṭiṃ nivatteti. samudayañāṇaṃ ucchedadiṭṭhiṃ, nirodha ñāṇaṃ sassatadiṭṭhiṃ, maggañāṇaṃ
+        akiriyadiṭṭhiṃ
+      context: 'buddhaghosa''s systematic correspondence: dukkha-insight overcomes sakkāyadiṭṭhi; origin-insight overcomes
+        ucchedadiṭṭhi; cessation- insight overcomes sassatadiṭṭhi; path-insight overcomes akiriyadiṭṭhi. the four noble truths
+        are now mapped ONTO four wrong views as a systematic grid. sakkāyadiṭṭhi = the view that dukkha-insight cures.
+
+        '
+    corpus_count: 'satkāyadṛṣṭi: ~15 in abhidharmakośa/yogācārabhūmi; sakkāyadiṭṭhi: ~25 in visuddhimagga'
+    drift_from_previous: 'from EXPERIENTIAL FETTER (the wrong identification that is abandoned at the moment of stream-entry,
+      SN 22.105) to TAXONOMIC CATEGORY (the first of five dṛṣṭis in vasubandhu''s classification) to META-ROOT (the source
+      of all doxographic error in asaṅga) to SYSTEMATIC CORRESPONDENCE (mapped onto dukkha-insight in buddhaghosa''s grid).
+      the lived moment of breakthrough is replaced by a scholastic position in a classification system.
+
+      '
+  valence:
+    buddhist: the primary fetter — its abandonment at stream-entry is the first breakthrough
+    note: 'sakkāyadiṭṭhi is the EXPERIENTIAL version of what later becomes the ''no-self'' ontological claim. the early teaching
+      says: abandon the VIEW that identifies the aggregates as self. the later teaching says: there IS no self. the difference
+      is between dropping an identification and making a metaphysical claim.
+
+      '
+  standard_references:
+    pts_dictionary: 'sakkāyadiṭṭhi: heresy of individuality, theory of soul'
+    diff_notes: 'PTS''s "heresy of individuality" is a poor translation — it sounds like the person''s individuality is denied.
+      what is actually denied is the VIEW (diṭṭhi) that any aggregate IS the self. our dictionary specifies: sakkāyadiṭṭhi
+      = wrong identification, not denial of individuality.
+
+      '
+  index_contribution:
+  - index: H
+    chapter: ch1
+    role: denominator
+    note: sakkāyadiṭṭhi as practical fetter to be abandoned = release-oriented language
+
+
+# ─────────────────────────────────────────────────────────────
+# 7. PATICCASAMUPPADA (dependent origination / conditioned arising)
+# ─────────────────────────────────────────────────────────────
+paticcasamuppada:
+  id: paticcasamuppada
+  concept: dependent origination / conditioned arising
+  tier: primary
+  family: ["namarupa", "vinnana", "bhava", "phassa"]
+  chapters: ["ch1"]
+  semantic_field: ontology-soteriology
+  forms:
+    pali:
+    - term: paṭiccasamuppāda
+      grammar: compound (paṭicca + sam + uppāda)
+      note: arising dependent on [conditions] — the 12-link chain
+    sanskrit:
+    - term: pratītyasamutpāda
+      grammar: compound
+      note: dependent co-arising — becomes the foundation of madhyamaka philosophy
+    chinese:
+    - term: 緣起
+      pinyin: yuánqǐ
+      translator: standard
+      translation_choice_note: '''condition-arising'' — elegant semantic translation'
+  temporal_strata:
+  - period: ~450-250 BCE
+    dating_confidence: low
+    tradition: early buddhist
+    meaning: the causal structure of suffering and its cessation — 12 links from ignorance to death
+    key_texts: ["SN 12.1", "SN 12.15 kaccānagotta"]
+    citations:
+    - file: data/raw/pali_suttacentral/sc_bilara_data/root/pli/ms/sutta/sn/sn12/sn12.1_root-pli-ms.json
+      reference: SN 12.1:1.7
+      quote: paṭiccasamuppādaṁ vo bhikkhave desessāmi
+      context: '''I will teach you dependent origination, monks'''
+    - file: data/raw/pali_suttacentral/sc_bilara_data/root/pli/ms/sutta/sn/sn12/sn12.1_root-pli-ms.json
+      reference: SN 12.1:2.4-11
+      quote: viññāṇapaccayā nāmarūpaṁ ... phassapaccayā vedanā ... upādānapaccayā bhavo bhavapaccayā jāti
+      context: 'the 12-link chain: ignorance → formations → consciousness → name-form → six senses → contact → feeling → craving
+        → clinging → becoming → birth → death'
+    corpus_count: extremely frequent — entire SN 12 devoted to it
+    drift_from_previous: null
+  - period: ~200-500 CE
+    dating_confidence: medium
+    tradition: madhyamaka
+    meaning: pratītyasamutpāda = śūnyatā. dependent origination IS emptiness — nāgārjuna's equation
+    key_texts: ["mūlamadhyamakakārikā"]
+    citations: []
+    corpus_count: ~135 (pratītyasamutpāda in sanskrit mahāyāna)
+    drift_from_previous: 'EQUATION: nāgārjuna identifies pratītyasamutpāda with śūnyatā — dependent origination = emptiness.
+      the early causal analysis of suffering becomes a comprehensive ontological principle. this is the most philosophically
+      significant expansion in the entire tradition.
+
+      '
+  valence:
+    buddhist: THE alternative to both eternalism and annihilationism — the 'middle way' in its deepest sense
+  standard_references:
+    pts_dictionary: 'paṭiccasamuppāda: production by dependence, dependent origination'
+    diff_notes: PTS gives clear definition. our dictionary adds the early→mādhyamika trajectory.
+  index_contribution:
+  - index: H
+    chapter: ch1
+    role: tracks hardening
+    note: early = causal structure of suffering (pragmatic); later = ontological principle (systematic)
+
+
+# ─────────────────────────────────────────────────────────────
+# 8. SUNNA (empty / void / emptiness)
+# ─────────────────────────────────────────────────────────────
+sunna:
+  id: sunna
+  concept: empty / void / emptiness
+  tier: primary
+  family: ["anatta", "paticcasamuppada"]
+  chapters: ["ch1"]
+  semantic_field: ontology
+  forms:
+    pali:
+    - term: suñña
+      grammar: adjective
+      note: 'empty — in early usage: ''empty OF self'' (attena suññaṁ), not ''empty'' in the abstract'
+    - term: suññatā
+      grammar: feminine abstract noun
+      note: emptiness — the nominalization (like nairātmya from anattā)
+    sanskrit:
+    - term: śūnya
+      grammar: adjective
+      note: 'empty — in madhyamaka: empty of inherent existence (svabhāva)'
+    - term: śūnyatā
+      grammar: feminine abstract noun
+      note: emptiness — the central term of madhyamaka philosophy
+    chinese:
+    - term: 空
+      pinyin: kōng
+      translator: standard
+      translation_choice_note: '''empty/void'' — one of the most loaded terms in east asian buddhism'
+  temporal_strata:
+  - period: ~450-250 BCE
+    dating_confidence: low
+    tradition: early buddhist
+    meaning: '''empty OF self and what belongs to self'' — suñña is an ADJECTIVE applied to specific domains. the world is
+      suñña BECAUSE the six sense bases are empty of self. this is anattā in slightly different vocabulary.
+
+      '
+    key_texts: ["SN 35.85 suñña sutta"]
+    citations:
+    - file: data/raw/pali_suttacentral/sc_bilara_data/root/pli/ms/sutta/sn/sn35/sn35.85_root-pli-ms.json
+      reference: SN 35.85:1.4
+      quote: yasmā ca kho ānanda suññaṁ attena vā attaniyena vā tasmā suñño lokoti vuccati
+      context: '''because it is empty of self or what belongs to self, therefore the world is called empty.'' the DEFINITION
+        of suñña in early usage: empty OF SELF. not empty in the abstract.
+
+        '
+    corpus_count: moderate in sutta; ubiquitous in mahāyāna
+    drift_from_previous: null
+  - period: ~200-500 CE
+    dating_confidence: medium
+    tradition: madhyamaka
+    meaning: śūnyatā = empty of inherent existence (svabhāva). all phenomena are empty — comprehensive ontological claim
+    key_texts: ["mūlamadhyamakakārikā"]
+    citations:
+    - file: data/raw/sanskrit/mahayana/sa_nAgArjuna-mUlamadhyamakakArikA.txt
+      reference: MMK 13.8
+      quote: śūnyatā sarvadṛṣṭīnāṃ proktā niḥsaraṇaṃ jinaiḥ yeṣāṃ tu śūnyatādṛṣṭis tān asādhyān babhāṣire
+      context: '''emptiness is the way out of all views. but those who make emptiness ITSELF a view are incurable.'' nāgārjuna''s
+        warning against reifying emptiness — the drift he sees and opposes.
+
+        '
+    corpus_count: ~446 (śūnyatā/śūnya in sanskrit mahāyāna)
+    drift_from_previous: 'THE ANATTĀ DRIFT''S PUREST EXPRESSION: early suñña = ''empty of self'' (applied to specific sense-domains).
+      mādhyamika śūnyatā = ''empty of inherent existence'' (applied to ALL phenomena). the scope expands from ''not-self''
+      to ''not-anything-inherent.'' this is the same trajectory as anattā → nairātmya, but with a different vocabulary. MMK
+      13.8 is the self-conscious warning against the drift''s endpoint.
+
+      '
+  valence:
+    buddhist_early: therapeutic — 'empty of self' as observation tool
+    buddhist_madhyamaka: ontological — 'empty of inherent existence' as universal principle
+    note: 'suñña→śūnyatā is the parallel track to anattā→nairātmya. both move from therapeutic adjective to ontological noun.
+      both are ch1 evidence.
+
+      '
+  standard_references:
+    pts_dictionary: 'suñña: empty, void'
+    diff_notes: 'PTS gives bare "empty, void" — missing the crucial qualifier ''of self'' that defines the early usage. our
+      dictionary insists: early suñña = ''empty of self'' (SN 35.85), NOT ''empty'' in the abstract. [!] FLAGGED — PTS''s
+      bare ''empty'' already reflects the drift.
+
+      '
+  index_contribution:
+  - index: H
+    chapter: ch1
+    role: primary
+    note: suñña→śūnyatā tracks the same drift as anattā→nairātmya
+
+
+# ─────────────────────────────────────────────────────────────
+# 9. NIBBANA (extinction / unbinding / the unconditioned)
+# ─────────────────────────────────────────────────────────────
+nibbana:
+  id: nibbana
+  concept: extinction / unbinding / the unconditioned
+  tier: primary
+  family: ["moksha", "anatta", "bhava"]
+  chapters: ["ch1"]
+  semantic_field: soteriology
+  forms:
+    pali:
+    - term: nibbāna
+      grammar: neuter noun
+      root: nir-vā (to blow out, to extinguish) OR nir-vana (without binding)
+      note: extinction of craving — the soteriological goal
+    sanskrit:
+    - term: nirvāṇa
+      grammar: neuter noun
+      note: extinction — in mahāyāna, nirvāṇa = saṃsāra (nāgārjuna's equation)
+    chinese:
+    - term: 涅槃
+      pinyin: nièpán
+      translator: phonetic
+      translation_choice_note: phonetic transliteration — the concept was deemed untranslatable
+  temporal_strata:
+  - period: ~450-250 BCE
+    dating_confidence: low
+    tradition: early buddhist
+    meaning: cessation of craving, hatred, and delusion — described via metaphor (fire going out) rather than definition
+    key_texts: ["SN 43", "SN 12.70"]
+    citations:
+    - file: data/raw/pali_suttacentral/sc_bilara_data/root/pli/ms/sutta/sn/sn43/sn43.14-43_root-pli-ms.json
+      reference: SN 43.34:1.1
+      quote: nibbānañca vo bhikkhave desessāmi nibbānagāmiñca maggaṁ
+      context: '''I will teach you nibbāna and the path to nibbāna'''
+    corpus_count: ~450
+    drift_from_previous: null
+  - period: ~200-500 CE
+    dating_confidence: medium
+    tradition: madhyamaka
+    meaning: nirvāṇa = saṃsāra — not a separate realm but the same reality seen without delusion
+    key_texts: ["MMK 25"]
+    citations: []
+    corpus_count: ~440 (nirvāṇa in sanskrit mahāyāna)
+    drift_from_previous: 'EQUATION: nāgārjuna identifies nirvāṇa with saṃsāra (MMK 25.19-20). the early teaching presents
+      nibbāna as the GOAL to be attained. the madhyamaka teaching presents nirvāṇa as what saṃsāra ALREADY IS when seen correctly.
+      the method (attaining liberation) becomes a thesis (liberation is already the case).
+
+      '
+  valence:
+    buddhist_early: the goal — cessation of craving, attained through practice
+    buddhist_madhyamaka: not separate from saṃsāra — a way of seeing, not a place to reach
+  standard_references:
+    pts_dictionary: 'nibbāna: going out, quenching, emancipation'
+    diff_notes: 'PTS preserves the fire metaphor (''going out, quenching''). our dictionary adds the early→madhyamaka trajectory:
+      from goal-to-attain to reality-already-present.
+
+      '
+  index_contribution:
+  - index: H
+    chapter: ch1
+    role: tracks hardening
+    note: nibbāna as goal (practice-oriented) → nirvāṇa as ontological truth (thesis-oriented)
+
+
+# ─────────────────────────────────────────────────────────────
+# 10. BHAVA (becoming / existence / being)
+# ─────────────────────────────────────────────────────────────
+bhava:
+  id: bhava
+  concept: becoming / existence / being
+  tier: primary
+  family: ["paticcasamuppada", "upadana", "samsara"]
+  chapters: ["ch1"]
+  semantic_field: ontology
+  forms:
+    pali:
+    - term: bhava
+      grammar: masculine noun
+      root: bhū (to be, to become)
+      note: becoming — link 10 in paṭiccasamuppāda. conditioned by clinging, conditions birth.
+    sanskrit:
+    - term: bhava
+      grammar: masculine noun
+      note: 'existence, becoming — in abhidharma: three realms of bhava (kāma, rūpa, arūpa)'
+    chinese:
+    - term: 有
+      pinyin: yǒu
+      translator: standard
+      translation_choice_note: '''existence/having'' — maps well to the pāli sense'
+  temporal_strata:
+  - period: ~450-250 BCE
+    dating_confidence: low
+    tradition: early buddhist
+    meaning: becoming — the process by which clinging generates continued existence. NOT a static state but an ONGOING PROCESS.
+    key_texts: ["SN 12.1"]
+    citations:
+    - file: data/raw/pali_suttacentral/sc_bilara_data/root/pli/ms/sutta/sn/sn12/sn12.1_root-pli-ms.json
+      reference: SN 12.1:2.10-11
+      quote: upādānapaccayā bhavo bhavapaccayā jāti
+      context: '''clinging conditions becoming; becoming conditions birth'' — bhava as process, not state'
+    corpus_count: ~1500+ (bhava-terms in sutta piṭaka)
+    drift_from_previous: null
+  - period: ~200-500 CE
+    dating_confidence: medium
+    tradition: madhyamaka
+    meaning: 'bhava is emptied of intrinsic nature (svabhāva). in nāgārjuna, whatever arises dependently is ''naturally peaceful''
+      (svabhāvataḥ śāntam) — the process-character of bhava is preserved but its ontological substance is denied. bhava becomes
+      the nexus linking upādāna to rebirth in the formal dependent origination analysis of MMK ch26.
+
+      '
+    key_texts: ["MMK ch26", "MMK 15"]
+    citations:
+    - file: data/raw/sanskrit/mahayana/sa_nAgArjuna-mUlamadhyamakakArikA.txt
+      reference: MMK 26 (lines 1278-1281)
+      quote: tṛṣyamāṇa upādānam upādatte caturvidham / upādāne sati bhava upādātuḥ pravartate / syād dhi yady anupādāno mucyeta
+        na bhaved bhavaḥ
+      context: '''the thirsting one grasps the four kinds of clinging; with clinging present, the becoming of the grasper
+        proceeds; for if there were no grasper, one would be liberated — there would be no bhava.'' the dependent origination
+        chain preserved but analysed: bhava depends entirely on upādāna, which depends on tṛṣṇā.
+
+        '
+    - file: data/raw/sanskrit/mahayana/sa_nAgArjuna-mUlamadhyamakakArikA.txt
+      reference: MMK 18.4 (line 768)
+      quote: mamety aham iti kṣīṇe bahirdhādhyātmam eva ca / nirudhyata upādānaṃ tatkṣayāj janmanaḥ kṣayaḥ
+      context: '''when "mine" and "I" are exhausted, both externally and internally, clinging ceases; from that cessation,
+        the cessation of birth.'' the upādāna→bhava→jāti chain compressed into a single causal sequence driven by self-grasping.
+
+        '
+    corpus_count: 'bhava: ~50+ in MMK/prasannapadā'
+    drift_from_previous: 'from SOTERIOLOGICAL PROCESS (becoming as the thing to be understood and ceased, SN 12.1) to DIALECTICALLY
+      EMPTY PROCESS (becoming that arises dependently and has no svabhāva, MMK 26). the practical urgency — ''cease becoming!''
+      — is replaced by the philosophical demonstration that becoming never had intrinsic nature to begin with. the register
+      shifts from practice (stop the process) to system (the process was always empty).
+
+      '
+  valence:
+    buddhist: the process to be understood and its cessation achieved — vibhava (non-becoming) also rejected
+    note: 'bhava/vibhava rejection is parallel to sassata/uccheda rejection. the buddha rejects BOTH becoming and non-becoming
+      as clingable positions. this middle way applies to existence itself.
+
+      '
+  standard_references:
+    pts_dictionary: 'bhava: becoming, existence, a state of existence'
+    diff_notes: PTS gives both 'becoming' (process) and 'existence' (state). our dictionary prefers 'becoming' for early usage.
+  index_contribution:
+  - index: H
+    chapter: ch1
+    role: denominator
+    note: bhava as process-term = practice-register language
+
+
+# ─────────────────────────────────────────────────────────────
+# 11. UPADANA (clinging / fuel / grasping)
+# ─────────────────────────────────────────────────────────────
+upadana:
+  id: upadana
+  concept: clinging / fuel / grasping
+  tier: primary
+  family: ["bhava", "paticcasamuppada", "khandha"]
+  chapters: ["ch1"]
+  semantic_field: soteriology
+  forms:
+    pali:
+    - term: upādāna
+      grammar: neuter noun
+      root: upa-ā-dā (to take up, to grasp, to fuel)
+      note: clinging — link 9 in paṭiccasamuppāda. ALSO 'fuel' (as in fire's fuel)
+    sanskrit:
+    - term: upādāna
+      grammar: neuter noun
+      note: grasping, fuel — same dual meaning
+    chinese:
+    - term: 取
+      pinyin: qǔ
+      translator: standard
+      translation_choice_note: '''grasping/taking'' — semantic translation'
+  temporal_strata:
+  - period: ~450-250 BCE
+    dating_confidence: low
+    tradition: early buddhist
+    meaning: 'clinging to the four objects: sense-pleasures (kāma), views (diṭṭhi), rules-and-rituals (sīlabbata), self-doctrine
+      (attavāda). the fourth — attavādupādāna — is directly relevant to ch1: clinging to a self-theory.
+
+      '
+    key_texts: ["SN 12.1", "MN 44"]
+    citations:
+    - file: data/raw/pali_suttacentral/sc_bilara_data/root/pli/ms/sutta/sn/sn12/sn12.1_root-pli-ms.json
+      reference: SN 12.1:2.9
+      quote: taṇhāpaccayā upādānaṁ
+      context: '''craving conditions clinging'' — the taṇhā→upādāna link'
+    corpus_count: ~750 (upādāna-terms in sutta piṭaka)
+    drift_from_previous: null
+  - period: ~200-500 CE
+    dating_confidence: medium
+    tradition: madhyamaka
+    meaning: 'upādāna becomes the pivot of nāgārjuna''s deconstruction: it links ātma-graha (self-grasping) to bhava (becoming)
+      to jāti (birth). MMK explores paradoxes of grasping — if upādāna IS the self, how can we abandon what we are? if upādāna
+      is OTHER than self, how does abandoning it affect us? the fire-fuel metaphor (agni-indhana) unifies ātman and upādāna
+      analysis.
+
+      '
+    key_texts: ["MMK ch10 (fire-fuel)", "MMK ch18", "MMK ch26"]
+    citations:
+    - file: data/raw/sanskrit/mahayana/sa_nAgArjuna-mUlamadhyamakakArikA.txt
+      reference: MMK 10 (lines 488-489)
+      quote: agnīndhanābhyāṃ vyākhyāta ātmopādānayoḥ kramaḥ sarvo niravaśeṣeṇa
+      context: '''through the fire-and-fuel [analysis], the entire sequence of ātman-and-upādāna is explained without remainder.''
+        the fire-fuel analogy (already present in early texts as upādāna = fuel) is now a formal philosophical tool unifying
+        self-theory and clinging-theory.
+
+        '
+    - file: data/raw/sanskrit/mahayana/sa_nAgArjuna-mUlamadhyamakakArikA.txt
+      reference: MMK (lines 644-645)
+      quote: bandhanaṃ ced upādānaṃ sopādāno na badhyate / badhyate nānupādānaḥ kimavastho 'tha badhyate
+      context: '''if grasping is bondage, then one WITH grasping is not bound; one WITHOUT grasping is not bound either —
+        in what state, then, is one bound?'' the paradox exposes upādāna as without intrinsic nature: bondage cannot be located
+        in the grasper, the grasping, or their relation.
+
+        '
+    - file: data/raw/sanskrit/mahayana/sa_nAgArjuna-mUlamadhyamakakArikA.txt
+      reference: MMK 26 (line 1278)
+      quote: tṛṣyamāṇa upādānam upādatte caturvidham
+      context: '''the thirsting one grasps the four kinds of clinging.'' ch26 restates the dependent origination formula but
+        within the madhyamaka framework — the chain operates conventionally while being ultimately empty.
+
+        '
+    corpus_count: 'upādāna: ~30+ in MMK/prasannapadā'
+    drift_from_previous: 'from THERAPEUTIC MECHANISM (clinging/fuel that sustains the fire of becoming, to be abandoned) to
+      PHILOSOPHICAL PARADOX (grasping that cannot be located in grasper or grasped). the early fire-metaphor (upādāna = fuel,
+      nibbāna = extinguishing) becomes a formal analogy (agni-indhana) in nāgārjuna''s dialectical system. the register shifts
+      from practice (let go of the fuel) to system (grasping has no intrinsic nature to let go of).
+
+      '
+  valence:
+    buddhist: the mechanism by which craving generates continued existence — to be abandoned
+    note: 'upādāna is both ''clinging'' and ''fuel.'' the fire metaphor: the aggregates are ''fuel-aggregates'' (upādānakkhandha).
+      when the fuel is consumed, the fire goes out (nibbāna). this is the most complete integration of the fire metaphor with
+      the anattā teaching.
+
+      '
+  standard_references:
+    pts_dictionary: 'upādāna: fuel, supply, clinging, grasping'
+    diff_notes: PTS correctly preserves both 'fuel' and 'clinging.' our dictionary emphasizes the attavādupādāna connection
+      to ch1.
+  index_contribution:
+  - index: H
+    chapter: ch1
+    role: denominator
+    note: upādāna as experiential process (clinging) = practice-register language
+
+
+# ─────────────────────────────────────────────────────────────
+# 12. PHASSA (contact / sensory impingement)
+# ─────────────────────────────────────────────────────────────
+phassa:
+  id: phassa
+  concept: contact / sensory impingement
+  tier: primary
+  family: ["paticcasamuppada", "namarupa", "vinnana"]
+  chapters: ["ch1"]
+  semantic_field: phenomenology
+  forms:
+    pali:
+    - term: phassa
+      grammar: masculine noun
+      root: spṛś (to touch, to contact)
+      note: contact — the meeting of sense-faculty, object, and consciousness. link 6 in paṭiccasamuppāda.
+    sanskrit:
+    - term: sparśa
+      grammar: masculine noun
+      note: touch, contact
+    chinese:
+    - term: 觸
+      pinyin: chù
+      translator: standard
+      translation_choice_note: '''touch/contact'' — straightforward semantic translation'
+  temporal_strata:
+  - period: ~450-250 BCE
+    dating_confidence: low
+    tradition: early buddhist
+    meaning: the convergence of sense-faculty, object, and consciousness — the point where experience arises
+    key_texts: ["SN 12.1", "SN 12.26"]
+    citations:
+    - file: data/raw/pali_suttacentral/sc_bilara_data/root/pli/ms/sutta/sn/sn12/sn12.1_root-pli-ms.json
+      reference: SN 12.1:2.6-7
+      quote: saḷāyatanapaccayā phasso phassapaccayā vedanā
+      context: '''six sense bases condition contact; contact conditions feeling'' — phassa as the arising-point of felt experience'
+    - file: data/raw/pali_suttacentral/sc_bilara_data/root/pli/ms/sutta/sn/sn12/sn12.26_root-pli-ms.json
+      reference: SN 12.26:4.1
+      quote: ye te samaṇabrāhmaṇā sayaṅkataṁ dukkhaṁ paññapenti tadapi phassapaccayā
+      context: '''those who declare suffering is self-made — that too is conditioned by contact.'' even the WRONG VIEWS about
+        suffering''s cause are themselves produced through phassa. the reflexivity is total.
+
+        '
+    corpus_count: ~1200 (phassa-terms in sutta piṭaka)
+    drift_from_previous: null
+  - period: ~200 BCE - 200 CE
+    dating_confidence: medium
+    tradition: abhidhamma
+    meaning: phassa analyzed as a cetasika (mental factor) present in every citta — from experiential description to systematic
+      classification
+    key_texts: ["dhammasaṅgaṇi"]
+    citations: []
+    corpus_count: ~183 (sparśa in sanskrit mahāyāna)
+    drift_from_previous: 'FORMALIZATION: the early description of phassa as the meeting-point of three factors becomes a classified
+      mental factor (cetasika) in the abhidhamma system. the experiential observation becomes an item in an ontological inventory.
+
+      '
+  valence:
+    buddhist: the arising-point of all experience — to be understood, not eliminated
+    note: 'phassa is included in ch1 because SN 12.26 uses it to refute BOTH the self-caused and other-caused views of suffering.
+      the dependent origination analysis passes THROUGH phassa — suffering is neither self-caused nor lord-caused but contact-conditioned.
+      this connects ch1 (anattā) to ch5 (the wrong question about causation).
+
+      '
+  standard_references:
+    pts_dictionary: 'phassa: contact, touch, impression'
+    diff_notes: PTS gives clear definition. no significant disagreement.
+  index_contribution:
+  - index: H
+    chapter: ch1
+    role: denominator
+    note: phassa as experiential description = practice-register language
+  - index: H
+    chapter: ch1
+    role: numerator (abhidhamma)
+    note: phassa as classified cetasika = system-register language

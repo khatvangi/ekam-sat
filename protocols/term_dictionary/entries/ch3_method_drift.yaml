@@ -1,0 +1,1171 @@
+
+
+# ─────────────────────────────────────────────────────────────
+# 1. SATI (mindfulness / recollection / awareness)
+# ─────────────────────────────────────────────────────────────
+sati:
+  id: sati
+  concept: mindfulness / recollection / awareness
+  tier: primary
+  family: ["jhana", "samadhi", "vipassana", "bhavana"]
+  chapters: ["ch3"]
+  semantic_field: practice-method
+  forms:
+    pali:
+    - term: sati
+      grammar: feminine noun (√sar, to remember)
+      root: smṛti (memory/recollection)
+      note: 'sati is etymologically ''remembering'' — but in the suttas it means present-moment AWARENESS, not memorization.
+        the root meaning shifts from ''recall'' to ''attend.'' later traditions re-systematize it into formal categories (four
+        foundations, etc.)
+
+        '
+    - term: satimā
+      grammar: 'adjective (possessive: ''having mindfulness'')'
+      note: 'used in the key formula: ātāpī sampajāno satimā'
+    - term: satipaṭṭhāna
+      grammar: compound (sati + upaṭṭhāna = establishing of mindfulness)
+      note: the four foundations — body, feelings, mind, dhammas
+    sanskrit:
+    - term: smṛti
+      grammar: feminine noun
+      note: 'in brahmanical usage: ''memory, tradition, remembered text'' (as opposed to śruti = ''heard/revealed''). buddhist
+        usage shifts to ''present-moment awareness.'' in yogācāra: becomes a mental factor (caitasika) with precise definition
+        — the drift from practice to category.
+
+        '
+    - term: smṛtyupasthāna
+      grammar: compound
+      note: = satipaṭṭhāna — foundations of mindfulness
+    chinese:
+    - term: 念
+      pinyin: niàn
+      translator: standard across translators
+      translation_choice_note: 'niàn means both ''think of/remember'' AND ''mindfulness.'' the character 心 (heart-mind) +
+        今 (now) = present-heartedness. this is one case where chinese PRESERVES the practice sense better than english ''mindfulness''
+        (which sounds passive/observational).
+
+        '
+    - term: 四念處
+      pinyin: sì niàn chù
+      translator: standard
+      translation_choice_note: '''four foundations of mindfulness'' — the systematized form'
+  temporal_strata:
+  - period: ~450-250 BCE
+    dating_confidence: low
+    tradition: early buddhist
+    meaning: 'sati as FUNCTIONAL practice — what you DO when you sit: ''ātāpī sampajāno satimā, vineyya loke abhijjhādomanassaṁ''
+      (diligent, clearly comprehending, mindful, removing greed and discontent regarding the world). sati REMOVES defilements,
+      it doesn''t categorize mental states.
+
+      '
+    citations:
+    - reference: MN 10:3.2
+      quote: kāye kāyānupassī viharati ātāpī sampajāno satimā
+      file: pali_suttacentral/sc_bilara_data/root/pli/ms/sutta/mn/mn10_root-pli-ms.json
+      context: the satipaṭṭhāna formula — sati as verb-like practice
+    - reference: SN 56.11:2.4
+      quote: majjhimā paṭipadā tathāgatena abhisambuddhā
+      file: pali_suttacentral/sc_bilara_data/root/pli/ms/sutta/sn/sn56/sn56.11_root-pli-ms.json
+      context: sati appears as sammāsati in the eightfold path — PART of a practice, not a standalone system
+    drift_from_previous: n/a — this is the baseline
+    corpus_count: ~773 (sati-terms in sutta piṭaka)
+  - period: ~3rd c BCE - 1st c CE
+    dating_confidence: medium
+    tradition: abhidhamma / early scholastic
+    meaning: 'sati becomes a MENTAL FACTOR (cetasika) in the abhidhamma system. defined categorically: ''the characteristic
+      of remembering'' (saraṇalakkhaṇā), ''the function of not forgetting'' (asammussanarasā), ''the manifestation of guarding''
+      (ārakkhapaccupaṭṭhānā). the four-aspect analysis template replaces the practice description.
+
+      '
+    citations:
+    - reference: Visuddhimagga line 1084
+      quote: saraṇalakkhaṇā sati, asammussanarasā, ārakkhapaccupaṭṭhānā
+      file: pali_commentary/visuddhimagga.txt
+      context: buddhaghosa applies lakkhaṇa-rasa-paccupaṭṭhāna formula — sati is now an OBJECT to be analyzed
+    drift_from_previous: 'FROM: ''be mindful'' (instruction to practitioner) TO: ''mindfulness HAS these characteristics''
+      (definition of mental factor). the practitioner disappears; the category remains.
+
+      '
+    corpus_count: ~2117 (sati in visuddhimagga + commentary)
+  - period: ~4th-5th c CE
+    dating_confidence: high
+    tradition: yogācāra / mahāyāna scholastic
+    meaning: 'smṛti becomes one of five ''object-determining'' mental factors (pañca viṣayaniyata-caitasika) in asaṅga''s
+      system. fully categorical — defined by its relationship to other mental factors, not by what the practitioner does.
+
+      '
+    citations:
+    - reference: Yogācārabhūmi (Asaṅga)
+      quote: bodhisattvasya dhyānapāramitāyā gotraliṅgāni
+      file: sanskrit/mahayana/sa_asanga-yogacarabhumi.txt
+      context: dhyāna/smṛti embedded in pāramitā system — categorical framework
+    drift_from_previous: 'FROM: individual mental factor in theravāda abhidhamma TO: element in bodhisattva training matrix.
+      the drift continues from category to SYSTEM OF CATEGORIES.
+
+      '
+    corpus_count: ~2117 (sati in visuddhimagga — buddhaghosa's systematization)
+  valence:
+    buddhist: affirmed — central practice term
+    vedic: cognate but different sense (smṛti = remembered tradition, textual memory)
+    jain: parallel (smṛti in jain yoga = recollection of past lives)
+  standard_references:
+    pts_dictionary: memory, recognition, consciousness ... 'one of the cardinal faculties'
+    monier_williams: 'smṛti: memory, remembrance, tradition'
+    wisdomlib: mindfulness, awareness; a mental factor that keeps the mind on its object
+    diff_notes: 'PTS and wisdomlib both FLATTEN the temporal strata — listing ''mindfulness'' as if it''s a single stable meaning.
+      the early sense (active practice of attending) and the later sense (categorized mental factor) are presented as one.
+      THIS IS THE METHOD-DRIFT that ch3 documents.
+
+      '
+  index_contribution:
+    MHI_register: practice → system
+    collocational_markers:
+    - bhaveti
+    - viharati
+    - pajānāti
+    - yathābhūtaṃ
+    drift_direction: practice instruction → mental factor category
+
+
+# ─────────────────────────────────────────────────────────────
+# 2. JHANA (meditative absorption / meditation)
+# ─────────────────────────────────────────────────────────────
+jhana:
+  id: jhana
+  concept: meditative absorption / meditation
+  tier: primary
+  family: ["sati", "samadhi", "vipassana", "bhavana"]
+  chapters: ["ch3"]
+  semantic_field: practice-method
+  forms:
+    pali:
+    - term: jhāna
+      grammar: neuter noun (√jhā/jhāyati, to meditate/burn)
+      root: dhyāna
+      note: 'etymologically connected to both ''meditation'' and ''burning'' (jhāpeti). the suttas preserve both senses —
+        meditative absorption AND burning away of defilements. later traditions lose the ''burning'' sense.
+
+        '
+    - term: paṭhamaṁ jhānaṁ
+      grammar: ordinal compound
+      note: first jhāna — the four jhānas are experienced in sequence
+    sanskrit:
+    - term: dhyāna
+      grammar: neuter noun (√dhyai, to think/meditate)
+      note: becomes a pāramitā in mahāyāna — dhyānapāramitā
+    chinese:
+    - term: 禪
+      pinyin: chán
+      translator: standard (transliteration of dhyāna)
+      translation_choice_note: 'chán preserves the sound but loses the meaning. it becomes the name of an entire school (chan/zen)
+        — a word that once described a practice state becomes a sectarian label.
+
+        '
+    - term: 禪定
+      pinyin: chán dìng
+      translator: common compound
+      translation_choice_note: '''meditation-concentration'' — compound glossing two distinct terms'
+    - term: 禪那
+      pinyin: chán nà
+      translator: closer transliteration
+      translation_choice_note: more precise transliteration of jhāna/dhyāna
+  temporal_strata:
+  - period: ~450-250 BCE
+    dating_confidence: low
+    tradition: early buddhist
+    meaning: 'jhāna as EMBODIED EXPERIENCE — the practitioner enters and abides (upasampajja viharati). described through
+      sensory language: joy (pīti), happiness (sukha), equanimity (upekkhā). the body is SUFFUSED: ''abhisandeti parisandeti
+      paripūreti parippharati'' (permeates, saturates, suffuses, fills). this is somatic, not categorical.
+
+      '
+    citations:
+    - reference: DN 2:75.1
+      quote: vivicceva kāmehi vivicca akusalehi dhammehi savitakkaṁ savicāraṁ vivekajaṁ pītisukhaṁ paṭhamaṁ jhānaṁ upasampajja
+        viharati
+      file: pali_suttacentral/sc_bilara_data/root/pli/ms/sutta/dn/dn2_root-pli-ms.json
+      context: first jhāna — experiential, not enumerated
+    - reference: DN 2:75.2
+      quote: imameva kāyaṁ vivekajena pītisukhena abhisandeti parisandeti paripūreti parippharati
+      file: pali_suttacentral/sc_bilara_data/root/pli/ms/sutta/dn/dn2_root-pli-ms.json
+      context: BODY-SUFFUSION simile — jhāna is felt in the body, not analyzed in the mind
+    drift_from_previous: n/a — baseline
+    corpus_count: ~1246 (jhāna-terms in sutta piṭaka)
+  - period: ~3rd c BCE - 5th c CE
+    dating_confidence: medium
+    tradition: abhidhamma / visuddhimagga
+    meaning: 'jhāna becomes a CLASSIFIED STATE with precise jhāna factors (jhānaṅga): vitakka, vicāra, pīti, sukha, ekaggatā.
+      buddhaghosa creates the 40 kammaṭṭhāna system and maps jhāna attainments onto specific meditation objects. the experiential
+      language is replaced by factor analysis.
+
+      '
+    citations:
+    - reference: Visuddhimagga line 692
+      quote: kānassa lakkhaṇarasapaccupaṭṭhānapadaṭṭhānāni... avikkhepalakkhaṇo samādhi
+      file: pali_commentary/visuddhimagga.txt
+      context: buddhaghosa applies his universal formula to samādhi/jhāna
+    drift_from_previous: 'FROM: ''enter and abide in the first jhāna'' (lived experience) TO: ''the first jhāna has 5 factors''
+      (analytical classification). the body-suffusion similes disappear; factor-lists replace them.
+
+      '
+    corpus_count: ~378 (dhyāna in sanskrit mahāyāna)
+  - period: ~4th-5th c CE
+    dating_confidence: high
+    tradition: yogācāra
+    meaning: 'dhyāna becomes dhyānapāramitā — the fifth of six/ten perfections. it''s no longer a state you enter but a VIRTUE
+      you cultivate across lifetimes. fully embedded in the bodhisattva path framework.
+
+      '
+    citations:
+    - reference: Yogācārabhūmi (Asaṅga)
+      quote: bodhisattvasya dhyānapāramitāyā gotraliṅgāni
+      file: sanskrit/mahayana/sa_asanga-yogacarabhumi.txt
+      context: dhyāna as pāramitā — perfection-category, not practice-experience
+    drift_from_previous: 'FROM: classified mental state (abhidhamma factors) TO: perfection to be cultivated across aeons
+      (pāramitā). the drift goes: experience → state-analysis → virtue-category.
+
+      '
+    corpus_count: ~492 (jhāna in visuddhimagga — scholastic treatment)
+  valence:
+    buddhist: affirmed — central practice
+    vedic: cognate (dhyāna in upanishads = contemplation)
+    jain: parallel (dhyāna in jain yoga = four types of meditation)
+  standard_references:
+    pts_dictionary: 'jhāna: meditation, usually inner contemplation... divided into 4 stages'
+    monier_williams: 'dhyāna: meditation, thought, reflection'
+    wisdomlib: meditative absorption, mental unification
+    diff_notes: 'PTS says ''divided into 4 stages'' — this already systematizes what in the suttas is presented as lived experience.
+      the ''division'' is a description of deepening practice, not a taxonomy.
+
+      '
+  index_contribution:
+    MHI_register: practice → system
+    collocational_markers:
+    - viharati
+    - upasampajja
+    - bhāveti
+    drift_direction: embodied experience → factor analysis → pāramitā category
+
+
+# ─────────────────────────────────────────────────────────────
+# 3. SAMADHI (concentration / composure / mental unification)
+# ─────────────────────────────────────────────────────────────
+samadhi:
+  id: samadhi
+  concept: concentration / composure / mental unification
+  tier: primary
+  family: ["jhana", "sati", "sila", "panna"]
+  chapters: ["ch3"]
+  semantic_field: practice-method
+  forms:
+    pali:
+    - term: samādhi
+      grammar: masculine noun (sam + ā + √dhā, to place together)
+      root: samādhāna (placing together)
+      note: the mind placed together, unified, composed
+    - term: sammāsamādhi
+      grammar: compound
+      note: right concentration — eighth factor of the noble eightfold path
+    sanskrit:
+    - term: samādhi
+      grammar: masculine noun
+      note: 'in yoga: the eighth limb (aṣṭāṅgayoga). in buddhism: part of the threefold training (sīla, samādhi, paññā). the
+        term is shared but the CONTEXT differs — yoga samādhi aims at kaivalya (isolation of puruṣa), buddhist samādhi aims
+        at nibbāna (extinction of craving).
+
+        '
+    chinese:
+    - term: 定
+      pinyin: dìng
+      translator: standard (translation)
+      translation_choice_note: '''settled, fixed, determined'' — captures the stability aspect'
+    - term: 三昧
+      pinyin: sānmèi
+      translator: transliteration of samādhi
+      translation_choice_note: phonetic borrowing — used especially in mahāyāna texts
+  temporal_strata:
+  - period: ~450-250 BCE
+    dating_confidence: low
+    tradition: early buddhist
+    meaning: 'samādhi as the OUTCOME of practice — what happens when you do satipaṭṭhāna correctly. defined functionally through
+      purpose: sammāsamādhi leads to ''rāgavinaya, dosavinaya, mohavinaya'' (ending of greed, hatred, delusion). it''s described
+      by what it DOES, not by what it IS.
+
+      '
+    citations:
+    - reference: SN 45.149:3.4
+      quote: sammāsamādhiṁ bhāveti rāgavinayapariyosānaṁ dosavinayapariyosānaṁ mohavinayapariyosānaṁ
+      file: pali_suttacentral/sc_bilara_data/root/pli/ms/sutta/sn/sn45/sn45.149_root-pli-ms.json
+      context: samādhi defined by PURPOSE — ending of greed, hatred, delusion
+    - reference: SN 45.149:5.4
+      quote: sammāsamādhiṁ bhāveti nibbānaninnaṁ nibbānapoṇaṁ nibbānapabbhāraṁ
+      file: pali_suttacentral/sc_bilara_data/root/pli/ms/sutta/sn/sn45/sn45.149_root-pli-ms.json
+      context: '''inclined toward nibbāna, sloping toward nibbāna'' — directional metaphor'
+    drift_from_previous: n/a — baseline
+    corpus_count: ~2611 (samādhi-terms in sutta piṭaka)
+  - period: ~3rd c BCE - 5th c CE
+    dating_confidence: medium
+    tradition: abhidhamma / visuddhimagga
+    meaning: 'samādhi receives the four-aspect analysis: avikkhepalakkhaṇo (characteristic of non-distraction), vikkhepaviddhaṃsanaraso
+      (function of destroying distraction), avikampanapaccupaṭṭhāno (manifests as unshakeability). the directional metaphors
+      (''sloping toward nibbāna'') are replaced by static definitions.
+
+      '
+    citations:
+    - reference: Visuddhimagga line 695
+      quote: avikkhepalakkhaṇo samādhi, vikkhepaviddhaṃsanaraso, avikampanapaccupaṭṭhāno
+      file: pali_commentary/visuddhimagga.txt
+      context: the four-aspect formula applied to samādhi — static category replaces flowing practice
+    drift_from_previous: 'FROM: ''cultivate concentration that slopes toward nibbāna'' (direction) TO: ''concentration HAS
+      the characteristic of non-distraction'' (definition). the direction (toward nibbāna) is replaced by the definition (what
+      it IS).
+
+      '
+    corpus_count: ~336 (samādhi in sanskrit mahāyāna)
+  valence:
+    buddhist: affirmed — part of the threefold training
+    vedic: shared term (samādhi in yoga = absorption/enstasis)
+    jain: absent as technical term (jains use different meditation vocabulary)
+  standard_references:
+    pts_dictionary: concentration; a fixing of the mind on a single object
+    monier_williams: putting together; joining... intense application or fixing the mind on
+    wisdomlib: mental unification; one-pointedness of mind
+    diff_notes: '''one-pointedness'' (ekaggatā) is an abhidhamma term that replaces the earlier directional descriptions. PTS
+      and wisdomlib present the later categorical sense as primary.
+
+      '
+  index_contribution:
+    MHI_register: practice → system
+    collocational_markers:
+    - bhāveti
+    - viharati
+    - nibbānaninnaṁ
+    drift_direction: directional practice → static mental factor
+
+
+# ─────────────────────────────────────────────────────────────
+# 4. VIPASSANA (insight / clear seeing / discernment)
+# ─────────────────────────────────────────────────────────────
+vipassana:
+  id: vipassana
+  concept: insight / clear seeing / discernment
+  tier: primary
+  family: ["sati", "jhana", "samadhi", "panna"]
+  chapters: ["ch3"]
+  semantic_field: practice-method
+  forms:
+    pali:
+    - term: vipassanā
+      grammar: feminine noun (vi + passanā = special/clear seeing)
+      root: vi + √pas (to see)
+      note: 'CRITICAL: vipassanā appears in only ~84 sutta files out of 5764 total (~1.5%). it is NOT the dominant practice
+        term in the early texts. the modern ''vipassanā movement'' amplifies a relatively minor sutta term into THE central
+        practice. THIS IS method-drift in action.
+
+        '
+    - term: vipassanāya samannāgato
+      grammar: instrumental phrase
+      note: '''possessed of insight'' — one quality among several'
+    sanskrit:
+    - term: vipaśyanā
+      grammar: feminine noun
+      note: 'in mahāyāna: paired with śamatha (calm) as the two wings of practice'
+    chinese:
+    - term: 觀
+      pinyin: guān
+      translator: standard (translation)
+      translation_choice_note: '''observe, contemplate'' — paired with 止 (zhǐ = śamatha/calm) to form 止觀 (zhǐguān), the fundamental
+        east asian meditation framework. zhìyǐ (天台) builds his entire system on this pair.
+
+        '
+  temporal_strata:
+  - period: ~450-250 BCE
+    dating_confidence: low
+    tradition: early buddhist
+    meaning: 'vipassanā as ONE QUALITY among many — ''anirākatajjhāno vipassanāya samannāgato'' (not neglecting jhāna, possessing
+      insight). always paired with other factors, never isolated as the central or sole practice. appears in 1.5% of sutta
+      files vs. jhāna/samādhi/sati which appear far more frequently.
+
+      '
+    citations:
+    - reference: MN 6:3.1
+      quote: sīlesvevassa paripūrakārī ajjhattaṁ cetosamathamanuyutto anirākatajjhāno vipassanāya samannāgato
+      file: pali_suttacentral/sc_bilara_data/root/pli/ms/sutta/mn/mn6_root-pli-ms.json
+      context: vipassanā listed as ONE factor alongside sīla, samatha, jhāna — not primary
+    - reference: AN 2.31
+      quote: samathañca vipassanañca
+      file: pali_suttacentral/sc_bilara_data/root/pli/ms/sutta/an/an2/an2.21-31_root-pli-ms.json
+      context: the samatha-vipassanā pair — calm and insight paired equally
+    drift_from_previous: n/a — baseline
+    corpus_count: ~419 (vipassanā in sutta piṭaka)
+  - period: ~5th c CE
+    dating_confidence: high
+    tradition: theravāda commentarial (buddhaghosa)
+    meaning: 'vipassanā becomes a SYSTEMATIC METHOD — buddhaghosa describes vipassanā-ñāṇa (insight-knowledges) as a precise
+      sequence of 16 stages leading to liberation. the single sutta quality (''possessing insight'') expands into a detailed
+      map of the contemplative path.
+
+      '
+    drift_from_previous: 'FROM: one quality among several in integrated practice TO: systematic progression of 16 insight-knowledges.
+      the map replaces the territory.
+
+      '
+    corpus_count: ~492 (vipassanā in visuddhimagga)
+  - period: ~20th century CE
+    dating_confidence: high
+    tradition: modern vipassanā movement
+    meaning: 'vipassanā becomes THE central buddhist practice — extracted from the jhāna/samatha/sīla context and presented
+      as a standalone technique. mahāsi sayādaw, goenka, and others create ''vipassanā meditation'' as a distinct practice
+      that the suttas never describe in isolation.
+
+      '
+    drift_from_previous: 'FROM: systematic stage-model within commentarial framework TO: standalone technique marketed as
+      THE buddha''s meditation. the 1.5% sutta term becomes 100% of popular buddhism''s meditation vocabulary. this is the
+      most extreme case of method-drift in the entire book.
+
+      '
+    corpus_count: modern usage — outside corpus scope
+  valence:
+    buddhist: affirmed but overemphasized in modern traditions
+    vedic: no direct cognate
+    jain: no parallel (jain meditation uses different vocabulary)
+  standard_references:
+    pts_dictionary: inward vision, intuition, introspection
+    monier_williams: vipaśyanā not listed (too buddhist-specific)
+    wisdomlib: insight, clear seeing into the three characteristics
+    diff_notes: '[!] wisdomlib defines vipassanā as ''clear seeing into the three characteristics (tilakkhaṇa)'' — this is
+      the COMMENTARIAL definition, not the sutta one. the suttas never define vipassanā as seeing impermanence/suffering/not-self.
+      that connection is made later.
+
+      '
+  index_contribution:
+    MHI_register: practice → system
+    collocational_markers:
+    - samatha
+    - ñāṇa
+    - bhāveti
+    drift_direction: one quality among many → 16-stage map → standalone technique
+
+
+# ─────────────────────────────────────────────────────────────
+# 5. PATIPADA (path / practice / way of going)
+# ─────────────────────────────────────────────────────────────
+patipada:
+  id: patipada
+  concept: path / practice / way of going
+  tier: primary
+  family: ["sila", "samadhi", "panna", "bhavana"]
+  chapters: ["ch3"]
+  semantic_field: practice-method
+  forms:
+    pali:
+    - term: paṭipadā
+      grammar: feminine noun (paṭi + pad = walking toward)
+      root: pratipad (stepping toward)
+      note: 'literally ''a walking-toward'' — the metaphor is MOVEMENT, not a fixed structure. the ''middle way'' is a way
+        of WALKING, not a doctrinal position.
+
+        '
+    - term: majjhimā paṭipadā
+      grammar: compound
+      note: the middle way — the buddha's first teaching at sārnāth
+    sanskrit:
+    - term: pratipad
+      grammar: feminine noun
+      note: way, path, means of attaining
+    - term: madhyamā pratipad
+      grammar: compound
+      note: middle way — in mahāyāna, reinterpreted as the middle between existence and non-existence
+    chinese:
+    - term: 道
+      pinyin: dào
+      translator: standard
+      translation_choice_note: 'dào (道) carries enormous weight in chinese — it IS the central term of daoism. using dào for
+        paṭipadā/pratipad immediately places buddhism in dialogue with daoist metaphysics. this is TRANSLATION-INDUCED semantic
+        drift.
+
+        '
+    - term: 中道
+      pinyin: zhōng dào
+      translator: standard
+      translation_choice_note: '''middle dào'' — the middle way as daoist-buddhist hybrid'
+  temporal_strata:
+  - period: ~450-250 BCE
+    dating_confidence: low
+    tradition: early buddhist
+    meaning: 'paṭipadā as WALKING — ''these two extremes should not be followed by one who has gone forth. what is the middle
+      way realized by the tathāgata?'' the answer is the noble eightfold path — a way of LIVING, not a doctrinal system.
+
+      '
+    citations:
+    - reference: SN 56.11:2.4
+      quote: ete kho bhikkhave ubho ante anupagamma majjhimā paṭipadā tathāgatena abhisambuddhā cakkhukaraṇī ñāṇakaraṇī
+      file: pali_suttacentral/sc_bilara_data/root/pli/ms/sutta/sn/sn56/sn56.11_root-pli-ms.json
+      context: first sermon — the middle way 'produces vision, produces knowledge'
+    drift_from_previous: n/a — baseline
+    corpus_count: ~1442 (paṭipadā in sutta piṭaka)
+  - period: ~2nd c CE
+    dating_confidence: medium
+    tradition: madhyamaka (nāgārjuna)
+    meaning: 'madhyamā pratipad becomes the philosophical MIDDLE between existence (bhāva) and non-existence (abhāva). the
+      ''walking'' metaphor is replaced by a logical position between two extremes. the path becomes a VIEW.
+
+      '
+    drift_from_previous: 'FROM: ''the middle way between indulgence and mortification'' (practice) TO: ''the middle between
+      existence and non-existence'' (ontology). the ethical/practical middle becomes a metaphysical middle.
+
+      '
+    corpus_count: ~135+ (madhyamā pratipad in MMK/prasannapadā)
+  valence:
+    buddhist: affirmed — foundational
+    vedic: no direct equivalent
+    jain: contrastive (jain path emphasizes asceticism — the extreme the buddha rejects)
+  standard_references:
+    pts_dictionary: road, path, way; method of practice
+    monier_williams: 'pratipad: a road, way, path'
+    diff_notes: straightforward — no major disagreement with standard references
+  index_contribution:
+    MHI_register: practice
+    collocational_markers:
+    - paṭipajjati
+    - bhāveti
+    - sikkhati
+    drift_direction: walking practice → philosophical position
+
+
+# ─────────────────────────────────────────────────────────────
+# 6. SILA (ethics / virtue / moral conduct)
+# ─────────────────────────────────────────────────────────────
+sila:
+  id: sila
+  concept: ethics / virtue / moral conduct
+  tier: primary
+  family: ["samadhi", "panna", "patipada"]
+  chapters: ["ch3"]
+  semantic_field: practice-method
+  forms:
+    pali:
+    - term: sīla
+      grammar: neuter noun
+      root: śīla (habit, nature, character)
+      note: '''good habit/character'' — originally about what you ARE LIKE, not rules you follow'
+    - term: sīlasampanno
+      grammar: compound adjective
+      note: '''accomplished in virtue'' — describes a quality of being'
+    sanskrit:
+    - term: śīla
+      grammar: neuter noun
+      note: 'in mahāyāna: becomes śīlapāramitā (perfection of ethics)'
+    chinese:
+    - term: 戒
+      pinyin: jiè
+      translator: standard
+      translation_choice_note: 'jiè means ''rule, precept, prohibition'' — the chinese shifts sīla from CHARACTER to RULES.
+        this is translation-induced method-drift: ''being virtuous'' becomes ''following precepts.''
+
+        '
+  temporal_strata:
+  - period: ~450-250 BCE
+    dating_confidence: low
+    tradition: early buddhist
+    meaning: 'sīla as QUALITY OF CHARACTER — ''how is a monk accomplished in virtue?'' (kathañca bhikkhu sīlasampanno hoti?).
+      the answer is behavioral: abstaining from killing, stealing, lying — described as natural conduct, not rule-following.
+      embedded in the graduated training (anupubbikathā).
+
+      '
+    citations:
+    - reference: DN 2:43.1
+      quote: kathañca mahārāja bhikkhu sīlasampanno hoti?
+      file: pali_suttacentral/sc_bilara_data/root/pli/ms/sutta/dn/dn2_root-pli-ms.json
+      context: graduated training — sīla as first foundation, described through behaviors
+    - reference: DN 2:42.1
+      quote: parisuddhājīvo sīlasampanno
+      file: pali_suttacentral/sc_bilara_data/root/pli/ms/sutta/dn/dn2_root-pli-ms.json
+      context: '''pure livelihood, accomplished in virtue'' — quality, not rule-list'
+    drift_from_previous: n/a — baseline
+    corpus_count: ~552 (sīla-terms in sutta piṭaka)
+  - period: ~3rd c BCE - 5th c CE
+    dating_confidence: medium
+    tradition: abhidhamma / visuddhimagga
+    meaning: 'sīla receives the four-aspect analysis and becomes the subject of the entire first chapter of the visuddhimagga.
+      buddhaghosa asks: ''what is sīla? what is its meaning? what are its characteristic, function, manifestation, proximate
+      cause?'' the character-quality becomes a PHILOSOPHICAL OBJECT.
+
+      '
+    citations:
+    - reference: Visuddhimagga line 78
+      quote: kiṃ sīlaṃ, kenaṭṭhena sīlaṃ, kānassa lakkhaṇarasapaccupaṭṭhānapadaṭṭhānāni
+      file: pali_commentary/visuddhimagga.txt
+      context: the four-aspect formula applied to sīla — the first case of systematic method-analysis
+    drift_from_previous: 'FROM: ''accomplished in virtue'' (character description) TO: ''what are the characteristic, function,
+      manifestation, and proximate cause of virtue?'' (philosophical analysis). the person disappears; the concept remains.
+
+      '
+    corpus_count: ~2117+ (sīla in visuddhimagga — extensive scholastic treatment)
+  valence:
+    buddhist: affirmed — first of threefold training
+    vedic: cognate (śīla in sanskrit = character, nature)
+    jain: parallel (five great vows = mahāvratas)
+  standard_references:
+    pts_dictionary: 'sīla: nature, character, habit; good conduct, morality'
+    monier_williams: 'śīla: habit, custom, usage; good disposition, good conduct'
+    diff_notes: PTS preserves the 'character/nature' sense alongside 'morality' — relatively fair
+  index_contribution:
+    MHI_register: practice → system
+    collocational_markers:
+    - sikkhati
+    - paṭipajjati
+    - sampanno
+    drift_direction: character quality → philosophical object → rule system
+
+
+# ─────────────────────────────────────────────────────────────
+# 7. PANNA (wisdom / understanding / discernment)
+# ─────────────────────────────────────────────────────────────
+panna:
+  id: panna
+  concept: wisdom / understanding / discernment
+  tier: primary
+  family: ["sila", "samadhi", "vipassana", "sati"]
+  chapters: ["ch3"]
+  semantic_field: practice-method
+  forms:
+    pali:
+    - term: paññā
+      grammar: feminine noun (pa + √ñā = through-knowing)
+      root: prajñā
+      note: '''knowing-through'' — penetrative understanding, not accumulated knowledge'
+    - term: sammādiṭṭhi
+      grammar: compound
+      note: '''right view'' — the first and last factor of the eightfold path'
+    sanskrit:
+    - term: prajñā
+      grammar: feminine noun
+      note: 'in mahāyāna: prajñāpāramitā becomes the HIGHEST perfection, identified with śūnyatā. the ''heart sutra'' is the
+        prajñāpāramitāhṛdaya. a practice faculty becomes a metaphysical principle.
+
+        '
+    chinese:
+    - term: 慧
+      pinyin: huì
+      translator: standard (translation)
+      translation_choice_note: '''wisdom, intelligence'' — standard rendering'
+    - term: 般若
+      pinyin: bōrě
+      translator: transliteration of prajñā
+      translation_choice_note: 'transliteration used specifically for prajñāpāramitā texts. the fact that chinese uses BOTH
+        a translation (慧) and a transliteration (般若) shows that the mahāyāna sense was felt to be different enough to warrant
+        a new word.
+
+        '
+  temporal_strata:
+  - period: ~450-250 BCE
+    dating_confidence: low
+    tradition: early buddhist
+    meaning: 'paññā as SEEING — ''cakkhuṁ udapādi, ñāṇaṁ udapādi, paññā udapādi, vijjā udapādi, āloko udapādi'' (the eye arose,
+      knowing arose, wisdom arose, knowledge arose, light arose). listed alongside VISUAL metaphors — not abstract cognition
+      but direct PERCEPTION of truth. the third of the threefold training (sīla → samādhi → paññā).
+
+      '
+    citations:
+    - reference: SN 56.11:5.1
+      quote: cakkhuṁ udapādi ñāṇaṁ udapādi paññā udapādi vijjā udapādi āloko udapādi
+      file: pali_suttacentral/sc_bilara_data/root/pli/ms/sutta/sn/sn56/sn56.11_root-pli-ms.json
+      context: paññā listed with cakkhuṁ (eye) and āloko (light) — wisdom as SEEING, not knowing
+    drift_from_previous: n/a — baseline
+    corpus_count: ~4334 (paññā ubiquitous in sutta piṭaka)
+  - period: ~1st c BCE - 5th c CE
+    dating_confidence: medium
+    tradition: prajñāpāramitā / mahāyāna
+    meaning: 'prajñā becomes prajñāpāramitā — ''perfection of wisdom'' — and is identified with the direct realization of
+      śūnyatā (emptiness). from a practice faculty (something you develop through the threefold training) to a metaphysical
+      principle (the nature of reality itself). the prajñāpāramitā sūtras personify it as the ''mother of all buddhas.''
+
+      '
+    drift_from_previous: 'FROM: wisdom as seeing (visual metaphor, practice outcome) TO: wisdom as the nature of reality itself
+      (prajñāpāramitā = śūnyatā). the practice faculty becomes a cosmic principle.
+
+      '
+    corpus_count: ~446+ (prajñā/prajñāpāramitā in sanskrit mahāyāna)
+  valence:
+    buddhist: affirmed — third of threefold training, highest pāramitā
+    vedic: cognate (prajñā in upanishads = insight, understanding)
+    jain: parallel (jñāna in jainism = knowledge, one of five categories)
+  standard_references:
+    pts_dictionary: 'paññā: intelligence, reason, wisdom, insight'
+    monier_williams: 'prajñā: wisdom, intelligence, knowledge, discrimination'
+    diff_notes: PTS's 'intelligence' and 'reason' miss the visual/perceptual sense that dominates the suttas
+  index_contribution:
+    MHI_register: practice → system
+    collocational_markers:
+    - pajānāti
+    - yathābhūtaṁ
+    - sacchikaroti
+    drift_direction: perceptual seeing → philosophical object → cosmic principle
+
+
+# ─────────────────────────────────────────────────────────────
+# 8. BHAVANA (cultivation / development / bringing into being)
+# ─────────────────────────────────────────────────────────────
+bhavana:
+  id: bhavana
+  concept: cultivation / development / bringing into being
+  tier: primary
+  family: ["sati", "jhana", "samadhi", "kammatthana"]
+  chapters: ["ch3"]
+  semantic_field: practice-method
+  forms:
+    pali:
+    - term: bhāvanā
+      grammar: 'feminine noun (√bhū = to become, causative: to make become)'
+      root: bhāvanā (making-become)
+      note: 'the causative form is key: bhāvanā is not passive ''meditation'' but active ''making-become.'' you CULTIVATE
+        qualities, you don''t just sit. the english ''meditation'' is a major mistranslation.
+
+        '
+    - term: bhāveti
+      grammar: verb (causative present, 3rd person singular)
+      note: '''cultivates, develops'' — the ACTIVE form that dominates the suttas'
+    sanskrit:
+    - term: bhāvanā
+      grammar: feminine noun
+      note: 'in mahāyāna: included in the path structure (śruta-cintā-bhāvanā)'
+    chinese:
+    - term: 修
+      pinyin: xiū
+      translator: standard (translation)
+      translation_choice_note: 'xiū means ''cultivate, repair, practice'' — preserves the active/causative sense better than
+        english ''meditation.''
+
+        '
+    - term: 修習
+      pinyin: xiū xí
+      translator: common compound
+      translation_choice_note: '''cultivate and habituate'' — compound form'
+  temporal_strata:
+  - period: ~450-250 BCE
+    dating_confidence: low
+    tradition: early buddhist
+    meaning: 'bhāvanā as VERB-DOMINATED practice — ''kāyagatāsatiṁ bhāveti'' (cultivates body-focused mindfulness). the suttas
+      overwhelmingly use the VERB form bhāveti, not the noun bhāvanā. you DO it; it''s not a thing. the verbal form preserves
+      agency and process.
+
+      '
+    citations:
+    - reference: MN 119:4.9
+      quote: evaṁ bhikkhave bhikkhu kāyagatāsatiṁ bhāveti
+      file: pali_suttacentral/sc_bilara_data/root/pli/ms/sutta/mn/mn119_root-pli-ms.json
+      context: bhāveti as verb — the monk cultivates. DOING, not categorizing.
+    drift_from_previous: n/a — baseline
+    corpus_count: ~2584 (bhāvanā/bhāveti in sutta piṭaka)
+  - period: ~3rd c BCE - 5th c CE
+    dating_confidence: medium
+    tradition: abhidhamma / commentarial
+    meaning: 'bhāvanā becomes a NOUN-CATEGORY — ''meditation'' as a domain of practice distinct from sīla and paññā. the threefold
+      training (tisso sikkhā: sīla, samādhi/bhāvanā, paññā) becomes fixed. bhāvanā shifts from ''the act of cultivating''
+      to ''the meditation section of the path.''
+
+      '
+    citations:
+    - reference: SN 45.8:8.5
+      quote: bhāvanāya pāripūriyā
+      file: pali_suttacentral/sc_bilara_data/root/pli/ms/sutta/sn/sn45/sn45.8_root-pli-ms.json
+      context: bhāvanā as noun — 'for the fullness of cultivation' — the act becomes a category
+    drift_from_previous: 'FROM: bhāveti — ''cultivates'' (verb, process, agency) TO: bhāvanā — ''cultivation/meditation''
+      (noun, category, system). the verb-to-noun shift IS the method-hardening.
+
+      '
+    corpus_count: ~336+ (bhāvanā within samādhi contexts in sanskrit mahāyāna)
+  valence:
+    buddhist: affirmed — central practice verb/noun
+    vedic: cognate (bhāvanā in upanishads = contemplation, producing)
+    jain: parallel (bhāvanā in jain practice = meditation/contemplation)
+  standard_references:
+    pts_dictionary: 'bhāvanā: producing, dwelling on... meditation, culture of the mind'
+    monier_williams: 'bhāvanā: demonstrating, manifesting, producing'
+    diff_notes: PTS preserves 'producing' alongside 'meditation' — captures both senses
+  index_contribution:
+    MHI_register: practice → system
+    collocational_markers:
+    - bhāveti
+    - sikkhati
+    - paṭipajjati
+    drift_direction: active cultivation (verb) → meditation category (noun)
+
+
+# ─────────────────────────────────────────────────────────────
+# 9. KAMMATTHANA (meditation subject / field of work / basis for practice)
+# ─────────────────────────────────────────────────────────────
+kammatthana:
+  id: kammatthana
+  concept: meditation subject / field of work / basis for practice
+  tier: primary
+  family: ["jhana", "bhavana", "sati", "abhidhamma"]
+  chapters: ["ch3"]
+  semantic_field: practice-method
+  forms:
+    pali:
+    - term: kammaṭṭhāna
+      grammar: neuter noun (kamma + ṭhāna = work-place, field of action)
+      root: karmasthāna
+      note: 'CRITICAL: in the suttas, kammaṭṭhāna means ''field of enterprise/work'' — farming, trading, etc. it is NOT a
+        meditation term in the sutta period. the visuddhimagga REPURPOSES it as ''meditation subject.'' this is one of the
+        clearest cases of method-drift in the entire dictionary.
+
+        '
+    sanskrit:
+    - term: karmasthāna
+      grammar: neuter noun
+      note: '''field of action'' — same literal meaning as pāli'
+    chinese:
+    - term: 業處
+      pinyin: yè chù
+      translator: standard
+      translation_choice_note: '''karma-place, work-field'' — literal translation preserves the original sense'
+  temporal_strata:
+  - period: ~450-250 BCE
+    dating_confidence: low
+    tradition: early buddhist
+    meaning: 'kammaṭṭhāna means ''field of enterprise'' — farming (kasi kammaṭṭhānaṁ), trading (vaṇijjā kammaṭṭhānaṁ), household
+      life (gharāvāsakammaṭṭhānaṁ), ordination (pabbajjā kammaṭṭhānaṁ). the word appears in only 3 sutta files (MN 99, DN
+      21, pe2). in MN 99 it''s used ENTIRELY for mundane occupations.
+
+      '
+    citations:
+    - reference: MN 99:5.2-5.3
+      quote: gharāvāsakammaṭṭhānaṁ mahapphalaṁ hoti; pabbajjā kammaṭṭhānaṁ appaphalaṁ hotī
+      file: pali_suttacentral/sc_bilara_data/root/pli/ms/sutta/mn/mn99_root-pli-ms.json
+      context: kammaṭṭhāna = 'field of work' — household vs. ordination enterprises
+    - reference: MN 99:6.2
+      quote: kasi kho māṇava kammaṭṭhānaṁ
+      file: pali_suttacentral/sc_bilara_data/root/pli/ms/sutta/mn/mn99_root-pli-ms.json
+      context: '''farming is a field of enterprise'' — NOT a meditation term'
+    drift_from_previous: n/a — baseline (non-meditation meaning)
+    corpus_count: ~79 (kammaṭṭhāna in canon — relatively rare in suttas)
+  - period: ~5th c CE
+    dating_confidence: high
+    tradition: visuddhimagga (buddhaghosa)
+    meaning: 'kammaṭṭhāna is REPURPOSED as ''meditation subject.'' buddhaghosa codifies 40 kammaṭṭhāna: 10 kasiṇa, 10 asubha,
+      10 anussati, 4 brahmavihāra, 4 āruppā, 1 āhāre paṭikūla, 1 catudhātuvavatthāna. a word that meant ''enterprise/occupation''
+      now means ''meditation object.'' the entire meditation system is built on a repurposed term.
+
+      '
+    drift_from_previous: 'FROM: ''field of enterprise'' (farming, trading) TO: ''meditation subject'' (kasiṇa, asubha, etc.)
+      the word doesn''t change; the REFERENCE changes entirely. this is semantic repurposing, not semantic evolution. the
+      40 kammaṭṭhāna system has NO sutta precedent.
+
+      '
+    corpus_count: ~500+ (kammaṭṭhāna in visuddhimagga — dominant in commentary)
+  valence:
+    buddhist: repurposed — mundane term becomes meditation technical term
+    vedic: no equivalent
+    jain: no equivalent
+  standard_references:
+    pts_dictionary: 'kammaṭṭhāna: working-Loss, occupation; in later usage: meditation subject'
+    monier_williams: 'karmasthāna: not listed separately'
+    wisdomlib: meditation subject, basis of mental development
+    diff_notes: '[!] wisdomlib gives ONLY the commentarial meaning (''meditation subject'') without noting the sutta meaning
+      (''field of enterprise''). PTS correctly notes ''in later usage'' — the temporal strata matter. the drift from ''occupation''
+      to ''meditation subject'' is invisible in wisdomlib''s flat definition.
+
+      '
+  index_contribution:
+    MHI_register: system
+    collocational_markers:
+    - bhāveti
+    - vavatthāpeti
+    - gaṇanā
+    drift_direction: mundane 'field of work' → commentarial 'meditation subject'
+
+
+# ─────────────────────────────────────────────────────────────
+# 10. ABHIDHAMMA (higher/further teaching → systematic philosophy)
+# ─────────────────────────────────────────────────────────────
+abhidhamma:
+  id: abhidhamma
+  concept: higher/further teaching → systematic philosophy
+  tier: primary
+  family: ["vibhajja", "matika", "kammatthana"]
+  chapters: ["ch3"]
+  semantic_field: practice-method
+  forms:
+    pali:
+    - term: abhidhamma
+      grammar: masculine noun (abhi + dhamma = higher/further dhamma)
+      root: abhidharma
+      note: '''abhi'' can mean ''toward, higher, further, about.'' in the suttas it''s a METHOD — further analysis of the
+        dhamma. it becomes a GENRE — the third basket of the canon.
+
+        '
+    - term: abhidhammakathaṁ
+      grammar: compound
+      note: '''abhidhamma-discourse'' — monks discussing/analyzing dhamma'
+    sanskrit:
+    - term: abhidharma
+      grammar: masculine noun
+      note: 'in sarvāstivāda: the abhidharma is the ''word of buddha'' (buddhavacana). in sautrāntika: it''s merely a systematic
+        presentation by disciples. this disagreement about STATUS is itself drift — does the system have the authority of
+        the teacher, or is it a later construction?
+
+        '
+    chinese:
+    - term: 阿毘達磨
+      pinyin: āpídámó
+      translator: transliteration
+      translation_choice_note: phonetic borrowing — treated as a technical term
+    - term: 論
+      pinyin: lùn
+      translator: xuanzang's translation
+      translation_choice_note: '''treatise, discussion'' — used as section name (三藏 = sūtra, vinaya, abhidharma/論)'
+  temporal_strata:
+  - period: ~450-250 BCE
+    dating_confidence: low
+    tradition: early buddhist
+    meaning: 'abhidhamma as an ACTIVITY — ''abhidhammakathaṁ kathenti'' (they speak abhidhamma-talk). elder monks sitting
+      after the meal, discussing and analyzing the dhamma. it''s a METHOD of inquiry, not a fixed body of doctrine. appears
+      in 23 sutta files, mostly in the activity sense.
+
+      '
+    citations:
+    - reference: AN 6.60:1.3
+      quote: sambahulā therā bhikkhū pacchābhattaṁ piṇḍapātapaṭikkantā maṇḍalamāḷe sannisinnā sannipatitā abhidhammakathaṁ
+        kathenti
+      file: pali_suttacentral/sc_bilara_data/root/pli/ms/sutta/an/an6/an6.60_root-pli-ms.json
+      context: monks gathered after meal, engaging in abhidhamma-discourse — this is a METHOD, not a canon
+    drift_from_previous: n/a — baseline (method sense)
+    corpus_count: ~45 (abhidhamma in sutta piṭaka — term itself rare in suttas)
+  - period: ~3rd c BCE - 1st c CE
+    dating_confidence: medium
+    tradition: early abhidhamma texts
+    meaning: 'abhidhamma hardens from an activity into a GENRE. the dhammasaṅgaṇī, vibhaṅga, dhātukathā, puggalapaññatti,
+      kathāvatthu, yamaka, paṭṭhāna become the ''seven books.'' what monks DID (analyze) becomes what monks STUDY (a canon).
+
+      '
+    drift_from_previous: 'FROM: monks doing analysis after meals (abhidhammakathaṁ kathenti) TO: a fixed body of seven books
+      constituting the ''third basket.'' the activity crystallizes into a text collection.
+
+      '
+    corpus_count: ~45+ (abhidharma in early systematic texts)
+  - period: ~1st-5th c CE
+    dating_confidence: medium
+    tradition: sarvāstivāda / vaibhāṣika
+    meaning: 'abhidharma achieves DOCTRINAL STATUS — the sarvāstivādins claim it is buddhavacana (word of the buddha), not
+      merely disciples'' systematization. the mahāvibhāṣā (2nd c CE) is the great commentary that fixes this interpretation.
+
+      '
+    drift_from_previous: 'FROM: systematized text collection (third basket) TO: word of the buddha himself (buddhavacana claim).
+      the system claims the authority of the founder.
+
+      '
+    corpus_count: ~307+ (skandha-analysis dominant in abhidharma texts)
+  valence:
+    buddhist: affirmed — but authority status disputed across schools
+    vedic: no equivalent
+    jain: parallel (jain canonical systematic texts perform similar function)
+  standard_references:
+    pts_dictionary: 'abhidhamma: further-dhamma, higher doctrine'
+    wisdomlib: the philosophical and psychological system of Buddhism
+    diff_notes: 'wisdomlib''s ''philosophical and psychological system'' describes the OUTCOME of drift, not the sutta starting
+      point. the sutta sense (method of inquiry) is absent from this definition.
+
+      '
+  index_contribution:
+    MHI_register: system
+    collocational_markers:
+    - vibhajjati
+    - vavatthāpeti
+    - lakkhaṇa
+    - gaṇanā
+    drift_direction: analytical activity → text genre → canonical authority
+
+
+# ─────────────────────────────────────────────────────────────
+# 11. VIBHAJJA (analysis / discrimination / distinguishing)
+# ─────────────────────────────────────────────────────────────
+vibhajja:
+  id: vibhajja
+  concept: analysis / discrimination / distinguishing
+  tier: primary
+  family: ["abhidhamma", "matika", "ditthi"]
+  chapters: ["ch3"]
+  semantic_field: practice-method
+  forms:
+    pali:
+    - term: vibhajja
+      grammar: gerund of vibhajjati (vi + bhajjati = to divide, separate)
+      root: vibhajya (having divided/analyzed)
+      note: the buddha as vibhajjavādī — 'one who speaks having analyzed'
+    - term: vibhajjavādī
+      grammar: compound noun
+      note: '''analyst / discriminating speaker'' — the buddha REJECTS one-sided answers (ekaṁsavāda) in favor of case-by-case
+        analysis. this is ANTI-dogmatic methodology.
+
+        '
+    sanskrit:
+    - term: vibhajya
+      grammar: gerund
+      note: having analyzed/distinguished
+    - term: vibhajyavādin
+      grammar: compound noun
+      note: later becomes a school name (vibhajyavāda) — the method becomes a sect
+    chinese:
+    - term: 分別
+      pinyin: fēnbié
+      translator: standard
+      translation_choice_note: '''distinguish, discriminate'' — but in mahāyāna, fēnbié becomes NEGATIVE: ''conceptual discrimination''
+        that obscures reality. the same chinese word means both the buddha''s analytical method AND the obstacle to enlightenment.
+        this is extreme semantic drift within chinese buddhism.
+
+        '
+  temporal_strata:
+  - period: ~450-250 BCE
+    dating_confidence: low
+    tradition: early buddhist
+    meaning: 'the buddha as vibhajjavādī — anti-dogmatic, case-by-case analysis. ''I am an analyst here, young man; I am not
+      a dogmatist.'' this is a METHOD of teaching, not a philosophical system. it means: don''t give blanket answers; distinguish
+      case by case.
+
+      '
+    citations:
+    - reference: MN 99:4.4-4.5
+      quote: vibhajjavādo kho ahamettha māṇava; nāhamettha ekaṁsavādo
+      file: pali_suttacentral/sc_bilara_data/root/pli/ms/sutta/mn/mn99_root-pli-ms.json
+      context: the buddha's self-description as analyst vs. dogmatist — METHOD, not doctrine
+    drift_from_previous: n/a — baseline
+    corpus_count: ~83 (vibhajja-terms in canon)
+  - period: ~3rd c BCE
+    dating_confidence: medium
+    tradition: vibhajyavāda school
+    meaning: 'vibhajja hardens from a method into a SCHOOL NAME. the vibhajyavādins become a distinct sect, claiming the buddha''s
+      analytical method as their sectarian identity. the method becomes a label.
+
+      '
+    drift_from_previous: 'FROM: ''I analyze case by case'' (buddha''s teaching method) TO: ''we are the analysts'' (school
+      claiming the method as identity). the method becomes institutional property.
+
+      '
+    corpus_count: ~83 (vibhajjavāda in commentarial tradition)
+  valence:
+    buddhist: affirmed — then appropriated as school identity
+    vedic: no direct equivalent
+    jain: parallel (syādvāda = 'maybe-ism' = jain analytical method)
+  standard_references:
+    pts_dictionary: 'vibhajja: distinguishing, dividing'
+    wisdomlib: analysis, discrimination
+    diff_notes: standard references don't note the school-formation drift
+  index_contribution:
+    MHI_register: practice → system
+    collocational_markers:
+    - vibhajjati
+    - vavatthāpeti
+    - naya
+    drift_direction: teaching method → school name → sectarian identity
+
+
+# ─────────────────────────────────────────────────────────────
+# 12. MATIKA (matrix / analytical grid / table of contents)
+# ─────────────────────────────────────────────────────────────
+matika:
+  id: matika
+  concept: matrix / analytical grid / table of contents
+  tier: primary
+  family: ["abhidhamma", "vibhajja", "kammatthana"]
+  chapters: ["ch3"]
+  semantic_field: practice-method
+  forms:
+    pali:
+    - term: mātikā
+      grammar: feminine noun (literally 'mother' → 'matrix, origin-list')
+      root: mātṛkā (from mātṛ = mother)
+      note: 'the metaphor is ''mother'' → ''generative source'' → ''table of contents that generates analysis.'' the mātikā
+        are the SEED from which the entire abhidhamma system grows. they are lists of paired opposites (kusala-akusala, etc.)
+        that serve as the analytical grid.
+
+        '
+    - term: mātikādhara
+      grammar: compound (mātikā + dhara = bearer/holder)
+      note: '''holders of the matrices'' — a recognized INSTITUTIONAL ROLE. monks designated as specialists who have memorized
+        the classification grids. this is the bureaucratization of the buddha''s analytical method.
+
+        '
+    sanskrit:
+    - term: mātṛkā
+      grammar: feminine noun
+      note: 'in sarvāstivāda: foundation of systematic abhidharma'
+    chinese:
+    - term: 論母
+      pinyin: lùnmǔ
+      translator: translation
+      translation_choice_note: '''treatise-mother'' — preserves the ''generative source'' metaphor'
+    - term: 本母
+      pinyin: běnmǔ
+      translator: alternative
+      translation_choice_note: '''root-mother'' — variant translation'
+  temporal_strata:
+  - period: ~450-250 BCE
+    dating_confidence: low
+    tradition: early buddhist
+    meaning: 'mātikā as informal CLASSIFICATION AIDS — lists that help monks organize teachings for memorization and recitation.
+      the mātikādhara (holders of matrices) appear alongside dhammadhara (holders of dhamma) and vinayadhara (holders of vinaya)
+      — an organizational role, not a doctrinal one.
+
+      '
+    citations:
+    - reference: AN 4.180:6.2
+      quote: sambahulā therā bhikkhū viharanti bahussutā āgatāgamā dhammadharā vinayadharā mātikādharā
+      file: pali_suttacentral/sc_bilara_data/root/pli/ms/sutta/an/an4/an4.180_root-pli-ms.json
+      context: mātikādhara as institutional role — alongside dhamma-holders and vinaya-holders
+    drift_from_previous: n/a — baseline
+    corpus_count: ~303 (mātikā in canon)
+  - period: ~3rd c BCE - 1st c CE
+    dating_confidence: medium
+    tradition: early abhidhamma
+    meaning: 'mātikā become the STRUCTURAL FOUNDATION of the abhidhamma piṭaka. the dhammasaṅgaṇī opens with the abhidhamma-mātikā:
+      22 triads (tika-mātikā) and 100 dyads (duka-mātikā) that generate the entire analytical system. the informal lists become
+      the GENERATIVE GRAMMAR of scholastic buddhism.
+
+      '
+    drift_from_previous: 'FROM: memorization aids held by specialist monks TO: generative foundation of an entire philosophical
+      system. the mnemonic tool becomes the analytical engine.
+
+      '
+    corpus_count: ~303+ (mātikā in abhidhamma piṭaka)
+  - period: ~5th c CE
+    dating_confidence: high
+    tradition: visuddhimagga / theravāda commentarial
+    meaning: 'buddhaghosa''s lakkhaṇa-rasa-paccupaṭṭhāna-padaṭṭhāna formula IS a mātikā applied to everything — a universal
+      analytical grid. every dhamma concept must be analyzed through this four-aspect matrix. the method fully hardens.
+
+      '
+    citations:
+    - reference: Visuddhimagga line 78
+      quote: kānassa lakkhaṇarasapaccupaṭṭhānapadaṭṭhānāni
+      file: pali_commentary/visuddhimagga.txt
+      context: the universal four-aspect mātikā — characteristic, function, manifestation, proximate cause
+    drift_from_previous: 'FROM: specific triads/dyads generating classification TO: universal four-aspect template applied
+      to EVERYTHING. the mātikā principle generalizes without limit.
+
+      '
+    corpus_count: ~500+ (mātikā in visuddhimagga — structural backbone)
+  valence:
+    buddhist: affirmed — foundation of analytical method
+    vedic: no equivalent (though the sūtra-genre performs a parallel role)
+    jain: parallel (jain anuyoga texts serve similar classificatory function)
+  standard_references:
+    pts_dictionary: 'mātikā: a mother, a table of contents, a summary'
+    monier_williams: 'mātṛkā: a mother, an original text'
+    wisdomlib: matrix, table of contents
+    diff_notes: 'the ''mother'' → ''generative matrix'' metaphor is crucial but underexplained in standard references. the
+      mātikā are not just ''tables of contents'' — they are the GENERATIVE SEED of an entire analytical system. the standard
+      definitions flatten this.
+
+      '
+  index_contribution:
+    MHI_register: system
+    collocational_markers:
+    - vavatthāpeti
+    - vibhajjati
+    - gaṇanā
+    - uddesa
+    - niddesa
+    drift_direction: memorization aid → abhidhamma foundation → universal analytical template

@@ -44,9 +44,9 @@ PARVAS = {
     "18": "Svargarohana",
 }
 
-# BG is Parva 06, chapters 25-42 in standard BORI (Bhishmaparva adhyayas 25-42)
-# We exclude these from the "echo" search — we want the MBH *outside* BG
-BG_CHAPTERS_IN_BHISHMA = set(range(25, 43))  # adjust if your numbering differs
+# BG is Parva 06, chapters 23-40 in BORI (BG ch1=06.023, ch18=06.040)
+# chapters 41-42 are post-BG narrative — should be searched for echoes
+BG_CHAPTERS_IN_BHISHMA = set(range(23, 41))
 
 
 def parse_verse_id(verse_id):
@@ -64,7 +64,7 @@ def parse_verse_id(verse_id):
 
 
 def is_bg_verse(parsed):
-    """Exclude the BG itself (Bhishmaparva ch 25-42) from echo search."""
+    """Exclude the BG itself (Bhishmaparva ch 23-40) from echo search."""
     if parsed and parsed["parva"] == "06":
         if parsed["chapter"] in BG_CHAPTERS_IN_BHISHMA:
             return True
@@ -115,7 +115,7 @@ def load_corpus(corpus_dir):
                 
                 # Try to detect verse ID at start of line: PPcccvvvx format
                 # Pattern: starts with 2 digits, then 3 digits, then 3 digits, then optional letter
-                m = re.match(r'^(\d{2}\d{3}\d{3}[abcd]?)\s*(.*)', line)
+                m = re.match(r'^(\d{2}\d{3}\d{3}[a-e]?)\s*(.*)', line)
                 if m:
                     # Save previous verse
                     if current_id and current_text_parts:
@@ -162,7 +162,7 @@ def search_node(corpus, node, exclude_bg=True):
         return results
     
     try:
-        regex = re.compile(combined_pattern, re.IGNORECASE)
+        regex = re.compile(combined_pattern)
     except re.error as e:
         print(f"  Regex error for node {node['id']}: {e}")
         return results
@@ -178,7 +178,7 @@ def search_node(corpus, node, exclude_bg=True):
         if matches:
             # Score by number of distinct core terms matched
             core_terms = node.get("core_hk", [])
-            core_matches = [t for t in core_terms if re.search(re.escape(t), text, re.IGNORECASE)]
+            core_matches = [t for t in core_terms if re.search(re.escape(t), text)]
             
             results.append({
                 "verse_id": verse_id,

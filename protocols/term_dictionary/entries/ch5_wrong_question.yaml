@@ -1,0 +1,1393 @@
+
+
+# ─────────────────────────────────────────────────────────────
+# 1. ISSARA (lord / creator / supreme controller)
+# ─────────────────────────────────────────────────────────────
+issara:
+  id: issara
+  concept: lord / creator / supreme controller
+  tier: primary
+  family: ["issariya", "issaranimmana", "katta", "nimmata", "vasavatti"]
+  chapters: ["ch5", "ch2"]
+  semantic_field: theology
+  forms:
+    vedic:
+    - term: īśāna
+      grammar: present participle → adjective/noun
+      root: īś (to own, to rule, to be master)
+      note: ruling — epithet applied to multiple gods (see ch2 issara_vedic)
+    sanskrit:
+    - term: īśvara
+      grammar: masculine noun
+      note: 'the lord — in nyāya-vaiśeṣika: efficient cause of the universe'
+    pali:
+    - term: issara
+      grammar: masculine noun
+      note: 'lord — appears in DN 1 formula: ''issaro kattā nimmātā'''
+    chinese:
+    - term: 自在
+      pinyin: zìzài
+      translator: standard
+      translation_choice_note: '''self-existing/sovereign'' — captures the POSITIVE valence. 自在天 (zìzàitiān) = Maheśvara as
+        heavenly being.
+
+        '
+    - term: 大自在天
+      pinyin: dàzìzàitiān
+      translator: xuanzang
+      translation_choice_note: Maheśvara — the great sovereign lord, specific deity
+    jain:
+    - term: issara
+      language: ardhamagadhi
+      note: jains ALSO reject issaranimmāna (creation-by-a-lord) — parallel to buddhist rejection
+  temporal_strata:
+  - period: ~1500-1200 BCE
+    dating_confidence: medium
+    tradition: vedic
+    meaning: epithet for powerful deities — NOT a supreme deity concept
+    key_texts: ["ṛgveda"]
+    citations:
+    - file: data/raw/vedic/rgveda_aufrecht_gretil.txt
+      reference: RV_2,033.09
+      quote: īśānād asya bhuvanasya bhūrer
+      context: the lord of this abundant world — applied to rudra (see ch2 issara_vedic for full citations)
+    corpus_count: 20
+    drift_from_previous: null
+  - period: ~500-200 BCE
+    dating_confidence: medium
+    tradition: late upanishadic
+    meaning: supreme lord identified with brahman — theistic vedānta developing
+    key_texts: ["śvetāśvatara", "īśa"]
+    citations:
+    - file: data/raw/upanishads/primary/svetasvatara.txt
+      reference: ŚU 3.2
+      quote: sa īśvaraḥ paramātmā
+      context: he is the lord, the supreme self
+    corpus_count: 116
+    drift_from_previous: 'ELEVATION: from generic epithet to supreme deity. this creates the theological position that buddhism
+      will reject.
+
+      '
+  - period: ~450-250 BCE
+    dating_confidence: low
+    tradition: early buddhist
+    meaning: 'issaranimmāna (creation by a lord) REJECTED as one of three wrong causation theories (AN 3.61). but issariya
+      (sovereignty) RETAINED and applied positively. the rejection is SPECIFIC: creation-function denied, power-function affirmed.
+
+      '
+    key_texts: ["DN 1 brahmajāla", "AN 3.61 titthāyatana", "MN 101 devadaha"]
+    citations:
+    - file: data/raw/pali_suttacentral/sc_bilara_data/root/pli/ms/sutta/dn/dn1_root-pli-ms.json
+      reference: DN 1:2.5.2
+      quote: ahamasmi brahmā mahābrahmā abhibhū anabhibhūto aññadatthudaso vasavattī issaro kattā nimmātā seṭṭho sajitā vasī
+        pitā bhūtabhabyānaṁ
+      context: 'brahmā''s self-description: ''I am brahmā, the great brahmā, unconquered, all-seeing, wielding power, lord,
+        creator, maker, chief, victor, ruler, father of beings.'' the buddha presents this as DELUSION — brahmā is the FIRST
+        being to arise in a new cosmic cycle and mistakes his priority for creatorship.
+
+        '
+    - file: data/raw/pali_suttacentral/sc_bilara_data/root/pli/ms/sutta/an/an3/an3.61_root-pli-ms.json
+      reference: AN 3.61:1.6
+      quote: yaṁ kiñcāyaṁ purisapuggalo paṭisaṁvedeti sukhaṁ vā dukkhaṁ vā adukkhamasukhaṁ vā sabbaṁ taṁ issaranimmānahetū
+      context: '''whatever a person experiences — pleasant, painful, or neutral — all is caused by the lord''s creation.''
+        this is ONE OF THREE wrong causation theories rejected in AN 3.61.
+
+        '
+    corpus_count: 24
+    drift_from_previous: 'STRATEGIC REJECTION: the buddha does NOT argue against issara in the abstract. he argues against
+      issaranimmāna as a CAUSATION THEORY. the argument is: if issaranimmāna is the cause of everything, then murderers murder
+      because of issaranimmāna, which destroys moral agency. the rejection is ETHICAL, not metaphysical. this is the key ch5
+      thesis: the "atheism" question misframes what the buddha actually does.
+
+      '
+  - period: ~600-700 CE
+    dating_confidence: high
+    tradition: buddhist systematic (dharmakīrti)
+    meaning: īśvara refuted through logical argument — kartṛtva (creatorship) of a permanent being is incoherent
+    key_texts: ["pramāṇavārttika"]
+    citations:
+    - file: data/raw/sanskrit/mahayana/sa_pramANavArttika_dharmakirti.txt
+      reference: PV 3.333
+      quote: nityasya puṃsaḥ kartṛtvaṃ nityān bhāvānatīndriyān
+      context: '''creatorship of a permanent person over permanent, supersensible entities'' — dharmakīrti''s target: the
+        logical incoherence of a permanent being acting as efficient cause'
+    - file: data/raw/sanskrit/mahayana/sa_pramANavArttika_dharmakirti.txt
+      reference: PV 4.46
+      quote: valāt taveccheyamiti vyaktamīśvaraceṣṭitam
+      context: '''you would want by force — this is clearly the activity of an īśvara'' — dharmakīrti identifies the fallacy
+        of the lord''s volition (īśvara-ceṣṭita) as explanation'
+    corpus_count: ~32 (īśvara in sanskrit mahāyāna — abhidharmakośa dominant)
+    drift_from_previous: 'THE DRIFT CAPTURED: early buddhist position = ethical rejection of a causation theory ("if everything
+      is the lord''s creation, morality is meaningless"). dharmakīrti''s position = LOGICAL refutation of creatorship as philosophically
+      incoherent. the buddha never needed to prove the creator-lord doesn''t exist — he showed the moral consequences of the
+      claim. dharmakīrti converts this into a formal issaranimmāna refutation against the metaphysical possibility. THIS IS
+      THE HARDENING from therapeutic deferral to logical refutation that ch5 tracks.
+
+      '
+  valence:
+    vedic: distributed epithet — not a supreme deity concept
+    upanishadic: elevated — supreme lord, creator
+    buddhist_early: SPLIT — creator rejected (issaranimmāna), sovereignty retained (issariya)
+    buddhist_late: SYSTEMATICALLY REFUTED — dharmakīrti converts ethical rejection into logical argument
+    jain: parallel rejection — no issaranimmāna (creation-by-a-lord)
+    note: 'the four-stage trajectory (epithet → supreme lord → ethical rejection → logical refutation) IS the drift. ch5 shows
+      that calling buddha "atheist" collapses all four stages into a single binary (theist/atheist) and loses the entire argument.
+
+      '
+  standard_references:
+    pts_dictionary: 'issara: lord, ruler, master, chief'
+    monier_williams: 'īśvara: able to do, master, lord, supreme being, god'
+    diff_notes: 'PTS correctly gives POWER terms (lord, ruler, master, chief) — no "creator." MW adds "supreme being, god."
+      the PTS-MW gap maps the pāli-sanskrit semantic range difference. our dictionary adds the temporal dimension: the buddhist
+      rejection targets specifically the CAUSATION claim, not the power claim.
+
+      '
+  index_contribution:
+  - index: H
+    chapter: ch5
+    role: numerator
+    note: dharmakīrti's logical refutation = ontic/definitional language (hardening)
+  - index: H
+    chapter: ch5
+    role: denominator
+    note: AN 3.61's ethical argument = pragmatic/release-oriented language
+
+
+# ─────────────────────────────────────────────────────────────
+# 2. ISSARIYA (sovereignty / mastery / power)
+# ─────────────────────────────────────────────────────────────
+issariya:
+  id: issariya
+  concept: sovereignty / mastery / power
+  tier: primary
+  family: ["issara", "vasavatti"]
+  chapters: ["ch5"]
+  semantic_field: theology-soteriology
+  forms:
+    sanskrit:
+    - term: aiśvarya
+      grammar: neuter noun
+      root: īśvara + -ya (abstract suffix)
+      note: lordship, sovereignty, lordly power — one of the six lordly qualities (ṣaḍ-aiśvarya)
+    pali:
+    - term: issariya
+      grammar: neuter noun
+      note: sovereignty, mastery — POSITIVELY RETAINED in buddhist usage
+    chinese:
+    - term: 自在
+      pinyin: zìzài
+      translator: standard
+      translation_choice_note: '''self-existing/sovereign'' — note: same character used for both issara and issariya'
+  temporal_strata:
+  - period: ~450-250 BCE
+    dating_confidence: low
+    tradition: early buddhist
+    meaning: sovereignty, mastery — applied POSITIVELY to the tathāgata and liberated beings
+    key_texts: ["various sutta references"]
+    citations:
+    - file: data/raw/pali_suttacentral/sc_bilara_data/root/pli/ms/sutta/dn/dn1_root-pli-ms.json
+      reference: DN 1:2.5.2
+      quote: vasavattī issaro
+      context: 'in brahmā''s self-description, vasavattī and issaro appear TOGETHER. the buddhist critique targets kattā nimmātā
+        (creator-maker) but NOT vasavattī issaro (power-wielding lord). the split is IN the text itself.
+
+        '
+    corpus_count: moderate
+    drift_from_previous: null
+  valence:
+    buddhist: RETAINED — sovereignty/mastery is a positive quality, unlike creation
+    note: 'the issara/issariya split is the KEY lexical evidence for ch5. the buddhist position is NOT "the lord has no power"
+      but "the lord is not the creator." power (issariya) is affirmed; creatorship (kattā nimmātā) is denied. standard "atheist"
+      framing misses this entirely.
+
+      '
+  standard_references:
+    pts_dictionary: 'issariya: sovereignty, mastery, domination'
+    diff_notes: 'PTS gives only positive meanings. no "creation" sense. this supports the split thesis: issariya is a different
+      concept from issaranimmāna.
+
+      '
+  index_contribution:
+  - index: SI
+    chapter: ch5
+    role: engagement
+    note: retention of issariya = engagement with power/sovereignty concept
+
+
+# ─────────────────────────────────────────────────────────────
+# 3. ISSARANIMMANA (creation by a lord / theistic creation)
+# ─────────────────────────────────────────────────────────────
+issaranimmana:
+  id: issaranimmana
+  concept: creation by a lord / theistic creation
+  tier: primary
+  family: ["issara", "katta", "nimmata"]
+  chapters: ["ch5"]
+  semantic_field: theology
+  forms:
+    pali:
+    - term: issaranimmāna
+      grammar: compound noun (tappurisa)
+      note: creation by a lord — the SPECIFIC claim that is rejected
+    - term: issaranimmānahetu
+      grammar: compound (issaranimmāna + hetu)
+      note: '''having a creator-lord as cause'' — the causation theory AN 3.61 refutes'
+    sanskrit:
+    - term: īśvaranirmāṇa
+      grammar: compound
+      note: creation by the lord
+    chinese:
+    - term: 自在所作
+      pinyin: zìzàisuǒzuò
+      translator: standard
+      translation_choice_note: '''made by the sovereign one'' — semantic translation'
+  temporal_strata:
+  - period: ~450-250 BCE
+    dating_confidence: low
+    tradition: early buddhist
+    meaning: the claim that a supreme being created the world and determines all experience — REJECTED
+    key_texts: ["AN 3.61 titthāyatana", "MN 101 devadaha", "DN 24 pāṭika"]
+    citations:
+    - file: data/raw/pali_suttacentral/sc_bilara_data/root/pli/ms/sutta/an/an3/an3.61_root-pli-ms.json
+      reference: AN 3.61:1.6
+      quote: sabbaṁ taṁ issaranimmānahetū
+      context: '''all that is caused by issaranimmāna (creation-by-a-lord)'' — one of three rejected causation theories'
+    - file: data/raw/pali_suttacentral/sc_bilara_data/root/pli/ms/sutta/an/an3/an3.61_root-pli-ms.json
+      reference: AN 3.61:4.4-6.7
+      quote: tenahāyasmanto pāṇātipātino bhavissanti issaranimmānahetu
+      context: 'the buddha''s reductio: ''then murderers will be murderers because of issaranimmāna (creation-by-a-lord).''
+        if issaranimmāna is the cause of ALL experience, then morality becomes meaningless — there is no personal responsibility.
+
+        '
+    - file: data/raw/pali_suttacentral/sc_bilara_data/root/pli/ms/sutta/mn/mn101_root-pli-ms.json
+      reference: MN 101:22.5
+      quote: sace bhikkhave sattā issaranimmānahetu sukhadukkhaṁ paṭisaṁvedenti
+      context: '''if beings experience pleasure and pain because of issaranimmāna (creation-by-a-lord)'' — conditional used
+        to show the consequence'
+    - file: data/raw/pali_suttacentral/sc_bilara_data/root/pli/ms/sutta/dn/dn24_root-pli-ms.json
+      reference: DN 24:2.14.3
+      quote: santi bhaggava eke samaṇabrāhmaṇā issarakuttaṁ brahmakuttaṁ ācariyakaṁ aggaññaṁ paññapenti
+      context: '''there are some ascetics and brahmins who declare that origins are from a lord (issarakutta), from brahmā
+        (brahmakutta)'' — DN 24 lists theistic creation as one view among many.
+
+        '
+    corpus_count: ~15 explicit occurrences across canon
+    drift_from_previous: null
+  - period: ~200-500 CE
+    dating_confidence: medium
+    tradition: abhidharma / madhyamaka
+    meaning: 'the issaranimmāna critique shifts from ETHICAL refutation (if a lord created everything, moral responsibility
+      collapses) to LOGICAL refutation (a permanent cause cannot produce impermanent effects). vasubandhu includes īśvara
+      alongside puruṣa and pradhāna as rejected causal theories. the abhidharmakośabhāṣya echoes DN 1''s brahmā-delusion passage
+      in a scholastic context.
+
+      '
+    key_texts: ["abhidharmakośabhāṣya", "visuddhimagga", "laṅkāvatāra sūtra"]
+    citations:
+    - file: data/raw/sanskrit/mahayana/sa_vasubandhu-abhidharmakozabhASya.txt
+      reference: abhidharmakośabhāṣya (line 6501)
+      quote: pratyayebhyo bhāvā upajāyante na punaḥ sarvasyaiva jagataḥ īśvarapuruṣapradhānādikaṃ kāraṇamiti
+      context: '''things arise from conditions, not from a single cause such as īśvara, puruṣa, pradhāna, etc.'' the ethical
+        refutation of AN 3.61 is replaced by a LOGICAL refutation: dependent origination vs. single-cause theories. the rejection
+        is now part of a systematic exclusion of all non-conditioned causation.
+
+        '
+    - file: data/raw/sanskrit/mahayana/sa_vasubandhu-abhidharmakozabhASya.txt
+      reference: abhidharmakośabhāṣya (line 3734)
+      quote: ahamasmin brahmā īśvaraḥ kartā nirmātā sraṣṭā sṛjaḥ pitṛbhūto bhūtānāmi
+      context: 'vasubandhu quotes the brahmā self-delusion passage (cf. DN 1:2.5.2) in a scholastic context. the narrative
+        of brahmā''s mistaken self- identification as creator is preserved but reframed as a logical error in causation theory,
+        not just a doxographic report.
+
+        '
+    - file: data/raw/pali_commentary/visuddhimagga_buddhaghosa.txt
+      reference: visuddhimagga (line 9542)
+      quote: na issaranimmānādito hoti; ito pana hotī
+      context: 'buddhaghosa: ''suffering does not come from issaranimmāna etc.; it comes from THIS [dependent origination].''
+        the visuddhimagga uses issaranimmāna as a stock counter-example when establishing paṭiccasamuppāda — the term is now
+        a STANDARD FOIL, not a live doctrinal opponent.
+
+        '
+    corpus_count: 'īśvara as cause: ~20 in abhidharmakośabhāṣya; issaranimmāna: ~5 in visuddhimagga'
+    drift_from_previous: 'from ETHICAL refutation (AN 3.61: if issaranimmāna, then murderers murder by the lord''s will —
+      moral agency collapses) to LOGICAL refutation (abhidharmakośa: a permanent cause cannot produce impermanent effects)
+      to STANDARD FOIL (visuddhimagga: issaranimmāna as the stock alternative to paṭiccasamuppāda). the shift: from engaging
+      a live doctrinal opponent → excluding a logical impossibility → invoking a standardized counter-example.
+
+      '
+  valence:
+    buddhist: REJECTED — but rejection is ethical (undermines moral agency), not metaphysical (no proof the creator-lord doesn't
+      exist)
+    note: 'issaranimmāna is the PRECISE target of the buddhist critique. not issara (power), not issariya (sovereignty) —
+      specifically the CREATION claim (nimmāna). the compound itself is the evidence: the buddhist language engineers a term
+      that isolates the specific claim being rejected.
+
+      '
+  standard_references:
+    pts_dictionary: 'issaranimmāna: not a separate entry (found under issara and nimmāna)'
+    diff_notes: 'the compound is NOT a PTS headword — it appears only in context. this is evidence that standard dictionaries
+      treat it as ad hoc rather than as a technical term. our dictionary elevates it to a primary entry because it IS the
+      technical term for what the buddha rejects.
+
+      '
+  index_contribution:
+  - index: H
+    chapter: ch5
+    role: tracks hardening
+    note: early = ethical rejection (AN 3.61); later = logical refutation (dharmakīrti)
+
+
+# ─────────────────────────────────────────────────────────────
+# 4. AVYAKATA (undeclared / unanswered / set aside)
+# ─────────────────────────────────────────────────────────────
+avyakata:
+  id: avyakata
+  concept: undeclared / unanswered / set aside
+  tier: primary
+  family: ["ditthi", "sassatavada"]
+  chapters: ["ch5"]
+  semantic_field: epistemology
+  forms:
+    pali:
+    - term: avyākata
+      grammar: past participle (a + vi + ā + kṛ)
+      root: a-vyākṛta (not explained, not declared)
+      note: undeclared — the famous 'unanswered questions' the buddha SET ASIDE
+    - term: abyākata
+      grammar: variant spelling
+      note: same term, alternate orthography in some manuscripts
+    sanskrit:
+    - term: avyākṛta
+      grammar: past participle
+      note: undeclared
+    chinese:
+    - term: 無記
+      pinyin: wújì
+      translator: standard
+      translation_choice_note: '''not-recorded/not-designated'' — semantic translation capturing the ''set aside'' sense'
+  temporal_strata:
+  - period: ~450-250 BCE
+    dating_confidence: low
+    tradition: early buddhist
+    meaning: 'questions the buddha REFUSED TO ANSWER — not because he couldn''t, but because answering either way would reinforce
+      a wrong framework. the refusal is THERAPEUTIC, not evasive.
+
+      '
+    key_texts: ["MN 63 cūḷamāluṅkya", "SN 44.7-8", "SN 16.12"]
+    citations:
+    - file: data/raw/pali_suttacentral/sc_bilara_data/root/pli/ms/sutta/sn/sn44/sn44.8_root-pli-ms.json
+      reference: SN 44.8:1.6
+      quote: etampi kho vaccha abyākataṁ mayā
+      context: '''this too, vaccha, is undeclared by me'' — the buddha''s formula for setting aside a question'
+    - file: data/raw/pali_suttacentral/sc_bilara_data/root/pli/ms/sutta/sn/sn16/sn16.12_root-pli-ms.json
+      reference: SN 16.12:1.8
+      quote: evampi kho āvuso abyākataṁ bhagavatā
+      context: '''even this was undeclared by the blessed one'''
+    - file: data/raw/pali_suttacentral/sc_bilara_data/root/pli/ms/sutta/mn/mn63_root-pli-ms.json
+      reference: MN 63:2.3
+      quote: sassato loko tipi asassato loko tipi antavā loko tipi anantavā loko tipi taṁ jīvaṁ taṁ sarīran tipi aññaṁ jīvaṁ
+        aññaṁ sarīran tipi
+      context: 'the ten (or fourteen) undeclared questions: is the world eternal? not eternal? finite? infinite? is the jīva
+        the same as the body? different? does the tathāgata exist after death? not exist? both? neither? — ALL set aside.
+
+        '
+    corpus_count: ~30-40 explicit abyākata/avyākata occurrences
+    drift_from_previous: null
+  - period: ~200 BCE - 200 CE
+    dating_confidence: medium
+    tradition: abhidhamma / early scholastic
+    meaning: avyākata reinterpreted from 'set aside' to 'indeterminate' (morally neutral) — a DIFFERENT technical meaning
+    key_texts: ["abhidhamma classification system"]
+    citations: []
+    corpus_count: ~50 (avyākṛta in abhidharma classifications)
+    drift_from_previous: 'SEMANTIC BIFURCATION: avyākata splits into TWO unrelated technical meanings: (1) the original "undeclared
+      questions" (soteriological), (2) "morally indeterminate" in abhidhamma classification (systematic). the same term now
+      means both "the buddha refused to answer" AND "neither wholesome nor unwholesome." this bifurcation is itself evidence
+      of the method→thesis drift ch3 tracks.
+
+      '
+  valence:
+    buddhist_early: therapeutic — refusing to answer IS the teaching
+    buddhist_later: technical — classified category in abhidhamma
+    note: 'avyākata is the MOST IMPORTANT term for ch5''s thesis. the buddha''s SILENCE on metaphysical questions is not ignorance
+      or evasion — it is a deliberate therapeutic strategy. "is the buddha an atheist?" is itself an avyākata question: answering
+      it either way misses the point.
+
+      '
+  standard_references:
+    pts_dictionary: 'avyākata: indeterminate, not designated, unexplained'
+    diff_notes: 'PTS lists "indeterminate" first — the abhidhamma sense — ahead of "unexplained" — the sutta sense. our dictionary
+      reverses the priority: the sutta sense (therapeutic silence) is primary, the abhidhamma sense (moral classification)
+      is derived. the PTS ordering itself reflects the drift from therapeutic to systematic.
+
+      '
+  index_contribution:
+  - index: H
+    chapter: ch5
+    role: denominator
+    note: the avyākata strategy = release-oriented language (refusing to harden into position)
+  - index: H
+    chapter: ch5
+    role: tracks hardening
+    note: later tradition's discomfort with silence → drives the hardening toward explicit refutation
+
+
+# ─────────────────────────────────────────────────────────────
+# 5. NATTHIKA (nihilist / one who denies / nāstika)
+# ─────────────────────────────────────────────────────────────
+natthika:
+  id: natthika
+  concept: nihilist / one who denies / nāstika
+  tier: primary
+  family: ["ditthi", "sassatavada"]
+  chapters: ["ch5"]
+  semantic_field: doxography
+  forms:
+    pali:
+    - term: natthika
+      grammar: adjective (natthi + ka)
+      note: '''one who says there is not'' — the nihilist position'
+    - term: natthikavāda
+      grammar: compound
+      note: nihilist doctrine
+    sanskrit:
+    - term: nāstika
+      grammar: adjective/noun
+      note: '''one who says na asti (it does not exist)'' — denier of vedic authority in brahmanical usage'
+    chinese:
+    - term: 斷見
+      pinyin: duànjiàn
+      translator: standard
+      translation_choice_note: '''annihilation-view'' — semantic translation'
+  temporal_strata:
+  - period: ~450-250 BCE
+    dating_confidence: low
+    tradition: early buddhist
+    meaning: one who denies the efficacy of giving, sacrifice, and karma — a specific doctrinal position the buddha ALSO rejects
+    key_texts: ["MN 60 apaṇṇaka", "DN 2 sāmaññaphala"]
+    citations:
+    - file: data/raw/pali_suttacentral/sc_bilara_data/root/pli/ms/sutta/mn/mn60_root-pli-ms.json
+      reference: MN 60:5.2
+      quote: natthi dinnaṁ natthi yiṭṭhaṁ natthi hutaṁ natthi sukatadukkaṭānaṁ kammānaṁ phalaṁ vipāko
+      context: 'the natthika formula: ''there is no giving, no sacrifice, no offering; there is no fruit or result of good
+        or bad actions; there is no this world, no other world; no mother, no father.'' the TOTAL denial position.
+
+        '
+    - file: data/raw/pali_suttacentral/sc_bilara_data/root/pli/ms/sutta/mn/mn60_root-pli-ms.json
+      reference: MN 60:9.5
+      quote: dussīlo purisapuggalo micchādiṭṭhi natthikavādo
+      context: '''an immoral person with wrong view, a nihilist'' — natthikavāda classified as micchādiṭṭhi (wrong view)'
+    corpus_count: ~20-30
+    drift_from_previous: null
+  - period: ~200-600 CE
+    dating_confidence: medium
+    tradition: madhyamaka / yogācāra
+    meaning: 'nāstika hardens from the specific buddhist rejection of karma-denial into a doxographic label classifying schools
+      that deny vedic authority, substance, or conventional reality. candrakīrti uses it to classify those who deny both existence
+      AND non-existence as categories. asaṅga warns that one who denies the substance (vastu) underlying designations becomes
+      "the chief nāstika" (pradhāno nāstiko) — excluded from the saṅgha.
+
+      '
+    key_texts: ["ratnāvalī 1.55-60", "prasannapadā on MMK 15", "yogācārabhūmi"]
+    citations:
+    - file: data/raw/sanskrit/mahayana/sa_candrakIrti-prasannapada.txt
+      reference: prasannapadā on MMK 15 (line 1279)
+      quote: nāstiko durgatiṃ yāti sugatiṃ yātyanāstikaḥ | yathābhūtaparijñānānmokṣamadvayaniśritaḥ
+      context: 'candrakīrti cites nāgārjuna''s ratnāvalī: ''the nāstika goes to a bad destiny; the non-nāstika goes to a good
+        destiny; through knowing reality as it is, liberation depends on non-duality.'' nāstika here = one who denies conventional
+        reality, NOT the early buddhist natthika who denies karma.
+
+        '
+    - file: data/raw/sanskrit/mahayana/sa_candrakIrti-prasannapada.txt
+      reference: prasannapadā (line 2758)
+      quote: yo hi bhagavan pūrvaṃ rāgadveṣamohabhāvābhyupagamaṃ kṛtvā paścānna santi rāgadveṣamohabhāvā iti bravīti, sa bhagavan
+        vai nāstiko bhavati
+      context: 'technical definition: ''one who first affirms the existence of greed, hatred, and delusion, then says they
+        do not exist — such a one is a nāstika.'' the term now names a LOGICAL ERROR (affirm-then-deny), not merely a doctrinal
+        position about karma.
+
+        '
+    - file: data/raw/sanskrit/mahayana/sa_asanga-yogacarabhumi.txt
+      reference: yogācārabhūmi (line 288)
+      quote: pradhāno nāstiko veditavyaḥ / sa evaṃ nāṣṭikaḥ sannakathyo bhavatyasaṃvāsyo bhavati vijñānāṃ sabrahmacāriṇām
+      context: 'asaṅga: ''he should be known as the chief nāstika. being such a nāstika, he becomes unfit for conversation,
+        unfit for communal life with fellow practitioners.'' nāstika now = an intra-buddhist heresy (denying the substance
+        underlying prajñapti), not the external position of MN 60.
+
+        '
+    corpus_count: ~15
+    drift_from_previous: 'from EXTERNAL doctrinal position (those who deny karma, in MN 60) to INTRA-BUDDHIST logical error
+      (denying substance while affirming designation). the term migrates from classifying an opponent''s position to classifying
+      a defective MODE OF REASONING. this is the hardening trajectory: from lived doctrinal disagreement → logical category
+      in systematic philosophy.
+
+      '
+  valence:
+    buddhist: 'REJECTED — the buddha is NOT a natthika. the buddhist position AFFIRMS karma, rebirth, and moral causation.
+      calling the buddha a "nāstika" in the brahmanical sense is precisely the confusion ch5 addresses.
+
+      '
+    note: 'in brahmanical doxography, "nāstika" = one who denies vedic authority (which includes buddhists). in buddhist doxography,
+      "natthika" = one who denies karma and moral causation (which the buddha explicitly rejects). the buddha is a "nāstika"
+      to brahmins but NOT a "natthika" in his own framework. this terminological cross-talk is the root of the "is the buddha
+      an atheist?" confusion.
+
+      '
+  standard_references:
+    pts_dictionary: 'natthika: nihilist, one who professes the doctrine of nihilism'
+    monier_williams: 'nāstika: an atheist, an unbeliever, infidel'
+    diff_notes: 'MW defines nāstika as "atheist" — THIS IS THE PROBLEM. the buddhist natthika (one who denies karma) ≠ the
+      brahmanical nāstika (one who denies vedic authority). MW''s "atheist" is a Western category retrofitted onto a fundamentally
+      different classificatory system. [!] FLAGGED — MW''s translation is itself evidence of the confusion ch5 addresses.
+
+      '
+  index_contribution:
+  - index: SI
+    chapter: ch5
+    role: opposition
+    note: buddha explicitly opposes natthikavāda — NOT the same position the brahmanical tradition attributes to him
+
+
+# ─────────────────────────────────────────────────────────────
+# 6. KATTA (creator / maker / agent)
+# ─────────────────────────────────────────────────────────────
+katta:
+  id: katta
+  concept: creator / maker / agent
+  tier: primary
+  family: ["issara", "nimmata", "issaranimmana"]
+  chapters: ["ch5"]
+  semantic_field: theology
+  forms:
+    pali:
+    - term: kattā
+      grammar: masculine noun (agent noun of karoti)
+      root: kṛ (to do, to make)
+      note: doer, maker, creator — in DN 1 formula, specifically the CREATION function
+    sanskrit:
+    - term: kartṛ
+      grammar: masculine noun
+      note: agent, creator — in nyāya-vaiśeṣika, the efficient cause argument for the lord (īśvara)
+    chinese:
+    - term: 作者
+      pinyin: zuòzhě
+      translator: standard
+      translation_choice_note: '''maker/doer'' — straightforward semantic translation'
+  temporal_strata:
+  - period: ~450-250 BCE
+    dating_confidence: low
+    tradition: early buddhist
+    meaning: the 'creator' attribute of brahmā that the buddha deconstructs
+    key_texts: ["DN 1 brahmajāla"]
+    citations:
+    - file: data/raw/pali_suttacentral/sc_bilara_data/root/pli/ms/sutta/dn/dn1_root-pli-ms.json
+      reference: DN 1:2.5.2
+      quote: issaro kattā nimmātā
+      context: lord, creator, maker — the three-term formula for the issaranimmāna claim. kattā = the specific agent-of-creation
+        term.
+    corpus_count: ~10 in issaranimmāna contexts
+    drift_from_previous: null
+  - period: ~600-700 CE
+    dating_confidence: high
+    tradition: buddhist systematic
+    meaning: kartṛ becomes the target of formal logical refutation — can a permanent being be an agent?
+    key_texts: ["pramāṇavārttika"]
+    citations:
+    - file: data/raw/sanskrit/mahayana/sa_pramANavArttika_dharmakirti.txt
+      reference: PV 3.333
+      quote: nityasya puṃsaḥ kartṛtvaṃ
+      context: '''creatorship (kartṛtva) of a permanent person'' — the logical problem dharmakīrti targets'
+    corpus_count: ~20 (kartṛ-debate in prasannapadā/pramāṇavārttika)
+    drift_from_previous: 'FORMALIZATION: the early suttas present kattā as one attribute in brahmā''s deluded self-description.
+      dharmakīrti converts kartṛtva into a LOGICAL PROBLEM: can a permanent, changeless being perform an act of creation?
+      this is the hardening from narrative to argument.
+
+      '
+  valence:
+    buddhist_early: critiqued — part of brahmā's deluded self-description
+    buddhist_later: refuted — logical impossibility of permanent creatorship
+  standard_references:
+    pts_dictionary: 'kattā: doer, maker, creator, author'
+    diff_notes: 'PTS lists "creator" as one meaning among several — correct for general usage. our dictionary notes that in
+      the DN 1 formula, kattā is specifically the CREATION function, distinct from issaro (power) and vasavattī (sovereignty).
+
+      '
+  index_contribution:
+  - index: H
+    chapter: ch5
+    role: tracks hardening
+    note: kattā in DN 1 = narrative; kartṛtva in dharmakīrti = logical argument
+
+
+# ─────────────────────────────────────────────────────────────
+# 7. NIMMATA (maker / fashioner / designer)
+# ─────────────────────────────────────────────────────────────
+nimmata:
+  id: nimmata
+  concept: maker / fashioner / designer
+  tier: primary
+  family: ["katta", "issara", "issaranimmana"]
+  chapters: ["ch5"]
+  semantic_field: theology
+  forms:
+    pali:
+    - term: nimmātā
+      grammar: masculine noun (agent noun of nimmināti)
+      root: nir-mā (to measure out, to create, to fashion)
+      note: fashioner — emphasizes the DESIGN aspect of creation, distinct from kattā (agency)
+    sanskrit:
+    - term: nirmātṛ
+      grammar: masculine noun
+      note: creator, fashioner
+  temporal_strata:
+  - period: ~450-250 BCE
+    dating_confidence: low
+    tradition: early buddhist
+    meaning: the 'fashioner' attribute of brahmā — paired with kattā in DN 1 formula
+    key_texts: ["DN 1"]
+    citations:
+    - file: data/raw/pali_suttacentral/sc_bilara_data/root/pli/ms/sutta/dn/dn1_root-pli-ms.json
+      reference: DN 1:2.5.2
+      quote: kattā nimmātā
+      context: '''creator, maker'' — kattā + nimmātā as a DOUBLET for the creation-function'
+    corpus_count: ~8-10 in creator contexts
+    drift_from_previous: null
+  valence:
+    buddhist: REJECTED — part of the creation-doublet that the buddha critiques
+    note: 'nimmātā adds the DESIGN sense to kattā''s agency sense. together, they cover both "making" and "fashioning" — the
+      buddhist language is precise about WHAT is being rejected.
+
+      '
+  standard_references:
+    pts_dictionary: 'nimmātā: creator, maker'
+    diff_notes: PTS gives straightforward definition. no temporal dimension needed — this is a stable term.
+  index_contribution:
+  - index: H
+    chapter: ch5
+    role: numerator
+    note: part of the definitional vocabulary used in formal issaranimmāna refutation
+
+
+# ─────────────────────────────────────────────────────────────
+# 8. VASAVATTI (wielding power / exercising control)
+# ─────────────────────────────────────────────────────────────
+vasavatti:
+  id: vasavatti
+  concept: wielding power / exercising control
+  tier: primary
+  family: ["issara", "issariya"]
+  chapters: ["ch5"]
+  semantic_field: theology-soteriology
+  forms:
+    pali:
+    - term: vasavattī
+      grammar: adjective/noun (vasa + vattī)
+      root: vaś (to wish, to will, to control)
+      note: one who wields power — RETAINED as positive in buddhist usage
+    sanskrit:
+    - term: vaśavartī
+      grammar: adjective
+      note: having power at will, self-controlled
+    chinese:
+    - term: 自在
+      pinyin: zìzài
+      translator: standard
+      translation_choice_note: same character as issara/issariya — the chinese CONFLATES the split
+  temporal_strata:
+  - period: ~450-250 BCE
+    dating_confidence: low
+    tradition: early buddhist
+    meaning: 'vasavattī appears in DN 1 formula alongside issaro kattā nimmātā. but ALSO appears positively: paranimmitavasavattī
+      = the highest sensuous celestial realm, and vasī = mastery in meditation contexts. the power-term is RETAINED while
+      the creation-terms are REJECTED.
+
+      '
+    key_texts: ["DN 1", "cosmological texts"]
+    citations:
+    - file: data/raw/pali_suttacentral/sc_bilara_data/root/pli/ms/sutta/dn/dn1_root-pli-ms.json
+      reference: DN 1:2.5.2
+      quote: vasavattī issaro kattā nimmātā
+      context: 'vasavattī IN the DN 1 formula — but note: this term also names a celestial realm (paranimmitavasavattī)'
+    corpus_count: moderate — appears in both theological and cosmological contexts
+    drift_from_previous: null
+  valence:
+    buddhist: 'SPLIT — vasavattī in DN 1 is part of brahmā''s deluded claim, but vasavattī as ''wielding power'' is positive
+      in cosmology and meditation. the buddhist tradition names its highest sensuous celestial realm after this concept.
+
+      '
+    note: 'vasavattī is the most nuanced term in the DN 1 formula. unlike kattā and nimmātā (rejected wholesale), vasavattī
+      straddles the line — rejected as attribute of a creator, retained as general concept of mastery.
+
+      '
+  standard_references:
+    pts_dictionary: 'vasavattī: exercising power, being in control'
+    diff_notes: PTS gives the positive sense. the DN 1 issaranimmāna context is not flagged.
+  index_contribution:
+  - index: SI
+    chapter: ch5
+    role: both
+    note: rejected as creator-attribute, retained as positive concept = both opposition and engagement
+
+
+# ─────────────────────────────────────────────────────────────
+# 9. LOKAYATA (worldly philosophy / materialism / sophistry)
+# ─────────────────────────────────────────────────────────────
+lokayata:
+  id: lokayata
+  concept: worldly philosophy / materialism / sophistry
+  tier: primary
+  family: ["natthika", "ditthi"]
+  chapters: ["ch5"]
+  semantic_field: doxography
+  forms:
+    pali:
+    - term: lokāyata
+      grammar: neuter noun/adjective
+      root: loka + āyata (extended to the world, worldly)
+      note: worldly philosophy — in buddhist usage, a PEJORATIVE for materialist/sophist positions
+    sanskrit:
+    - term: lokāyata
+      grammar: neuter noun
+      note: materialism — becomes the label for the cārvāka school
+    chinese:
+    - term: 順世
+      pinyin: shùnshì
+      translator: standard
+      translation_choice_note: '''following the world'' — semantic translation of lokāyata'
+  temporal_strata:
+  - period: ~450-250 BCE
+    dating_confidence: low
+    tradition: early buddhist
+    meaning: 'in early suttas: a brahmanical discipline (one of the subjects brahmins study), but also used for materialist
+      positions that deny karma and post-mortem continuation. SN 12.48 presents four lokāyata positions the buddha rejects.
+
+      '
+    key_texts: ["SN 12.48", "MN 95", "DN 2"]
+    citations:
+    - file: data/raw/pali_suttacentral/sc_bilara_data/root/pli/ms/sutta/sn/sn12/sn12.48_root-pli-ms.json
+      reference: SN 12.48:2.2-5.2
+      quote: sabbamatthī ti kho brāhmaṇa jeṭṭhametaṁ lokāyataṁ ... sabbaṁ natthī ti ... sabbamekattan ti ... sabbaṁ puthuttan
+        ti
+      context: 'four lokāyata positions: (1) everything exists, (2) nothing exists, (3) everything is one, (4) everything
+        is many. the buddha rejects ALL FOUR as extreme views and teaches paṭiccasamuppāda (dependent origination) instead.
+
+        '
+    - file: data/raw/pali_suttacentral/sc_bilara_data/root/pli/ms/sutta/mn/mn95_root-pli-ms.json
+      reference: MN 95:8.8
+      quote: lokāyatamahāpurisalakkhaṇesu anavayo
+      context: lokāyata listed as a brahmanical subject alongside grammar and the marks of a great man
+    corpus_count: ~15
+    drift_from_previous: null
+  - period: ~200-500 CE
+    dating_confidence: medium
+    tradition: mahāyāna polemical
+    meaning: 'lokāyata hardens from a brahmanical discipline (one subject among many) into the paradigmatic MATERIALIST OPPONENT
+      in mahāyāna Buddhist polemic. the laṅkāvatāra treats it as pure sophistry; the yogācārabhūmi lists it alongside tīrthika
+      doctrines as what bodhisattvas must avoid. but the divyāvadāna preserves the earlier NEUTRAL usage — lokāyata as a brahmin
+      study-subject alongside yajña and nyāya.
+
+      '
+    key_texts: ["laṅkāvatāra sūtra", "yogācārabhūmi", "divyāvadāna"]
+    citations:
+    - file: data/raw/sanskrit/mahayana/sa_saddharmalaGkAvatArasUtra.txt
+      reference: laṅkāvatāra (16 occurrences)
+      quote: lokāyatamidaṃ sarvaṃ yattīrthyairdeśyate mṛṣā
+      context: '''whatever the tīrthikas teach as lokāyata is false.'' the laṅkāvatāra has the most extensive treatment —
+        16 occurrences. lokāyata = materialist sophistry, explicitly rejected as teaching only bodily-mental perception. the
+        term has become a PEJORATIVE LABEL.
+
+        '
+    - file: data/raw/sanskrit/mahayana/sa_asanga-yogacarabhumi.txt
+      reference: yogācārabhūmi (line 1902)
+      quote: lokāyatairmantraistīrthikaśāstrapravisaṃyuttairjñātra pratilambhaḥ
+      context: '''knowledge connected with lokāyata, mantras, and non-buddhist doctrines'' — listed among the pseudo-virtues
+        (guṇapratirūpaka) that counterfeit real bodhisattva qualities. lokāyata = heterodox material to be avoided.
+
+        '
+    - file: data/raw/sanskrit/fragments/divyavadana.txt
+      reference: divyāvadāna 319.015 (line 2218)
+      quote: lokāyatayajñamantramahāpuruṣalakṣaṇeṣu pāragaḥ
+      context: 'a brahmin described as ''expert in lokāyata, sacrificial knowledge, mantras, and the marks of a great man.''
+        here lokāyata is NEUTRAL — listed alongside yajña and mahāpuruṣalakṣaṇa as a legitimate brahmanical study-subject.
+        this preserves the earlier meaning.
+
+        '
+    corpus_count: ~22 (16 laṅkāvatāra + 2 yogācārabhūmi + 3 divyāvadāna + 1 saddharmapuṇḍarīka)
+    drift_from_previous: 'from NEUTRAL brahmanical discipline (one study-subject among many, MN 95) to PEJORATIVE doxographic
+      label (= materialist sophistry, laṅkāvatāra). the SN 12.48 middle ground — where lokāyata names four extreme positions
+      the buddha rejects — is lost. in mahāyāna polemic, lokāyata = THE materialist enemy, no longer one position among several.
+      the divyāvadāna preserves the older neutral usage, showing the drift was not total.
+
+      '
+  valence:
+    buddhist: REJECTED — but as one extreme among several, not as THE opponent
+    note: 'the buddhist position is BETWEEN sassatavāda (eternalism) and ucchedavāda (annihilationism). lokāyata materialism
+      is rejected, but so is theistic eternalism. the buddha occupies a MIDDLE position that both sides misidentify as the
+      other''s.
+
+      '
+  standard_references:
+    pts_dictionary: 'lokāyata: a branch of brahmanical learning; sophistry'
+    diff_notes: PTS preserves both meanings — brahmanical discipline AND pejorative. our dictionary adds the SN 12.48 taxonomy.
+  index_contribution:
+  - index: SI
+    chapter: ch5
+    role: opposition
+    note: rejection of lokāyata materialism = opposition, but ALSO shows buddha is not a materialist
+
+
+# ─────────────────────────────────────────────────────────────
+# 10. SASSATAVADA (eternalism and annihilationism — the two extremes)
+# ─────────────────────────────────────────────────────────────
+sassatavada:
+  id: sassatavada
+  concept: eternalism and annihilationism — the two extremes
+  tier: primary
+  family: ["ditthi", "avyakata", "natthika"]
+  chapters: ["ch5"]
+  semantic_field: doxography
+  forms:
+    pali:
+    - term: sassatavāda
+      grammar: compound (sassata + vāda)
+      note: eternalist doctrine — 'the self and world are eternal'
+    - term: ucchedavāda
+      grammar: compound (uccheda + vāda)
+      note: annihilationist doctrine — 'the self is destroyed at death'
+    sanskrit:
+    - term: śāśvatavāda
+      grammar: compound
+      note: eternalism
+    - term: ucchedavāda
+      grammar: compound
+      note: annihilationism
+    chinese:
+    - term: 常見
+      pinyin: chángjiàn
+      translator: standard
+      translation_choice_note: '''permanence-view'' = eternalism'
+    - term: 斷見
+      pinyin: duànjiàn
+      translator: standard
+      translation_choice_note: '''annihilation-view'' = nihilism'
+  temporal_strata:
+  - period: ~450-250 BCE
+    dating_confidence: low
+    tradition: early buddhist
+    meaning: the two extremes between which the buddha's middle way passes
+    key_texts: ["DN 1 brahmajāla", "SN 12.15 kaccānagotta"]
+    citations:
+    - file: data/raw/pali_suttacentral/sc_bilara_data/root/pli/ms/sutta/dn/dn1_root-pli-ms.json
+      reference: DN 1:1.30.1
+      quote: santi bhikkhave eke samaṇabrāhmaṇā sassatavādā sassataṁ attānañca lokañca paññapenti catūhi vatthūhi
+      context: '''there are some ascetics who are eternalists — they declare the self and world to be eternal on four grounds.''
+        DN 1 maps the entire field of wrong views, with sassatavāda first.
+
+        '
+    - file: data/raw/pali_suttacentral/sc_bilara_data/root/pli/ms/sutta/dn/dn1_root-pli-ms.json
+      reference: DN 1:1.31.4
+      quote: sassato attā ca loko ca vañjho kūṭaṭṭho esikaṭṭhāyiṭṭhito
+      context: '''the self and world are eternal, barren, standing like a pillar'' — the eternalist formula'
+    corpus_count: 'sassatavāda: ~30; ucchedavāda: ~25'
+    drift_from_previous: null
+  - period: ~200-500 CE
+    dating_confidence: medium
+    tradition: madhyamaka
+    meaning: 'sassata/uccheda (śāśvata/uccheda) transformed from empirically-grounded wrong views encountered in ascetic communities
+      into LOGICAL POLES in a dialectical matrix. nāgārjuna uses them as the target-pair that śūnyatā transcends: emptiness
+      is neither annihilation nor eternalism.
+
+      '
+    key_texts: ["MMK 15.10-11", "MMK 17.20", "MMK 18.10-11", "MMK 25.3", "MMK 27.1-20"]
+    citations:
+    - file: data/raw/sanskrit/mahayana/sa_nAgArjuna-mUlamadhyamakakArikA.txt
+      reference: MMK 15.10
+      quote: astīti śāśvatagrāho nāstīty ucchedadarśanam / tasmād astitvanāstitve nāśrīyeta vicakṣaṇaḥ
+      context: 'the central dialectical rejection: ''"it exists" = eternalism-grasping; "it does not exist" = annihilationism-view.
+        therefore the wise one should not rely on existence or non-existence.'' the two terms now function as LOGICAL POLES,
+        not as descriptions of actual communities.
+
+        '
+    - file: data/raw/sanskrit/mahayana/sa_nAgArjuna-mUlamadhyamakakArikA.txt
+      reference: MMK 17.20
+      quote: śūnyatā ca na cocchedaḥ saṃsāraś ca na śāśvatam / karmaṇo 'vipraṇāśaś ca dharmo buddhena deśitaḥ
+      context: '''emptiness is not annihilation; saṃsāra is not eternal; the non-destruction of karma — this is the dharma
+        taught by the buddha.'' śūnyatā explicitly positioned BETWEEN the two extremes.
+
+        '
+    - file: data/raw/sanskrit/mahayana/sa_nAgArjuna-mUlamadhyamakakArikA.txt
+      reference: MMK 18.11
+      quote: anekārtham anānārtham anucchedam aśāśvatam / etat tal lokanāthānāṃ buddhānāṃ śāsanāmṛtam
+      context: '''not of one meaning, not of many meanings, not annihilated, not eternal — this is the nectar-teaching of
+        the buddhas, protectors of the world.'' the pair enters the eight-fold negation formula that defines the middle way
+        itself.
+
+        '
+    corpus_count: 'śāśvata: ~20; uccheda: ~15 (in MMK + prasannapadā)'
+    drift_from_previous: 'from EMPIRICAL DESCRIPTIONS of wrong views held by actual ascetic communities (DN 1 lists specific
+      grounds — memory of past lives, reasoning, meditation states) to LOGICAL ABSTRACTIONS in a dialectical system. the specific
+      people and their reasons vanish; what remains are the formal positions as poles in a tetralemma. the hardening: from
+      ''some ascetics hold X on these grounds'' → ''X is a logical extreme that emptiness transcends.''
+
+      '
+  valence:
+    buddhist: BOTH REJECTED — the buddha's position is between the two extremes
+    note: 'for ch5: the theistic position (issaranimmāna) is a SPECIES of sassatavāda — an eternal creator implies an eternal
+      self and world. the materialist position (lokāyata) is a species of ucchedavāda — no post-mortem continuation, no moral
+      causation. the buddha rejects BOTH. calling him "atheist" places him in the ucchedavāda camp, which he explicitly opposes.
+
+      '
+  standard_references:
+    pts_dictionary: 'sassata: eternal, lasting; uccheda: cutting off, annihilation'
+    diff_notes: 'PTS treats these as individual terms. our dictionary pairs them because the PAIR is the buddhist framework
+      — neither eternal nor annihilated, neither theist nor atheist.
+
+      '
+  index_contribution:
+  - index: SI
+    chapter: ch5
+    role: opposition
+    note: rejecting both extremes = the framework that makes 'atheist?' the wrong question
+
+
+# ─────────────────────────────────────────────────────────────
+# 11. DITTHI (view / opinion / speculative position)
+# ─────────────────────────────────────────────────────────────
+ditthi:
+  id: ditthi
+  concept: view / opinion / speculative position
+  tier: primary
+  family: ["sassatavada", "natthika", "avyakata"]
+  chapters: ["ch5", "ch1"]
+  semantic_field: epistemology
+  forms:
+    pali:
+    - term: diṭṭhi
+      grammar: feminine noun
+      root: dṛś (to see) → diṭṭha (seen) → diṭṭhi (view)
+      note: view — in buddhist usage, predominantly NEGATIVE (wrong view, speculative position)
+    - term: micchādiṭṭhi
+      grammar: compound
+      note: wrong view — one of the ten fetters
+    - term: sammādiṭṭhi
+      grammar: compound
+      note: right view — first factor of the eightfold path
+    sanskrit:
+    - term: dṛṣṭi
+      grammar: feminine noun
+      note: view, opinion — in brahmanical usage, more neutral than pāli
+    chinese:
+    - term: 見
+      pinyin: jiàn
+      translator: standard
+      translation_choice_note: '''view/seeing'' — same character for both positive and negative senses'
+  temporal_strata:
+  - period: ~450-250 BCE
+    dating_confidence: low
+    tradition: early buddhist
+    meaning: 'diṭṭhi = speculative position that one clings to. the buddha''s radical move: HAVING A VIEW (about metaphysical
+      matters) is itself a form of clinging. the point is not to hold the RIGHT view about the creator-lord but to SEE that
+      view-holding itself is the problem.
+
+      '
+    key_texts: ["DN 1 brahmajāla (the 'net of views')", "MN 117"]
+    citations:
+    - file: data/raw/pali_suttacentral/sc_bilara_data/root/pli/ms/sutta/mn/mn117_root-pli-ms.json
+      reference: MN 117:4.1-3
+      quote: sammādiṭṭhi pubbaṅgamā hoti ... micchādiṭṭhiṁ micchādiṭṭhīti pajānāti sammādiṭṭhiṁ sammādiṭṭhīti pajānāti
+      context: '''right view leads the way ... one understands wrong view as wrong view, right view as right view.'' right
+        view is meta-cognitive: knowing WHICH views are wrong, including metaphysical speculation.
+
+        '
+    corpus_count: extremely frequent — thousands
+    drift_from_previous: null
+  - period: ~200 BCE - 200 CE
+    dating_confidence: medium
+    tradition: scholastic
+    meaning: diṭṭhi systematized into taxonomies — 62 views in DN 1, later expanded
+    key_texts: ["DN 1", "abhidhamma classifications"]
+    citations: []
+    corpus_count: thousands (dṛṣṭi ubiquitous in systematic texts)
+    drift_from_previous: 'SYSTEMATIZATION: the buddha''s therapeutic warning against view- clinging becomes a comprehensive
+      TAXONOMY of wrong views. DN 1 maps 62 positions. this is itself evidence of the method→thesis drift: the anti-speculative
+      teaching becomes a systematic classification of speculations.
+
+      '
+  valence:
+    buddhist: predominantly NEGATIVE — diṭṭhi = something to be abandoned, even about the creator-lord
+    note: 'for ch5: the buddha''s position on issaranimmāna is not "this is false" but "this is a diṭṭhi — a speculative view
+      that does not lead to liberation." the avyākata strategy and the diṭṭhi framework work together: questions about the
+      creator-lord are set aside (avyākata) BECAUSE holding any position about them is view- clinging (diṭṭhi).
+
+      '
+  standard_references:
+    pts_dictionary: 'diṭṭhi: opinion, view, speculative view, theory'
+    diff_notes: 'PTS preserves the negative valence ("speculative view"). MW''s dṛṣṭi is more neutral. our dictionary emphasizes:
+      in pāli, diṭṭhi is almost always pejorative unless prefixed with sammā-.
+
+      '
+  index_contribution:
+  - index: H
+    chapter: ch5
+    role: tracks hardening
+    note: early = diṭṭhi as therapeutic warning; later = diṭṭhi as taxonomic category
+
+
+# ─────────────────────────────────────────────────────────────
+# 12. PUBBAKAMMA (past karma / prior action as sole cause)
+# ─────────────────────────────────────────────────────────────
+pubbakamma:
+  id: pubbakamma
+  concept: past karma / prior action as sole cause
+  tier: primary
+  family: ["karma", "issaranimmana"]
+  chapters: ["ch5"]
+  semantic_field: soteriology
+  forms:
+    pali:
+    - term: pubbakamma
+      grammar: compound (pubba + kamma)
+      note: past action — specifically the DETERMINISTIC claim that all present experience is caused by past karma
+    - term: pubbekatahetu
+      grammar: compound (pubbe + kata + hetu)
+      note: '''having a past-done cause'' — the causation theory (jain position)'
+    sanskrit:
+    - term: pūrvakarman
+      grammar: compound
+      note: prior action
+    chinese:
+    - term: 宿業
+      pinyin: sùyè
+      translator: standard
+      translation_choice_note: '''former karma'' — semantic translation'
+  temporal_strata:
+  - period: ~450-250 BCE
+    dating_confidence: low
+    tradition: early buddhist
+    meaning: 'the claim that ALL present experience is determined by past karma. REJECTED as one of three wrong causation
+      theories (alongside issaranimmāna and ahetuappaccaya). notably, the buddha ACCEPTS that past karma is ONE cause among
+      many — he rejects only the DETERMINISTIC version.
+
+      '
+    key_texts: ["AN 3.61 titthāyatana", "MN 101 devadaha"]
+    citations:
+    - file: data/raw/pali_suttacentral/sc_bilara_data/root/pli/ms/sutta/an/an3/an3.61_root-pli-ms.json
+      reference: AN 3.61:1.4
+      quote: sabbaṁ taṁ pubbekatahetū
+      context: '''all that is caused by past action'' — one of three rejected causation theories'
+    - file: data/raw/pali_suttacentral/sc_bilara_data/root/pli/ms/sutta/mn/mn101_root-pli-ms.json
+      reference: MN 101:2.5
+      quote: sabbaṁ taṁ pubbekatahetu
+      context: 'jain/nigaṇṭha version: ''everything one experiences is because of past action'''
+    corpus_count: ~20
+    drift_from_previous: null
+  - period: ~200-500 CE
+    dating_confidence: medium
+    tradition: abhidharma / yogācāra
+    meaning: 'pūrvakarman (past karma) is integrated into the systematic five-fruit classification. it no longer names a wrong
+      causation THEORY (the determinist claim the buddha rejects in AN 3.61) but becomes a technical element in karma-result
+      taxonomy: niṣyandaphala (outflow-fruit) is defined as ''subsequent results following through similarity with pūrvakarman.''
+
+      '
+    key_texts: ["abhidharmakośa ch2", "yogācārabhūmi"]
+    citations:
+    - file: data/raw/sanskrit/mahayana/sa_asanga-yogacarabhumi.txt
+      reference: yogācārabhūmi (line 754)
+      quote: pūrvakarmasādṛśyena vā paścātphalānuvartanatā tanniṣyandaphalam
+      context: '''through similarity with past karma, subsequent results follow — that is the outflow-fruit (niṣyandaphala).''
+        pūrvakarman is now a TECHNICAL COMPONENT in a five-fold fruit classification, not a wrong causation theory to be refuted.
+
+        '
+    - file: data/raw/sanskrit/mahayana/sa_candrakIrti-prasannapada.txt
+      reference: prasannapadā on MMK 17 (line 3079)
+      quote: pūrvakarmaphalahetuko na syāt
+      context: 'candrakīrti argues: if karma could be destroyed by the path of seeing, then the fruits of karma for the āryas
+        would not be ''caused by past karma-fruit'' (pūrvakarmaphalahetuka). the concept is now embedded in a philosophical
+        debate about karmic continuity, not about determinism vs. free will.
+
+        '
+    corpus_count: ~10 in abhidharmakośa/yogācārabhūmi
+    drift_from_previous: 'from REJECTED DETERMINISTIC THEORY (AN 3.61: ''everything is caused by past karma'' = wrong) to
+      TECHNICAL COMPONENT in systematic karma-result taxonomy (yogācārabhūmi: past karma as the basis for niṣyandaphala).
+      the ETHICAL critique (determinism undermines moral agency) is replaced by SCHOLASTIC INTEGRATION (past karma as one
+      factor in a five-fold fruit classification). the original rejection is forgotten — the concept is neutralized and absorbed
+      into the system.
+
+      '
+  valence:
+    buddhist: 'REJECTED as total explanation, ACCEPTED as partial cause. the buddha''s middle position: past karma is ONE
+      factor, but present intention also matters. this nuance is crucial for ch5 — the same structure (partial acceptance,
+      total claim rejected) applies to issaranimmāna.
+
+      '
+    jain: CENTRAL — all present experience is caused by past karma. tapas burns it off.
+    note: 'AN 3.61 places pubbekatahetu, issaranimmāna, and ahetuappaccaya in PARALLEL — three equally wrong total-causation
+      theories. the buddha rejects all three with the SAME argument. this parallelism is the structural backbone of ch5.
+
+      '
+  standard_references:
+    pts_dictionary: 'pubbakamma: former action'
+    diff_notes: 'PTS gives neutral definition. our dictionary specifies: the DETERMINISTIC version (sabbaṁ taṁ pubbekatahetu)
+      is what''s rejected.'
+  index_contribution:
+  - index: SI
+    chapter: ch5
+    role: both
+    note: rejects deterministic version (opposition) while accepting past karma as one cause (engagement)
+
+
+# ─────────────────────────────────────────────────────────────
+# 13. KIRIYAVADA (the doctrine that actions have consequences)
+# ─────────────────────────────────────────────────────────────
+kiriyavada:
+  id: kiriyavada
+  concept: the doctrine that actions have consequences
+  tier: primary
+  family: ["karma", "natthika"]
+  chapters: ["ch5"]
+  semantic_field: soteriology
+  forms:
+    pali:
+    - term: kiriyavāda
+      grammar: compound (kiriya + vāda)
+      note: the doctrine of the efficacy of action — the buddha AFFIRMS this
+    - term: akiriyavāda
+      grammar: compound (a + kiriya + vāda)
+      note: the doctrine of NON-efficacy — pūraṇa kassapa's position, REJECTED
+    sanskrit:
+    - term: kriyāvāda
+      grammar: compound
+      note: doctrine of action's efficacy
+  temporal_strata:
+  - period: ~450-250 BCE
+    dating_confidence: low
+    tradition: early buddhist
+    meaning: 'the buddha is explicitly called a kiriyavādī (affirmer of action''s efficacy) — he ACCEPTS that what you do
+      matters. pūraṇa kassapa''s akiriyavāda (nothing you do has consequences) is explicitly classified as wrong view.
+
+      '
+    key_texts: ["DN 2 sāmaññaphala", "DN 4 soṇadaṇḍa"]
+    citations:
+    - file: data/raw/pali_suttacentral/sc_bilara_data/root/pli/ms/sutta/dn/dn4_root-pli-ms.json
+      reference: DN 4:6.16
+      quote: samaṇo khalu bho gotamo kammavādī kiriyavādī apāpapurekkhāro brahmaññāya pajāya
+      context: '''the ascetic gotama is indeed a kammavādī (affirmer of karma), a kiriyavādī (affirmer of action''s efficacy),
+        one who does not encourage evil, for the benefit of the brahmanical people.'' this is how a BRAHMIN describes the
+        buddha — as a moral realist.
+
+        '
+    - file: data/raw/pali_suttacentral/sc_bilara_data/root/pli/ms/sutta/dn/dn2_root-pli-ms.json
+      reference: DN 2:18.1
+      quote: pūraṇo kassapo sandiṭṭhikaṁ sāmaññaphalaṁ puṭṭho samāno akiriyaṁ byākāsi
+      context: '''pūraṇa kassapa, when asked about the fruits of asceticism, declared non-efficacy of action'''
+    corpus_count: ~10 explicit kiriyavāda; akiriya ~5
+    drift_from_previous: null
+  valence:
+    buddhist: 'AFFIRMED — the buddha is a kiriyavādī. this is CRITICAL for ch5: calling the buddha an "atheist" implies he
+      is an akiriyavādī (one who denies moral causation). he is the OPPOSITE. he affirms karma, affirms moral agency, affirms
+      that actions have consequences.
+
+      '
+    note: 'kiriyavāda is the positive counterpart to the three negations of AN 3.61. the buddha is not defined by what he
+      REJECTS (issaranimmāna, pubbekatahetu, ahetuappaccaya) but by what he AFFIRMS: actions have consequences, and you are
+      responsible for them.
+
+      '
+  standard_references:
+    pts_dictionary: 'kiriya: action, deed; kiriyavāda: realism of action'
+    diff_notes: PTS correctly identifies the positive sense.
+  index_contribution:
+  - index: SI
+    chapter: ch5
+    role: engagement
+    note: buddha's affirmation of kiriyavāda = engagement with moral-realist tradition
+
+
+# ─────────────────────────────────────────────────────────────
+# 14. ATTAKARA (self-agency / personal effort / own-making)
+# ─────────────────────────────────────────────────────────────
+attakara:
+  id: attakara
+  concept: self-agency / personal effort / own-making
+  tier: primary
+  family: ["karma", "pubbakamma", "issaranimmana"]
+  chapters: ["ch5"]
+  semantic_field: soteriology
+  forms:
+    pali:
+    - term: attakāra
+      grammar: compound (atta + kāra)
+      note: self-agency, own-making — personal responsibility for one's actions
+    - term: purisakāra
+      grammar: compound (purisa + kāra)
+      note: personal effort, human agency — what one DOES NOW matters
+    - term: sayaṅkata
+      grammar: compound (sayaṁ + kata)
+      note: self-made — used in the famous 'is suffering self-made?' exchange (SN 12.17-18)
+    sanskrit:
+    - term: ātmakāra
+      grammar: compound
+      note: self-making
+    - term: puruṣakāra
+      grammar: compound
+      note: personal effort — also a major concept in brahmanical ethics
+  temporal_strata:
+  - period: ~450-250 BCE
+    dating_confidence: low
+    tradition: early buddhist
+    meaning: 'the buddha navigates between ''suffering is self-made'' (sayaṅkata) and ''suffering is other-made'' (paraṅkata).
+      NEITHER is correct. suffering arises through dependent origination — not from self- agency alone, not from external
+      agency alone.
+
+      '
+    key_texts: ["SN 12.17-18", "SN 12.26"]
+    citations:
+    - file: data/raw/pali_suttacentral/sc_bilara_data/root/pli/ms/sutta/sn/sn12/sn12.17_root-pli-ms.json
+      reference: SN 12.17:3.1
+      quote: kiṁ nu kho bho gotama sayaṅkataṁ dukkhan ti
+      context: '''is suffering self-made, master gotama?'' — the opening question'
+    - file: data/raw/pali_suttacentral/sc_bilara_data/root/pli/ms/sutta/sn/sn12/sn12.18_root-pli-ms.json
+      reference: SN 12.18:2.1
+      quote: kiṁ nu kho bho gotama sayaṅkataṁ sukhadukkhanti
+      context: '''is pleasure-and-pain self-made?'' — same question, different interlocutor'
+    - file: data/raw/pali_suttacentral/sc_bilara_data/root/pli/ms/sutta/sn/sn12/sn12.18_root-pli-ms.json
+      reference: SN 12.18:4.1
+      quote: sā vedanā so vedayatī ti kho timbaruka ādito sato sayaṅkataṁ sukhadukkhanti evampāhaṁ na vadāmi
+      context: '''that feeling is experienced by the same being [who caused it] — from that starting point, timbaruka, I do
+        not say pleasure- and-pain is self-made.'' the buddha''s position: neither purely self-made nor purely other-made.
+
+        '
+    corpus_count: ~15 in the sayaṅkata/paraṅkata debate
+    drift_from_previous: null
+  - period: ~200-500 CE
+    dating_confidence: medium
+    tradition: abhidharma / yogācāra
+    meaning: 'puruṣakāra (personal effort / human agency) is systematized as one of five types of karmic fruit (puruṣakāraphala).
+      vasubandhu defines it as the result produced by effort in the present life — agriculture, trade, royal service. the
+      nuanced buddha-position (neither self-made nor other-made) is replaced by a POSITIVE CATEGORY for human effort in the
+      karma system.
+
+      '
+    key_texts: ["abhidharmakośa 2.58", "yogācārabhūmi"]
+    citations:
+    - file: data/raw/sanskrit/mahayana/sa_vasubandhu-abhidharmakoza.txt
+      reference: abhidharmakośa 2.58 (line 383)
+      quote: yadvalājjāyate yattatphalaṃ puruṣakārajam
+      context: '''whatever is produced by effort — that is the puruṣakāra-fruit.'' puruṣakāra (= attakāra/purisakāra) is now
+        a FORMAL CATEGORY in the five-fruit system, not a question to be transcended through dependent origination.
+
+        '
+    - file: data/raw/sanskrit/mahayana/sa_asanga-yogacarabhumi.txt
+      reference: yogācārabhūmi (line 752-754)
+      quote: pañca phalāni / vipākaphalaṃ niṣyandaphalaṃ visaṃyogaphalaṃ puruṣakāraphalamadhipatiphalañca
+      context: 'asaṅga''s five fruits: ripening-fruit, outflow-fruit, separation- fruit, puruṣakāra-fruit, dominant-fruit.
+        the concept that the buddha refused to affirm or deny absolutely (SN 12.17-18) is now a named, classified, positively-defined
+        category in the system.
+
+        '
+    corpus_count: 'puruṣakāra: ~10 in abhidharmakośa/yogācārabhūmi'
+    drift_from_previous: 'from QUESTION TO BE TRANSCENDED (''is suffering self-made?'' — neither yes nor no, but dependent
+      origination) to POSITIVE TAXONOMIC CATEGORY (puruṣakāraphala as the fourth of five fruit-types). the buddha''s refusal
+      to affirm self-agency as a total explanation is replaced by the system''s AFFIRMATION of puruṣakāra as a legitimate
+      type of result. the middle-way nuance (neither self-made nor other-made) is lost in the systematization.
+
+      '
+  valence:
+    buddhist: 'NUANCED — neither affirmed nor denied wholesale. the buddha accepts personal agency (purisakāra) within dependent
+      origination but rejects the claim that EVERYTHING is self-made or other-made.
+
+      '
+    note: 'for ch5: the attakāra/paraṅkata debate parallels the issaranimmāna debate. "is the lord the maker?" is structurally
+      parallel to "is the self the maker?" both are rejected as total claims while being accepted as partial factors. the
+      same middle-way logic applies.
+
+      '
+  standard_references:
+    pts_dictionary: 'attakāra: own agency'
+    diff_notes: PTS gives minimal entry. our dictionary places it in the broader framework of the four causation positions.
+  index_contribution:
+  - index: SI
+    chapter: ch5
+    role: both
+    note: rejects self-made as total claim (opposition) while accepting personal agency (engagement)
+
+
+# ─────────────────────────────────────────────────────────────
+# 15. JIVA (life-principle / jīva)
+# ─────────────────────────────────────────────────────────────
+jiva:
+  id: jiva
+  concept: life-principle / jīva
+  tier: primary
+  family: ["atman", "anatta"]
+  chapters: ["ch5", "ch1"]
+  semantic_field: ontology
+  forms:
+    pali:
+    - term: jīva
+      grammar: masculine noun
+      root: jīv (to live)
+      note: 'the life-principle — in buddhist usage, appears in the undeclared question: ''taṁ jīvaṁ taṁ sarīraṁ?'''
+    sanskrit:
+    - term: jīva
+      grammar: masculine noun
+      note: the individual jīva — central to jain metaphysics
+    jain:
+    - term: jīva
+      language: ardhamagadhi
+      note: CENTRAL — the jīva is the eternal individual life-principle bound by karmic matter (pudgala)
+    chinese:
+    - term: 命
+      pinyin: mìng
+      translator: standard
+      translation_choice_note: '''life/destiny'' — not a perfect match for the metaphysical concept'
+  temporal_strata:
+  - period: ~450-250 BCE
+    dating_confidence: low
+    tradition: early buddhist
+    meaning: 'jīva appears ONLY in the undeclared questions: ''is the jīva the same as the body?'' (taṁ jīvaṁ taṁ sarīraṁ).
+      the buddha SETS THIS ASIDE — he neither affirms nor denies the jīva. the avyākata strategy applies.
+
+      '
+    key_texts: ["MN 63 cūḷamāluṅkya", "SN 44"]
+    citations:
+    - file: data/raw/pali_suttacentral/sc_bilara_data/root/pli/ms/sutta/mn/mn63_root-pli-ms.json
+      reference: MN 63:2.3
+      quote: taṁ jīvaṁ taṁ sarīran tipi aññaṁ jīvaṁ aññaṁ sarīran tipi
+      context: '''is the jīva the same as the body? or is the jīva one thing and the body another?'' (conventional translation
+        uses "soul" for jīva) — part of the ten undeclared questions. the buddha''s answer: NEITHER position is declared.
+
+        '
+    - file: data/raw/pali_suttacentral/sc_bilara_data/root/pli/ms/sutta/mn/mn63_root-pli-ms.json
+      reference: MN 63:6.9-10
+      quote: taṁ jīvaṁ taṁ sarīran ti mālukyaputta diṭṭhiyā sati brahmacariyavāso abhavissāti evaṁ no
+      context: '''would the holy life depend on whether the jīva is the same as the body? no, mālukyaputta.'' (conventional
+        translation uses "soul" for jīva) the answer is not "the jīva doesn''t exist" but "the question is irrelevant to liberation."
+
+        '
+    corpus_count: ~30 (mostly in avyākata contexts)
+    drift_from_previous: null
+  valence:
+    buddhist: SET ASIDE — neither affirmed nor denied, treated as an avyākata question
+    jain: CENTRAL — the jīva is the eternal individual life-principle, the starting point of jain soteriology
+    note: 'the buddhist-jain contrast on jīva is structurally parallel to the contrast on ātman. jains AFFIRM an eternal individual
+      jīva (life-principle) bound by karmic matter. buddhists SET ASIDE the question of whether there IS a jīva. this is not
+      the same as DENYING the jīva — it is refusing to engage with the question on those terms.
+
+      '
+  standard_references:
+    pts_dictionary: 'jīva: life, the living principle, soul'
+    monier_williams: 'jīva: living, existing; the individual soul'
+    diff_notes: 'both PTS and MW give "soul" as a meaning. our dictionary notes that in pāli, jīva appears PREDOMINANTLY in
+      the undeclared-question formula, not as an affirmed concept. PTS''s "soul" is technically correct but contextually misleading.
+
+      '
+  index_contribution:
+  - index: H
+    chapter: ch5
+    role: denominator
+    note: avyākata treatment of jīva = release-oriented (refusing to harden into position)
+  - index: SI
+    chapter: ch5
+    role: opposition
+    note: setting aside the jīva question = implicit opposition to both jain affirmation and materialist denial
