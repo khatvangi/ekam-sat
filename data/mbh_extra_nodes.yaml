@@ -71,11 +71,15 @@ nodes:
       inverse_relation: omitted
 
   - id: X003
-    short_label: grief_dharma
+    short_label: grief_dharma_striparva
     canonical_statement: >
-      sustained philosophical engagement with grief, loss, and
-      lamentation as dharmic process — not merely corrected but
-      explored and honored.
+      grief (zoka) as a sustained dharmic process with its own arc —
+      not a problem to be solved through philosophical correction, but
+      a passage to be traversed. the bereaved are not "deluded" for
+      grieving; their grief is the appropriate response to irreversible
+      loss. the same philosophical truths (body-self distinction,
+      inevitability of death, kala as sovereign) that BG uses to
+      CORRECT grief are here used to ACCOMPANY it.
     domain:
       primary: dharma
       secondary: psychology
@@ -83,20 +87,273 @@ nodes:
       present: false
       centrality: 0.05
       notes: >
-        BG corrects arjuna's grief in ch1-2. striparva and
-        ashramavasikaparva explore grief as sustained experience.
-        BG treats vishada as problem to solve, not dharma to traverse.
+        BG has vishada (ch1) but treats it as the starting condition
+        to be corrected by jnana. striparva (parva 11) shows grief
+        that cannot be corrected because the loss is real and complete.
+        the same siddhanta appears in both — body-self distinction,
+        karma, kala — but serves a completely different function.
+
+    # ── THE TWO VISHADAS: a comparative framework ────────────────────
+    #
+    # this is the core finding: vishada appears twice in the MBH with
+    # opposite orientations. understanding the difference illuminates
+    # what the BG selects and what it transforms.
+    #
+    # VISHADA 1: BG (parva 06, ch 23-40)
+    #   speaker:    arjuna
+    #   situation:  BEFORE the irreversible (battle not yet begun)
+    #   cause:      fear of unforeseen consequences — "if I fight,
+    #               my teachers/kin will die, dharma will collapse,
+    #               varnasankara will arise" (BG 1.38-44)
+    #   nature:     anticipatory grief — mourning what MIGHT happen
+    #   krishna's response: CORRECTION
+    #               — the self does not die (2.19-20)
+    #               — grief for the undying is misplaced (2.11)
+    #               — your duty as kshatriya is clear (2.31-33)
+    #               — equanimity dissolves attachment (2.48)
+    #               krishna treats vishada as confusion (moha)
+    #               rooted in misidentification of self with body.
+    #               the cure: jnana (knowledge) → action (karma).
+    #   outcome:    arjuna rises and fights (18.73: "naSTo mohaH")
+    #   register:   philosophical instruction, teacher-to-student
+    #
+    # VISHADA 2: STRIPARVA (parva 11)
+    #   speakers:   dhritarashtra, gandhari, the widows
+    #   situation:  AFTER the irreversible (battle is over, sons are dead)
+    #   cause:      actual realized loss — 100 sons dead, armies destroyed,
+    #               widows walking over blood-soaked ground (11.018.002-004)
+    #   nature:     actual grief — mourning what HAS happened
+    #   vidura's response: CONSOLATION (not correction)
+    #               — uses the SAME philosophical arguments as krishna:
+    #                 "all unions end in separation, all life ends in death"
+    #                 (11.002.003: saMyogA viprayogAntA maraNAntaM hi jIvitam)
+    #                 "kala drags everything" (11.002.014)
+    #                 "the body is like a clay pot" (11.003.009-010)
+    #                 body-as-chariot metaphor (11.007.013-015)
+    #               — BUT vidura does not say "therefore stop grieving"
+    #                 he says "bear it with self-mastery" (11.007.018:
+    #                 tathonmocayate duHkhAd yathAtmA sthirasaMyamaH)
+    #               — the tone is COMPASSION, not correction
+    #   gandhari's response: she accepts the philosophy but curses krishna
+    #               — "you had the power, you watched" (11.025.036-038)
+    #               — "by my tapas I curse you: your own clan will
+    #                 destroy itself the same way" (11.025.039-041)
+    #               — this is NOT ignorance. gandhari understands
+    #                 karma, kala, and dharma. her curse comes FROM
+    #                 that understanding, not despite it.
+    #   krishna's response: ACCEPTANCE (not argument)
+    #               — "I know. the vrishnis can only be destroyed
+    #                 by themselves" (11.025.044-045)
+    #               — he does NOT teach gandhari. he does not correct her.
+    #                 he receives the curse as consequence.
+    #               — then he says: "rise, gandhari. do not keep your
+    #                 mind in grief. it was your own son's fault."
+    #                 (11.026.001-003) — but even this is stated gently,
+    #                 not as philosophical demolition.
+    #   outcome:    gandhari does NOT say "naSTo mohaH" (my delusion is
+    #               destroyed). she falls silent (11.026.006:
+    #               tUSNIM babhUva gAndhArI zokavyAkulalocanA).
+    #               grief remains. philosophy accompanies but does not cure.
+    #   register:   lamentation, witness, confrontation with the divine
+    #
+    # KEY DIFFERENCE:
+    #   BG vishada is ANTICIPATORY — arjuna grieves what might happen.
+    #     krishna shows him it need not happen (the self is undying).
+    #     solution: correct the misunderstanding, then act.
+    #   striparva vishada is REALIZED — gandhari grieves what has happened.
+    #     no teaching can undo it. the same truths that freed arjuna
+    #     cannot free gandhari because her loss is actual, not projected.
+    #     vidura's consolation and krishna's acceptance acknowledge this.
+    #
+    # SAME SIDDHANTA, OPPOSITE SITUATION:
+    #   both use: body-self distinction, kala, karma, inevitability
+    #   BG applies them to prevent paralysis BEFORE action
+    #   striparva applies them to bear loss AFTER action
+    #   the teaching is one (ekam sat); the human situation transforms it
+    #
+    # WHAT BG TRANSFORMS:
+    #   BG does not deny grief — ch1 is entirely vishada.
+    #   but BG structurally subordinates grief to instruction.
+    #   arjuna's grief is the setup; krishna's teaching is the content.
+    #   in striparva, grief IS the content. gandhari's lament (ch13-25)
+    #   is not waiting to be corrected. it is the dharmic event itself.
+    #   walking the battlefield naming each dead son IS the teaching —
+    #   it teaches the cost of the dharma that the BG advocates.
+    #
+    # GANDHARI'S CURSE AS INVERSE OF KRISHNA'S TEACHING:
+    #   BG 11.32: "kAlo 'smi" — I am Time, the destroyer.
+    #   striparva 11.025.039-041: gandhari curses krishna with the
+    #   consequences of being Time. if you are kala, then kala's
+    #   own destruction comes to you too. the yadu-vamsha will end
+    #   the same way the kuru-vamsha ended. this is not refutation —
+    #   it is completion. gandhari AGREES with the BG's cosmology
+    #   and draws the consequence that the BG does not state.
+
     discovery:
-      discovered_from: []
-      speakers: ["Gandhari", "Dhritarashtra", "Vidura"]
-      parvas: ["11", "15"]
+      discovered_from:
+        # vidura's consolation
+        - "11002002"   # uttiSTha rAjan... dhArayAtmAnam AtmanA
+        - "11002003"   # saMyogA viprayogAntA maraNAntaM hi jIvitam
+        - "11002005"   # kAlaM prApya... na kaz cid ativartate
+        - "11002013"   # zokasthAnasahasrANi... Avizanti na paNDitam
+        - "11002014"   # na kAlasya priyaH kaz cit... sarvaM kAlaH prakarSati
+        - "11003006"   # anyad rocayate vastram evaM dehAH zarIriNAm
+        - "11003007"   # svakRtenaiva karmaNA (one receives by own karma)
+        - "11003009"   # body-as-clay-pot metaphor
+        # vidura's chariot metaphor
+        - "11007013"   # rathaM zarIraM bhUtAnAM sattvam Ahus tu sArathim
+        - "11007014"   # indriyANi hayAn — senses are horses
+        - "11007018"   # tathonmocayate duHkhAd yathAtmA sthirasaMyamaH
+        - "11007020"   # tyaktvA mRtyubhayaM... brahmalokaM sa gacchati
+        # gandhari's lament on the battlefield
+        - "11018001"   # pazya mAdhava putrAn me (see my sons, krishna)
+        - "11018002"   # hataputrA raNe bAlAH paridhAvanti me snuSAH (widows running)
+        - "11018003"   # prAsAdatalacAriNyaz... spRzantImA rudhirArdrAM vasuMdharAm (feet touching blood-soaked earth)
+        - "11018011"   # pUrvajAtikRtaM pApaM manye (I think this is past-life karma)
+        - "11018019"   # duHzAsanaH zete... bhImasenena pAtitaH (Duhshasana lies fallen)
+        # gandhari's curse
+        - "11025036"   # upekSitA vinazyantas tvayA kasmAj janArdana (why did you watch?)
+        - "11025038"   # icchatopekSito nAzaH... phalaM tasmAd avApnuhi (receive the fruit)
+        - "11025039"   # patizuzrUSayA... zapsye cakragadAdhara (by my tapas I curse you)
+        - "11025040"   # jJAtIn vadhiSyasi (you will slay your own kin)
+        - "11025041"   # kutsitenAbhyupAyena nidhanaM samavApsyasi (you will die a lowly death)
+        # krishna's acceptance
+        - "11025043"   # ISad abhyutsmayann iva (smiling slightly)
+        - "11025044"   # saMhartA vRSNicakrasya nAnyo mad vidyate (none other than me can destroy the vrishnis)
+        - "11025045"   # parasparakRtaM nAzam ataH prApsyanti yAdavAH (they will destroy each other)
+        # krishna's gentle response
+        - "11026001"   # uttiSThottiSTha gAndhAri mA ca zoke manaH kRthAH
+        - "11026004"   # mRtaM vA yadi vA naSTaM yo 'tItam anuzocati / duHkhena labhate duHkhaM
+        # gandhari's silence
+        - "11026006"   # tUSNIM babhUva gAndhArI zokavyAkulalocanA
+      speakers: ["Gandhari", "Dhritarashtra", "Vidura", "Krishna"]
+      parvas: ["11"]
+    semantic_profile:
+      conceptual_features_required:
+        - grief_as_sustained_process
+        - same_philosophy_different_function
+        - irreversible_loss
+      conceptual_features_optional:
+        - bereaved_not_deluded
+        - philosophy_accompanies_not_cures
+        - confrontation_with_divine_agency
+        - curse_as_consequence_not_ignorance
+        - feminine_voice_as_moral_center
+      exclusion_features:
+        - grief_quickly_corrected
+        - mourner_shown_to_be_wrong
+        - grief_as_mere_weakness
+    expression_families:
+      direct_hk:
+        - "zokavyAkulalocanA"
+        - "hataputrA raNe bAlAH"
+        - "rudhirArdrAM vasuMdharAm"
+        - "zokasthAnasahasrANi"
+        - "maraNAntaM hi jIvitam"
+        - "tUSNIM babhUva gAndhArI"
+      paraphrase_hk:
+        - "zoka dharma"
+        - "vilApa as dharmic process"
+        - "duHkha not corrected but borne"
+      inferential_patterns:
+        - "philosophical truth stated but grief persists — truth does not cure"
+        - "bereaved person understands karma/kala but still grieves"
+        - "divine agent confronted with consequences of cosmic role"
+        - "same arguments as BG ch2 but different emotional outcome"
+        - "silence as response to consolation — neither agreement nor rejection"
     inverse_analysis:
-      provisional_type: E
-      inverse_relation: opposed
+      provisional_type: D
+      inverse_relation: transformed
       rationale: >
-        BG actively redirects away from grief toward action.
-        MBH elsewhere treats grief as legitimate sustained experience
-        with its own dharmic arc.
+        NOT omitted — BG ch1 is entirely vishada.
+        NOT opposed — the siddhanta is the same.
+        TRANSFORMED: BG uses grief as the STARTING CONDITION for
+        philosophical instruction. the grief is corrected and arjuna
+        acts. striparva uses the same philosophical truths to
+        ACCOMPANY irreversible grief. gandhari is not corrected;
+        she falls silent. vidura consoles rather than instructs.
+        krishna accepts rather than teaches.
+
+        the transformation is structural: BG places grief BEFORE
+        action, as the problem that philosophy solves.
+        striparva places grief AFTER action, as the consequence
+        that philosophy cannot undo but can help bear.
+
+        the inverse discovery: the BG's compressed teaching works
+        because arjuna's vishada is anticipatory (fear of the
+        unforeseen future). gandhari's vishada is realized (actual
+        experienced loss). the same medicine, different disease.
+
+  # ─── X006: the two vishadas as structural pair ──────────────────
+  - id: X006
+    short_label: two_vishadas
+    canonical_statement: >
+      vishada (grief/despair) appears twice in the MBH with opposite
+      orientations: arjuna's vishada (BG ch1) is ANTICIPATORY grief
+      before the irreversible — fear of unforeseen consequences of
+      action. gandhari's vishada (striparva) is REALIZED grief after
+      the irreversible — actual experienced loss. krishna corrects
+      the first; krishna accepts the second. the same siddhanta
+      serves opposite functions depending on whether loss is
+      projected or actual.
+    domain:
+      primary: tattva
+      secondary: psychology
+    bg_status:
+      present: true
+      centrality: 0.30
+      notes: >
+        BG ch1 (vishada yoga) is the setup. but BG treats vishada
+        as confusion (moha) to be dispelled. it does not explore
+        vishada as a legitimate sustained state.
+    discovery:
+      discovered_from:
+        # BG vishada (anticipatory)
+        - "06023028"   # arjuna sees kin arrayed (sIdanti mama gAtrANi)
+        - "06023032"   # na ca zreyo 'nupazyAmi (I see no good)
+        - "06023037"   # yady apy ete na pazyanti (even if they don't see)
+        - "06023045"   # aho bata mahat pApaM (what great sin we are about to commit)
+        - "06023046"   # arjuna puts down weapons, mind overwhelmed with grief
+        # krishna's correction
+        - "06024011"   # azocyAn anvazocas tvaM (you grieve for those not to be grieved for)
+        - "06024019"   # na jAyate mriyate vA (the self is not born, does not die)
+        - "06024030"   # dehI nityam avadhyo yaM (the self is eternally indestructible)
+        # striparva vishada (realized)
+        - "11001036"   # dhArayAtmAnam AtmanA (sustain yourself by yourself)
+        - "11002003"   # maraNAntaM hi jIvitam (life ends in death)
+        - "11018001"   # gandhari: see my sons, krishna
+        - "11025036"   # gandhari: why did you watch while they destroyed each other?
+        - "11025044"   # krishna: I alone can destroy the vrishnis
+        - "11026006"   # gandhari falls silent, eyes distraught with grief
+      speakers: ["Arjuna", "Krishna", "Gandhari", "Vidura", "Dhritarashtra"]
+      parvas: ["06", "11"]
+    semantic_profile:
+      conceptual_features_required:
+        - two_forms_of_grief
+        - anticipatory_vs_realized
+        - same_siddhanta_different_outcome
+      conceptual_features_optional:
+        - correction_vs_consolation
+        - divine_acceptance_of_consequence
+        - silence_as_unresolved_grief
+      exclusion_features:
+        - treating_both_vishadas_as_identical
+        - dismissing_grief_as_mere_ignorance
+    inverse_analysis:
+      provisional_type: D
+      inverse_relation: transformed
+      rationale: >
+        the two vishadas are a structural pair. BG's vishada
+        is the compressed, solvable version — arjuna's grief is
+        anticipatory and can be corrected by knowledge because
+        the feared outcome has not yet occurred. striparva's
+        vishada is the expanded, unsolvable version — gandhari's
+        grief is realized and cannot be corrected because the
+        loss is actual. together they show the full range of
+        what the siddhanta means for human suffering: it can
+        prevent unnecessary grief (BG) but it cannot undo
+        actual loss (striparva). this is not a contradiction.
+        it is the complete teaching.
 
   # ─── TYPE D: strong in MBH, weak in BG ─────────────────────────────
 
