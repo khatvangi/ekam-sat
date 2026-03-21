@@ -7,7 +7,34 @@
 
 ---
 
-## phase 1: paraphrase family curation (CURRENT)
+## phase 0: the eighteen vishadas (BOOK STRUCTURE) — DONE 2026-03-21
+
+- [x] framework document: docs/eighteen_vishadas.md
+- [x] P01 Adi: inherited curse
+- [x] P02 Sabha: witnessed humiliation
+- [x] P03 Aranyaka: chronic exile
+- [x] P04 Virata: forced concealment
+- [x] P05 Udyoga: failed peace
+- [x] P06 Bhishma: anticipatory grief (the one the Gita resolves)
+- [x] P07 Drona: moral injury (the lie)
+- [x] P08 Karna: retroactive fratricide
+- [x] P09 Shalya: determined endgame
+- [x] P10 Sauptika: vengeance / doctrine weaponized
+- [x] P11 Stri: accomplished loss (three registers)
+- [x] P12 Shanti: burden of governance
+- [x] P13 Anushasana: dying teacher
+- [x] P14 Ashvamedha: atonement
+- [x] P15 Ashramavasika: aging and departure
+- [x] P16 Mausala: self-destruction / curse fulfilled
+- [x] P17 Mahaprasthanika: the last walk / the dog
+- [x] P18 Svargarohana: cosmic injustice
+- [ ] review all 18 essays for Sanskrit accuracy and verse references
+- [ ] rename P10/P11/P16/P17/P18 essay files for consistent naming (p10_, p11_, etc.)
+- [ ] write book introduction using 18 vishadas as spine
+
+---
+
+## phase 1: paraphrase family curation
 
 ### per-node curation (output/paraphrase/paraphrase_families.json)
 for each node, review expansion words and mark keep/drop/add.
