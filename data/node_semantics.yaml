@@ -61,7 +61,7 @@ nodes:
       negative: [genealogy_only, mere_funeral_without_ontology, bodily_heroism]
     validation_examples:
       positive: ["06023019", "06023020", "06023017"]
-      hard_positive: []  # TO CURATE: find non-BG verses that clearly teach this
+      hard_positive: ["08021007a", "13094007a", "12192108c"]
       false_positive: []  # TO CURATE: verses with nitya/aja that DON'T teach atman doctrine
 
   - id: N009
@@ -101,7 +101,7 @@ nodes:
         - "discrimination between real and apparent"
     validation_examples:
       positive: ["06024016"]
-      hard_positive: []
+      hard_positive: ["05151009a", "12227031a", "03188040c"]
       false_positive: []
 
   # ─── GOLD STANDARD SET 2: KARMA / ACTION TEACHINGS ─────────────────
@@ -146,7 +146,7 @@ nodes:
         - "discipline of intention while acting"
     validation_examples:
       positive: ["06024047", "06024048"]
-      hard_positive: []
+      hard_positive: ["05151009a", "03004004a", "14005011a"]
       false_positive: []
 
   - id: N016
@@ -189,7 +189,7 @@ nodes:
         - "desire as the root of a chain leading to ruin"
     validation_examples:
       positive: ["06024062", "06024063"]
-      hard_positive: []
+      hard_positive: ["12234008a", "12064010a", "05139020a"]
       false_positive: []
 
   # ─── GOLD STANDARD SET 3: YOGA / DISCIPLINE ────────────────────────
@@ -234,7 +234,7 @@ nodes:
         - "contentment arising from self alone"
     validation_examples:
       positive: ["06024055", "06024056"]
-      hard_positive: []
+      hard_positive: ["12159054a", "12067003a", "07155020a"]
       false_positive: []
 
   # ─── GOLD STANDARD SET 4: BHAKTI / SURRENDER ──────────────────────
@@ -278,7 +278,7 @@ nodes:
         - "seeing the same reality in learned and outcaste"
     validation_examples:
       positive: ["06031029", "06027018"]
-      hard_positive: []
+      hard_positive: ["03192018a", "12185014a", "14009023a"]
       false_positive: []
 
   # ─── GOLD STANDARD SET 5: GUNA / PRAKRITI ─────────────────────────
@@ -321,7 +321,7 @@ nodes:
         - "nature as divine instrument but not ultimate"
     validation_examples:
       positive: ["06029004", "06029005"]
-      hard_positive: []
+      hard_positive: ["12140016a", "12222017c", "02060004a"]
       false_positive: []
 
   # ─── GOLD STANDARD SET 6: RENUNCIATION ─────────────────────────────
@@ -360,7 +360,7 @@ nodes:
         - "wise person sees no difference between the two paths"
     validation_examples:
       positive: ["06027004", "06027005"]
-      hard_positive: []
+      hard_positive: ["12025024a", "12056002a", "13016002c"]
       false_positive: []
 
   # ─── GOLD STANDARD SET 7: SVADHARMA ────────────────────────────────
@@ -402,7 +402,7 @@ nodes:
         - "authenticity of action over borrowed excellence"
     validation_examples:
       positive: ["06025035", "06040047"]
-      hard_positive: []
+      hard_positive: ["12110013c", "01200002c", "05190013a"]
       false_positive: []
 
   # ─── PLACEHOLDER: REMAINING GOLD STANDARD NODES ────────────────────
